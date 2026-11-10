@@ -13,7 +13,7 @@ description: "Getting started with Revontulet, answers to common questions and h
 <details>
 <summary>How is the estimate calculated?</summary>
 
-The estimate combines the Kp forecast and space weather from NOAA and the Finnish Meteorological Institute with the cloud forecast, darkness and moonlight at your place. It is an estimate, not a promise: auroras can surprise in both directions.
+The estimate combines NOAA's Kp forecast and live readings from NOAA and the Finnish Meteorological Institute with the cloud forecast, darkness and moonlight at your place. It is an estimate, not a promise: auroras can surprise in both directions. The [guide](/revontulet/guide/#how-the-estimate-is-computed) explains it in more detail.
 </details>
 
 <details>

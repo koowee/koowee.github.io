@@ -8,6 +8,7 @@
   "platforms": [
     "iPhone"
   ],
+  "guide": true,
   "status": "coming-soon",
   "accent": "#3ee8a0",
   "icon": "../../assets/icons/revontulet.png",

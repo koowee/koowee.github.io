@@ -77,7 +77,7 @@ function listHtml(dir: string, base = ''): string[] {
   });
 }
 
-const GUIDES = ['cadence'];
+const GUIDES = ['cadence', 'revontulet'];
 
 const EXPECTED_PATHS = [
   '/', '/privacy/',
@@ -90,7 +90,7 @@ const toFile = (p: string) => `${p.slice(1)}index.html`;
 test('exactly the expected pages', () => {
   const files = listHtml(DIST).sort();
   const expected = [...EXPECTED_PATHS.map(toFile), '404.html'].sort();
-  assert.equal(expected.length, 31);
+  assert.equal(expected.length, 33);
   assert.deepEqual(files, expected);
 });
 
@@ -187,6 +187,28 @@ test('Cadence guide has the nine in-app topics with a table of contents', () => 
     const plain = text(rel);
     for (const topic of topics) assert.ok(plain.includes(topic), `${rel}: ${topic}`);
     assert.ok(plain.includes('localhost'), `${rel} has the Strava steps`);
+  }
+});
+
+// Revontulet guide: the same nine topics as Settings → Ohje in the app.
+const REVONTULET_TOPICS = {
+  en: ['Getting started', 'Reading the estimate', 'How the estimate is computed', 'Juuri nyt', 'Notifications',
+    'Widgets', 'Sighting log', 'Data sources', "If something doesn't work"],
+  fi: ['Aloitus', 'Arvion lukeminen', 'Miten arvio lasketaan', 'Juuri nyt', 'Ilmoitukset',
+    'Widgetit', 'Havaintoloki', 'Tietolähteet', 'Jos jokin ei toimi'],
+};
+
+test('Revontulet guide has the nine in-app topics and its support page links to it', () => {
+  for (const [lang, topics] of Object.entries(REVONTULET_TOPICS)) {
+    const prefix = lang === 'en' ? '/' : '/fi/';
+    const rel = `${prefix.slice(1)}revontulet/guide`;
+    const html = readPage(rel);
+    const toc = html.match(/<nav class="toc"[\s\S]*?<\/nav>/);
+    assert.ok(toc, `${rel} has a toc`);
+    assert.equal([...toc![0].matchAll(/href="#([^"]+)"/g)].length, 9, `${rel} toc entries`);
+    const plain = text(rel);
+    for (const topic of topics) assert.ok(plain.includes(topic), `${rel}: ${topic}`);
+    assert.ok(readPage(`${prefix.slice(1)}revontulet/support`).includes(`href="${prefix}revontulet/guide/`), `${rel} support → guide`);
   }
 });
 

@@ -13,7 +13,7 @@ description: "Revontulten käyttöönotto, vastauksia usein kysyttyihin kysymyks
 <details>
 <summary>Miten arvio lasketaan?</summary>
 
-Arvio yhdistää NOAA:n ja Ilmatieteen laitoksen Kp-ennusteen ja avaruussään paikkasi pilviennusteeseen, pimeyteen ja kuunvaloon. Se on arvio, ei lupaus: revontulet voivat yllättää kumpaankin suuntaan.
+Arvio yhdistää NOAA:n Kp-ennusteen ja Ilmatieteen laitoksen ja NOAA:n reaaliaikaiset mittaukset paikkasi pilviennusteeseen, pimeyteen ja kuunvaloon. Tarkempi selitys on [ohjeessa](/fi/revontulet/guide/#miten-arvio-lasketaan). Se on arvio, ei lupaus: revontulet voivat yllättää kumpaankin suuntaan.
 </details>
 
 <details>
