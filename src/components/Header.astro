@@ -1,0 +1,10 @@
+---
+import LangSwitch from './LangSwitch.astro';
+import { localizedPath, type Locale } from '../lib/i18n.ts';
+interface Props { locale: Locale; currentPath: string }
+const { locale, currentPath } = Astro.props;
+---
+<header class="site-header">
+  <a class="wordmark" href={localizedPath(locale, '/')}>Valkama Apps</a>
+  <LangSwitch locale={locale} currentPath={currentPath} />
+</header>
