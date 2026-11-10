@@ -22,7 +22,7 @@ Ennuste päivittyy 15 minuutin välein, kun näkymä on auki. Vedä alas, niin s
 
 ## Arvion lukeminen
 
-Prosentti kertoo, kuinka hyvät olosuhteet tunnilla on nähdä revontulia:
+Prosentti kertoo, kuinka hyvät olosuhteet tunnilla ovat revontulien näkemiseen:
 
 | Arvio | Sana |
 |---|---|
@@ -35,9 +35,9 @@ Arvio on suuntaa antava, ei tilastollinen todennäköisyys eikä lupaus. Revontu
 
 ### Tänä yönä
 
-**Paras aika** on yön paras tunti. **Hyvä aika** on tunnit, joilla arvio on vähintään ilmoitusrajasi, sama aika kuin ilmoituksessa.
+**Paras aika** on yön paras tunti. **Hyvä aika** tarkoittaa tunteja, joilla arvio on vähintään ilmoitusrajasi, sama aika kuin ilmoituksessa.
 
-Tänä yönä vaihtuu tulevaan yöhön kello 4 paikan aikaa. Sen jälkeen kortilla näkyy vielä **Loppuyö**, jos yötä on jäljellä.
+Tänä yönä -kortti vaihtuu seuraavaan yöhön klo 4 paikallista aikaa. Sen jälkeen kortilla näkyy vielä **Loppuyö**, jos yötä on jäljellä.
 
 ### Tuntitaulukko
 
@@ -62,7 +62,7 @@ Malli on sovitettu Lapin oloihin. Kaukana Pohjolasta se on karkeampi.
 
 ## Juuri nyt
 
-**Juuri nyt** -kortilla on lähimmän Ilmatieteen laitoksen magnetometrin R-luku, joka kertoo magneettikentän häiriöstä nyt, ja NOAA:n OVATION-mallin revontulien voimakkuus paikan kohdalla.
+**Juuri nyt** -kortilla on lähimmän Ilmatieteen laitoksen magnetometrin R-luku, joka kertoo magneettikentän häiriöstä nyt (jos asema on alle 300 km päässä), ja NOAA:n OVATION-mallin revontulien voimakkuus paikan kohdalla.
 
 ### Aurinkotuuli
 
@@ -70,7 +70,7 @@ Aurinkotuulen arvot tulevat NOAA:n mittauksista Maan ja Auringon välissä. Kun 
 
 ### Taivaskamera
 
-Kuva tulee lähimmästä Ilmatieteen laitoksen taivaskamerasta, Kilpisjärveltä tai Kevolta, enintään 300 km:n päästä. Napauta kuvaa, niin se aukeaa koko ruudulle. Kun uusin kuva on yli tunnin vanha, sen tilalla näkyy huomautus.
+Kuva tulee lähimmästä Ilmatieteen laitoksen taivaskamerasta, Kilpisjärveltä tai Kevolta, enintään 300 km:n päästä. Napauta kuvaa, niin se aukeaa koko ruudulle. Kun uusin kuva on yli tunnin vanha, sen tilalla näkyy pimeään aikaan huomautus.
 
 ## Ilmoitukset
 
@@ -81,7 +81,7 @@ Ilmoitukset tulevat suosikeista, kun yön paras tunti saavuttaa ilmoitusrajan (o
 
 Ilmoitukset ajastetaan aina, kun ennuste päivittyy, joten ne tulevat, vaikka sovellus ei olisi auki.
 
-**Tarkista suosikit nyt** lähettää testi-ilmoituksen heti, jos jonkin suosikin tämä yö ylittää rajan. Se ei muuta ajastettuja ilmoituksia.
+**Tarkista suosikit nyt** lähettää testi-ilmoituksen heti, jos jonkin suosikin tämä yö saavuttaa ilmoitusrajan. Se ei muuta ajastettuja ilmoituksia.
 
 Suosikit-välilehti kertoo ylhäällä, jos ilmoitukset ovat pois päältä sovelluksessa tai iPhonen asetuksissa. Napauta sen painiketta, niin pääset korjaamaan asian.
 
@@ -114,4 +114,4 @@ Jos ennustetta ei saada, tarkista verkkoyhteys ja vedä näkymää alas. Jos jok
 
 Jos paikkaa ei löydy, kokeile lähintä kaupunkia tai kylää. Oma sijainti vaatii sijaintiluvan iPhonen asetuksista.
 
-Muissa asioissa katso [tuki](/fi/revontulet/support/) tai lähetä sähköpostia osoitteeseen [valkama.app@gmail.com](mailto:valkama.app@gmail.com). Kerro mielellään iPhonesi malli ja iOS-versio.
+Muissa asioissa katso [tukisivu](/fi/revontulet/support/) tai lähetä sähköpostia osoitteeseen [valkama.app@gmail.com](mailto:valkama.app@gmail.com). Kerro mielellään iPhonesi malli ja iOS-versio.

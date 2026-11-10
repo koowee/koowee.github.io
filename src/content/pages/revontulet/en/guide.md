@@ -35,14 +35,14 @@ The estimate is a guide, not a statistical probability and not a promise. The au
 
 ### Tonight
 
-**Paras aika** (best time) is the night's best hour. **Hyvä aika** (good window) is the hours at or above your notification limit, the same window as in the notifications.
+**Paras aika** (best time) is the night's best hour. **Hyvä aika** (good window) means the hours at or above your notification limit, the same window as in the notifications.
 
 "Tonight" moves on to the coming night at 4 am local time. After that the card still shows **Loppuyö** (rest of the night) if some of the night is left.
 
 ### Hourly table
 
 - **Pilviä** is total cloud cover. **Yläpilveä** means the cloud is mostly thin high cloud, which hides less.
-- **Kp** measures the disturbance of the Earth's magnetic field on a scale of 0–9: the higher it is, the further south the aurora can be seen. A star (\*) means the Kp comes from the 27-day outlook and is less precise. A lightning mark (⚡︎) means a live measurement is part of the estimate.
+- **Kp** measures the disturbance of the Earth's magnetic field on a scale of 0–9: the higher it is, the further south the aurora can be seen. A star (\*) means the Kp comes from the 27-day outlook and is less precise. A lightning bolt (⚡︎) means a live measurement is part of the estimate.
 - A mark in the **Kuu** (moon) column means a bright moon is up.
 
 ### Longer range
@@ -51,7 +51,7 @@ The 27-day outlook gives only each day's largest Kp, so the figure is the night'
 
 ## How the estimate is computed
 
-Each hour gets four factors, and the estimate is their product: activity, clear sky, darkness and moonlight.
+Four factors are computed for each hour, and the estimate is their product: activity, clear sky, darkness and moonlight.
 
 - **Activity** comes from NOAA's Kp forecast and how close the place is to the auroral oval. For the current and next hour it also uses the R-index of the nearest Finnish Meteorological Institute magnetometer, if one is within 300 km, and NOAA's real-time OVATION model.
 - **Clear sky** is 100 % minus cloud cover (Open-Meteo). Cloud is counted by layer: the largest of low, middle and half of high cloud, at most the total, because thin high cloud hides less.
@@ -62,7 +62,7 @@ The model is tuned for Finnish Lapland. Far from the Nordic countries it is roug
 
 ## Juuri nyt (right now)
 
-The **Juuri nyt** card shows the R-index of the nearest Finnish Meteorological Institute magnetometer, which tells how disturbed the magnetic field is now, and the aurora strength at the place from NOAA's OVATION model.
+The **Juuri nyt** card shows the R-index of the nearest Finnish Meteorological Institute magnetometer, which tells how disturbed the magnetic field is now (if a station is within 300 km), and the aurora strength at the place from NOAA's OVATION model.
 
 ### Solar wind
 
@@ -70,7 +70,7 @@ The solar wind values come from NOAA's measurements between the Earth and the Su
 
 ### Sky camera
 
-The image comes from the nearest Finnish Meteorological Institute all-sky camera, in Kilpisjärvi or Kevo, within 300 km. Tap the image to see it full screen. When the newest image is more than an hour old, a short note is shown instead.
+The image comes from the nearest Finnish Meteorological Institute all-sky camera, in Kilpisjärvi or Kevo, within 300 km. Tap the image to see it full screen. When the newest image is more than an hour old, a short note is shown instead while it is dark.
 
 ## Notifications
 
@@ -81,7 +81,7 @@ Notifications are sent for favourites when the night's best hour reaches your no
 
 Notifications are scheduled whenever the forecast updates, so they arrive even when the app is not open.
 
-**Tarkista suosikit nyt** (Check favourites now) sends a test notification right away if a favourite's night is over the limit. It does not change the scheduled notifications.
+**Tarkista suosikit nyt** (Check favourites now) sends a test notification right away if a favourite's night reaches the limit. It does not change the scheduled notifications.
 
 The Favourites tab says at the top if notifications are off in the app or in iPhone Settings. Tap its button to fix it.
 
@@ -89,7 +89,7 @@ The Favourites tab says at the top if notifications are off in the app or in iPh
 
 - **Suosikit tänä yönä** (Favourites tonight) shows the best hour of tonight for your favourites on the Home Screen.
 - **Paikan yö** (Place's night) shows one place's night hour by hour. Choose the place when you edit the widget.
-- Paikan yö also comes for the Lock Screen: the round one shows the best estimate, the rectangle the place, best hour and good window, and the line above the clock the place and best hour.
+- Paikan yö is also available on the Lock Screen: the circular widget shows the best estimate, the rectangular one the place, best hour and good window, and the inline one above the clock the place and best hour.
 
 Tapping a widget opens the app on that place. Widgets update on iOS's schedule, so they can lag a little behind the app.
 
