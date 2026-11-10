@@ -17,7 +17,7 @@ Kirjanpainaja **ei**:
 
 Luvut lasketaan näiden oletusten mukaan. Jos jokin ei sovi tilanteeseesi, kysy kirjanpitäjältä tai Verohallinnolta ennen kuin käytät lukuja.
 - Toimintamuodot ovat toiminimen elinkeinotoiminta (lomake 5) ja metsätalous (lomake 2C). Muita yritysmuotoja ei tueta.
-- ALV-ilmoitus lasketaan koko kalenterivuodelta, ja kanta valitaan kirjauksen päivän mukaan.
+- ALV-ilmoitus lasketaan koko kalenterivuodelta, ja kanta valitaan kirjauksen päivän mukaan, paitsi hyvityslaskussa, joka käyttää alkuperäisen laskun kantaa.
 - Kirjaus kuuluu kirjauksen päivän vuoteen.
 - Myyntilaskun myynti kirjataan toimituspäivälle (suoriteperuste).
 
@@ -34,7 +34,7 @@ Vanhan Excel-pohjan vuoden voi tuoda **Tuonti**-sivulla painikkeella **Tuo Excel
 
 ## Vuoden kulku
 
-1. **Kuitit talteen** Saapuneet-kansioon tai suoraan Kirjaukset-sivulle.
+1. **Kuitit talteen.** Tallenna kuitit Saapuneet-kansioon tai suoraan Kirjaukset-sivulle.
 2. **Kirjaukset.** Kategoria ratkaisee, mihin veroilmoituksen kohtaan kirjaus menee.
 3. **Matkat ja konetunnit.**
 4. **Maksujen täsmäytys** (valinnainen). Tuo tiliotteet ja yhdistä maksut kirjauksiin.
@@ -44,7 +44,7 @@ Vanhan Excel-pohjan vuoden voi tuoda **Tuonti**-sivulla painikkeella **Tuo Excel
 
 ## Yleiskatsaus ja Analyysi
 
-**Yleiskatsaus** näyttää valitun vuoden yhdellä silmäyksellä. Ylimpänä on **Tehtävää**: Saapuneissa odottavat kuitit, vuoden tarkistuksen kuittaamattomat huomautukset ja lähestyvä määräpäivä. Rivit vievät oikealle sivulle. Sen alla ovat tulos osioittain, ALV, ennakonpidätykset, avoimet laskut, sopimukset ja päättyvät takuut. Alimpana **Tila** kertoo viimeisimmän varmuuskopion ja puhelimen lukujen päivityksen.
+**Yleiskatsaus** näyttää valitun vuoden yhdellä silmäyksellä. Ylimpänä on **Tehtävää**: Saapuneissa odottavat kuitit, vuoden tarkistuksen kuittaamattomat huomautukset ja lähestyvä määräpäivä. Rivit vievät kyseiselle sivulle. Sen alla ovat tulos osioittain, ALV, ennakonpidätykset, avoimet laskut, sopimukset ja päättyvät takuut. Alimpana **Tila** kertoo viimeisimmän varmuuskopion ja puhelimen lukujen päivityksen.
 
 **Analyysi** näyttää tulot, menot ja ALV:n kuukausittain sekä menot kategorioittain, ja vertaa vuosia keskenään. Luvut täsmäävät aina veroilmoitukseen.
 
@@ -78,13 +78,13 @@ Laskutus-sivulla tehdään myyntilaskut, paikan päällä maksettujen myyntien k
 - **Uusi lasku** avaa luonnoksen. ALV-kanta määräytyy toimituspäivän mukaan. Mukana ovat kotitalousvähennyksen työn osuus, rakentamispalvelun käännetty verovelvollisuus ja EU-palvelumyynti.
 - **Lähetä** antaa laskulle numeron ja viitteen, kirjaa myynnin ja tekee PDF:n, jossa on pankkiviivakoodi ja QR-koodi. PDF:n voi tulostaa, tallentaa tai lähettää Mailin kautta.
 - Lähetettyä laskua ei muuteta. Virhe korjataan **hyvityslaskulla**, joka voi olla myös osittainen.
-- Tiliotteen tuonti tunnistaa laskun viitteen ja merkitsee laskun maksetuksi.
+- Kun viite ja summa täsmäävät, tiliotteen tuonti merkitsee laskun maksetuksi. Jos summa poikkeaa, maksu näkyy ehdotuksena Maksut-sivulla.
 
 ## Sopimukset ja takuut
 
 **Sopimukset** seuraa myynti- ja ostosopimuksia, joiden työt ja rahat tulevat myöhemmin, kuten puukauppaa, joka maksetaan erissä. Sopimus ei tee kirjauksia. Se kokoaa liitetyt kirjaukset ja vertaa niitä arvioon ja maksueriin. Myöhässä olevat erät näkyvät kortilla ja Yleiskatsauksessa.
 
-**Takuut** näyttää ostokset, joilla on takuuta jäljellä. Takuu lisätään kirjaukselle, ja 60 päivän sisällä päättyvät näkyvät oranssina.
+**Takuut** näyttää ostokset, joilla on takuuta jäljellä. Takuu lisätään kirjaukselle. 60 päivän sisällä päättyvät takuut näkyvät oranssina.
 
 ## Maksut ja tiliotteet
 
@@ -109,7 +109,7 @@ Kun olet jättänyt ilmoituksen, liitä sen PDF lomakkeelle painikkeella **Liit�
 **Vuoden päättäminen** -sivu kokoaa vuoden viimeiset vaiheet:
 
 1. **Tarkistukset.** **Tarkista nämä** -huomautukset, kuten puuttuva kuitti tai kategoria, pitää korjata tai kuitata. Kuittaukseen kirjoitetaan aina syy. **Tiedoksi**-kohdat eivät estä lukitusta.
-2. **Ilmoitukset.** Onko jätetty ilmoitus liitetty jokaiselle lomakkeelle, jolla on lukuja.
+2. **Ilmoitukset.** Tarkista, että jokaiselle lomakkeelle, jolla on lukuja, on liitetty jätetty ilmoitus. Jos ilmoitusta ei tarvinnut antaa, kuittaa sen huomautus vaiheessa 1.
 3. **Lukitus.** **Lukitse vuosi…** jäädyttää veroilmoitusten luvut ja tallentaa niille tarkistussumman. Lukitun vuoden kirjauksia ei voi muuttaa.
 4. **Varmuuskopio.** Lukitus ottaa heti varmuuskopion.
 5. **Vuosiarkisto.** **Tallenna vuosiarkisto…** tallentaa vuoden Excelin, kuitit, liitteet, jätetyt ilmoitukset ja kuittaukset yhdeksi zip-tiedostoksi.
@@ -125,7 +125,7 @@ iPhonen ja iPadin Kirjanpainajalla lähetetään kuitteja Macille ja katsotaan l
 3. Valitse puhelimessa sama tallennuskansio kuin Macilla.
 
 Puhelimen välilehdet:
-- **Kuitit**: skannaa kuitti, ota kuva tai valitse tiedosto. Kuitti menee Macin Saapuneisiin. Kytkimellä **Lähetä liitteenä** tiedosto lähetetään liitteeksi olemassa olevaan kirjaukseen.
+- **Kuitit**: skannaa kuitti tai valitse kuva tai tiedosto. Kuitti menee Macin Saapuneisiin. Kytkimellä **Lähetä liitteenä** tiedosto lähetetään liitteeksi olemassa olevaan kirjaukseen.
 - **Yleiskatsaus**, **Kirjaukset** ja **Veroilmoitukset**: Macin viimeksi kirjoittamat luvut. Vedä alas hakeaksesi uusimmat.
 
 Dropbox, Google Drive ja OneDrive voivat näyttää puhelimelle vanhaa versiota luvuista. Jos tallennuskansio on muualla kuin iCloud Drivessa, valitse luvuille erillinen iCloud Driven **mobiilikansio** sekä Macilla että puhelimessa.
@@ -136,9 +136,9 @@ Dropbox, Google Drive ja OneDrive voivat näyttää puhelimelle vanhaa versiota 
 - **Kuitit, liitteet, laskujen PDF:t, jätetyt ilmoitukset ja varmuuskopiot** ovat tallennuskansion *Kirjanpainaja*-kansiossa.
 - Kirjanpainaja ei lähetä tietoja minnekään. **Vie Exceliin…** tekee valitusta vuodesta tiedoston, jonka voit antaa vaikka kirjanpitäjälle.
 
-Kirjanpainaja varmuuskopioi tietokannan automaattisesti: kerran päivässä, viisi minuuttia muutosten jälkeen, suljettaessa ja aina vuotta lukittaessa. Jokainen varmuuskopio tarkistetaan. Palautus tehdään kohdassa **Asetukset → Varmuuskopiot → Palauta varmuuskopiosta…**, ja ennen palautusta nykyisistä tiedoista otetaan vielä varmuuskopio.
+Kirjanpainaja varmuuskopioi tietokannan automaattisesti: kerran päivässä, viisi minuuttia muutosten jälkeen, suljettaessa, jos tietoja on muutettu, ja aina vuotta lukittaessa. Jokainen varmuuskopio tarkistetaan. Kuittitiedostot eivät ole varmuuskopiossa, koska ne ovat jo tallennuskansiossa. Palautus tehdään kohdassa **Asetukset → Varmuuskopiot → Palauta varmuuskopiosta…**, ja ennen palautusta nykyisistä tiedoista otetaan vielä varmuuskopio.
 
-Mitään ei poisteta lopullisesti. Poistetun kirjauksen saa takaisin valinnalla **Näytä poistetut → Palauta**, ja muutokset kirjautuvat muutoslokiin.
+Mitään ei poisteta lopullisesti. **Näytä poistetut** tuo poistetut näkyviin, ja hiiren oikean painikkeen valikon **Palauta** palauttaa kirjauksen. Muutokset kirjautuvat muutoslokiin.
 
 Kirjanpainaja ei salaa tietoja itse. Pidä Macissa **FileVault** päällä ja ota tallennuspalvelussa käyttöön kaksivaiheinen tunnistus.
 

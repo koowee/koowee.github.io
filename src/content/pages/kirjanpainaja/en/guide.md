@@ -8,7 +8,7 @@ This is a summary of the Mac app's own guide, under **Ohje → Kirjanpainajan oh
 
 Kirjanpainaja is a bookkeeping and tax helper for a Finnish sole proprietorship (toiminimi), on the Mac. It has two sections: **Metsätalous** (forestry), which gives the figures for the forestry tax return (form 2C), and **Toiminimi** (business), which gives the figures for the business tax return (form 5). It also works out the year's VAT return.
 
-Kirjanpainaja keeps track of income and expenses, works out VAT, links receipts to entries, works out trips, machine hours and depreciation, and shows the tax return figures in the same order as OmaVero, the Finnish Tax Administration's online service.
+Kirjanpainaja keeps track of income and expenses, works out VAT, links receipts to entries, works out mileage, machine hours and depreciation, and shows the tax return figures in the same order as OmaVero, the Finnish Tax Administration's online service.
 
 Kirjanpainaja does **not**:
 - send anything to OmaVero. You copy the figures yourself.
@@ -17,7 +17,7 @@ Kirjanpainaja does **not**:
 
 The figures rest on these assumptions. If one doesn't fit your situation, ask an accountant or the Tax Administration before you use the figures.
 - The supported forms are a sole proprietorship's business income (form 5) and forestry (form 2C). Other company types are not supported.
-- The VAT return covers the whole calendar year, and the rate is chosen by the entry's date.
+- The VAT return covers the whole calendar year, and the rate is chosen by the entry's date, except on a credit note, which uses the original invoice's rate.
 - An entry belongs to the year of its date.
 - A sales invoice is booked on its delivery date (accrual basis).
 
@@ -27,7 +27,7 @@ The figures rest on these assumptions. If one doesn't fit your situation, ask an
 2. Choose your line of business in Settings. It sets the starting categories. The calculations are the same for every line of business.
 3. Choose the year you are booking from the **Vuosi** (Year) menu in the toolbar.
 4. Check the year's settings: mileage allowance, small-purchase limits, deadlines and machine hourly rates. They are copied from the previous year.
-5. If you depreciate equipment, set each section's starting year and opening book value.
+5. If you depreciate equipment, set each section's starting year and undepreciated balance (menojäännös).
 6. Make your first entry: **Kirjaukset → Uusi kirjaus** (Entries → New entry).
 
 A year kept in the old Excel template can be imported on the **Tuonti** (Import) page with **Tuo Excel-työkirja…** (Import Excel workbook). You see a preview before saving, and the import can be undone.
@@ -44,7 +44,7 @@ A year kept in the old Excel template can be imported on the **Tuonti** (Import)
 
 ## Overview and analysis
 
-**Yleiskatsaus** (Overview) shows the chosen year at a glance. At the top, **Tehtävää** (To do) lists receipts waiting in the inbox, open review findings and an upcoming deadline. Each row takes you to the right page. Below are the result by section, VAT, tax withheld at source, open invoices, contracts and warranties about to end. At the bottom, **Tila** (Status) shows the last backup and when the phone figures were last updated.
+**Yleiskatsaus** (Overview) shows the chosen year at a glance. At the top, **Tehtävää** (To do) lists receipts waiting in the inbox, open review findings and an upcoming deadline. Each row takes you to that page. Below are the result by section, VAT, tax withheld at source, open invoices, contracts and warranties about to end. At the bottom, **Tila** (Status) shows the last backup and when the phone figures were last updated.
 
 **Analyysi** (Analysis) shows income, expenses and VAT by month and expenses by category, and compares years. The figures always match the tax returns.
 
@@ -78,13 +78,13 @@ The Laskutus (Invoicing) page makes sales invoices, receipts for sales paid on t
 - **Uusi lasku** (New invoice) opens a draft. The VAT rate follows the delivery date. The household tax credit's labour share, reverse charge for construction services and EU service sales are supported.
 - **Lähetä** (Send) gives the invoice a number and a reference, books the sale and makes a PDF with a bank barcode and a QR code. The PDF can be printed, saved or sent through Mail.
 - A sent invoice is never changed. A mistake is fixed with a **credit note**, which can also be partial.
-- Importing a bank statement recognises the invoice reference and marks the invoice paid.
+- When the reference and the amount match, importing a bank statement marks the invoice paid. If the amount differs, the payment shows as a suggestion on the Payments page.
 
 ## Contracts and warranties
 
 **Sopimukset** (Contracts) tracks sales and purchase contracts whose work and money come later, such as a timber sale paid in instalments. A contract makes no entries. It collects the linked entries and compares them with the estimate and the instalments. Overdue instalments show on the contract and on the Overview.
 
-**Takuut** (Warranties) lists purchases that still have warranty left. A warranty is added to an entry, and those ending within 60 days show in orange.
+**Takuut** (Warranties) lists purchases that still have warranty left. A warranty is added to an entry. Warranties ending within 60 days show in orange.
 
 ## Payments and bank statements
 
@@ -109,7 +109,7 @@ Once you have filed a return, attach its PDF to the form with **Liitä jätetty 
 The **Vuoden päättäminen** (Closing the year) page brings the last steps together:
 
 1. **Review.** Each **Tarkista nämä** (Check these) finding, such as a missing receipt or category, must be fixed or acknowledged. An acknowledgement always needs a reason. **Tiedoksi** (For information) items don't block locking.
-2. **Returns.** Whether a filed return is attached for every form that has figures.
+2. **Returns.** Check that a filed return is attached to every form that has figures. If a return wasn't needed, acknowledge its finding in step 1.
 3. **Lock.** **Lukitse vuosi…** (Lock year) freezes the tax return figures and stores a checksum for them. A locked year's entries can't be changed.
 4. **Backup.** Locking takes a backup straight away.
 5. **Year archive.** **Tallenna vuosiarkisto…** (Save year archive) saves the year's Excel file, receipts, attachments, filed returns and acknowledgements as one zip file.
@@ -125,7 +125,7 @@ The iPhone and iPad app sends receipts to your Mac and shows the figures. It nev
 3. On the phone, choose the same storage folder as on the Mac.
 
 The phone's tabs:
-- **Kuitit** (Receipts): scan a receipt, take a photo or pick a file. It goes to the Mac's inbox. With **Lähetä liitteenä** (Send as attachment), the file goes to an existing entry as an attachment.
+- **Kuitit** (Receipts): scan a receipt or pick a photo or file. It goes to the Mac's inbox. With **Lähetä liitteenä** (Send as attachment), the file goes to an existing entry as an attachment.
 - **Yleiskatsaus**, **Kirjaukset** and **Veroilmoitukset** (Overview, Entries, Tax returns): the figures the Mac wrote last. Pull down to get the newest.
 
 Dropbox, Google Drive and OneDrive can show the phone an older copy of the figures. If your storage folder is not in iCloud Drive, choose a separate iCloud Drive **mobile folder** for the figures on both the Mac and the phone.
@@ -136,10 +136,10 @@ Dropbox, Google Drive and OneDrive can show the phone an older copy of the figur
 - **Receipts, attachments, invoice PDFs, filed returns and backups** are in the *Kirjanpainaja* folder in your storage folder.
 - Kirjanpainaja sends your data nowhere. **Vie Exceliin…** (Export to Excel) makes a file of the chosen year that you can give to an accountant, for example.
 
-Kirjanpainaja backs up the database automatically: once a day, five minutes after changes, when you quit and whenever a year is locked. Every backup is checked. To restore, go to **Asetukset → Varmuuskopiot → Palauta varmuuskopiosta…** (Settings → Backups → Restore from backup). The current data is backed up once more before it is replaced.
+Kirjanpainaja backs up the database automatically: once a day, five minutes after changes, when you quit if anything changed, and whenever a year is locked. Every backup is checked. Receipt files are not in the backup, because they are already in your storage folder. To restore, go to **Asetukset → Varmuuskopiot → Palauta varmuuskopiosta…** (Settings → Backups → Restore from backup). The current data is backed up once more before it is replaced.
 
-Nothing is deleted for good. A deleted entry comes back with **Näytä poistetut → Palauta** (Show deleted → Restore), and changes are written to a change log.
+Nothing is deleted for good. **Näytä poistetut** (Show deleted) shows deleted entries, and **Palauta** (Restore) in the right-click menu brings one back. Changes are written to a change log.
 
-Kirjanpainaja does not encrypt your data itself. Keep **FileVault** on on your Mac and turn on two-factor authentication in your storage service.
+Kirjanpainaja does not encrypt your data itself. Keep **FileVault** turned on in your Mac and turn on two-factor authentication in your storage service.
 
 **Moving to a new Mac**: install Kirjanpainaja, choose the same storage folder and restore the newest backup.
