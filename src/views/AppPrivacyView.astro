@@ -1,0 +1,21 @@
+---
+import { render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AppHero from '../components/AppHero.astro';
+import AppSubnav from '../components/AppSubnav.astro';
+import LastUpdated from '../components/LastUpdated.astro';
+import { getAppPage, type AppMeta } from '../lib/apps.ts';
+import type { Locale } from '../lib/i18n.ts';
+interface Props { app: AppMeta; locale: Locale }
+const { app, locale } = Astro.props;
+const page = await getAppPage(app.slug, locale, 'privacy');
+const { Content } = await render(page);
+---
+<BaseLayout locale={locale} title={`${page.data.title} · ${app.name}`} description={page.data.description} path={`/${app.slug}/privacy/`} accent={app.accent}>
+  <AppHero app={app} locale={locale} heading={page.data.title} compact />
+  <AppSubnav app={app} locale={locale} current="privacy" />
+  <article class="prose">
+    <Content />
+    <LastUpdated locale={locale} date={page.data.lastUpdated!} />
+  </article>
+</BaseLayout>

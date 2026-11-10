@@ -1,0 +1,8 @@
+---
+import { t, type Locale } from '../lib/i18n.ts';
+import type { AppMeta } from '../lib/apps-core.ts';
+interface Props { app: AppMeta; locale: Locale }
+const { app, locale } = Astro.props;
+const released = app.status === 'released';
+---
+<span class:list={['status', { released }]}>{t(locale, released ? 'onAppStore' : 'comingSoon')}</span>

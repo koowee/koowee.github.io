@@ -1,0 +1,23 @@
+---
+import { counterpartPath, t, type Locale } from '../lib/i18n.ts';
+interface Props { locale: Locale; currentPath: string }
+const { locale, currentPath } = Astro.props;
+const langs: { code: Locale; label: string }[] = [
+  { code: 'en', label: 'EN' },
+  { code: 'fi', label: 'FI' },
+];
+---
+<nav class="lang-switch" aria-label={t(locale, 'language')}>
+  {langs.map((l, i) => (
+    <>
+      {i > 0 && <span class="sep" aria-hidden="true">|</span>}
+      <a
+        href={counterpartPath(currentPath, l.code)}
+        hreflang={l.code}
+        lang={l.code}
+        aria-current={l.code === locale ? 'true' : undefined}
+        data-lang={l.code}
+      >{l.label}</a>
+    </>
+  ))}
+</nav>

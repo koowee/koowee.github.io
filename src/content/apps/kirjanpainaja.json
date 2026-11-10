@@ -1,0 +1,17 @@
+{
+  "slug": "kirjanpainaja",
+  "name": "Kirjanpainaja",
+  "tagline": {
+    "en": "Bookkeeping for a Finnish sole proprietorship.",
+    "fi": "Kirjanpito toiminimelle ja metsätaloudelle."
+  },
+  "platforms": [
+    "Mac",
+    "iPhone"
+  ],
+  "status": "coming-soon",
+  "accent": "#d4a464",
+  "icon": "../../assets/icons/kirjanpainaja.png",
+  "order": 2,
+  "iconStyle": "mac"
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "revontulet",
+  "name": "Revontulet",
+  "tagline": {
+    "en": "Hour-by-hour aurora forecast for your places.",
+    "fi": "Revontuliennuste tunneittain omille paikoillesi."
+  },
+  "platforms": [
+    "iPhone"
+  ],
+  "status": "coming-soon",
+  "accent": "#3ee8a0",
+  "icon": "../../assets/icons/revontulet.png",
+  "order": 3,
+  "iconStyle": "ios"
+}

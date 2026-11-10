@@ -1,0 +1,5 @@
+node_modules/
+dist/
+.astro/
+.superpowers/
+tests/e2e/out/

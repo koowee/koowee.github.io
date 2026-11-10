@@ -1,0 +1,33 @@
+---
+import { render } from 'astro:content';
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AppHero from '../components/AppHero.astro';
+import { getAppPage, type AppMeta } from '../lib/apps.ts';
+import { localizedPath, t, type Locale } from '../lib/i18n.ts';
+interface Props { app: AppMeta; locale: Locale }
+const { app, locale } = Astro.props;
+const page = await getAppPage(app.slug, locale, 'intro');
+const { Content } = await render(page);
+const all = import.meta.glob<{ default: ImageMetadata }>('../assets/screenshots/*/*.{png,jpg,jpeg,webp}', { eager: true });
+const screenshots = Object.entries(all)
+  .filter(([path]) => path.includes(`/screenshots/${app.slug}/`))
+  .sort(([a], [b]) => a.localeCompare(b))
+  .map(([, mod]) => mod.default);
+---
+<BaseLayout locale={locale} title={`${app.name} · Valkama Apps`} description={page.data.description} path={`/${app.slug}/`} accent={app.accent}>
+  <AppHero app={app} locale={locale} />
+  <article class="prose app-features">
+    <Content />
+  </article>
+  {screenshots.length > 0 && (
+    <section class="screenshots" aria-label={t(locale, 'screenshots')}>
+      {screenshots.map((s, i) => <Image src={s} alt={`${app.name} ${i + 1}`} width={320} />)}
+    </section>
+  )}
+  <nav class="app-links" aria-label={app.name}>
+    <a class="pill-link" href={localizedPath(locale, `/${app.slug}/support/`)}>{t(locale, 'support')}</a>
+    <a class="pill-link" href={localizedPath(locale, `/${app.slug}/privacy/`)}>{t(locale, 'privacyPolicy')}</a>
+  </nav>
+</BaseLayout>

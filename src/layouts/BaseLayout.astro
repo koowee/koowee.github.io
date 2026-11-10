@@ -1,0 +1,46 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+import { localizedPath, type Locale } from '../lib/i18n.ts';
+
+interface Props {
+  locale: Locale;
+  title: string;
+  description: string;
+  /** Locale-less path, e.g. '/cadence/privacy/'. The 404 page passes '/404.html'. */
+  path: string;
+  accent?: string;
+}
+const { locale, title, description, path, accent } = Astro.props;
+const site = (Astro.site?.toString() ?? '').replace(/\/$/, '');
+const currentPath = localizedPath(locale, path);
+const indexable = !path.endsWith('.html');
+---
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0b0d12" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    {indexable && (
+      <>
+        <link rel="canonical" href={site + currentPath} />
+        <link rel="alternate" hreflang="en" href={site + localizedPath('en', path)} />
+        <link rel="alternate" hreflang="fi" href={site + localizedPath('fi', path)} />
+        <link rel="alternate" hreflang="x-default" href={site + localizedPath('en', path)} />
+      </>
+    )}
+  </head>
+  <body style={accent ? `--accent: ${accent}` : undefined}>
+    <Header locale={locale} currentPath={currentPath} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer locale={locale} />
+  </body>
+</html>

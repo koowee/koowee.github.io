@@ -1,0 +1,16 @@
+---
+import type { ImageMetadata } from 'astro';
+import { t, type Locale } from '../lib/i18n.ts';
+import type { AppMeta } from '../lib/apps-core.ts';
+interface Props { app: AppMeta; locale: Locale }
+const { app, locale } = Astro.props;
+// Apple's official badge artwork goes in src/assets/badges/app-store-<locale>.svg (see README).
+const badges = import.meta.glob<{ default: ImageMetadata }>('../assets/badges/app-store-*.svg', { eager: true });
+// Finnish falls back to the English badge until app-store-fi.svg is added.
+const badge = (badges[`../assets/badges/app-store-${locale}.svg`] ?? badges[`../assets/badges/app-store-en.svg`])?.default;
+---
+<a class="app-store-button" href={app.appStoreUrl}>
+  {badge
+    ? <img src={badge.src} width={badge.width} height={badge.height} alt={t(locale, 'downloadOnAppStore')} />
+    : <span>{t(locale, 'downloadOnAppStore')}</span>}
+</a>

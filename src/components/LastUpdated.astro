@@ -1,0 +1,8 @@
+---
+import { t, type Locale } from '../lib/i18n.ts';
+interface Props { locale: Locale; date: Date }
+const { locale, date } = Astro.props;
+const iso = date.toISOString().slice(0, 10);
+const label = new Intl.DateTimeFormat(locale === 'fi' ? 'fi-FI' : 'en-GB', { dateStyle: 'long', timeZone: 'UTC' }).format(date);
+---
+<p class="last-updated">{t(locale, 'lastUpdated')}: <time datetime={iso}>{label}</time></p>

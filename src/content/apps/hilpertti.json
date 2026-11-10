@@ -1,0 +1,17 @@
+{
+  "slug": "hilpertti",
+  "name": "Hilpertti",
+  "tagline": {
+    "en": "Learning games for little children.",
+    "fi": "Oppimispelejä pienille lapsille."
+  },
+  "platforms": [
+    "iPad",
+    "iPhone"
+  ],
+  "status": "coming-soon",
+  "accent": "#8ccdf5",
+  "icon": "../../assets/icons/hilpertti.png",
+  "order": 4,
+  "iconStyle": "ios"
+}

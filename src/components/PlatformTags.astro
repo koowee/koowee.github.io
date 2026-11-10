@@ -1,0 +1,6 @@
+---
+import type { Platform } from '../lib/apps-core.ts';
+interface Props { platforms: Platform[] }
+const { platforms } = Astro.props;
+---
+<p class="platforms">{platforms.join(' · ')}</p>

@@ -1,0 +1,18 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import { t, type Locale } from '../lib/i18n.ts';
+import type { AppMeta } from '../lib/apps-core.ts';
+interface Props { app: AppMeta; locale: Locale; size: number; loading?: 'eager' | 'lazy' }
+const { app, locale, size, loading = 'lazy' } = Astro.props;
+const alt = locale === 'fi' ? `${app.name}-${t(locale, 'appIcon')}` : `${app.name} ${t(locale, 'appIcon')}`;
+---
+<Image
+  src={app.icon as ImageMetadata}
+  alt={alt}
+  width={size}
+  height={size}
+  densities={[1, 2]}
+  loading={loading}
+  class:list={['app-icon', `app-icon--${app.iconStyle ?? 'ios'}`]}
+/>
