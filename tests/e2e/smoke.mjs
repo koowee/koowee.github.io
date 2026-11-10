@@ -42,6 +42,17 @@ for (const path of ['/', '/fi/']) {
   }
 }
 
+await check('app cards are visible without scrolling', async () => {
+  for (const [w, h] of [[1440, 900], [1280, 720], [390, 844]]) {
+    const page = await browser.newPage({ viewport: { width: w, height: h } });
+    await page.goto(BASE + '/');
+    const top = await page.locator('.app-card').first().evaluate((el) => el.getBoundingClientRect().top);
+    // The first row of cards must start in the upper half (55 %) of the first screen.
+    assert.ok(top < h * 0.55, `first card at ${Math.round(top)} px on ${w}x${h}`);
+    await page.close();
+  }
+});
+
 await check('long Finnish words fit at 320 px', async () => {
   const page = await browser.newPage({ viewport: { width: 320, height: 640 } });
   for (const p of ['/fi/kirjanpainaja/privacy/', '/fi/kirjanpainaja/support/', '/fi/revontulet/privacy/']) {
