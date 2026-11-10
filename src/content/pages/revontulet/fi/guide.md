@@ -70,7 +70,7 @@ Aurinkotuulen arvot tulevat NOAA:n mittauksista Maan ja Auringon välissä. Kun 
 
 ### Taivaskamera
 
-Kuva tulee lähimmästä Ilmatieteen laitoksen taivaskamerasta, Kilpisjärveltä tai Kevolta, enintään 300 km:n päästä. Napauta kuvaa, niin se aukeaa koko ruudulle. Kun uusin kuva on yli tunnin vanha, sen tilalla näkyy pimeään aikaan huomautus.
+Kuva tulee lähimmästä Ilmatieteen laitoksen taivaskamerasta, Kilpisjärveltä tai Kevolta, enintään 300 km:n päästä. Enintään 150 km:n päässä oleva kamera näkyy pyöreänä pikkukuvana. Kauempana oleva näkyy linkkinä, koska sen taivas kertoo paikan taivaasta vähemmän. Napauta, niin kuva aukeaa koko ruudulle, ja sitä voi suurentaa nipistämällä tai kaksoisnapautuksella. Kun kuva ei ole vaihtunut yli tuntiin, sen tilalla näkyy pimeään aikaan huomautus.
 
 ## Ilmoitukset
 

@@ -70,7 +70,7 @@ The solar wind values come from NOAA's measurements between the Earth and the Su
 
 ### Sky camera
 
-The image comes from the nearest Finnish Meteorological Institute all-sky camera, in Kilpisjärvi or Kevo, within 300 km. Tap the image to see it full screen. When the newest image is more than an hour old, a short note is shown instead while it is dark.
+The image comes from the nearest Finnish Meteorological Institute all-sky camera, in Kilpisjärvi or Kevo, within 300 km. A camera within 150 km is shown as a round thumbnail. A farther one is shown as a link, because its sky says less about the sky at your place. Tap to see the image full screen, and pinch or double-tap to zoom. When the image has not changed for more than an hour, a short note is shown instead while it is dark.
 
 ## Notifications
 
