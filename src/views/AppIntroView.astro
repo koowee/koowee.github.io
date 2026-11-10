@@ -27,6 +27,7 @@ const screenshots = Object.entries(all)
     </section>
   )}
   <nav class="app-links" aria-label={app.name}>
+    {app.guide && <a class="pill-link" href={localizedPath(locale, `/${app.slug}/guide/`)}>{t(locale, 'guide')}</a>}
     <a class="pill-link" href={localizedPath(locale, `/${app.slug}/support/`)}>{t(locale, 'support')}</a>
     <a class="pill-link" href={localizedPath(locale, `/${app.slug}/privacy/`)}>{t(locale, 'privacyPolicy')}</a>
   </nav>

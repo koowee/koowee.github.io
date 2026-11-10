@@ -13,5 +13,6 @@
   "accent": "#4fb877",
   "icon": "../../assets/icons/cadence.png",
   "order": 1,
-  "iconStyle": "ios"
+  "iconStyle": "ios",
+  "guide": true
 }

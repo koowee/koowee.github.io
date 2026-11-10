@@ -8,3 +8,5 @@ Cadence on pyörähuollon sovellus iPhonelle ja iPadille. Se tietää, mitä osi
 - **Kuluminen ajoista.** Stravan tai Terveys-appin ajot kuluttavat ajetun pyörän osia, ja saat muistutuksen ennen kuin osa on huollon tarpeessa.
 - **Huoltopäiväkirja ja kuitit.** Kirjaa huollot ja vaihdot, skannaa kuitit kameralla ja näe, mitä kukin pyörä todella maksaa kilometriä kohden.
 - **Widgetit.** Seuraavat huollot näkyvät koti- tai lukitusnäytöllä.
+
+Sovellus on suomeksi ja englanniksi. [Ohjeesta](/fi/cadence/guide/) näet, miten se toimii.

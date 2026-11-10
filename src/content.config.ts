@@ -17,6 +17,7 @@ const apps = defineCollection({
       icon: image(),
       order: z.number().int(),
       iconStyle: z.enum(['ios', 'mac']).default('ios'),
+      guide: z.boolean().default(false),
     }),
 });
 

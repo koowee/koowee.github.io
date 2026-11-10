@@ -55,7 +55,7 @@ await check('app cards are visible without scrolling', async () => {
 
 await check('long Finnish words fit at 320 px', async () => {
   const page = await browser.newPage({ viewport: { width: 320, height: 640 } });
-  for (const p of ['/fi/kirjanpainaja/privacy/', '/fi/kirjanpainaja/support/', '/fi/revontulet/privacy/']) {
+  for (const p of ['/fi/kirjanpainaja/privacy/', '/fi/kirjanpainaja/support/', '/fi/revontulet/privacy/', '/fi/cadence/guide/', '/cadence/guide/', '/fi/cadence/support/']) {
     await page.goto(BASE + p);
     await noHorizontalScroll(page);
   }
