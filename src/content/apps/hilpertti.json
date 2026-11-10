@@ -13,5 +13,6 @@
   "accent": "#8ccdf5",
   "icon": "../../assets/icons/hilpertti.png",
   "order": 4,
-  "iconStyle": "ios"
+  "iconStyle": "ios",
+  "guide": true
 }
