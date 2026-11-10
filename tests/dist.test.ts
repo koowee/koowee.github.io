@@ -77,7 +77,7 @@ function listHtml(dir: string, base = ''): string[] {
   });
 }
 
-const GUIDES = ['cadence', 'revontulet'];
+const GUIDES = ['cadence', 'kirjanpainaja', 'revontulet'];
 
 const EXPECTED_PATHS = [
   '/', '/privacy/',
@@ -90,7 +90,7 @@ const toFile = (p: string) => `${p.slice(1)}index.html`;
 test('exactly the expected pages', () => {
   const files = listHtml(DIST).sort();
   const expected = [...EXPECTED_PATHS.map(toFile), '404.html'].sort();
-  assert.equal(expected.length, 33);
+  assert.equal(expected.length, 35);
   assert.deepEqual(files, expected);
 });
 
@@ -209,6 +209,31 @@ test('Revontulet guide has the nine in-app topics and its support page links to 
     const plain = text(rel);
     for (const topic of topics) assert.ok(plain.includes(topic), `${rel}: ${topic}`);
     assert.ok(readPage(`${prefix.slice(1)}revontulet/support`).includes(`href="${prefix}revontulet/guide/`), `${rel} support → guide`);
+  }
+});
+
+// Kirjanpainaja guide: a summary of the Mac app's Help, one section per area.
+const KIRJANPAINAJA_TOPICS = {
+  en: ['What Kirjanpainaja is', 'Getting started', 'The year from January to closing', 'Overview and analysis',
+    'Entries and receipts', 'VAT', 'Invoicing', 'Contracts and warranties', 'Payments and bank statements',
+    'Trips, machine hours and depreciation', 'Tax returns', 'Closing and locking the year', 'iPhone and iPad',
+    'Data, backups and restoring'],
+  fi: ['Mikä Kirjanpainaja on', 'Käyttöönotto', 'Vuoden kulku', 'Yleiskatsaus ja Analyysi', 'Kirjaukset ja kuitit',
+    'ALV', 'Laskutus', 'Sopimukset ja takuut', 'Maksut ja tiliotteet', 'Matkat, konetunnit ja poistot',
+    'Veroilmoitukset', 'Vuoden päättäminen ja lukitus', 'iPhone ja iPad', 'Tiedot, varmuuskopiot ja palautus'],
+};
+
+test('Kirjanpainaja guide has its fourteen topics and its support page links to it', () => {
+  for (const [lang, topics] of Object.entries(KIRJANPAINAJA_TOPICS)) {
+    const prefix = lang === 'en' ? '/' : '/fi/';
+    const rel = `${prefix.slice(1)}kirjanpainaja/guide`;
+    const html = readPage(rel);
+    const toc = html.match(/<nav class="toc"[\s\S]*?<\/nav>/);
+    assert.ok(toc, `${rel} has a toc`);
+    assert.equal([...toc![0].matchAll(/href="#([^"]+)"/g)].length, topics.length, `${rel} toc entries`);
+    const plain = text(rel);
+    for (const topic of topics) assert.ok(plain.includes(topic), `${rel}: ${topic}`);
+    assert.ok(readPage(`${prefix.slice(1)}kirjanpainaja/support`).includes(`href="${prefix}kirjanpainaja/guide/`), `${rel} support → guide`);
   }
 });
 

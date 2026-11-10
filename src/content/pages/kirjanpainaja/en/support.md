@@ -2,6 +2,8 @@
 title: "Kirjanpainaja support"
 description: "Getting started with Kirjanpainaja on the Mac and iPhone, common questions and how to get help."
 ---
+The [guide](/kirjanpainaja/guide/) covers every part of the app. It is a summary of the Mac app's own guide, under **Ohje → Kirjanpainajan ohje** (Help → Kirjanpainaja guide).
+
 ## Getting started
 
 1. On the Mac, choose a storage folder under **Asetukset → Yleiset**. Any synced folder works, such as iCloud Drive, Dropbox, Google Drive or OneDrive, or a local folder. Receipts are kept there.
@@ -21,7 +23,7 @@ The database is stored in the app's own container on your Mac, and receipts are 
 <details>
 <summary>Why does the iPhone app not show my latest figures?</summary>
 
-The iPhone shows a snapshot that the Mac writes under Asetukset → Yleiset → Mobiilisovellus. Update it on the Mac, wait for your folder to sync, then pull down to reload on the iPhone.
+The iPhone shows a snapshot that the Mac writes under Asetukset → Yleiset → Mobiilisovellus. Update it on the Mac, wait for your folder to sync, then pull down to reload on the iPhone. Dropbox, Google Drive and OneDrive can show the phone an older copy. In that case choose an iCloud Drive mobile folder for the figures, see the [guide](/kirjanpainaja/guide/#iphone-and-ipad).
 </details>
 
 <details>
