@@ -77,7 +77,7 @@ function listHtml(dir: string, base = ''): string[] {
   });
 }
 
-const GUIDES = ['cadence', 'kirjanpainaja', 'revontulet'];
+const GUIDES = ['cadence', 'hilpertti', 'kirjanpainaja', 'revontulet'];
 
 const EXPECTED_PATHS = [
   '/', '/privacy/',
@@ -90,7 +90,7 @@ const toFile = (p: string) => `${p.slice(1)}index.html`;
 test('exactly the expected pages', () => {
   const files = listHtml(DIST).sort();
   const expected = [...EXPECTED_PATHS.map(toFile), '404.html'].sort();
-  assert.equal(expected.length, 35);
+  assert.equal(expected.length, 37);
   assert.deepEqual(files, expected);
 });
 
@@ -234,6 +234,35 @@ test('Kirjanpainaja guide has its fourteen topics and its support page links to 
     const plain = text(rel);
     for (const topic of topics) assert.ok(plain.includes(topic), `${rel}: ${topic}`);
     assert.ok(readPage(`${prefix.slice(1)}kirjanpainaja/support`).includes(`href="${prefix}kirjanpainaja/guide/`), `${rel} support → guide`);
+  }
+});
+
+// Hilpertti guide: for parents, with every game of the home screen.
+const HILPERTTI_GUIDE = {
+  en: {
+    topics: ['Home screen', 'Stars and friends', 'Levels', 'The games', 'Parent section'],
+    games: ['Maze', 'Colours', 'Numbers', 'Odd one out', 'Colouring', 'Strings', 'Differences', 'Pairs', 'Memory',
+      'Sounds', 'Draw', 'Puzzle', 'Balloons', 'Repeat'],
+  },
+  fi: {
+    topics: ['Kotinäkymä', 'Tähdet ja ystävät', 'Tasot', 'Pelit', 'Vanhempien osio'],
+    games: ['Labyrintti', 'Värit', 'Numerot', 'Erilainen', 'Väritys', 'Langat', 'Erot', 'Parit', 'Muisti', 'Äänet',
+      'Piirrä', 'Palapeli', 'Ilmapallot', 'Toista'],
+  },
+};
+
+test('Hilpertti guide has its topics and all fourteen games, and its support page links to it', () => {
+  for (const [lang, { topics, games }] of Object.entries(HILPERTTI_GUIDE)) {
+    const prefix = lang === 'en' ? '/' : '/fi/';
+    const rel = `${prefix.slice(1)}hilpertti/guide`;
+    const html = readPage(rel);
+    const toc = html.match(/<nav class="toc"[\s\S]*?<\/nav>/);
+    assert.ok(toc, `${rel} has a toc`);
+    assert.equal([...toc![0].matchAll(/href="#([^"]+)"/g)].length, topics.length, `${rel} toc entries`);
+    const plain = text(rel);
+    for (const topic of topics) assert.ok(plain.includes(topic), `${rel}: ${topic}`);
+    for (const game of games) assert.ok(html.includes(`<strong>${game}.</strong>`), `${rel}: ${game}`);
+    assert.ok(readPage(`${prefix.slice(1)}hilpertti/support`).includes(`href="${prefix}hilpertti/guide/`), `${rel} support → guide`);
   }
 });
 
