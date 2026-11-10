@@ -33,6 +33,6 @@ Revontulet is not directed at children and does not knowingly collect data from 
 
 ## Your rights and contact
 
-Because your data stays on your device, you can view, change and delete it in the app at any time. Deleting the app removes its data. For any questions about privacy, email [valkama.apps@gmail.com](mailto:valkama.apps@gmail.com).
+Because your data stays on your device, you can view, change and delete it in the app at any time. Deleting the app removes its data. For any questions about privacy, email [valkama.app@gmail.com](mailto:valkama.app@gmail.com).
 
 If this policy changes, the new version will be published on this page with a new date.

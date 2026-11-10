@@ -33,6 +33,6 @@ Revontulia ei ole suunnattu lapsille, eikä se tietoisesti kerää lasten tietoj
 
 ## Oikeutesi ja yhteystiedot
 
-Koska tietosi pysyvät laitteellasi, voit katsoa, muuttaa ja poistaa niitä sovelluksessa milloin tahansa. Sovelluksen poistaminen poistaa sen tiedot. Tietosuojaa koskevat kysymykset: [valkama.apps@gmail.com](mailto:valkama.apps@gmail.com).
+Koska tietosi pysyvät laitteellasi, voit katsoa, muuttaa ja poistaa niitä sovelluksessa milloin tahansa. Sovelluksen poistaminen poistaa sen tiedot. Tietosuojaa koskevat kysymykset: [valkama.app@gmail.com](mailto:valkama.app@gmail.com).
 
 Jos tämä seloste muuttuu, uusi versio julkaistaan tällä sivulla uudella päivämäärällä.

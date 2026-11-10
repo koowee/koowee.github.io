@@ -42,8 +42,8 @@ test('complete content has no errors', () => {
 import { supportMailto } from '../../src/lib/apps-core.ts';
 
 test('supportMailto encodes the subject', () => {
-  assert.equal(supportMailto('Kirjanpainaja', 'fi'), 'mailto:valkama.apps@gmail.com?subject=Kirjanpainaja%20tuki');
-  assert.equal(supportMailto('Cadence', 'en'), 'mailto:valkama.apps@gmail.com?subject=Cadence%20support');
+  assert.equal(supportMailto('Kirjanpainaja', 'fi'), 'mailto:valkama.app@gmail.com?subject=Kirjanpainaja%20tuki');
+  assert.equal(supportMailto('Cadence', 'en'), 'mailto:valkama.app@gmail.com?subject=Cadence%20support');
 });
 
 // #362: an optional guide page, only for apps whose JSON says `guide: true`.

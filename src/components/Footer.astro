@@ -5,7 +5,7 @@ const { locale } = Astro.props;
 const year = new Date().getFullYear();
 ---
 <footer class="site-footer">
-  <a href="mailto:valkama.apps@gmail.com">valkama.apps@gmail.com</a>
+  <a href="mailto:valkama.app@gmail.com">valkama.app@gmail.com</a>
   <a href={localizedPath(locale, '/privacy/')}>{t(locale, 'sitePrivacy')}</a>
   <span>© {year} Valkama Apps</span>
 </footer>
