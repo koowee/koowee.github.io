@@ -6,7 +6,8 @@ interface Props { app: AppMeta; locale: Locale }
 const { app, locale } = Astro.props;
 // Apple's official badge artwork goes in src/assets/badges/app-store-<locale>.svg (see README).
 const badges = import.meta.glob<{ default: ImageMetadata }>('../assets/badges/app-store-*.svg', { eager: true });
-const badge = badges[`../assets/badges/app-store-${locale}.svg`]?.default;
+// Finnish falls back to the English badge until app-store-fi.svg is added.
+const badge = (badges[`../assets/badges/app-store-${locale}.svg`] ?? badges[`../assets/badges/app-store-en.svg`])?.default;
 ---
 <a class="app-store-button" href={app.appStoreUrl}>
   {badge

@@ -44,12 +44,7 @@ The build fails if an app is missing any of its six text files, if a privacy pag
 
 In the app's JSON, set `"status": "released"` and `"appStoreUrl": "https://apps.apple.com/…"`.
 
-The app page then shows a "Download on the App Store" button. To use Apple's official badge on that button:
-
-1. Download the black badge in English and Finnish from [Apple's marketing tools](https://tools.applemarketingtools.com/).
-2. Save the two files as `src/assets/badges/app-store-en.svg` and `src/assets/badges/app-store-fi.svg`.
-
-Until those files are there, the button shows plain text.
+The app page then shows Apple's official "Download on the App Store" badge. The English badge (`src/assets/badges/app-store-en.svg`) comes from Apple's [marketing guidelines page](https://developer.apple.com/app-store/marketing/guidelines/). For the Finnish badge, download the black badge in Finnish from [App Store Marketing Tools](https://toolbox.marketingtools.apple.com/app-store/) and save it as `src/assets/badges/app-store-fi.svg`. Until then, Finnish pages use the English badge.
 
 ### Screenshots
 
