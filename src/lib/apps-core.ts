@@ -15,6 +15,7 @@ export type AppMeta = {
   appStoreUrl?: string;
   accent: string;
   icon?: unknown;
+  iconStyle?: 'ios' | 'mac';
   order: number;
 };
 

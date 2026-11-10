@@ -1,8 +1,4 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import { getApps } from '../lib/apps.ts';
-await getApps();
+import HomeView from '../views/HomeView.astro';
 ---
-<BaseLayout locale="en" title="Valkama Apps" description="Apps for iPhone, iPad and Mac" path="/">
-  <h1>Valkama Apps</h1>
-</BaseLayout>
+<HomeView locale="en" />

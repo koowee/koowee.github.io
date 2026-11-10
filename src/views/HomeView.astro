@@ -1,0 +1,30 @@
+---
+import { getEntry, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AppCard from '../components/AppCard.astro';
+import { getApps } from '../lib/apps.ts';
+import { t, type Locale } from '../lib/i18n.ts';
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const apps = await getApps();
+const about = await getEntry('site', `${locale}/about`);
+const { Content: About } = about ? await render(about) : { Content: null };
+---
+<BaseLayout locale={locale} title="Valkama Apps" description={t(locale, 'hero')} path="/">
+  <section class="hero">
+    <h1>Valkama Apps</h1>
+    <p class="hero__lead">{t(locale, 'hero')}</p>
+  </section>
+  <section class="apps" aria-labelledby="apps-title">
+    <h2 id="apps-title" class="visually-hidden">{t(locale, 'apps')}</h2>
+    <ul class="app-grid" role="list">
+      {apps.map((app) => <li><AppCard app={app} locale={locale} /></li>)}
+    </ul>
+  </section>
+  {About && (
+    <section class="about prose" aria-labelledby="about-title">
+      <h2 id="about-title">{t(locale, 'about')}</h2>
+      <About />
+    </section>
+  )}
+</BaseLayout>

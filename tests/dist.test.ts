@@ -13,3 +13,30 @@ test('home pages carry their language', () => {
   assert.match(readPage(''), /<html lang="en"/);
   assert.match(readPage('fi'), /<html lang="fi"/);
 });
+
+const ORDER = ['cadence', 'kirjanpainaja', 'revontulet', 'hilpertti'];
+const HOME = {
+  en: { dir: '', prefix: '/', hero: 'Apps for iPhone, iPad and Mac', status: 'Coming soon' },
+  fi: { dir: 'fi', prefix: '/fi/', hero: 'Sovelluksia iPhonelle, iPadille ja Macille', status: 'Tulossa' },
+};
+const PLATFORM_TAGS: Record<string, string> = {
+  cadence: 'iPhone · iPad',
+  kirjanpainaja: 'Mac · iPhone',
+  revontulet: 'iPhone',
+  hilpertti: 'iPad · iPhone',
+};
+
+test('home lists all apps in order', () => {
+  for (const h of Object.values(HOME)) {
+    const html = readPage(h.dir);
+    assert.ok(html.includes(h.hero), `hero in ${h.dir || 'en'}`);
+    const positions = ORDER.map((slug) => html.indexOf(`href="${h.prefix}${slug}/"`));
+    assert.ok(positions.every((p) => p >= 0), `all app links in ${h.dir || 'en'}: ${positions}`);
+    assert.deepEqual([...positions].sort((a, b) => a - b), positions, 'cards in order');
+    for (const slug of ORDER) {
+      const card = html.slice(html.indexOf(`href="${h.prefix}${slug}/"`), html.indexOf('</a>', html.indexOf(`href="${h.prefix}${slug}/"`)));
+      assert.ok(card.includes(PLATFORM_TAGS[slug]), `${slug} platforms`);
+      assert.ok(card.includes(h.status), `${slug} status`);
+    }
+  }
+});

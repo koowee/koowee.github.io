@@ -2,15 +2,16 @@
   "slug": "hilpertti",
   "name": "Hilpertti",
   "tagline": {
-    "en": "placeholder",
-    "fi": "placeholder"
+    "en": "Finnish learning games for little children.",
+    "fi": "Oppimispelejä pienille lapsille."
   },
   "platforms": [
     "iPad",
     "iPhone"
   ],
   "status": "coming-soon",
-  "accent": "#888888",
+  "accent": "#8ccdf5",
   "icon": "../../assets/icons/hilpertti.png",
-  "order": 4
+  "order": 4,
+  "iconStyle": "ios"
 }

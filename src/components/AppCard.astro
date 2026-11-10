@@ -1,0 +1,18 @@
+---
+import AppIcon from './AppIcon.astro';
+import PlatformTags from './PlatformTags.astro';
+import StatusBadge from './StatusBadge.astro';
+import { localizedPath, type Locale } from '../lib/i18n.ts';
+import type { AppMeta } from '../lib/apps-core.ts';
+interface Props { app: AppMeta; locale: Locale }
+const { app, locale } = Astro.props;
+---
+<a class="app-card" href={localizedPath(locale, `/${app.slug}/`)} style={`--accent: ${app.accent}`}>
+  <AppIcon app={app} locale={locale} size={112} />
+  <span class="app-card__body">
+    <span class="app-card__name">{app.name}</span>
+    <span class="app-card__tagline">{app.tagline[locale]}</span>
+    <PlatformTags platforms={app.platforms} />
+    <StatusBadge app={app} locale={locale} />
+  </span>
+</a>

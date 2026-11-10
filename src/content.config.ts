@@ -16,6 +16,7 @@ const apps = defineCollection({
       accent: z.string().regex(/^#[0-9a-fA-F]{6}$/),
       icon: image(),
       order: z.number().int(),
+      iconStyle: z.enum(['ios', 'mac']).default('ios'),
     }),
 });
 
