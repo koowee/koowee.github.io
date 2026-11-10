@@ -1,6 +1,43 @@
 ---
-title: "Kirjanpainaja support"
-description: "placeholder"
+title: "Kirjanpainajan tuki"
+description: "Kirjanpainajan käyttöönotto Macilla ja iPhonella, usein kysyttyä ja yhteystiedot."
 ---
+## Aloitus
 
-placeholder
+1. Valitse Macilla tallennuskansio kohdassa **Asetukset → Yleiset**. Mikä tahansa synkronoitu kansio käy, kuten iCloud Drive, Dropbox, Google Drive tai OneDrive, tai paikallinen kansio. Kuitit säilytetään siellä.
+2. Valitse toimialasi, joka määrää aloituskategoriat.
+3. Lisää kirjauksia, liitä kuitit ja tarkista luvut kohdasta **Veroilmoitukset**.
+
+iPhone-sovellusta varten valitse sama tallennuskansio Tiedostoissa. Skannaamasi kuitit menevät kansion kohtaan *Kirjanpainaja/Saapuneet*, ja Mac kirjaa ne tavalliseen tapaan.
+
+## Usein kysyttyä
+
+<details>
+<summary>Missä kirjanpitoni on tallessa?</summary>
+
+Tietokanta on sovelluksen omassa säilössä Macillasi, ja kuitit ovat tallennuskansiossasi. Tietokannan varmuuskopiot tallentuvat samaan kansioon kohtaan *Kirjanpainaja/Varmuuskopiot*, katso Asetukset → Varmuuskopiot.
+</details>
+
+<details>
+<summary>Miksi iPhone ei näytä uusimpia lukuja?</summary>
+
+iPhone näyttää tilannekuvan, jonka Mac kirjoittaa kohdassa Asetukset → Yleiset → Mobiilisovellus. Päivitä se Macilla, odota kansion synkronointia ja vedä iPhonessa alas päivittääksesi.
+</details>
+
+<details>
+<summary>Lähettääkö Kirjanpainaja jotain Verohallintoon?</summary>
+
+Ei. Sovellus laskee luvut, ja syötät ne itse OmaVeroon. Tarkista luvut aina ennen ilmoittamista.
+</details>
+
+<details>
+<summary>Voinko muuttaa lukittua vuotta?</summary>
+
+Vain avaamalla lukituksen kirjallisella perustelulla. Perustelu ja aiemmat luvut säilytetään.
+</details>
+
+<details>
+<summary>Miten saan yhteyden?</summary>
+
+Lähetä sähköpostia alla olevaan osoitteeseen. Kerro mielellään laitteesi ja järjestelmäversiosi, jos jokin ei toimi.
+</details>

@@ -1,6 +1,43 @@
 ---
 title: "Kirjanpainaja support"
-description: "placeholder"
+description: "Getting started with Kirjanpainaja on the Mac and iPhone, common questions and how to get help."
 ---
+## Getting started
 
-placeholder
+1. On the Mac, choose a storage folder under **Asetukset → Yleiset**. Any synced folder works, such as iCloud Drive, Dropbox, Google Drive or OneDrive, or a local folder. Receipts are kept there.
+2. Choose your line of business, which sets the starting categories.
+3. Add entries, attach receipts and check the figures under **Veroilmoitukset**.
+
+To use the iPhone app, choose the same storage folder in Files. Receipts you scan go into the folder's *Kirjanpainaja/Saapuneet*, and the Mac books them as usual.
+
+## Frequently asked questions
+
+<details>
+<summary>Where is my bookkeeping stored?</summary>
+
+The database is stored in the app's own container on your Mac, and receipts are in your storage folder. Backups of the database go to *Kirjanpainaja/Varmuuskopiot* in the same folder; see Asetukset → Varmuuskopiot.
+</details>
+
+<details>
+<summary>Why does the iPhone app not show my latest figures?</summary>
+
+The iPhone shows a snapshot that the Mac writes under Asetukset → Yleiset → Mobiilisovellus. Update it on the Mac, wait for your folder to sync, then pull down to reload on the iPhone.
+</details>
+
+<details>
+<summary>Does Kirjanpainaja send anything to the tax authority?</summary>
+
+No. The app calculates the figures and you enter them in OmaVero yourself. Always check the figures before filing.
+</details>
+
+<details>
+<summary>Can I change a locked year?</summary>
+
+Only by unlocking it with a written reason. The reason and the earlier figures are kept.
+</details>
+
+<details>
+<summary>How do I contact you?</summary>
+
+Send an email to the address below. Please mention your device and system version if something is not working.
+</details>
