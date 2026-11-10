@@ -13,7 +13,7 @@ Vain lapsen edistyminen sovelluksessa: tähdet, avatut ystävät, väritetyt kuv
 
 ## Missä tiedot säilyvät
 
-Vain laitteella. Mitään ei lähetetä minnekään, eikä sovellus ota yhteyttä internetiin.
+Vain laitteella. Sovellus ei ota yhteyttä internetiin eikä lähetä mitään itsestään. Vanhempien osiossa, lukon takana, vanhempi voi halutessaan jakaa väritetyn kuvan iOS:n jakovalikolla.
 
 ## Ulkopuoliset palvelut
 

@@ -27,6 +27,6 @@ Kirjanpainajaa ei ole suunnattu lapsille, eikä se tietoisesti kerää lasten ti
 
 ## Oikeutesi ja yhteystiedot
 
-Koska tietosi pysyvät laitteellasi, voit katsoa, muuttaa ja poistaa niitä sovelluksessa milloin tahansa. Sovelluksen poistaminen poistaa sen tiedot. Tietosuojaa koskevat kysymykset: [valkama.apps@gmail.com](mailto:valkama.apps@gmail.com).
+Koska tietosi pysyvät laitteellasi, voit katsoa, muuttaa ja poistaa niitä sovelluksessa milloin tahansa. Sovelluksen poistaminen poistaa sen tiedot. Omassa tallennuskansiossasi olevat kuitit, varmuuskopiot ja iPhonen tilannekuva säilyvät siellä, kunnes poistat ne. Tietosuojaa koskevat kysymykset: [valkama.apps@gmail.com](mailto:valkama.apps@gmail.com).
 
 Jos tämä seloste muuttuu, uusi versio julkaistaan tällä sivulla uudella päivämäärällä.

@@ -13,7 +13,7 @@ Only the child's progress in the app: stars, unlocked friends, coloured pictures
 
 ## Where it is stored
 
-On the device only. Nothing is sent anywhere, and the app does not connect to the internet.
+On the device only. The app does not connect to the internet and never sends anything by itself. In the parent section, behind the parental gate, a parent can choose to share a coloured picture with the iOS share sheet.
 
 ## Third-party services
 

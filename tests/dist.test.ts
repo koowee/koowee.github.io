@@ -126,3 +126,38 @@ test('internal links resolve and end with /', () => {
     }
   }
 });
+
+// Final review: privacy and intro texts must match what the apps actually do.
+const text = (rel: string) => readPage(rel).replace(/<[^>]+>/g, ' ').replace(/&#39;|&#x27;|&rsquo;/g, "'").replace(/\s+/g, ' ');
+
+test('no internal notes in published HTML', () => {
+  for (const file of listHtml(DIST)) {
+    assert.doesNotMatch(readFileSync(join(DIST, file), 'utf8'), /DRAFT|Kalle/, file);
+  }
+});
+
+test('Cadence privacy covers ride start locations and Apple geocoding', () => {
+  assert.match(text('cadence/privacy'), /start location/);
+  assert.match(text('cadence/privacy'), /Apple['’]s geocoding/);
+  assert.match(text('fi/cadence/privacy'), /lähtöpaik/);
+});
+
+test('Hilpertti languages are Finnish, English and Swedish', () => {
+  assert.match(text('hilpertti'), /Finnish, English and Swedish/);
+  assert.match(text('fi/hilpertti'), /suomeksi, englanniksi ja ruotsiksi/);
+  assert.doesNotMatch(text(''), /Finnish learning games/);
+});
+
+test('Hilpertti privacy mentions parent-started sharing', () => {
+  assert.match(text('hilpertti/privacy'), /share/i);
+  assert.match(text('fi/hilpertti/privacy'), /jaa/i);
+});
+
+test('Revontulet privacy covers reverse geocoding of current location', () => {
+  assert.match(text('revontulet/privacy'), /Apple Maps.{0,80}current location/);
+});
+
+test('files in the user\'s own folder are said to stay after deleting the app', () => {
+  for (const p of ['cadence/privacy', 'kirjanpainaja/privacy']) assert.match(text(p), /stay there until you delete them/, p);
+  for (const p of ['fi/cadence/privacy', 'fi/kirjanpainaja/privacy']) assert.match(text(p), /säilyvät siellä, kunnes poistat ne/, p);
+});

@@ -1,8 +1,8 @@
 ---
 title: "Hilpertti"
-description: "Hilpertti-poro opastaa pieniä lapsia lyhyissä suomenkielisissä oppimispeleissä, joissa harjoitellaan numeroita, värejä ja sorminäppäryyttä."
+description: "Hilpertti-poro opastaa pieniä lapsia lyhyissä oppimispeleissä, joissa harjoitellaan numeroita, värejä ja sorminäppäryyttä."
 ---
-Hilpertti on suomenkielinen oppimissovellus noin 3-vuotiaasta alkaen iPadille ja iPhonelle. Hilpertti-poro opastaa lyhyissä ja rauhallisissa peleissä, ja kaikki puhutaan ääneen, joten lapsen ei tarvitse osata lukea.
+Hilpertti on oppimissovellus noin 3-vuotiaasta alkaen iPadille ja iPhonelle, ja se toimii suomeksi, englanniksi ja ruotsiksi. Hilpertti-poro opastaa lyhyissä ja rauhallisissa peleissä, ja kaikki puhutaan ääneen, joten lapsen ei tarvitse osata lukea.
 
 - **Pelejä, jotka opettavat.** Laskeminen, värien lajittelu, pensaslabyrintti, väritys ja erilaisen kuvan etsiminen, kukin useammalla tasolla.
 - **Ystäviä kerättäväksi.** Tähdet avaavat eläinystäviä, jotka tanssivat Hilpertin kanssa kotinäkymässä.

@@ -23,7 +23,7 @@ To make the forecast, the app requests open data directly from these services:
 
 - **Open-Meteo**, for the cloud forecast. The request contains the place's coordinates (rounded to about 100 metres), as any weather request does. See Open-Meteo's [terms and privacy](https://open-meteo.com/en/terms).
 - **NOAA Space Weather Prediction Center** and the **Finnish Meteorological Institute**, for space weather, the Kp forecast and sky camera images. These requests contain no information about you or your place.
-- **Apple Maps**, when you search for a place. Apple's privacy policy applies to searches.
+- **Apple Maps**, when you search for a place or use your current location (to find the place's name). Apple's privacy policy applies.
 
 The app contains no advertising, analytics or crash-reporting services.
 
