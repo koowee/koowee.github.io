@@ -38,3 +38,10 @@ test('privacy needs lastUpdated', () => {
 test('complete content has no errors', () => {
   assert.deepEqual(validateContent([cadence], allIds, dates), []);
 });
+
+import { supportMailto } from '../../src/lib/apps-core.ts';
+
+test('supportMailto encodes the subject', () => {
+  assert.equal(supportMailto('Kirjanpainaja', 'fi'), 'mailto:valkama.apps@gmail.com?subject=Kirjanpainaja%20tuki');
+  assert.equal(supportMailto('Cadence', 'en'), 'mailto:valkama.apps@gmail.com?subject=Cadence%20support');
+});

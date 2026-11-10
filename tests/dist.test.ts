@@ -40,3 +40,28 @@ test('home lists all apps in order', () => {
     }
   }
 });
+
+test('app pages exist and link support and privacy', () => {
+  for (const h of Object.values(HOME)) {
+    for (const slug of ORDER) {
+      const base = `${h.dir ? h.dir + '/' : ''}${slug}`;
+      const intro = readPage(base);
+      assert.ok(intro.includes(`href="${h.prefix}${slug}/support/"`), `${base} → support`);
+      assert.ok(intro.includes(`href="${h.prefix}${slug}/privacy/"`), `${base} → privacy`);
+      assert.ok(readPage(`${base}/support`).includes('mailto:valkama.apps@gmail.com?subject='), `${base} support mailto`);
+      const privacy = readPage(`${base}/privacy`);
+      assert.match(privacy, /<time datetime="\d{4}-\d{2}-\d{2}"/, `${base} privacy lastUpdated`);
+    }
+  }
+});
+
+test('404 links to both home pages', () => {
+  const html = readFileSync(join(DIST, '404.html'), 'utf8');
+  assert.ok(html.includes('href="/"'));
+  assert.ok(html.includes('href="/fi/"'));
+});
+
+test('site privacy exists in both languages', () => {
+  assert.match(readPage('privacy'), /<html lang="en"/);
+  assert.match(readPage('fi/privacy'), /<html lang="fi"/);
+});

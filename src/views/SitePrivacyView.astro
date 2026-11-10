@@ -1,0 +1,18 @@
+---
+import { getEntry, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LastUpdated from '../components/LastUpdated.astro';
+import type { Locale } from '../lib/i18n.ts';
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const page = await getEntry('site', `${locale}/privacy`);
+if (!page) throw new Error(`Missing src/content/site/${locale}/privacy.md`);
+const { Content } = await render(page);
+---
+<BaseLayout locale={locale} title={`${page.data.title} · Valkama Apps`} description={page.data.description} path="/privacy/">
+  <article class="prose page-top">
+    <h1>{page.data.title}</h1>
+    <Content />
+    {page.data.lastUpdated && <LastUpdated locale={locale} date={page.data.lastUpdated} />}
+  </article>
+</BaseLayout>

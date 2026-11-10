@@ -1,0 +1,9 @@
+---
+import AppPrivacyView from '../../../views/AppPrivacyView.astro';
+import { getApps, type AppMeta } from '../../../lib/apps.ts';
+export async function getStaticPaths() {
+  return (await getApps()).map((app) => ({ params: { app: app.slug }, props: { app } }));
+}
+const { app } = Astro.props as { app: AppMeta };
+---
+<AppPrivacyView app={app} locale="fi" />

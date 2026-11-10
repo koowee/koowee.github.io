@@ -41,3 +41,12 @@ export function validateContent(
   }
   return errors;
 }
+
+export const CONTACT_EMAIL = 'valkama.apps@gmail.com';
+
+const SUPPORT_WORD = { en: 'support', fi: 'tuki' } as const;
+
+/** mailto: link with a ready subject, e.g. "Kirjanpainaja tuki". */
+export function supportMailto(appName: string, locale: 'en' | 'fi'): string {
+  return `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(`${appName} ${SUPPORT_WORD[locale]}`)}`;
+}

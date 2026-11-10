@@ -1,0 +1,24 @@
+---
+import { render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AppHero from '../components/AppHero.astro';
+import AppSubnav from '../components/AppSubnav.astro';
+import { getAppPage, supportMailto, CONTACT_EMAIL, type AppMeta } from '../lib/apps.ts';
+import { t, type Locale } from '../lib/i18n.ts';
+interface Props { app: AppMeta; locale: Locale }
+const { app, locale } = Astro.props;
+const page = await getAppPage(app.slug, locale, 'support');
+const { Content } = await render(page);
+---
+<BaseLayout locale={locale} title={`${page.data.title} · ${app.name}`} description={page.data.description} path={`/${app.slug}/support/`} accent={app.accent}>
+  <AppHero app={app} locale={locale} heading={page.data.title} compact />
+  <AppSubnav app={app} locale={locale} current="support" />
+  <article class="prose">
+    <Content />
+  </article>
+  <section class="contact-card" aria-labelledby="contact-title">
+    <h2 id="contact-title">{t(locale, 'contact')}</h2>
+    <p>{t(locale, 'contactText')}</p>
+    <a class="pill-link" href={supportMailto(app.name, locale)}>{CONTACT_EMAIL}</a>
+  </section>
+</BaseLayout>

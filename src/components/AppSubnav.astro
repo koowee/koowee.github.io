@@ -1,0 +1,16 @@
+---
+import { localizedPath, t, type Locale } from '../lib/i18n.ts';
+import type { AppMeta, PageKind } from '../lib/apps-core.ts';
+interface Props { app: AppMeta; locale: Locale; current: PageKind }
+const { app, locale, current } = Astro.props;
+const links: { kind: PageKind; label: string; href: string }[] = [
+  { kind: 'intro', label: app.name, href: localizedPath(locale, `/${app.slug}/`) },
+  { kind: 'support', label: t(locale, 'support'), href: localizedPath(locale, `/${app.slug}/support/`) },
+  { kind: 'privacy', label: t(locale, 'privacy'), href: localizedPath(locale, `/${app.slug}/privacy/`) },
+];
+---
+<nav class="app-subnav" aria-label={app.name}>
+  {links.map((l) => (
+    <a href={l.href} aria-current={l.kind === current ? 'page' : undefined}>{l.label}</a>
+  ))}
+</nav>

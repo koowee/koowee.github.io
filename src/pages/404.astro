@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { t } from '../lib/i18n.ts';
+---
+<BaseLayout locale="en" title="Page not found · Valkama Apps" description="Page not found" path="/404.html">
+  <section class="not-found">
+    <h1>{t('en', 'notFoundTitle')}</h1>
+    <p><a class="pill-link" href="/">{t('en', 'backHome')}</a></p>
+    <h2 lang="fi">{t('fi', 'notFoundTitle')}</h2>
+    <p lang="fi"><a class="pill-link" href="/fi/">{t('fi', 'backHome')}</a></p>
+  </section>
+</BaseLayout>

@@ -1,0 +1,25 @@
+---
+import AppIcon from './AppIcon.astro';
+import PlatformTags from './PlatformTags.astro';
+import StatusBadge from './StatusBadge.astro';
+import AppStoreButton from './AppStoreButton.astro';
+import type { Locale } from '../lib/i18n.ts';
+import type { AppMeta } from '../lib/apps-core.ts';
+interface Props { app: AppMeta; locale: Locale; heading?: string; compact?: boolean }
+const { app, locale, heading, compact = false } = Astro.props;
+---
+<header class:list={['app-hero', { 'app-hero--compact': compact }]}>
+  <AppIcon app={app} locale={locale} size={compact ? 88 : 168} loading="eager" />
+  {heading
+    ? <><p class="app-hero__eyebrow">{app.name}</p><h1>{heading}</h1></>
+    : <h1>{app.name}</h1>}
+  {!compact && (
+    <>
+      <p class="app-hero__tagline">{app.tagline[locale]}</p>
+      <PlatformTags platforms={app.platforms} />
+      {app.status === 'released' && app.appStoreUrl
+        ? <AppStoreButton app={app} locale={locale} />
+        : <StatusBadge app={app} locale={locale} />}
+    </>
+  )}
+</header>
