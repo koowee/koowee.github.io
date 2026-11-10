@@ -77,9 +77,12 @@ function listHtml(dir: string, base = ''): string[] {
   });
 }
 
+const GUIDES = ['cadence'];
+
 const EXPECTED_PATHS = [
   '/', '/privacy/',
   ...ORDER.flatMap((s) => [`/${s}/`, `/${s}/support/`, `/${s}/privacy/`]),
+  ...GUIDES.map((s) => `/${s}/guide/`),
 ].flatMap((p) => [p, p === '/' ? '/fi/' : `/fi${p}`]);
 
 const toFile = (p: string) => `${p.slice(1)}index.html`;
@@ -87,7 +90,7 @@ const toFile = (p: string) => `${p.slice(1)}index.html`;
 test('exactly the expected pages', () => {
   const files = listHtml(DIST).sort();
   const expected = [...EXPECTED_PATHS.map(toFile), '404.html'].sort();
-  assert.equal(expected.length, 29);
+  assert.equal(expected.length, 31);
   assert.deepEqual(files, expected);
 });
 
@@ -121,14 +124,16 @@ test('internal links resolve and end with /', () => {
     const html = readFileSync(join(DIST, file), 'utf8');
     for (const [, href] of html.matchAll(/href="(\/[^"]*)"/g)) {
       if (href === '/favicon.svg' || href.startsWith('/_astro/')) continue;
-      assert.ok(href.endsWith('/'), `${file}: ${href} ends with /`);
-      assert.ok(existsSync(join(DIST, toFile(href))), `${file}: ${href} resolves`);
+      const [path, anchor] = href.split('#');
+      assert.ok(path.endsWith('/'), `${file}: ${href} ends with /`);
+      assert.ok(existsSync(join(DIST, toFile(path))), `${file}: ${href} resolves`);
+      if (anchor) assert.ok(readFileSync(join(DIST, toFile(path)), 'utf8').includes(`id="${anchor}"`), `${file}: #${anchor} exists`);
     }
   }
 });
 
 // Final review: privacy and intro texts must match what the apps actually do.
-const text = (rel: string) => readPage(rel).replace(/<[^>]+>/g, ' ').replace(/&#39;|&#x27;|&rsquo;/g, "'").replace(/\s+/g, ' ');
+const text = (rel: string) => readPage(rel).replace(/<[^>]+>/g, ' ').replace(/&#39;|&#x27;|&rsquo;|’/g, "'").replace(/\s+/g, ' ');
 
 test('no internal notes in published HTML', () => {
   for (const file of listHtml(DIST)) {
@@ -160,4 +165,48 @@ test('Revontulet privacy covers reverse geocoding of current location', () => {
 test('files in the user\'s own folder are said to stay after deleting the app', () => {
   for (const p of ['cadence/privacy', 'kirjanpainaja/privacy']) assert.match(text(p), /stay there until you delete them/, p);
   for (const p of ['fi/cadence/privacy', 'fi/kirjanpainaja/privacy']) assert.match(text(p), /säilyvät siellä, kunnes poistat ne/, p);
+});
+
+// #362: Cadence user guide and Q&A.
+const GUIDE_TOPICS = {
+  en: ['Getting started', 'Bikes and parts', 'Wear and service intervals', 'Services, receipts and warranties', 'Rides',
+    'Shopping list', 'Reminders, widget and background refresh', 'Backup and spreadsheet export', "If something doesn't work"],
+  fi: ['Aloitus', 'Pyörät ja osat', 'Kuluminen ja huoltovälit', 'Huollot, kuitit ja takuut', 'Ajot',
+    'Ostoslista', 'Muistutukset, widget ja taustapäivitys', 'Varmuuskopio ja taulukkovienti', 'Jos jokin ei toimi'],
+};
+
+test('Cadence guide has the nine in-app topics with a table of contents', () => {
+  for (const [lang, topics] of Object.entries(GUIDE_TOPICS)) {
+    const rel = lang === 'en' ? 'cadence/guide' : 'fi/cadence/guide';
+    const html = readPage(rel);
+    const toc = html.match(/<nav class="toc"[\s\S]*?<\/nav>/);
+    assert.ok(toc, `${rel} has a toc`);
+    const ids = [...toc![0].matchAll(/href="#([^"]+)"/g)].map((m) => m[1]);
+    assert.equal(ids.length, 9, `${rel} toc entries`);
+    for (const id of ids) assert.ok(html.includes(`<h2 id="${id}"`), `${rel} heading #${id}`);
+    const plain = text(rel);
+    for (const topic of topics) assert.ok(plain.includes(topic), `${rel}: ${topic}`);
+    assert.ok(plain.includes('localhost'), `${rel} has the Strava steps`);
+  }
+});
+
+test('only apps with a guide link to one', () => {
+  for (const h of Object.values(HOME)) {
+    for (const slug of ORDER) {
+      const base = `${h.dir ? h.dir + '/' : ''}${slug}`;
+      const has = readPage(base).includes(`href="${h.prefix}${slug}/guide/"`);
+      assert.equal(has, GUIDES.includes(slug), `${base} guide link`);
+    }
+  }
+});
+
+test('Cadence support has a Q&A that links to the guide', () => {
+  for (const [rel, prefix] of [['cadence/support', '/'], ['fi/cadence/support', '/fi/']]) {
+    const html = readPage(rel);
+    assert.ok(html.includes(`href="${prefix}cadence/guide/"`), `${rel} → guide`);
+    assert.ok((html.match(/<details>/g) ?? []).length >= 10, `${rel} has at least 10 questions`);
+  }
+  assert.doesNotMatch(text('cadence/support'), /Merkitse huolletuksi|Vaihda uuteen|Asetukset/, 'English labels in English');
+  assert.doesNotMatch(text('cadence/support') + text('cadence'), /in Finnish for now|The app is in Finnish/);
+  assert.match(text('cadence/support'), /English/);
 });

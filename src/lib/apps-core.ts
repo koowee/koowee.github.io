@@ -3,7 +3,9 @@
 export const PLATFORMS = ['iPhone', 'iPad', 'Mac', 'Apple Watch', 'Apple TV', 'Vision Pro', 'Android', 'Web'] as const;
 export type Platform = (typeof PLATFORMS)[number];
 export const PAGE_KINDS = ['intro', 'support', 'privacy'] as const;
-export type PageKind = (typeof PAGE_KINDS)[number];
+/** Pages an app has only when its JSON says so (`guide: true`). */
+export const OPTIONAL_PAGE_KINDS = ['guide'] as const;
+export type PageKind = (typeof PAGE_KINDS)[number] | (typeof OPTIONAL_PAGE_KINDS)[number];
 export const LOCALES = ['en', 'fi'] as const;
 
 export type AppMeta = {
@@ -16,6 +18,8 @@ export type AppMeta = {
   accent: string;
   icon?: unknown;
   iconStyle?: 'ios' | 'mac';
+  /** The app has a user guide page (`/<slug>/guide/`). */
+  guide?: boolean;
   order: number;
 };
 
@@ -34,6 +38,11 @@ export function validateContent(
         if (!ids.has(id)) errors.push(`Missing page src/content/pages/${id}.md`);
         else if (kind === 'privacy' && !privacyDates[id]) errors.push(`${id}.md needs lastUpdated in its frontmatter`);
       }
+    }
+    for (const locale of LOCALES) {
+      const id = `${app.slug}/${locale}/guide`;
+      if (app.guide && !ids.has(id)) errors.push(`Missing page src/content/pages/${id}.md`);
+      if (!app.guide && ids.has(id)) errors.push(`${id}.md exists, so ${app.slug}.json needs guide: true`);
     }
     if (app.status === 'released' && !app.appStoreUrl) {
       errors.push(`${app.slug}: status "released" needs an appStoreUrl`);

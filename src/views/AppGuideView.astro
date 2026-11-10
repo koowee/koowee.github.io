@@ -1,0 +1,26 @@
+---
+import { render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AppHero from '../components/AppHero.astro';
+import AppSubnav from '../components/AppSubnav.astro';
+import { getAppPage, type AppMeta } from '../lib/apps.ts';
+import { t, type Locale } from '../lib/i18n.ts';
+interface Props { app: AppMeta; locale: Locale }
+const { app, locale } = Astro.props;
+const page = await getAppPage(app.slug, locale, 'guide');
+const { Content, headings } = await render(page);
+const topics = headings.filter((h) => h.depth === 2);
+---
+<BaseLayout locale={locale} title={`${page.data.title} · ${app.name}`} description={page.data.description} path={`/${app.slug}/guide/`} accent={app.accent}>
+  <AppHero app={app} locale={locale} heading={page.data.title} compact />
+  <AppSubnav app={app} locale={locale} current="guide" />
+  <nav class="toc" aria-labelledby="toc-title">
+    <h2 id="toc-title">{t(locale, 'contents')}</h2>
+    <ol>
+      {topics.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}
+    </ol>
+  </nav>
+  <article class="prose">
+    <Content />
+  </article>
+</BaseLayout>

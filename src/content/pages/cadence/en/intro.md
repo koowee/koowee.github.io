@@ -9,4 +9,4 @@ Cadence is a bike maintenance app for iPhone and iPad. It knows what is on each 
 - **Service diary with receipts.** Log services and replacements, scan receipts with the camera and see what each bike really costs per kilometre.
 - **Widgets.** See the next services on your home screen or lock screen.
 
-The app is in Finnish.
+The app is in English and Finnish. Read the [guide](/cadence/guide/) to see how it works.

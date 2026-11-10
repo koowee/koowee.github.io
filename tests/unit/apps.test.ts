@@ -45,3 +45,20 @@ test('supportMailto encodes the subject', () => {
   assert.equal(supportMailto('Kirjanpainaja', 'fi'), 'mailto:valkama.apps@gmail.com?subject=Kirjanpainaja%20tuki');
   assert.equal(supportMailto('Cadence', 'en'), 'mailto:valkama.apps@gmail.com?subject=Cadence%20support');
 });
+
+// #362: an optional guide page, only for apps whose JSON says `guide: true`.
+const guideIds = ['cadence/en/guide', 'cadence/fi/guide'];
+
+test('guide: true needs the guide in both languages', () => {
+  const errors = validateContent([{ ...cadence, guide: true }], [...allIds, 'cadence/en/guide'], dates);
+  assert.ok(errors.some((e) => e.includes('cadence/fi/guide')), errors.join('\n'));
+});
+
+test('a guide file without guide: true is reported', () => {
+  const errors = validateContent([cadence], [...allIds, ...guideIds], dates);
+  assert.ok(errors.some((e) => e.includes('guide: true')), errors.join('\n'));
+});
+
+test('complete guide content has no errors', () => {
+  assert.deepEqual(validateContent([{ ...cadence, guide: true }], [...allIds, ...guideIds], dates), []);
+});

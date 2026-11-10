@@ -5,6 +5,7 @@ interface Props { app: AppMeta; locale: Locale; current: PageKind }
 const { app, locale, current } = Astro.props;
 const links: { kind: PageKind; label: string; href: string }[] = [
   { kind: 'intro', label: app.name, href: localizedPath(locale, `/${app.slug}/`) },
+  ...(app.guide ? [{ kind: 'guide' as const, label: t(locale, 'guide'), href: localizedPath(locale, `/${app.slug}/guide/`) }] : []),
   { kind: 'support', label: t(locale, 'support'), href: localizedPath(locale, `/${app.slug}/support/`) },
   { kind: 'privacy', label: t(locale, 'privacy'), href: localizedPath(locale, `/${app.slug}/privacy/`) },
 ];
