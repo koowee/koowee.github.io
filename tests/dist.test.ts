@@ -65,3 +65,64 @@ test('site privacy exists in both languages', () => {
   assert.match(readPage('privacy'), /<html lang="en"/);
   assert.match(readPage('fi/privacy'), /<html lang="fi"/);
 });
+
+import { readdirSync, existsSync, statSync } from 'node:fs';
+import { counterpartPath, stripLocale } from '../src/lib/i18n.ts';
+
+function listHtml(dir: string, base = ''): string[] {
+  return readdirSync(join(dir, base)).flatMap((name) => {
+    const rel = base ? `${base}/${name}` : name;
+    if (statSync(join(dir, rel)).isDirectory()) return listHtml(dir, rel);
+    return rel.endsWith('.html') ? [rel] : [];
+  });
+}
+
+const EXPECTED_PATHS = [
+  '/', '/privacy/',
+  ...ORDER.flatMap((s) => [`/${s}/`, `/${s}/support/`, `/${s}/privacy/`]),
+].flatMap((p) => [p, p === '/' ? '/fi/' : `/fi${p}`]);
+
+const toFile = (p: string) => `${p.slice(1)}index.html`;
+
+test('exactly the expected pages', () => {
+  const files = listHtml(DIST).sort();
+  const expected = [...EXPECTED_PATHS.map(toFile), '404.html'].sort();
+  assert.equal(expected.length, 29);
+  assert.deepEqual(files, expected);
+});
+
+test('head is correct', () => {
+  for (const p of EXPECTED_PATHS) {
+    const html = readFileSync(join(DIST, toFile(p)), 'utf8');
+    const lang = p.startsWith('/fi/') ? 'fi' : 'en';
+    assert.match(html, new RegExp(`<html lang="${lang}"`), p);
+    const canon = [...html.matchAll(/<link rel="canonical" href="([^"]+)"/g)].map((m) => m[1]);
+    assert.deepEqual(canon, [`https://koowee.github.io${p}`], p);
+    const base = stripLocale(p);
+    for (const [hl, href] of [['en', base], ['fi', base === '/' ? '/fi/' : `/fi${base}`], ['x-default', base]]) {
+      assert.ok(html.includes(`<link rel="alternate" hreflang="${hl}" href="https://koowee.github.io${href}"`), `${p} ${hl}`);
+    }
+  }
+});
+
+test('switch points to counterpart', () => {
+  for (const p of [...EXPECTED_PATHS, '/404.html']) {
+    const html = readFileSync(join(DIST, p === '/404.html' ? '404.html' : toFile(p)), 'utf8');
+    for (const l of ['en', 'fi'] as const) {
+      const m = html.match(new RegExp(`<a href="([^"]+)" hreflang="${l}"[^>]*data-lang="${l}"`));
+      assert.ok(m, `${p} has ${l} switch`);
+      assert.equal(m![1], counterpartPath(p, l), `${p} → ${l}`);
+    }
+  }
+});
+
+test('internal links resolve and end with /', () => {
+  for (const file of listHtml(DIST)) {
+    const html = readFileSync(join(DIST, file), 'utf8');
+    for (const [, href] of html.matchAll(/href="(\/[^"]*)"/g)) {
+      if (href === '/favicon.svg' || href.startsWith('/_astro/')) continue;
+      assert.ok(href.endsWith('/'), `${file}: ${href} ends with /`);
+      assert.ok(existsSync(join(DIST, toFile(href))), `${file}: ${href} resolves`);
+    }
+  }
+});
