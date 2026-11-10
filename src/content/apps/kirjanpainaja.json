@@ -1,0 +1,16 @@
+{
+  "slug": "kirjanpainaja",
+  "name": "Kirjanpainaja",
+  "tagline": {
+    "en": "placeholder",
+    "fi": "placeholder"
+  },
+  "platforms": [
+    "Mac",
+    "iPhone"
+  ],
+  "status": "coming-soon",
+  "accent": "#888888",
+  "icon": "../../assets/icons/kirjanpainaja.png",
+  "order": 2
+}

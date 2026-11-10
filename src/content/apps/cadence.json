@@ -1,0 +1,16 @@
+{
+  "slug": "cadence",
+  "name": "Cadence",
+  "tagline": {
+    "en": "placeholder",
+    "fi": "placeholder"
+  },
+  "platforms": [
+    "iPhone",
+    "iPad"
+  ],
+  "status": "coming-soon",
+  "accent": "#888888",
+  "icon": "../../assets/icons/cadence.png",
+  "order": 1
+}

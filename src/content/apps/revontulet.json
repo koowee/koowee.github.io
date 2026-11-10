@@ -1,0 +1,15 @@
+{
+  "slug": "revontulet",
+  "name": "Revontulet",
+  "tagline": {
+    "en": "placeholder",
+    "fi": "placeholder"
+  },
+  "platforms": [
+    "iPhone"
+  ],
+  "status": "coming-soon",
+  "accent": "#888888",
+  "icon": "../../assets/icons/revontulet.png",
+  "order": 3
+}

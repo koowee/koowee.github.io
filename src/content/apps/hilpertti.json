@@ -1,0 +1,16 @@
+{
+  "slug": "hilpertti",
+  "name": "Hilpertti",
+  "tagline": {
+    "en": "placeholder",
+    "fi": "placeholder"
+  },
+  "platforms": [
+    "iPad",
+    "iPhone"
+  ],
+  "status": "coming-soon",
+  "accent": "#888888",
+  "icon": "../../assets/icons/hilpertti.png",
+  "order": 4
+}
