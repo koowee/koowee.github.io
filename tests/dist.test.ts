@@ -48,7 +48,7 @@ test('app pages exist and link support and privacy', () => {
       const intro = readPage(base);
       assert.ok(intro.includes(`href="${h.prefix}${slug}/support/"`), `${base} → support`);
       assert.ok(intro.includes(`href="${h.prefix}${slug}/privacy/"`), `${base} → privacy`);
-      assert.ok(readPage(`${base}/support`).includes('mailto:valkama.apps@gmail.com?subject='), `${base} support mailto`);
+      assert.ok(readPage(`${base}/support`).includes('mailto:valkama.app@gmail.com?subject='), `${base} support mailto`);
       const privacy = readPage(`${base}/privacy`);
       assert.match(privacy, /<time datetime="\d{4}-\d{2}-\d{2}"/, `${base} privacy lastUpdated`);
     }
@@ -209,4 +209,10 @@ test('Cadence support has a Q&A that links to the guide', () => {
   assert.doesNotMatch(text('cadence/support'), /Merkitse huolletuksi|Vaihda uuteen|Asetukset/, 'English labels in English');
   assert.doesNotMatch(text('cadence/support') + text('cadence'), /in Finnish for now|The app is in Finnish/);
   assert.match(text('cadence/support'), /English/);
+});
+
+test('the old contact address is gone everywhere', () => {
+  for (const file of listHtml(DIST)) {
+    assert.ok(!readFileSync(join(DIST, file), 'utf8').includes('valkama.apps@'), file);
+  }
 });

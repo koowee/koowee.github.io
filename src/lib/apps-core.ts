@@ -51,7 +51,7 @@ export function validateContent(
   return errors;
 }
 
-export const CONTACT_EMAIL = 'valkama.apps@gmail.com';
+export const CONTACT_EMAIL = 'valkama.app@gmail.com';
 
 const SUPPORT_WORD = { en: 'support', fi: 'tuki' } as const;
 

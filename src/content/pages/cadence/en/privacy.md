@@ -34,6 +34,6 @@ Cadence is not directed at children and does not knowingly collect data from the
 
 ## Your rights and contact
 
-Because your data stays on your device, you can view, change and delete it in the app at any time. Deleting the app removes its data. Backup files you saved to your own folder stay there until you delete them. If you disconnect Strava or Bosch, the app stops fetching data from them. For any questions about privacy, email [valkama.apps@gmail.com](mailto:valkama.apps@gmail.com).
+Because your data stays on your device, you can view, change and delete it in the app at any time. Deleting the app removes its data. Backup files you saved to your own folder stay there until you delete them. If you disconnect Strava or Bosch, the app stops fetching data from them. For any questions about privacy, email [valkama.app@gmail.com](mailto:valkama.app@gmail.com).
 
 If this policy changes, the new version will be published on this page with a new date.

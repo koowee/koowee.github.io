@@ -34,6 +34,6 @@ Cadencea ei ole suunnattu lapsille, eikä se tietoisesti kerää lasten tietoja.
 
 ## Oikeutesi ja yhteystiedot
 
-Koska tietosi pysyvät laitteellasi, voit katsoa, muuttaa ja poistaa niitä sovelluksessa milloin tahansa. Sovelluksen poistaminen poistaa sen tiedot. Omaan kansioosi tallentamasi varmuuskopiot säilyvät siellä, kunnes poistat ne. Kun katkaiset Strava- tai Bosch-yhteyden, sovellus lakkaa hakemasta niistä tietoja. Tietosuojaa koskevat kysymykset: [valkama.apps@gmail.com](mailto:valkama.apps@gmail.com).
+Koska tietosi pysyvät laitteellasi, voit katsoa, muuttaa ja poistaa niitä sovelluksessa milloin tahansa. Sovelluksen poistaminen poistaa sen tiedot. Omaan kansioosi tallentamasi varmuuskopiot säilyvät siellä, kunnes poistat ne. Kun katkaiset Strava- tai Bosch-yhteyden, sovellus lakkaa hakemasta niistä tietoja. Tietosuojaa koskevat kysymykset: [valkama.app@gmail.com](mailto:valkama.app@gmail.com).
 
 Jos tämä seloste muuttuu, uusi versio julkaistaan tällä sivulla uudella päivämäärällä.

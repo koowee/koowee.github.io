@@ -1,6 +1,6 @@
 # Valkama Apps website
 
-This is the source of the Valkama Apps website, built with [Astro](https://astro.build) and published on GitHub Pages at <https://koowee.github.io>. English pages sit at the root of the site and Finnish pages under `/fi/`. Each app has an intro page, a support page and a privacy page. The site's support email is `valkama.apps@gmail.com`.
+This is the source of the Valkama Apps website, built with [Astro](https://astro.build) and published on GitHub Pages at <https://koowee.github.io>. English pages sit at the root of the site and Finnish pages under `/fi/`. Each app has an intro page, a support page and a privacy page. The site's support email is `valkama.app@gmail.com`.
 
 This repository is public. Planning documents live in the private `koowee/apps` repository, under `Website/`.
 

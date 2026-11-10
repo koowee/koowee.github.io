@@ -20,4 +20,4 @@ Jos lähetät sähköpostia, käytämme osoitettasi ja viestiäsi vain vastataks
 
 ## Yhteystiedot
 
-[valkama.apps@gmail.com](mailto:valkama.apps@gmail.com)
+[valkama.app@gmail.com](mailto:valkama.app@gmail.com)

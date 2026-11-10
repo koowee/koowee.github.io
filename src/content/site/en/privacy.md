@@ -20,4 +20,4 @@ If you send an email, we use your address and message only to reply to you.
 
 ## Contact
 
-[valkama.apps@gmail.com](mailto:valkama.apps@gmail.com)
+[valkama.app@gmail.com](mailto:valkama.app@gmail.com)
