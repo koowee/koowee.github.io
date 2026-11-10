@@ -13,6 +13,8 @@ Kirjanpainaja keeps your bookkeeping on your own Mac and in a folder you choose.
 - Receipts you attach, scan or photograph.
 - On the iPhone: receipts you scan or pick, and a read-only snapshot of the figures that your Mac writes.
 
+Receipt text is read on the device, and receipts are never sent anywhere to be read. The iPhone asks for camera access only to scan receipts.
+
 ## Where it is stored
 
 The bookkeeping database is stored in the app's own container on your Mac. Receipts, backups and the iPhone snapshot are stored in the storage folder you choose. If that folder is synced by a service such as iCloud Drive, Dropbox, Google Drive or OneDrive, that service stores and syncs the files under its own terms. The Mac app itself does not connect to the internet.

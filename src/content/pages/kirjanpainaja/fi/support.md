@@ -2,6 +2,8 @@
 title: "Kirjanpainajan tuki"
 description: "Kirjanpainajan käyttöönotto Macilla ja iPhonella, usein kysyttyä ja yhteystiedot."
 ---
+[Ohje](/fi/kirjanpainaja/guide/) kertoo sovelluksen kaikista osista. Se on tiivistelmä Mac-sovelluksen omasta ohjeesta, joka on kohdassa **Ohje → Kirjanpainajan ohje**.
+
 ## Aloitus
 
 1. Valitse Macilla tallennuskansio kohdassa **Asetukset → Yleiset**. Mikä tahansa synkronoitu kansio käy, kuten iCloud Drive, Dropbox, Google Drive tai OneDrive, tai paikallinen kansio. Kuitit säilytetään siellä.
@@ -21,7 +23,7 @@ Tietokanta on sovelluksen omassa säilössä Macillasi, ja kuitit ovat tallennus
 <details>
 <summary>Miksi iPhone ei näytä uusimpia lukuja?</summary>
 
-iPhone näyttää tilannekuvan, jonka Mac kirjoittaa kohdassa Asetukset → Yleiset → Mobiilisovellus. Päivitä se Macilla, odota kansion synkronointia ja vedä iPhonessa alas päivittääksesi.
+iPhone näyttää tilannekuvan, jonka Mac kirjoittaa kohdassa Asetukset → Yleiset → Mobiilisovellus. Päivitä se Macilla, odota kansion synkronointia ja vedä iPhonessa alas päivittääksesi. Dropbox, Google Drive ja OneDrive voivat näyttää puhelimelle vanhaa versiota. Silloin luvuille kannattaa valita iCloud Driven mobiilikansio, katso [ohje](/fi/kirjanpainaja/guide/#iphone-ja-ipad).
 </details>
 
 <details>

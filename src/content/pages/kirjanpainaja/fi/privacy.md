@@ -13,6 +13,8 @@ Kirjanpainaja säilyttää kirjanpitosi omalla Macillasi ja valitsemassasi kansi
 - Kuitit, jotka liität, skannaat tai kuvaat.
 - iPhonessa: skannaamasi tai valitsemasi kuitit sekä Macin kirjoittama lukujen tilannekuva.
 
+Kuitin tekstin lukeminen tehdään laitteella, eikä kuittia lähetetä minnekään luettavaksi. iPhone pyytää kameran käyttöoikeutta vain kuittien skannaamiseen.
+
 ## Missä tiedot säilyvät
 
 Kirjanpidon tietokanta on sovelluksen omassa säilössä Macillasi. Kuitit, varmuuskopiot ja iPhonen tilannekuva tallennetaan valitsemaasi tallennuskansioon. Jos kansiota synkronoi palvelu, kuten iCloud Drive, Dropbox, Google Drive tai OneDrive, palvelu säilyttää ja synkronoi tiedostot omien ehtojensa mukaan. Mac-sovellus itse ei ota yhteyttä internetiin.
