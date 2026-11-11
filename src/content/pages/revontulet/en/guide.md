@@ -45,7 +45,7 @@ The estimate is a guide, not a statistical probability and not a promise. The au
 
 ### Coming nights
 
-The heat map shows tonight and the next two nights hour by hour from 6 pm to 6 am. Each square is coloured by that hour's estimate, in the same colours as the percentages. An empty square is an hour that has passed, is light or has no forecast.
+Each night has its own strip with its hours from 6 pm to 6 am. Each square is coloured by that hour's estimate, in the same colours as the percentages, and the night's best hour is outlined. An empty square is an hour that has passed, is light or has no forecast.
 
 ### Seuraavat 24 tuntia (next 24 hours)
 
