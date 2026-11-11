@@ -25,7 +25,7 @@ Notifications are sent only for favourites, and only when the best hour of tonig
 <details>
 <summary>Why is the sky camera image missing?</summary>
 
-The image comes from the nearest Finnish Meteorological Institute all-sky camera, in Kilpisjärvi or Kevo, within 300 km. Places further away have no camera image. When the latest image is more than an hour old, a short note is shown instead.
+The image comes from the nearest Finnish Meteorological Institute all-sky camera, in Kilpisjärvi, Kevo, Muonio or Helsinki, within 300 km. Places further away have no camera image. When the latest image is more than an hour old, a short note is shown instead.
 </details>
 
 <details>

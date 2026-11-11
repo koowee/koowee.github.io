@@ -25,7 +25,7 @@ Ilmoitus lähetetään vain suosikeista ja vain, kun yön paras tunti ylittää 
 <details>
 <summary>Miksi taivaskameran kuvaa ei näy?</summary>
 
-Kuva tulee lähimmästä Ilmatieteen laitoksen taivaskamerasta, Kilpisjärveltä tai Kevolta, 300 km:n säteeltä. Kauempana olevilla paikoilla kuvaa ei ole. Kun uusin kuva on yli tunnin vanha, sen tilalla näkyy lyhyt huomautus.
+Kuva tulee lähimmästä Ilmatieteen laitoksen taivaskamerasta, Kilpisjärveltä, Kevosta, Muoniosta tai Helsingistä, 300 km:n säteeltä. Kauempana olevilla paikoilla kuvaa ei ole. Kun uusin kuva on yli tunnin vanha, sen tilalla näkyy lyhyt huomautus.
 </details>
 
 <details>
