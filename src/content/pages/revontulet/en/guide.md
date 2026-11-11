@@ -1,8 +1,8 @@
 ---
 title: "Revontulet guide"
-description: "How to read Revontulet's estimate: tonight, the good window, the hourly table, how the estimate is computed, the Juuri nyt readings, notifications, widgets and the sighting log, plus an aurora guide for going out."
+description: "How to read Revontulet's estimate: tonight, the good window, the hourly table, how the estimate is computed, the Right now readings, notifications, widgets and the sighting log, plus an aurora guide for going out."
 ---
-This guide matches the one in the app, under **Asetukset → Ohje** (Settings → Help). The app is in Finnish for now, so the button names below are given in Finnish with a translation.
+This guide matches the one in the app, under **Settings → Help**. The app is in English and Finnish and follows your iPhone's language.
 
 ## Getting started
 
@@ -72,9 +72,9 @@ Four factors are computed for each hour, and the estimate is their product: acti
 
 The model is tuned for Finnish Lapland. Far from the Nordic countries it is rougher.
 
-## Juuri nyt (right now)
+## Right now
 
-The **Juuri nyt** card shows the R-index of the nearest Finnish Meteorological Institute magnetometer, which tells how disturbed the magnetic field is now (if a station is within 300 km), and the aurora strength at the place from NOAA's OVATION model. The R-index bar marks the station's own limits for moderate and high activity.
+The **Right now** card shows the R-index of the nearest Finnish Meteorological Institute magnetometer, which tells how disturbed the magnetic field is now (if a station is within 300 km), and the aurora strength at the place from NOAA's OVATION model. The R-index bar marks the station's own limits for moderate and high activity.
 
 ### Aurora map
 
@@ -90,7 +90,7 @@ The image comes from the nearest Finnish Meteorological Institute all-sky camera
 
 ## Notifications
 
-Notifications are sent for favourites when the night's best hour reaches your notification limit (50 % by default). Change the limit in **Asetukset → Ilmoitusraja** (Settings → Notification limit).
+Notifications are sent for favourites when the night's best hour reaches your notification limit (50 % by default). Change the limit in **Settings → Alert threshold**.
 
 - The **Ennakkoilmoitus** (preview) arrives at the time you choose (12, 14, 16 or 18).
 - The **Muistutus** (reminder) arrives 15 minutes before the good window starts.
@@ -111,7 +111,7 @@ Tapping a widget opens the app on that place. Widgets update on iOS's schedule, 
 
 ## Sighting log
 
-When the sighting log is on (**Asetukset → Havaintoloki**), the tonight card has the buttons **Näin revontulet** (I saw the aurora) and **En nähnyt** (I didn't). An entry saves the estimate of that moment, and you can add the strength.
+When the sighting log is on (**Settings → Sighting log**), the tonight card has the buttons **I saw the aurora** and **Didn't see it**. An entry saves the estimate of that moment, and you can add the strength.
 
 **Näytä loki** (Show log) tells how often you saw the aurora at each estimate, and the entries can be exported as a CSV file. The log stays on your iPhone.
 
@@ -125,7 +125,7 @@ When the sighting log is on (**Asetukset → Havaintoloki**), the tonight card h
 
 The app fetches the data straight from these sources. It has no servers of its own and no accounts. Darkness and moonlight are computed on the phone from the place and the time.
 
-In the app, the sources are also under Asetukset → Tietolähteet (Settings → Data sources).
+In the app, the sources are also under Settings → Data sources.
 
 ## If something doesn't work
 
@@ -161,13 +161,13 @@ The aurora is there in summer too, but you can only see it in the dark. In Lapla
 
 **Remember:** A clear, dark sky matters as much as the activity. A faint aurora looks grey to the eye; the camera sees the green.
 
-### R index, Kp and the estimate
+### R-index, Kp and the estimate
 
 The app shows three space weather numbers. They measure different things, and the estimate combines them with the weather.
 
-#### R index
+#### R-index
 
-The R index tells how much the magnetic field is varying right now at the nearest Finnish Meteorological Institute magnetometer. It is a measurement, not a forecast. Each station has its own limits for moderate and high activity, because the field varies more in the north than in the south. When the R index rises, the aurora is often already in the sky.
+The R-index tells how much the magnetic field is varying right now at the nearest Finnish Meteorological Institute magnetometer. It is a measurement, not a forecast. Each station has its own limits for moderate and high activity, because the field varies more in the north than in the south. When the R-index rises, the aurora is often already in the sky.
 
 #### Kp
 
@@ -175,13 +175,13 @@ Kp describes the disturbance of the Earth's magnetic field worldwide in three-ho
 
 #### OVATION
 
-NOAA's OVATION model works out from solar wind measurements how strong the aurora will be around the globe in about 30–90 minutes. The map on the Juuri nyt (Right now) card shows the model's oval.
+NOAA's OVATION model works out from solar wind measurements how strong the aurora will be around the globe in about 30–90 minutes. The map on the Right now card shows the model's oval.
 
 #### Estimate
 
-The percentage combines activity, clouds, darkness and moonlight. It is not a statistical probability but tells how good the conditions are. How it is calculated is explained under Asetukset → Ohje → Miten arvio lasketaan (Settings → Help → How the estimate is calculated).
+The percentage combines activity, clouds, darkness and moonlight. It is not a statistical probability but tells how good the conditions are. How it is calculated is explained under Settings → Help → How the estimate is calculated.
 
-**Remember:** The R index tells about now, Kp about the coming hours and days. Even high activity doesn't help under clouds.
+**Remember:** The R-index tells about now, Kp about the coming hours and days. Even high activity doesn't help under clouds.
 
 ### Solar wind and Bz
 
@@ -197,7 +197,7 @@ Bt is the total strength of the field. Bz can turn south at most as far as Bt, s
 
 #### In practice
 
-When Bz has turned south and stays there, go out or keep the app open. The Juuri nyt card tells when the measured wind reaches the Earth.
+When Bz has turned south and stays there, go out or keep the app open. The Right now card tells when the measured wind reaches the Earth.
 
 **Remember:** A southward Bz is the best short-term warning. One moment is not enough; Bz has to stay south.
 

@@ -192,7 +192,7 @@ test('Cadence guide has the nine in-app topics with a table of contents', () => 
 
 // Revontulet guide: the same nine topics as Settings → Ohje in the app, then the Opas tab's aurora guide.
 const REVONTULET_TOPICS = {
-  en: ['Getting started', 'Reading the estimate', 'How the estimate is computed', 'Juuri nyt', 'Notifications',
+  en: ['Getting started', 'Reading the estimate', 'How the estimate is computed', 'Right now', 'Notifications',
     'Widgets', 'Sighting log', 'Data sources', "If something doesn't work", 'Aurora guide',
     'Taking photos with a phone'],
   fi: ['Aloitus', 'Arvion lukeminen', 'Miten arvio lasketaan', 'Juuri nyt', 'Ilmoitukset',

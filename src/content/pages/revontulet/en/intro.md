@@ -9,4 +9,4 @@ Revontulet is an aurora forecast for iPhone. It combines space weather, cloud co
 - **Right now.** Real-time solar wind and the latest image from the nearest all-sky camera.
 - **Widgets.** Your favourites tonight, or one place's night as an hourly chart, on the home screen and lock screen.
 
-No accounts and no servers of our own: the app fetches open data straight from its sources. The app is in Finnish.
+No accounts and no servers of our own: the app fetches open data straight from its sources. The app is in English and Finnish.
