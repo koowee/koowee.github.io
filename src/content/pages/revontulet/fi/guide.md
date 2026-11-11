@@ -39,13 +39,17 @@ Arvio on suuntaa antava, ei tilastollinen todennäköisyys eikä lupaus. Revontu
 
 ### Tänä yönä
 
-**Paras aika** on yön paras tunti. **Hyvä aika** tarkoittaa tunteja, joilla arvio on vähintään ilmoitusrajasi, sama aika kuin ilmoituksessa.
+**Paras aika** on yön paras tunti. **Hyvä aika** tarkoittaa tunteja, joilla arvio on vähintään ilmoitusrajasi, sama aika kuin ilmoituksessa. Jos hyvä aika on vain se yksi paras tunti, kortilla näkyy vain se.
 
 Tänä yönä -kortti vaihtuu seuraavaan yöhön klo 4 paikallista aikaa. Sen jälkeen kortilla näkyy vielä **Loppuyö**, jos yötä on jäljellä.
 
 ### Seuraavat yöt
 
 Lämpökartassa on tämä yö ja kaksi seuraavaa tunneittain klo 18–06. Ruudun väri on tunnin arvio samoilla väreillä kuin prosenteissa. Tyhjä ruutu on jo mennyt, valoisa tai ilman ennustetta oleva tunti.
+
+### Seuraavat 24 tuntia
+
+Kaaviossa palkit ovat tunnin arvio ja katkoviiva pilvisyys. Vihreä katkoviiva on ilmoitusrajasi ja pystyviiva nykyhetki.
 
 ### Tuntitaulukko
 
@@ -117,8 +121,11 @@ Kun havaintoloki on päällä (**Asetukset → Havaintoloki**), Tänä yönä -k
 - [Ilmatieteen laitos ja ESA](https://space.fmi.fi/MIRACLE/RWC/): R-luku
 - [Ilmatieteen laitos](https://rwc-finland.fmi.fi/index.php/revontulikameroiden-kuvat/): taivaskamerat
 - [Ilmatieteen laitos](https://en.ilmatieteenlaitos.fi/open-data-licence): pilviennuste (avoin data, CC BY 4.0)
+- Apple Kartat: kartat ja paikkahaku
 
-Sovellus hakee datan suoraan näistä lähteistä. Sillä ei ole omia palvelimia eikä tilejä.
+Sovellus hakee datan suoraan näistä lähteistä. Sillä ei ole omia palvelimia eikä tilejä. Pimeys ja kuunvalo lasketaan puhelimessa paikan ja kellonajan perusteella.
+
+Tietolähteet löytyvät sovelluksesta myös kohdasta Asetukset → Tietolähteet.
 
 ## Jos jokin ei toimi
 

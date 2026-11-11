@@ -39,13 +39,17 @@ The estimate is a guide, not a statistical probability and not a promise. The au
 
 ### Tonight
 
-**Paras aika** (best time) is the night's best hour. **Hyvä aika** (good window) means the hours at or above your notification limit, the same window as in the notifications.
+**Paras aika** (best time) is the night's best hour. **Hyvä aika** (good window) means the hours at or above your notification limit, the same window as in the notifications. If the good window is just that one best hour, the card says it once.
 
 "Tonight" moves on to the coming night at 4 am local time. After that the card still shows **Loppuyö** (rest of the night) if some of the night is left.
 
 ### Coming nights
 
 The heat map shows tonight and the next two nights hour by hour from 6 pm to 6 am. Each square is coloured by that hour's estimate, in the same colours as the percentages. An empty square is an hour that has passed, is light or has no forecast.
+
+### Seuraavat 24 tuntia (next 24 hours)
+
+In the chart, the bars are the hourly estimate and the dashed line is the cloud cover. The green dashed line is your notification limit and the vertical line is now.
 
 ### Hourly table
 
@@ -117,8 +121,11 @@ When the sighting log is on (**Asetukset → Havaintoloki**), the tonight card h
 - [Finnish Meteorological Institute and ESA](https://space.fmi.fi/MIRACLE/RWC/): R-index
 - [Finnish Meteorological Institute](https://rwc-finland.fmi.fi/index.php/all-sky-camera-images/): all-sky cameras
 - [Finnish Meteorological Institute](https://en.ilmatieteenlaitos.fi/open-data-licence): cloud forecast (open data, CC BY 4.0)
+- Apple Maps: maps and place search
 
-The app fetches the data straight from these sources. It has no servers of its own and no accounts.
+The app fetches the data straight from these sources. It has no servers of its own and no accounts. Darkness and moonlight are computed on the phone from the place and the time.
+
+In the app, the sources are also under Asetukset → Tietolähteet (Settings → Data sources).
 
 ## If something doesn't work
 
