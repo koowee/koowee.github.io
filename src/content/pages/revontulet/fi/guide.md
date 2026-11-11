@@ -70,11 +70,11 @@ Malli on sovitettu Lapin oloihin. Kaukana Pohjolasta se on karkeampi.
 
 ### Revontulikartta
 
-Kortin kartta näyttää NOAA:n OVATION-mallin revontulivyöhykkeen noin 30–90 minuutin päähän samoilla väreillä kuin arviot: oranssi on pieni, keltainen kohtalainen ja vihreä hyvä mahdollisuus. Nasta on valittu paikka. Napauta, niin kartta aukeaa koko ruudulle, ja sitä voi vierittää ja suurentaa. Malli ei ota huomioon pilviä eikä valoisuutta, joten se ei ole koko yön ennuste.
+Kortin kartta näyttää NOAA:n OVATION-mallin revontulivyöhykkeen noin 30–90 minuutin päähän vihreänä hehkuna: mitä kirkkaampi vihreä, sitä todennäköisemmin revontulia näkyy. Nasta on valittu paikka. Napauta, niin kartta aukeaa koko ruudulle, ja sitä voi vierittää ja suurentaa. Malli ei ota huomioon pilviä eikä valoisuutta, joten se ei ole koko yön ennuste.
 
 ### Aurinkotuuli
 
-Aurinkotuulen arvot tulevat NOAA:n mittauksista Maan ja Auringon välissä. Kun Bz on etelään (alle −5 nT), revontulet voimistuvat usein noin tunnin päästä. Käyrä näyttää Bz:n kahden viime tunnin ajalta, ja katkoviiva on −5 nT:n kohdalla. Aurinkotuuli on vain tiedoksi, eikä se muuta arviota.
+Aurinkotuulen arvot tulevat NOAA:n mittauksista Maan ja Auringon välissä. Kun Bz on etelään (alle −5 nT), revontulet voimistuvat usein noin tunnin päästä. Mittauspiste on noin 1,5 miljoonan kilometrin päässä, joten kortti kertoo nopeudesta lasketun ajan, jolloin mitattu tuuli on Maassa. Käyrä näyttää Bz:n kahden viime tunnin ajalta, ja katkoviiva on −5 nT:n kohdalla. Pisteviiva on alin mahdollinen Bz: Bz voi kääntyä etelään enintään magneettikentän kokonaisvoimakkuuden (Bt) verran. Aurinkotuuli on vain tiedoksi, eikä se muuta arviota.
 
 ### Taivaskamera
 

@@ -70,11 +70,11 @@ The **Juuri nyt** card shows the R-index of the nearest Finnish Meteorological I
 
 ### Aurora map
 
-The map on the card shows the aurora oval from NOAA's OVATION model about 30–90 minutes ahead, in the same colours as the estimates: orange is a low, yellow a moderate and green a good chance. The pin is the chosen place. Tap to open the map full screen, where you can pan and zoom. The model leaves out clouds and daylight, so it is not a forecast for the whole night.
+The map on the card shows the aurora oval from NOAA's OVATION model about 30–90 minutes ahead, as a green glow: the brighter the green, the likelier the aurora. The pin is the chosen place. Tap to open the map full screen, where you can pan and zoom. The model leaves out clouds and daylight, so it is not a forecast for the whole night.
 
 ### Solar wind
 
-The solar wind values come from NOAA's measurements between the Earth and the Sun. When Bz points south (below −5 nT), the aurora often strengthens about an hour later. The curve shows Bz over the last two hours, with a dashed line at −5 nT. The solar wind is shown for information only and does not change the estimate.
+The solar wind values come from NOAA's measurements between the Earth and the Sun. When Bz points south (below −5 nT), the aurora often strengthens about an hour later. The spacecraft is about 1.5 million km away, so the card gives the time, worked out from the speed, when the measured wind reaches the Earth. The curve shows Bz over the last two hours, with a dashed line at −5 nT. The dotted line is the lowest possible Bz, the total field strength (Bt) with a minus sign: Bz can turn south at most that far. The solar wind is shown for information only and does not change the estimate.
 
 ### Sky camera
 
