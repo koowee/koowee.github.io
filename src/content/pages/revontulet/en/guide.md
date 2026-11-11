@@ -62,11 +62,11 @@ The model is tuned for Finnish Lapland. Far from the Nordic countries it is roug
 
 ## Juuri nyt (right now)
 
-The **Juuri nyt** card shows the R-index of the nearest Finnish Meteorological Institute magnetometer, which tells how disturbed the magnetic field is now (if a station is within 300 km), and the aurora strength at the place from NOAA's OVATION model.
+The **Juuri nyt** card shows the R-index of the nearest Finnish Meteorological Institute magnetometer, which tells how disturbed the magnetic field is now (if a station is within 300 km), and the aurora strength at the place from NOAA's OVATION model. The R-index bar marks the station's own limits for moderate and high activity.
 
 ### Solar wind
 
-The solar wind values come from NOAA's measurements between the Earth and the Sun. When Bz points south (below −5 nT), the aurora often strengthens about an hour later. The solar wind is shown for information only and does not change the estimate.
+The solar wind values come from NOAA's measurements between the Earth and the Sun. When Bz points south (below −5 nT), the aurora often strengthens about an hour later. The curve shows Bz over the last two hours, with a dashed line at −5 nT. The solar wind is shown for information only and does not change the estimate.
 
 ### Sky camera
 
