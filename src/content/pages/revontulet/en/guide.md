@@ -45,7 +45,7 @@ The estimate is a guide, not a statistical probability and not a promise. The au
 
 ### Coming nights
 
-Each night has its own strip with its hours from 6 pm to 6 am. Each square is coloured by that hour's estimate, in the same colours as the percentages, and the night's best hour is outlined. An empty square is an hour that has passed, is light or has no forecast.
+Each night has its own strip with its hours from 6 pm to 6 am. Each square is coloured by that hour's estimate, in the same colours as the percentages, and the night's best hour is outlined. An empty square is an hour that has passed or is light. A square with a dashed outline is an hour the hourly forecast does not reach yet, and the card says when the forecast ends.
 
 ### Seuraavat 24 tuntia (next 24 hours)
 
