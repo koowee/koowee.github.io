@@ -190,22 +190,24 @@ test('Cadence guide has the nine in-app topics with a table of contents', () => 
   }
 });
 
-// Revontulet guide: the same nine topics as Settings → Ohje in the app.
+// Revontulet guide: the same nine topics as Settings → Ohje in the app, then the Opas tab's aurora guide.
 const REVONTULET_TOPICS = {
   en: ['Getting started', 'Reading the estimate', 'How the estimate is computed', 'Juuri nyt', 'Notifications',
-    'Widgets', 'Sighting log', 'Data sources', "If something doesn't work"],
+    'Widgets', 'Sighting log', 'Data sources', "If something doesn't work", 'Aurora guide',
+    'Taking photos with a phone'],
   fi: ['Aloitus', 'Arvion lukeminen', 'Miten arvio lasketaan', 'Juuri nyt', 'Ilmoitukset',
-    'Widgetit', 'Havaintoloki', 'Tietolähteet', 'Jos jokin ei toimi'],
+    'Widgetit', 'Havaintoloki', 'Tietolähteet', 'Jos jokin ei toimi', 'Revontuliopas',
+    'Kuvaaminen puhelimella'],
 };
 
-test('Revontulet guide has the nine in-app topics and its support page links to it', () => {
+test('Revontulet guide has the nine in-app topics, the aurora guide, and its support page links to it', () => {
   for (const [lang, topics] of Object.entries(REVONTULET_TOPICS)) {
     const prefix = lang === 'en' ? '/' : '/fi/';
     const rel = `${prefix.slice(1)}revontulet/guide`;
     const html = readPage(rel);
     const toc = html.match(/<nav class="toc"[\s\S]*?<\/nav>/);
     assert.ok(toc, `${rel} has a toc`);
-    assert.equal([...toc![0].matchAll(/href="#([^"]+)"/g)].length, 9, `${rel} toc entries`);
+    assert.equal([...toc![0].matchAll(/href="#([^"]+)"/g)].length, 10, `${rel} toc entries`);
     const plain = text(rel);
     for (const topic of topics) assert.ok(plain.includes(topic), `${rel}: ${topic}`);
     assert.ok(readPage(`${prefix.slice(1)}revontulet/support`).includes(`href="${prefix}revontulet/guide/`), `${rel} support → guide`);
