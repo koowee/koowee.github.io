@@ -70,7 +70,7 @@ Aurinkotuulen arvot tulevat NOAA:n mittauksista Maan ja Auringon välissä. Kun 
 
 ### Taivaskamera
 
-Kuva tulee lähimmästä Ilmatieteen laitoksen taivaskamerasta, Kilpisjärveltä tai Kevolta, enintään 300 km:n päästä. Enintään 150 km:n päässä oleva kamera näkyy pyöreänä pikkukuvana. Kauempana oleva näkyy linkkinä, koska sen taivas kertoo paikan taivaasta vähemmän. Napauta, niin kuva aukeaa koko ruudulle, ja sitä voi suurentaa nipistämällä tai kaksoisnapautuksella. Kun kuva ei ole vaihtunut yli tuntiin, sen tilalla näkyy pimeään aikaan huomautus.
+Kuva tulee lähimmästä Ilmatieteen laitoksen taivaskamerasta, Kilpisjärveltä, Kevosta, Muoniosta tai Helsingistä, enintään 300 km:n päästä. Enintään 150 km:n päässä oleva kamera näkyy pyöreänä pikkukuvana. Kauempana oleva näkyy linkkinä, koska sen taivas kertoo paikan taivaasta vähemmän. Napauta, niin kuva aukeaa koko ruudulle, ja sitä voi suurentaa nipistämällä tai kaksoisnapautuksella. Kun kuva ei ole vaihtunut yli tuntiin, sen tilalla näkyy pimeään aikaan huomautus.
 
 ## Ilmoitukset
 
@@ -103,7 +103,7 @@ Kun havaintoloki on päällä (**Asetukset → Havaintoloki**), Tänä yönä -k
 
 - [NOAA SWPC](https://www.swpc.noaa.gov/): Kp-ennuste, 27 vuorokauden ennuste, OVATION, aurinkotuuli
 - [Ilmatieteen laitos ja ESA](https://space.fmi.fi/MIRACLE/RWC/): R-luku
-- [Ilmatieteen laitos](https://space.fmi.fi/MIRACLE/ASC/): taivaskamerat
+- [Ilmatieteen laitos](https://rwc-finland.fmi.fi/index.php/revontulikameroiden-kuvat/): taivaskamerat
 - [Open-Meteo](https://open-meteo.com/): pilviennuste (CC BY 4.0)
 
 Sovellus hakee datan suoraan näistä lähteistä. Sillä ei ole omia palvelimia eikä tilejä.
