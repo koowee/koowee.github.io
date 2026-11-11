@@ -39,6 +39,10 @@ The estimate is a guide, not a statistical probability and not a promise. The au
 
 "Tonight" moves on to the coming night at 4 am local time. After that the card still shows **Loppuyö** (rest of the night) if some of the night is left.
 
+### Coming nights
+
+The heat map shows tonight and the next two nights hour by hour from 6 pm to 6 am. Each square is coloured by that hour's estimate, in the same colours as the percentages. An empty square is an hour that has passed, is light or has no forecast.
+
 ### Hourly table
 
 - **Pilviä** is total cloud cover. **Yläpilveä** means the cloud is mostly thin high cloud, which hides less.

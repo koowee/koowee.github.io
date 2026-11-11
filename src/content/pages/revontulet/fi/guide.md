@@ -39,6 +39,10 @@ Arvio on suuntaa antava, ei tilastollinen todennäköisyys eikä lupaus. Revontu
 
 Tänä yönä -kortti vaihtuu seuraavaan yöhön klo 4 paikallista aikaa. Sen jälkeen kortilla näkyy vielä **Loppuyö**, jos yötä on jäljellä.
 
+### Seuraavat yöt
+
+Lämpökartassa on tämä yö ja kaksi seuraavaa tunneittain klo 18–06. Ruudun väri on tunnin arvio samoilla väreillä kuin prosenteissa. Tyhjä ruutu on jo mennyt, valoisa tai ilman ennustetta oleva tunti.
+
 ### Tuntitaulukko
 
 - **Pilviä** on kokonaispilvisyys. **Yläpilveä** tarkoittaa, että pilvet ovat enimmäkseen ohutta yläpilveä, joka haittaa vähemmän.
