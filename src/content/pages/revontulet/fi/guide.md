@@ -68,6 +68,10 @@ Malli on sovitettu Lapin oloihin. Kaukana Pohjolasta se on karkeampi.
 
 **Juuri nyt** -kortilla on lähimmän Ilmatieteen laitoksen magnetometrin R-luku, joka kertoo magneettikentän häiriöstä nyt (jos asema on alle 300 km päässä), ja NOAA:n OVATION-mallin revontulien voimakkuus paikan kohdalla. R-luvun palkissa on aseman omat rajat kohtalaiselle ja suurelle aktiivisuudelle.
 
+### Revontulikartta
+
+Kortin kartta näyttää NOAA:n OVATION-mallin revontulivyöhykkeen noin 30–90 minuutin päähän samoilla väreillä kuin arviot: oranssi on pieni, keltainen kohtalainen ja vihreä hyvä mahdollisuus. Nasta on valittu paikka. Napauta, niin kartta aukeaa koko ruudulle, ja sitä voi vierittää ja suurentaa. Malli ei ota huomioon pilviä eikä valoisuutta, joten se ei ole koko yön ennuste.
+
 ### Aurinkotuuli
 
 Aurinkotuulen arvot tulevat NOAA:n mittauksista Maan ja Auringon välissä. Kun Bz on etelään (alle −5 nT), revontulet voimistuvat usein noin tunnin päästä. Käyrä näyttää Bz:n kahden viime tunnin ajalta, ja katkoviiva on −5 nT:n kohdalla. Aurinkotuuli on vain tiedoksi, eikä se muuta arviota.
