@@ -62,11 +62,11 @@ Malli on sovitettu Lapin oloihin. Kaukana Pohjolasta se on karkeampi.
 
 ## Juuri nyt
 
-**Juuri nyt** -kortilla on lähimmän Ilmatieteen laitoksen magnetometrin R-luku, joka kertoo magneettikentän häiriöstä nyt (jos asema on alle 300 km päässä), ja NOAA:n OVATION-mallin revontulien voimakkuus paikan kohdalla.
+**Juuri nyt** -kortilla on lähimmän Ilmatieteen laitoksen magnetometrin R-luku, joka kertoo magneettikentän häiriöstä nyt (jos asema on alle 300 km päässä), ja NOAA:n OVATION-mallin revontulien voimakkuus paikan kohdalla. R-luvun palkissa on aseman omat rajat kohtalaiselle ja suurelle aktiivisuudelle.
 
 ### Aurinkotuuli
 
-Aurinkotuulen arvot tulevat NOAA:n mittauksista Maan ja Auringon välissä. Kun Bz on etelään (alle −5 nT), revontulet voimistuvat usein noin tunnin päästä. Aurinkotuuli on vain tiedoksi, eikä se muuta arviota.
+Aurinkotuulen arvot tulevat NOAA:n mittauksista Maan ja Auringon välissä. Kun Bz on etelään (alle −5 nT), revontulet voimistuvat usein noin tunnin päästä. Käyrä näyttää Bz:n kahden viime tunnin ajalta, ja katkoviiva on −5 nT:n kohdalla. Aurinkotuuli on vain tiedoksi, eikä se muuta arviota.
 
 ### Taivaskamera
 
