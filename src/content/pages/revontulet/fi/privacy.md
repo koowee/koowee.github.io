@@ -21,7 +21,7 @@ Kaikki tallennetaan laitteellesi, ja ne jaetaan vain sovelluksen omien widgettie
 
 Ennustetta varten sovellus hakee avointa dataa suoraan näistä palveluista:
 
-- **Open-Meteo** pilviennustetta varten. Pyynnössä on paikan koordinaatit (noin 100 metrin tarkkuudella), kuten missä tahansa sääpyynnössä. Katso Open-Meteon [ehdot ja tietosuoja](https://open-meteo.com/en/terms).
+- **Ilmatieteen laitoksen avoin data** pilviennustetta varten. Pyynnössä on paikan koordinaatit noin kilometrin tarkkuudella, kuten missä tahansa sääpyynnössä. Katso Ilmatieteen laitoksen [tietosuojaperiaatteet](https://en.ilmatieteenlaitos.fi/data-protection) (englanniksi).
 - **NOAA:n Space Weather Prediction Center** ja **Ilmatieteen laitos** avaruussäätä, Kp-ennustetta ja taivaskameroiden kuvia varten. Näissä pyynnöissä ei ole tietoja sinusta eikä paikastasi.
 - **Apple Maps**, kun haet paikkaa tai käytät nykyistä sijaintiasi (paikan nimen selvittämiseen). Siihen sovelletaan Applen tietosuojakäytäntöä.
 

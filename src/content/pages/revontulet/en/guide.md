@@ -54,7 +54,7 @@ The 27-day outlook gives only each day's largest Kp, so the figure is the night'
 Four factors are computed for each hour, and the estimate is their product: activity, clear sky, darkness and moonlight.
 
 - **Activity** comes from NOAA's Kp forecast and how close the place is to the auroral oval. For the current and next hour it also uses the R-index of the nearest Finnish Meteorological Institute magnetometer, if one is within 300 km, and NOAA's real-time OVATION model.
-- **Clear sky** is 100 % minus cloud cover (Open-Meteo). Cloud is counted by layer: the largest of low, middle and half of high cloud, at most the total, because thin high cloud hides less.
+- **Clear sky** is 100 % minus cloud cover from the Finnish Meteorological Institute's forecast, which reaches about 9 days ahead and covers the Nordic countries and nearby areas (farther away 50 % cloud is assumed). Cloud is counted by layer: the largest of low, middle and half of high cloud, at most the total, because thin high cloud hides less.
 - **Darkness** comes from the Sun's elevation: it is fully dark when the Sun is more than 12 degrees below the horizon.
 - **Moonlight**: a bright moon hides a faint aurora. Moonlight is computed from the moon's phase and elevation, and it lowers the estimate by up to 30 %, most when activity is low.
 
@@ -104,7 +104,7 @@ When the sighting log is on (**Asetukset → Havaintoloki**), the tonight card h
 - [NOAA SWPC](https://www.swpc.noaa.gov/): Kp forecast, 27-day outlook, OVATION, solar wind
 - [Finnish Meteorological Institute and ESA](https://space.fmi.fi/MIRACLE/RWC/): R-index
 - [Finnish Meteorological Institute](https://rwc-finland.fmi.fi/index.php/all-sky-camera-images/): all-sky cameras
-- [Open-Meteo](https://open-meteo.com/): cloud forecast (CC BY 4.0)
+- [Finnish Meteorological Institute](https://en.ilmatieteenlaitos.fi/open-data-licence): cloud forecast (open data, CC BY 4.0)
 
 The app fetches the data straight from these sources. It has no servers of its own and no accounts.
 

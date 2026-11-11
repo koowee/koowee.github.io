@@ -54,7 +54,7 @@ Tänä yönä -kortti vaihtuu seuraavaan yöhön klo 4 paikallista aikaa. Sen j�
 Jokaiselle tunnille lasketaan neljä tekijää, ja arvio on niiden tulo: aktiivisuus, selkeys, pimeys ja kuunvalo.
 
 - **Aktiivisuus** tulee NOAA:n Kp-ennusteesta ja siitä, kuinka lähellä revontulivyöhykettä paikka on. Kuluvalle ja seuraavalle tunnille mukaan tulevat myös lähimmän Ilmatieteen laitoksen magnetometrin R-luku, jos asema on alle 300 km päässä, ja NOAA:n reaaliaikainen OVATION-malli.
-- **Selkeys** on 100 % miinus pilvisyys (Open-Meteo). Pilvet lasketaan kerroksittain: suurin luvuista matala, keskikorkea ja puolet korkeasta, enintään kokonaispilvisyys, koska ohut yläpilvi haittaa vähemmän.
+- **Selkeys** on 100 % miinus pilvisyys Ilmatieteen laitoksen ennusteesta, joka ulottuu noin 9 vuorokauden päähän ja kattaa Pohjoismaat ja lähialueet (kauempana pilvisyydeksi oletetaan 50 %). Pilvet lasketaan kerroksittain: suurin luvuista matala, keskikorkea ja puolet korkeasta, enintään kokonaispilvisyys, koska ohut yläpilvi haittaa vähemmän.
 - **Pimeys** lasketaan Auringon korkeudesta: täysin pimeää on, kun Aurinko on yli 12 astetta horisontin alapuolella.
 - **Kuunvalo**: kirkas kuu peittää heikot revontulet. Kuunvalo lasketaan kuun vaiheesta ja korkeudesta, ja se laskee arviota enintään 30 %, eniten heikolla aktiivisuudella.
 
@@ -104,7 +104,7 @@ Kun havaintoloki on päällä (**Asetukset → Havaintoloki**), Tänä yönä -k
 - [NOAA SWPC](https://www.swpc.noaa.gov/): Kp-ennuste, 27 vuorokauden ennuste, OVATION, aurinkotuuli
 - [Ilmatieteen laitos ja ESA](https://space.fmi.fi/MIRACLE/RWC/): R-luku
 - [Ilmatieteen laitos](https://rwc-finland.fmi.fi/index.php/revontulikameroiden-kuvat/): taivaskamerat
-- [Open-Meteo](https://open-meteo.com/): pilviennuste (CC BY 4.0)
+- [Ilmatieteen laitos](https://en.ilmatieteenlaitos.fi/open-data-licence): pilviennuste (avoin data, CC BY 4.0)
 
 Sovellus hakee datan suoraan näistä lähteistä. Sillä ei ole omia palvelimia eikä tilejä.
 
