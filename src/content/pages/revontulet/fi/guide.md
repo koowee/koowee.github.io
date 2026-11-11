@@ -45,7 +45,7 @@ Tänä yönä -kortti vaihtuu seuraavaan yöhön klo 4 paikallista aikaa. Sen j�
 
 ### Seuraavat yöt
 
-Lämpökartassa on tämä yö ja kaksi seuraavaa tunneittain klo 18–06. Ruudun väri on tunnin arvio samoilla väreillä kuin prosenteissa. Tyhjä ruutu on jo mennyt, valoisa tai ilman ennustetta oleva tunti.
+Jokaisella yöllä on oma palkkinsa, jossa ovat yön tunnit klo 18–06. Ruudun väri on tunnin arvio samoilla väreillä kuin prosenteissa, ja yön paras tunti on kehystetty. Tyhjä ruutu on jo mennyt, valoisa tai ilman ennustetta oleva tunti.
 
 ### Seuraavat 24 tuntia
 
