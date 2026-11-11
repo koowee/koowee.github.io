@@ -49,7 +49,7 @@ The heat map shows tonight and the next two nights hour by hour from 6 pm to 6 a
 
 ### Seuraavat 24 tuntia (next 24 hours)
 
-In the chart, the bars are the hourly estimate and the dashed line is the cloud cover. The green line is your notification limit and the vertical line is now.
+In the chart, the bars are the hourly estimate and the dashed line is the cloud cover. The green dashed line is your notification limit and the vertical line is now.
 
 ### Hourly table
 

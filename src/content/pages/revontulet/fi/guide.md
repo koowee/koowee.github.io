@@ -39,7 +39,7 @@ Arvio on suuntaa antava, ei tilastollinen todennäköisyys eikä lupaus. Revontu
 
 ### Tänä yönä
 
-**Paras aika** on yön paras tunti. **Hyvä aika** tarkoittaa tunteja, joilla arvio on vähintään ilmoitusrajasi, sama aika kuin ilmoituksessa. Jos hyvä aika on vain se yksi paras tunti, kortti kertoo sen kerran.
+**Paras aika** on yön paras tunti. **Hyvä aika** tarkoittaa tunteja, joilla arvio on vähintään ilmoitusrajasi, sama aika kuin ilmoituksessa. Jos hyvä aika on vain se yksi paras tunti, kortilla näkyy vain se.
 
 Tänä yönä -kortti vaihtuu seuraavaan yöhön klo 4 paikallista aikaa. Sen jälkeen kortilla näkyy vielä **Loppuyö**, jos yötä on jäljellä.
 
@@ -49,7 +49,7 @@ Lämpökartassa on tämä yö ja kaksi seuraavaa tunneittain klo 18–06. Ruudun
 
 ### Seuraavat 24 tuntia
 
-Kaaviossa palkit ovat tunnin arvio ja katkoviiva pilvisyys. Vihreä viiva on ilmoitusrajasi ja pystyviiva nykyhetki.
+Kaaviossa palkit ovat tunnin arvio ja katkoviiva pilvisyys. Vihreä katkoviiva on ilmoitusrajasi ja pystyviiva nykyhetki.
 
 ### Tuntitaulukko
 
