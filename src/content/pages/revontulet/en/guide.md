@@ -53,9 +53,9 @@ In the chart, the bars are the hourly estimate and the dashed line is the cloud 
 
 ### Hourly table
 
-- **Pilviä** is total cloud cover. **Yläpilveä** means the cloud is mostly thin high cloud, which hides less.
+- **Clouds** is total cloud cover. **High cloud** means the cloud is mostly thin high cloud, which hides less.
 - **Kp** measures the disturbance of the Earth's magnetic field on a scale of 0–9: the higher it is, the further south the aurora can be seen. A star (\*) means the Kp comes from the 27-day outlook and is less precise. A lightning bolt (⚡︎) means a live measurement is part of the estimate.
-- A mark in the **Kuu** (moon) column means a bright moon is up.
+- In the **Darkness** column, a starry sky means dark, a sunset twilight and a sun daylight. A moon in the **Moon** column means a bright moon is up, and a dash means the moon doesn't interfere.
 
 ### Longer range
 

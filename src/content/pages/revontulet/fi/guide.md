@@ -55,7 +55,7 @@ Kaaviossa palkit ovat tunnin arvio ja katkoviiva pilvisyys. Vihreä katkoviiva o
 
 - **Pilviä** on kokonaispilvisyys. **Yläpilveä** tarkoittaa, että pilvet ovat enimmäkseen ohutta yläpilveä, joka haittaa vähemmän.
 - **Kp** kuvaa magneettikentän häiriötä asteikolla 0–9: mitä suurempi, sitä etelämpänä revontulia näkyy. Tähti (\*) tarkoittaa, että Kp on 27 vuorokauden ennusteesta ja siksi epätarkempi. Salama (⚡︎) tarkoittaa, että arviossa on mukana juuri tehty mittaus.
-- **Kuu**-sarakkeen merkki kertoo, että kirkas kuu on taivaalla.
+- **Pimeys**-sarakkeessa tähtitaivas tarkoittaa pimeää, auringonlasku hämärää ja aurinko valoisaa. **Kuu**-sarakkeen kuun kuva kertoo, että kirkas kuu on taivaalla, ja viiva, ettei kuu haittaa.
 
 ### Pidemmän aikavälin ennuste
 
