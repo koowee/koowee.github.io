@@ -70,7 +70,7 @@ The solar wind values come from NOAA's measurements between the Earth and the Su
 
 ### Sky camera
 
-The image comes from the nearest Finnish Meteorological Institute all-sky camera, in Kilpisjärvi or Kevo, within 300 km. A camera within 150 km is shown as a round thumbnail. A farther one is shown as a link, because its sky says less about the sky at your place. Tap to see the image full screen, and pinch or double-tap to zoom. When the image has not changed for more than an hour, a short note is shown instead while it is dark.
+The image comes from the nearest Finnish Meteorological Institute all-sky camera, in Kilpisjärvi, Kevo, Muonio or Helsinki, within 300 km. A camera within 150 km is shown as a round thumbnail. A farther one is shown as a link, because its sky says less about the sky at your place. Tap to see the image full screen, and pinch or double-tap to zoom. When the image has not changed for more than an hour, a short note is shown instead while it is dark.
 
 ## Notifications
 
@@ -103,7 +103,7 @@ When the sighting log is on (**Asetukset → Havaintoloki**), the tonight card h
 
 - [NOAA SWPC](https://www.swpc.noaa.gov/): Kp forecast, 27-day outlook, OVATION, solar wind
 - [Finnish Meteorological Institute and ESA](https://space.fmi.fi/MIRACLE/RWC/): R-index
-- [Finnish Meteorological Institute](https://space.fmi.fi/MIRACLE/ASC/): all-sky cameras
+- [Finnish Meteorological Institute](https://rwc-finland.fmi.fi/index.php/all-sky-camera-images/): all-sky cameras
 - [Open-Meteo](https://open-meteo.com/): cloud forecast (CC BY 4.0)
 
 The app fetches the data straight from these sources. It has no servers of its own and no accounts.
