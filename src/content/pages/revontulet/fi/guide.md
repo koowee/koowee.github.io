@@ -1,6 +1,6 @@
 ---
 title: "Revontulten ohje"
-description: "Näin luet Revontulten arviota: tämä yö, hyvä aika, tuntitaulukko, miten arvio lasketaan, Juuri nyt -mittaukset, ilmoitukset, widgetit ja havaintoloki sekä revontuliopas retkelle."
+description: "Näin luet Revontulten arviota: tämä yö, hyvä aika, tuntitaulukko, miten arvio lasketaan, Juuri nyt -mittaukset, avaruussää, ilmoitukset, widgetit ja havaintoloki sekä revontuliopas retkelle."
 ---
 Tämä ohje on sama kuin sovelluksessa kohdassa **Asetukset → Ohje**. Painikkeet on nimetty kuten sovelluksessa.
 
@@ -57,10 +57,6 @@ Kaaviossa palkit ovat tunnin arvio ja katkoviiva pilvisyys. Vihreä katkoviiva o
 - **Kp** kuvaa magneettikentän häiriötä asteikolla 0–9: mitä suurempi, sitä etelämpänä revontulia näkyy. Tähti (\*) tarkoittaa, että Kp on 27 vuorokauden ennusteesta ja siksi epätarkempi. Salama (⚡︎) tarkoittaa, että arviossa on mukana juuri tehty mittaus.
 - **Pimeys**-sarakkeessa tähtitaivas tarkoittaa pimeää, auringonlasku hämärää ja aurinko valoisaa. **Kuu**-sarakkeen kuun kuva kertoo, että kirkas kuu on taivaalla, ja viiva, ettei kuu haittaa.
 
-### Pidemmän aikavälin ennuste
-
-27 vuorokauden ennuste kertoo vain kunkin päivän suurimman Kp-arvon, joten luku on yön paras mahdollinen hetki. Pilvisyys on mukana noin 10 vuorokauden ajalta. Harmaissa öissä ei ole pilviennustetta, vaan ne näyttävät vain aktiivisuuden.
-
 ## Miten arvio lasketaan
 
 Jokaiselle tunnille lasketaan neljä tekijää, ja arvio on niiden tulo: aktiivisuus, selkeys, pimeys ja kuunvalo.
@@ -87,6 +83,22 @@ Aurinkotuulen arvot tulevat NOAA:n mittauksista Maan ja Auringon välissä. Kun 
 ### Taivaskamera
 
 Kuva tulee lähimmästä Ilmatieteen laitoksen taivaskamerasta, Kilpisjärveltä, Kevosta, Muoniosta tai Helsingistä, enintään 300 km:n päästä. Enintään 150 km:n päässä oleva kamera näkyy pyöreänä pikkukuvana. Kauempana oleva näkyy linkkinä, koska sen taivas kertoo paikan taivaasta vähemmän. Napauta, niin kuva aukeaa koko ruudulle, ja sitä voi suurentaa nipistämällä tai kaksoisnapautuksella. Kuvan ottoaika luetaan kameran kuvaan merkitsemästä kellonajasta. Kun kuva on yli tunnin vanha, sen tilalla näkyy pimeään aikaan huomautus, ja vuorokautta vanhempaa kuvaa ei näytetä lainkaan.
+
+## Avaruussää
+
+**Avaruussää** aukeaa **Juuri nyt** -kortin alimmalta riviltä. Siinä ovat Kp, aurinkotuulen vuorokausi ja pidemmän aikavälin ennuste. Vedä alas, niin tiedot päivittyvät.
+
+### Kp: mitattu ja ennuste
+
+Palkit ovat Kp:n kolmen tunnin jaksot kolmelta viime vuorokaudelta ja NOAA:n ennuste kolmelle seuraavalle. Täydet palkit on mitattu, vaaleat ovat ennustetta, ja pystyviiva on nykyhetki. Katkoviiva on Kp 5, josta alkaa magneettinen myrsky (G1). Palkin väri kertoo tason samoilla väreillä kuin arviossa: harmaa on hiljaista, vihreä myrsky.
+
+### Aurinkotuuli, 24 tuntia
+
+Käyrät ovat 10 minuutin keskiarvoja samoista NOAA:n mittauksista kuin Juuri nyt -kortilla. Magneettikentän kaaviossa yhtenäinen viiva on Bz ja katkoviiva Bt. Vihreä alue näyttää, milloin Bz on ollut etelään (alle 0), mikä avaa tien revontulille. Nopeuden kaaviossa katkoviivat ovat 500 ja 700 km/s:n kohdalla. Äkillinen tiheyden ja nopeuden nousu kertoo usein Auringon purkauksen saapumisesta.
+
+### Pidemmän aikavälin ennuste
+
+27 vuorokauden ennuste kertoo vain kunkin päivän suurimman Kp-arvon, joten luku on yön paras mahdollinen hetki. Pilvisyys on mukana noin 10 vuorokauden ajalta. Harmaissa öissä ei ole pilviennustetta, vaan ne näyttävät vain aktiivisuuden.
 
 ## Ilmoitukset
 
