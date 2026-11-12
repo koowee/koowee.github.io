@@ -127,6 +127,14 @@ Kun havaintoloki on päällä (**Asetukset → Havaintoloki**), Tänä yönä -k
 
 **Näytä loki** kertoo, kuinka usein näit revontulia eri arvioilla, ja tiedot voi viedä CSV-tiedostona. Loki pysyy puhelimessa.
 
+## Yötila
+
+Yötila muuttaa sovelluksen himmeän punaiseksi. Punainen valo ei pilaa silmien pimeään tottumista, johon kuluu 20–30 minuuttia. Kytke se **Ennusteen** kuun kuvakkeesta tai kohdasta **Asetukset → Yötila**. Laske myös näytön kirkkaus pieneksi.
+
+### Koko puhelin punaiseksi
+
+Ilmoitukset, näppäimistö ja muut iOS:n omat osat eivät muutu punaisiksi. Koko puhelimen saa punaiseksi iOS:n värisuodattimella: **Asetukset → Käyttöapu → Näyttö ja tekstin koko → Värisuodattimet → Värisävy**, ja sävy sekä voimakkuus täysille. Kun valitset kohdassa **Asetukset → Käyttöapu → Käyttöapuoikotie** Värisuodattimet, suodatin kytkeytyy sivupainikkeen kolmoispainalluksella.
+
 ## Tietolähteet
 
 - [NOAA SWPC](https://www.swpc.noaa.gov/): Kp-ennuste, 27 vuorokauden ennuste, OVATION, aurinkotuuli

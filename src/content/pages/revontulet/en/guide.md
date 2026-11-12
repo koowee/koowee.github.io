@@ -127,6 +127,14 @@ When the sighting log is on (**Settings → Sighting log**), the tonight card ha
 
 **Näytä loki** (Show log) tells how often you saw the aurora at each estimate, and the entries can be exported as a CSV file. The log stays on your iPhone.
 
+## Night mode
+
+Night mode turns the app dim red. Red light does not spoil your eyes’ adaptation to the dark, which takes 20–30 minutes. Switch it with the moon icon on **Forecast** or in **Settings → Night mode**. Turn the screen brightness down too.
+
+### The whole phone in red
+
+Notifications, the keyboard and other parts drawn by iOS do not turn red. iOS’s colour filter turns the whole phone red: **Settings → Accessibility → Display & Text Size → Colour Filters → Colour Tint**, with Hue and Intensity all the way up. When you choose Colour Filters in **Settings → Accessibility → Accessibility Shortcut**, a triple-click of the side button switches the filter.
+
 ## Data sources
 
 - [NOAA SWPC](https://www.swpc.noaa.gov/): Kp forecast, 27-day outlook, OVATION, solar wind
