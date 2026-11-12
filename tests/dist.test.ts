@@ -14,7 +14,7 @@ test('home pages carry their language', () => {
   assert.match(readPage('fi'), /<html lang="fi"/);
 });
 
-const ORDER = ['cadence', 'kirjanpainaja', 'revontulet', 'hilpertti'];
+const ORDER = ['cadence', 'kirjanpainaja', 'repovahti', 'hilpertti'];
 const HOME = {
   en: { dir: '', prefix: '/', hero: 'Apps for iPhone, iPad and Mac', status: 'Coming soon' },
   fi: { dir: 'fi', prefix: '/fi/', hero: 'Sovelluksia iPhonelle, iPadille ja Macille', status: 'Tulossa' },
@@ -22,7 +22,7 @@ const HOME = {
 const PLATFORM_TAGS: Record<string, string> = {
   cadence: 'iPhone · iPad',
   kirjanpainaja: 'Mac · iPhone',
-  revontulet: 'iPhone',
+  repovahti: 'iPhone',
   hilpertti: 'iPad · iPhone',
 };
 
@@ -77,7 +77,7 @@ function listHtml(dir: string, base = ''): string[] {
   });
 }
 
-const GUIDES = ['cadence', 'hilpertti', 'kirjanpainaja', 'revontulet'];
+const GUIDES = ['cadence', 'hilpertti', 'kirjanpainaja', 'repovahti'];
 
 const EXPECTED_PATHS = [
   '/', '/privacy/',
@@ -89,8 +89,10 @@ const toFile = (p: string) => `${p.slice(1)}index.html`;
 
 test('exactly the expected pages', () => {
   const files = listHtml(DIST).sort();
-  const expected = [...EXPECTED_PATHS.map(toFile), '404.html'].sort();
-  assert.equal(expected.length, 37);
+  const redirects = ['', 'fi/'].flatMap((lang) =>
+    ['', 'guide/', 'support/', 'privacy/'].map((page) => `${lang}revontulet/${page}index.html`));
+  const expected = [...EXPECTED_PATHS.map(toFile), '404.html', ...redirects].sort();
+  assert.equal(expected.length, 45);
   assert.deepEqual(files, expected);
 });
 
@@ -159,7 +161,7 @@ test('Hilpertti privacy mentions parent-started sharing', () => {
 });
 
 test('Revontulet privacy covers reverse geocoding of current location', () => {
-  assert.match(text('revontulet/privacy'), /Apple Maps.{0,80}current location/);
+  assert.match(text('repovahti/privacy'), /Apple Maps.{0,80}current location/);
 });
 
 test('files in the user\'s own folder are said to stay after deleting the app', () => {
@@ -203,14 +205,14 @@ const REVONTULET_TOPICS = {
 test('Revontulet guide has the eleven in-app topics, the aurora guide, and its support page links to it', () => {
   for (const [lang, topics] of Object.entries(REVONTULET_TOPICS)) {
     const prefix = lang === 'en' ? '/' : '/fi/';
-    const rel = `${prefix.slice(1)}revontulet/guide`;
+    const rel = `${prefix.slice(1)}repovahti/guide`;
     const html = readPage(rel);
     const toc = html.match(/<nav class="toc"[\s\S]*?<\/nav>/);
     assert.ok(toc, `${rel} has a toc`);
     assert.equal([...toc![0].matchAll(/href="#([^"]+)"/g)].length, 12, `${rel} toc entries`);
     const plain = text(rel);
     for (const topic of topics) assert.ok(plain.includes(topic), `${rel}: ${topic}`);
-    assert.ok(readPage(`${prefix.slice(1)}revontulet/support`).includes(`href="${prefix}revontulet/guide/`), `${rel} support → guide`);
+    assert.ok(readPage(`${prefix.slice(1)}repovahti/support`).includes(`href="${prefix}repovahti/guide/`), `${rel} support → guide`);
   }
 });
 
@@ -292,5 +294,15 @@ test('Cadence support has a Q&A that links to the guide', () => {
 test('the old contact address is gone everywhere', () => {
   for (const file of listHtml(DIST)) {
     assert.ok(!readFileSync(join(DIST, file), 'utf8').includes('valkama.apps@'), file);
+  }
+});
+
+// Repovahti's first name was Revontulet: the old addresses lead to the new ones.
+test('old Revontulet addresses redirect to Repovahti', () => {
+  for (const lang of ['', 'fi/']) {
+    for (const page of ['', 'guide/', 'support/', 'privacy/']) {
+      const html = readPage(`${lang}revontulet/${page}`);
+      assert.ok(html.includes(`/${lang}repovahti/${page}`), `${lang}revontulet/${page} → repovahti`);
+    }
   }
 });

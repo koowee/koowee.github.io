@@ -1,5 +1,5 @@
 {
-  "slug": "revontulet",
+  "slug": "repovahti",
   "name": "Repovahti",
   "tagline": {
     "en": "Hour-by-hour aurora forecast for your places.",
@@ -11,7 +11,7 @@
   "guide": true,
   "status": "coming-soon",
   "accent": "#3ee8a0",
-  "icon": "../../assets/icons/revontulet.png",
+  "icon": "../../assets/icons/repovahti.png",
   "order": 3,
   "iconStyle": "ios"
 }

@@ -153,7 +153,7 @@ Jos ennustetta ei saada, tarkista verkkoyhteys ja vedä näkymää alas. Jos jok
 
 Jos paikkaa ei löydy, kokeile lähintä kaupunkia tai kylää. Oma sijainti vaatii sijaintiluvan iPhonen asetuksista.
 
-Muissa asioissa katso [tukisivu](/fi/revontulet/support/) tai lähetä sähköpostia osoitteeseen [valkama.app@gmail.com](mailto:valkama.app@gmail.com). Kerro mielellään iPhonesi malli ja iOS-versio.
+Muissa asioissa katso [tukisivu](/fi/repovahti/support/) tai lähetä sähköpostia osoitteeseen [valkama.app@gmail.com](mailto:valkama.app@gmail.com). Kerro mielellään iPhonesi malli ja iOS-versio.
 
 ## Revontuliopas
 
