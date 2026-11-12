@@ -153,7 +153,7 @@ If the forecast can't be fetched, check your connection and pull down to refresh
 
 If a place can't be found, try the nearest town or village. Your current location needs location permission in iPhone Settings.
 
-For anything else, see [support](/revontulet/support/) or email [valkama.app@gmail.com](mailto:valkama.app@gmail.com). Mention your iPhone model and iOS version if you can.
+For anything else, see [support](/repovahti/support/) or email [valkama.app@gmail.com](mailto:valkama.app@gmail.com). Mention your iPhone model and iOS version if you can.
 
 ## Aurora guide
 
