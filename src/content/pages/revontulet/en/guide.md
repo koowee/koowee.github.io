@@ -1,6 +1,6 @@
 ---
 title: "Revontulet guide"
-description: "How to read Revontulet's estimate: tonight, the good window, the hourly table, how the estimate is computed, the Right now readings, notifications, widgets and the sighting log, plus an aurora guide for going out."
+description: "How to read Revontulet's estimate: tonight, the good window, the hourly table, how the estimate is computed, the Right now readings, space weather, notifications, widgets and the sighting log, plus an aurora guide for going out."
 ---
 This guide matches the one in the app, under **Settings → Help**. The app is in English and Finnish and follows your iPhone's language.
 
@@ -57,10 +57,6 @@ In the chart, the bars are the hourly estimate and the dashed line is the cloud 
 - **Kp** measures the disturbance of the Earth's magnetic field on a scale of 0–9: the higher it is, the further south the aurora can be seen. A star (\*) means the Kp comes from the 27-day outlook and is less precise. A lightning bolt (⚡︎) means a live measurement is part of the estimate.
 - In the **Darkness** column, a starry sky means dark, a sunset twilight and a sun daylight. A moon in the **Moon** column means a bright moon is up, and a dash means the moon doesn't interfere.
 
-### Longer range
-
-The 27-day outlook gives only each day's largest Kp, so the figure is the night's best possible moment. Cloud cover is included for about the first 10 days. Grey nights have no cloud forecast and show activity only.
-
 ## How the estimate is computed
 
 Four factors are computed for each hour, and the estimate is their product: activity, clear sky, darkness and moonlight.
@@ -87,6 +83,22 @@ The solar wind values come from NOAA's measurements between the Earth and the Su
 ### Sky camera
 
 The image comes from the nearest Finnish Meteorological Institute all-sky camera, in Kilpisjärvi, Kevo, Muonio or Helsinki, within 300 km. A camera within 150 km is shown as a round thumbnail. A farther one is shown as a link, because its sky says less about the sky at your place. Tap to see the image full screen, and pinch or double-tap to zoom. The time the image was taken is read from the clock time the camera prints on it. When the image is more than an hour old, a short note is shown instead while it is dark, and an image older than a day is not shown at all.
+
+## Space weather
+
+**Space weather** opens from the bottom row of the **Right now** card. It shows Kp, the last day of solar wind and the long-range outlook. Pull down to update it.
+
+### Kp: measured and forecast
+
+The bars are Kp's three-hour periods over the last three days and NOAA's forecast for the next three. Solid bars are measured, light bars are the forecast, and the vertical line is now. The dashed line is Kp 5, where a geomagnetic storm (G1) begins. A bar's colour shows the level in the same colours as the estimate: grey is quiet, green a storm.
+
+### Solar wind, 24 hours
+
+The curves are 10-minute means of the same NOAA measurements as on the Right now card. In the magnetic field chart the solid line is Bz and the dashed line Bt. The green area shows when Bz has pointed south (below 0), which opens the way for the aurora. In the speed chart the dashed lines are at 500 and 700 km/s. A sudden rise in density and speed often means that an eruption from the Sun is arriving.
+
+### Long-range outlook
+
+The 27-day outlook gives only each day's largest Kp, so the figure is the night's best possible moment. Cloud cover is included for about the first 10 days. Grey nights have no cloud forecast and show activity only.
 
 ## Notifications
 
