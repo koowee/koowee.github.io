@@ -90,7 +90,7 @@ The image comes from the nearest Finnish Meteorological Institute all-sky camera
 
 ### Kp: measured and forecast
 
-The bars are Kp's three-hour periods over the last three days and NOAA's forecast for the next three. Solid bars are measured, light bars are the forecast, and the vertical line is now. The dashed line is Kp 5, where a geomagnetic storm (G1) begins. A bar's colour shows the level in the same colours as the estimate: grey is quiet, green a storm.
+The bars are Kp's three-hour periods over the last three days and NOAA's forecast for the next three. Solid bars are measured, faded bars are the forecast, and the vertical line is now. The dashed line is Kp 5, where a geomagnetic storm (G1) begins. A bar's colour shows the level in the same colours as the estimate: grey is quiet, green a storm.
 
 ### Solar wind, 24 hours
 
