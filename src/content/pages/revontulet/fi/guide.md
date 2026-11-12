@@ -86,7 +86,7 @@ Kuva tulee lähimmästä Ilmatieteen laitoksen taivaskamerasta, Kilpisjärveltä
 
 ## Avaruussää
 
-**Avaruussää** aukeaa **Juuri nyt** -kortin alimmalta riviltä. Siinä ovat Kp, aurinkotuulen vuorokausi ja pidemmän aikavälin ennuste. Vedä alas, niin tiedot päivittyvät.
+**Avaruussää** aukeaa **Juuri nyt** -kortin aurinkotuuliruudusta tai kortin alimmalta riviltä, jossa näkyvät Kp nyt ja kolmen vuorokauden ennusteen suurin Kp. Näkymässä ovat Kp, aurinkotuulen vuorokausi ja pidemmän aikavälin ennuste. Vedä alas, niin tiedot päivittyvät.
 
 ### Kp: mitattu ja ennuste
 

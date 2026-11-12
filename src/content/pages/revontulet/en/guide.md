@@ -86,7 +86,7 @@ The image comes from the nearest Finnish Meteorological Institute all-sky camera
 
 ## Space weather
 
-**Space weather** opens from the bottom row of the **Right now** card. It shows Kp, the last day of solar wind and the long-range outlook. Pull down to update it.
+**Space weather** opens from the solar wind panel of the **Right now** card or from the card's bottom row, which shows Kp now and the largest Kp of the 3-day forecast. The screen shows Kp, the last day of solar wind and the long-range outlook. Pull down to update it.
 
 ### Kp: measured and forecast
 
