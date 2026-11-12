@@ -1,6 +1,6 @@
 ---
-title: "Revontulet support"
-description: "Getting started with Revontulet, answers to common questions and how to get help."
+title: "Repovahti support"
+description: "Getting started with Repovahti, answers to common questions and how to get help."
 ---
 ## Getting started
 
@@ -19,7 +19,7 @@ The estimate combines NOAA's Kp forecast and live readings from NOAA and the Fin
 <details>
 <summary>Why did I not get a notification?</summary>
 
-Notifications are sent only for favourites, and only when the best hour of tonight reaches your limit (50 % by default). Check that notifications are allowed for Revontulet in iOS Settings. The Favourites tab says so at the top if they are off.
+Notifications are sent only for favourites, and only when the best hour of tonight reaches your limit (50 % by default). Check that notifications are allowed for Repovahti in iOS Settings. The Favourites tab says so at the top if they are off.
 </details>
 
 <details>
@@ -31,7 +31,7 @@ The image comes from the nearest Finnish Meteorological Institute all-sky camera
 <details>
 <summary>Do I need an account?</summary>
 
-No. Revontulet has no accounts and no sign-in.
+No. Repovahti has no accounts and no sign-in.
 </details>
 
 <details>

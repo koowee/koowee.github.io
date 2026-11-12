@@ -1,12 +1,12 @@
 ---
-title: "Revontulet guide"
-description: "How to read Revontulet's estimate: tonight, the good window, the hourly table, how the estimate is computed, the Right now readings, space weather, notifications, widgets and the sighting log, plus an aurora guide for going out."
+title: "Repovahti guide"
+description: "How to read Repovahti's estimate: tonight, the good window, the hourly table, how the estimate is computed, the Right now readings, space weather, notifications, widgets and the sighting log, plus an aurora guide for going out."
 ---
 This guide matches the one in the app, under **Settings → Help**. The app is in English and Finnish and follows your iPhone's language.
 
 ## Getting started
 
-Revontulet estimates, hour by hour, how good the chances are of seeing the aurora at a place you choose. The estimate combines space weather, cloud cover, darkness and moonlight.
+Repovahti estimates, hour by hour, how good the chances are of seeing the aurora at a place you choose. The estimate combines space weather, cloud cover, darkness and moonlight.
 
 ### Choose a place
 

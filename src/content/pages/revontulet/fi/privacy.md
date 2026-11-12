@@ -1,6 +1,6 @@
 ---
 title: "Revontulten tietosuojaseloste"
-description: "Miten Revontulet käsittelee tietojasi: ei tilejä, ei omia palvelimia, ja paikkasi pysyvät laitteellasi."
+description: "Miten Repovahti käsittelee tietojasi: ei tilejä, ei omia palvelimia, ja paikkasi pysyvät laitteellasi."
 lastUpdated: 2026-11-10
 ---
 ## Lyhyesti

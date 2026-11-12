@@ -1,11 +1,11 @@
 ---
-title: "Revontulet privacy policy"
-description: "How Revontulet handles your data: no accounts, no servers of our own, and your places stay on your device."
+title: "Repovahti privacy policy"
+description: "How Repovahti handles your data: no accounts, no servers of our own, and your places stay on your device."
 lastUpdated: 2026-11-10
 ---
 ## Summary
 
-Revontulet has no accounts and no servers of our own. Your places and settings stay on your iPhone, and the app only fetches open forecast data.
+Repovahti has no accounts and no servers of our own. Your places and settings stay on your iPhone, and the app only fetches open forecast data.
 
 ## Data the app handles
 
@@ -29,7 +29,7 @@ The app contains no advertising, analytics or crash-reporting services.
 
 ## Children
 
-Revontulet is not directed at children and does not knowingly collect data from them.
+Repovahti is not directed at children and does not knowingly collect data from them.
 
 ## Your rights and contact
 
