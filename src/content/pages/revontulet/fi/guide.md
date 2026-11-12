@@ -6,7 +6,7 @@ Tämä ohje on sama kuin sovelluksessa kohdassa **Asetukset → Ohje**. Painikke
 
 ## Aloitus
 
-Revontulet arvioi tunti tunnilta, kuinka hyvin revontulia voi nähdä valitsemassasi paikassa. Arvio yhdistää avaruussään, pilvisyyden, pimeyden ja kuunvalon.
+Repovahti arvioi tunti tunnilta, kuinka hyvin revontulia voi nähdä valitsemassasi paikassa. Arvio yhdistää avaruussään, pilvisyyden, pimeyden ja kuunvalon.
 
 ### Valitse paikka
 
