@@ -2,7 +2,7 @@
 title: "Repovahti"
 description: "Repovahti arvioi tunneittain, kuinka todennäköisesti näet revontulet valitsemissasi paikoissa, ja kertoo, kun tämä yö näyttää hyvältä."
 ---
-Repovahti on revontuliennuste iPhonelle. Se yhdistää avaruussään, pilvisyyden, pimeyden ja kuun yhdeksi selkeäksi arvioksi: kuinka todennäköisesti näet revontulet tunti tunnilta sinulle tärkeissä paikoissa.
+Repovahti on revontuliennuste iPhonelle ja iPadille. Se yhdistää avaruussään, pilvisyyden, pimeyden ja kuun yhdeksi selkeäksi arvioksi: kuinka todennäköisesti näet revontulet tunti tunnilta sinulle tärkeissä paikoissa.
 
 - **Tämä yö yhdellä silmäyksellä.** Paras tunti, hyvä aikaikkuna ja todennäköisyys seuraavan 24 tunnin jokaiselle tunnille.
 - **Ilmoitukset suosikeista.** Merkitse paikat tähdellä ja saat ilmoituksen, kun yö näyttää hyvältä.

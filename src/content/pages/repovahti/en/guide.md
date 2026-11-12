@@ -16,6 +16,8 @@ On the **Forecast** tab, tap the magnifying glass. Search by name, use your curr
 
 Star a place to make it a favourite. Favourites get notifications, and the **Favourites** tab shows their night at a glance. Tap a favourite to open its forecast.
 
+On iPad your favourites and the chosen place's forecast sit side by side. When the iPad is on its side, the **Forecast** tab splits into two columns.
+
 ### Updates
 
 The forecast refreshes every 15 minutes while the screen is open. Pull down to refresh it now.

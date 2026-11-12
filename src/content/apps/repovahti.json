@@ -6,7 +6,8 @@
     "fi": "Revontuliennuste tunneittain omille paikoillesi."
   },
   "platforms": [
-    "iPhone"
+    "iPhone",
+    "iPad"
   ],
   "guide": true,
   "status": "coming-soon",
