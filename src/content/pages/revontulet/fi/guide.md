@@ -90,7 +90,7 @@ Kuva tulee lähimmästä Ilmatieteen laitoksen taivaskamerasta, Kilpisjärveltä
 
 ### Kp: mitattu ja ennuste
 
-Palkit ovat Kp:n kolmen tunnin jaksot kolmelta viime vuorokaudelta ja NOAA:n ennuste kolmelle seuraavalle. Täydet palkit on mitattu, vaaleat ovat ennustetta, ja pystyviiva on nykyhetki. Katkoviiva on Kp 5, josta alkaa magneettinen myrsky (G1). Palkin väri kertoo tason samoilla väreillä kuin arviossa: harmaa on hiljaista, vihreä myrsky.
+Palkit ovat Kp:n kolmen tunnin jaksot kolmelta viime vuorokaudelta ja NOAA:n ennuste kolmelle seuraavalle. Täydet palkit on mitattu, himmeät ovat ennustetta, ja pystyviiva on nykyhetki. Katkoviiva on Kp 5, josta alkaa magneettinen myrsky (G1). Palkin väri kertoo tason samoilla väreillä kuin arviossa: harmaa on hiljaista, vihreä myrsky.
 
 ### Aurinkotuuli, 24 tuntia
 
