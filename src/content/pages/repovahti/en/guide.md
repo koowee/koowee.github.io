@@ -10,19 +10,19 @@ Repovahti estimates, hour by hour, how good the chances are of seeing the aurora
 
 ### Choose a place
 
-On the **Ennuste** (Forecast) tab, tap the magnifying glass. Search by name, use your current location or pick one of the suggested aurora spots.
+On the **Forecast** tab, tap the magnifying glass. Search by name, use your current location or pick one of the suggested aurora spots.
 
 ### Favourites
 
-Star a place to make it a favourite. Favourites get notifications, and the **Suosikit** (Favourites) tab shows their night at a glance. Tap a favourite to open its forecast.
+Star a place to make it a favourite. Favourites get notifications, and the **Favourites** tab shows their night at a glance. Tap a favourite to open its forecast.
 
 ### Updates
 
 The forecast refreshes every 15 minutes while the screen is open. Pull down to refresh it now.
 
-### Opas
+### Guide
 
-The **Opas** (Aurora guide) tab has short articles about the aurora, the solar wind, watching, taking photos with a phone and dressing for the cold. The same texts are at the end of this page under [Aurora guide](#aurora-guide).
+The **Guide** tab has short articles about the aurora, the solar wind, watching, taking photos with a phone and dressing for the cold. The same texts are at the end of this page under [Aurora guide](#aurora-guide).
 
 ## Reading the estimate
 
@@ -30,26 +30,26 @@ The percentage tells how good the conditions are for seeing the aurora in that h
 
 | Estimate | Word |
 |---|---|
-| 50 % or more | Hyvä mahdollisuus (good chance) |
-| 25–49 % | Kohtalainen mahdollisuus (moderate chance) |
-| 5–24 % | Pieni mahdollisuus (small chance) |
-| under 5 % | Epätodennäköistä (unlikely) |
+| 50 % or more | Good chance |
+| 25–49 % | Moderate chance |
+| 5–24 % | Small chance |
+| under 5 % | Unlikely |
 
 The estimate is a guide, not a statistical probability and not a promise. The aurora can surprise in both directions.
 
 ### Tonight
 
-**Paras aika** (best time) is the night's best hour. **Hyvä aika** (good window) means the hours at or above your notification limit, the same window as in the notifications. If the good window is just that one best hour, the card says it once.
+**Best time** is the night's best hour. **Good window** means the hours at or above your alert threshold, the same window as in the notifications. If the good window is just that one best hour, the card says it once.
 
-"Tonight" moves on to the coming night at 4 am local time. After that the card still shows **Loppuyö** (rest of the night) if some of the night is left.
+"Tonight" moves on to the coming night at 4 am local time. After that the card still shows **Rest of the night** if some of the night is left.
 
-### Coming nights
+### Next nights
 
 Each night has its own strip with its hours from 6 pm to 6 am. Each square is coloured by that hour's estimate, in the same colours as the percentages, and the night's best hour is outlined. An empty square is an hour that has passed or is light. A square with a dashed outline is an hour the hourly forecast does not reach yet, and the card says when the forecast ends.
 
-### Seuraavat 24 tuntia (next 24 hours)
+### Next 24 hours
 
-In the chart, the bars are the hourly estimate and the dashed line is the cloud cover. The green dashed line is your notification limit and the vertical line is now.
+In the chart, the bars are the hourly estimate and the dashed line is the cloud cover. The green dashed line is your alert threshold and the vertical line is now.
 
 ### Hourly table
 
@@ -100,12 +100,12 @@ The curves are 10-minute means of the same NOAA measurements as on the Right now
 
 The 27-day outlook gives only each day's largest Kp, so the figure is the night's best possible moment. Cloud cover is included for about the first 10 days. Grey nights have no cloud forecast and show activity only.
 
-## Notifications
+## Alerts
 
-Notifications are sent for favourites when the night's best hour reaches your notification limit (50 % by default). Change the limit in **Settings → Alert threshold**.
+Notifications are sent for favourites when the night's best hour reaches your alert threshold (50 % by default). Change it in **Settings → Alert threshold**.
 
-- The **Ennakkoilmoitus** (preview) arrives at the time you choose (12, 14, 16 or 18).
-- The **Muistutus** (reminder) arrives 15 minutes before the good window starts.
+- The **Advance alert** arrives at the time you choose (12, 14, 16 or 18).
+- The **reminder** arrives 15 minutes before the good window starts.
 
 Notifications are scheduled whenever the forecast updates, so they arrive even when the app is not open.
 
@@ -115,9 +115,9 @@ The Favourites tab says at the top if notifications are off in the app or in iPh
 
 ## Widgets
 
-- **Suosikit tänä yönä** (Favourites tonight) shows the best hour of tonight for your favourites on the Home Screen.
-- **Paikan yö** (Place's night) shows one place's night hour by hour. Choose the place when you edit the widget.
-- Paikan yö is also available on the Lock Screen: the circular widget shows the best estimate, the rectangular one the place, best hour and good window, and the inline one above the clock the place and best hour.
+- **Favourites tonight** shows the best hour of tonight for your favourites on the Home Screen.
+- **Night at a place** shows one place's night hour by hour. Choose the place when you edit the widget.
+- Night at a place is also available on the Lock Screen: the circular widget shows the best estimate, the rectangular one the place, best hour and good window, and the inline one above the clock the place and best hour.
 
 Tapping a widget opens the app on that place. Widgets update on iOS's schedule, so they can lag a little behind the app.
 
@@ -125,7 +125,7 @@ Tapping a widget opens the app on that place. Widgets update on iOS's schedule, 
 
 When the sighting log is on (**Settings → Sighting log**), the tonight card has the buttons **I saw the aurora** and **Didn't see it**. An entry saves the estimate of that moment, and you can add the strength.
 
-**Näytä loki** (Show log) tells how often you saw the aurora at each estimate, and the entries can be exported as a CSV file. The log stays on your iPhone.
+**Show log** tells how often you saw the aurora at each estimate, and the entries can be exported as a CSV file. The log stays on your iPhone.
 
 ## Night mode
 
@@ -157,7 +157,7 @@ For anything else, see [support](/repovahti/support/) or email [valkama.app@gmai
 
 ## Aurora guide
 
-The same guide is in the app's **Opas** (Aurora guide) tab.
+The same guide is in the app's **Guide** tab.
 
 ### What the aurora is
 

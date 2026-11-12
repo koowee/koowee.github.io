@@ -194,7 +194,7 @@ test('Cadence guide has the nine in-app topics with a table of contents', () => 
 
 // Revontulet guide: the same eleven topics as Settings → Ohje in the app, then the Opas tab's aurora guide.
 const REVONTULET_TOPICS = {
-  en: ['Getting started', 'Reading the estimate', 'How the estimate is computed', 'Right now', 'Space weather', 'Notifications',
+  en: ['Getting started', 'Reading the estimate', 'How the estimate is computed', 'Right now', 'Space weather', 'Alerts',
     'Widgets', 'Sighting log', 'Night mode', 'Data sources', "If something doesn't work", 'Aurora guide',
     'Taking photos with a phone'],
   fi: ['Aloitus', 'Arvion lukeminen', 'Miten arvio lasketaan', 'Juuri nyt', 'Avaruussää', 'Ilmoitukset',
@@ -303,6 +303,17 @@ test('old Revontulet addresses redirect to Repovahti', () => {
     for (const page of ['', 'guide/', 'support/', 'privacy/']) {
       const html = readPage(`${lang}revontulet/${page}`);
       assert.ok(html.includes(`/${lang}repovahti/${page}`), `${lang}revontulet/${page} → repovahti`);
+    }
+  }
+});
+
+// The English Repovahti pages use the app's English names, not Finnish ones (Kalle 2026-11-12).
+test('English Repovahti pages have no Finnish UI words', () => {
+  for (const page of ['repovahti/guide', 'repovahti/support', 'repovahti/privacy', 'repovahti']) {
+    const plain = text(page);
+    for (const word of ['mahdollisuus', 'Epätodennäköistä', 'Paras aika', 'Hyvä aika', 'Loppuyö', 'Ennakkoilmoitus',
+      'Muistutus', 'Suosikit', 'Paikan yö', 'Näytä loki', 'Ennuste', 'Seuraavat', 'Opas']) {
+      assert.ok(!plain.includes(word), `${page}: ${word}`);
     }
   }
 });
