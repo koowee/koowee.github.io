@@ -22,7 +22,7 @@ const HOME = {
 const PLATFORM_TAGS: Record<string, string> = {
   cadence: 'iPhone · iPad',
   kirjanpainaja: 'Mac · iPhone',
-  repovahti: 'iPhone',
+  repovahti: 'iPhone · iPad',
   hilpertti: 'iPad · iPhone',
 };
 

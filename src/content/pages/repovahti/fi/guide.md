@@ -16,6 +16,8 @@ Paina **Ennuste**-välilehdellä suurennuslasia. Hae paikkaa nimellä, käytä o
 
 Merkitse paikka suosikiksi tähdellä. Suosikeista tulee ilmoitukset, ja **Suosikit**-välilehdellä näet niiden tämän yön yhdellä silmäyksellä. Napauta suosikkia, niin sen ennuste aukeaa.
 
+iPadilla suosikit ja valitun paikan ennuste näkyvät rinnakkain. Kun iPad on vaakatilassa, **Ennuste** jakautuu kahteen palstaan.
+
 ### Päivitys
 
 Ennuste päivittyy 15 minuutin välein, kun näkymä on auki. Vedä alas, niin se päivittyy heti.
