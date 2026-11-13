@@ -39,6 +39,18 @@ Only by unlocking it with a written reason. The reason and the earlier figures a
 </details>
 
 <details>
+<summary>Can I import my old bookkeeping from another program?</summary>
+
+You can import past years as history on the Import page with Tuo vanha vuosi taulukosta… (Import an earlier year from a spreadsheet). Export the old bookkeeping from the program as a CSV or Excel file. History appears in Analysis for comparison, but has no tax returns. See the [guide](/kirjanpainaja/guide/#getting-started).
+</details>
+
+<details>
+<summary>My bank's statement is not recognised. What do I do?</summary>
+
+In the window that opens, choose which column is the date, the amount and the other details, and the account the statement belongs to. Your choices are remembered for the next statement from the same bank.
+</details>
+
+<details>
 <summary>How do I contact you?</summary>
 
 Send an email to the address below. Please mention your device and system version if something is not working.

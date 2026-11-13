@@ -32,6 +32,8 @@ Kirjanpainaja is not tax or accounting advice. Check the figures before you file
 
 A year kept in the old Excel template can be imported on the **Tuonti** (Import) page with **Tuo Excel-työkirja…** (Import Excel workbook). You see a preview before saving, and the import can be undone.
 
+Earlier years kept in another program or your own spreadsheet can be imported as **history** with **Tuo vanha vuosi taulukosta…** (Import an earlier year from a spreadsheet), as CSV or Excel. Choose which column is the date, description, amount, VAT and category or account, and give each of the file's categories one of the app's categories. Your choices are remembered for the next file. The preview shows the rows and the year's income, expenses and result by section. A history year appears in Analysis and the year comparison marked "(historia)", but it has no tax returns, cannot be locked and takes no entries. The original file is saved in the year's Vanhat aineistot (Old material) folder. History can be undone on the Import page.
+
 ## The year from January to closing
 
 1. **Collect receipts** in the inbox folder or drop them on the Entries page.
@@ -91,6 +93,8 @@ The Laskutus (Invoicing) page makes sales invoices, receipts for sales paid on t
 ## Payments and bank statements
 
 Turn on payment matching under **Asetukset → Yleiset → Näytettävät ominaisuudet** (Settings → General → Shown features). Bank CSV files, credit card Excel files and PayPal CSV files are imported on the **Tuonti** (Import) page. Rows already imported are skipped, so overlapping statements are safe to import.
+
+CSV or Excel statements from other banks and cards are imported the same way. If the format is not recognised, choose the columns (date, amount or separate money out and in, payee, description, message, reference, balance) and the account the statement belongs to, or create a new one. Your choices are remembered, so the next statement from the same bank opens ready and you only confirm the account. Always choose the same account for the same bank account so rows already imported are recognised.
 
 The **Maksut** (Payments) page suggests which statement row pays which entry. A row with no entry can become one with **Tee kirjaus…** (Make entry). Your own transfers, such as paying the credit card from the bank account, are recognised so nothing is counted twice. A statement row on its own never changes the tax return figures.
 
