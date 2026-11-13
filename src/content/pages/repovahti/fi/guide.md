@@ -45,6 +45,8 @@ Arvio on suuntaa antava, ei tilastollinen todennäköisyys eikä lupaus. Revontu
 
 Tänä yönä -kortti vaihtuu seuraavaan yöhön klo 4 paikallista aikaa. Sen jälkeen kortilla näkyy vielä **Loppuyö**, jos yötä on jäljellä.
 
+Kun pilvet vievät selvästi tämän yön mahdollisuudesta, sovellus katsoo pilviennusteen 30 ja 60 km:n päästä kahdeksaan suuntaan. Jos jossain on selvästi paremmat mahdollisuudet, kortilla näkyy esimerkiksi *Selkeämpää 30 km pohjoiseen: 55 % klo 22–01*. Napauttamalla saat ajo-ohjeet Kartoissa. Haku toimii Pohjoismaissa, joita Ilmatieteen laitoksen ennuste kattaa.
+
 ### Seuraavat yöt
 
 Jokaisella yöllä on oma palkkinsa, jossa ovat yön tunnit klo 18–06. Ruudun väri on tunnin arvio samoilla väreillä kuin prosenteissa, ja yön paras tunti on kehystetty. Tyhjä ruutu on jo mennyt tai valoisa tunti. Katkoviivalla reunustettu ruutu on tunti, jolle ei vielä ole tuntiennustetta, ja kortti kertoo, mihin ennuste päättyy.

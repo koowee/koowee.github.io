@@ -45,6 +45,8 @@ The estimate is a guide, not a statistical probability and not a promise. The au
 
 "Tonight" moves on to the coming night at 4 am local time. After that the card still shows **Rest of the night** if some of the night is left.
 
+When clouds take a clear share of tonight's chance, the app checks the cloud forecast 30 and 60 km away in eight directions. If somewhere has a clearly better chance, the card shows for example *Clearer 30 km north: 55% at 22–01*. Tap it for driving directions in Maps. The search works in the Nordic countries, which the Finnish Meteorological Institute's forecast covers.
+
 ### Next nights
 
 Each night has its own strip with its hours from 6 pm to 6 am. Each square is coloured by that hour's estimate, in the same colours as the percentages, and the night's best hour is outlined. An empty square is an hour that has passed or is light. A square with a dashed outline is an hour the hourly forecast does not reach yet, and the card says when the forecast ends.
