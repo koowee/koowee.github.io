@@ -124,6 +124,8 @@ iPhonen ja iPadin Kirjanpainajalla lähetetään kuitteja Macille ja katsotaan l
 2. Varmista, että tallennuskansio näkyy iPhonen tai iPadin **Tiedostot**-sovelluksessa. Dropbox, Google Drive ja OneDrive tarvitsevat oman sovelluksensa, joka laitetaan päälle Tiedostot-sovelluksen kohdassa **Selaa → Muokkaa**.
 3. Valitse iPhonessa tai iPadissa sama tallennuskansio kuin Macilla.
 
+Ennen kansion valintaa **Kokeile esimerkkiluvuilla** näyttää keksityn vuoden luvut, joten näet, miltä sovellus näyttää.
+
 Puhelimen välilehdet:
 - **Kuitit**: skannaa kuitti tai valitse kuva tai tiedosto. Kuitti menee Macin Saapuneisiin. Kytkimellä **Lähetä liitteenä** tiedosto lähetetään liitteeksi olemassa olevaan kirjaukseen.
 - **Yleiskatsaus**, **Kirjaukset** ja **Veroilmoitukset**: Macin viimeksi kirjoittamat luvut. Vedä alas hakeaksesi uusimmat.

@@ -124,6 +124,8 @@ The iPhone and iPad app sends receipts to your Mac and shows the figures. It nev
 2. Make sure the storage folder shows in the **Files** app on the iPhone or iPad. Dropbox, Google Drive and OneDrive need their own app, which you then turn on in Files under **Browse → Edit**.
 3. On the iPhone or iPad, choose the same storage folder as on the Mac.
 
+Before you choose a folder, **Kokeile esimerkkiluvuilla** (Try with sample figures) shows an invented year, so you can see what the app looks like.
+
 The phone's tabs:
 - **Kuitit** (Receipts): scan a receipt or pick a photo or file. It goes to the Mac's inbox. With **Lähetä liitteenä** (Send as attachment), the file goes to an existing entry as an attachment.
 - **Yleiskatsaus**, **Kirjaukset** and **Veroilmoitukset** (Overview, Entries, Tax returns): the figures the Mac wrote last. Pull down to get the newest.
