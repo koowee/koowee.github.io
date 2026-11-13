@@ -21,7 +21,7 @@ const HOME = {
 };
 const PLATFORM_TAGS: Record<string, string> = {
   cadence: 'iPhone · iPad',
-  kirjanpainaja: 'Mac · iPhone',
+  kirjanpainaja: 'Mac · iPhone · iPad',
   repovahti: 'iPhone · iPad',
   hilpertti: 'iPad · iPhone',
 };

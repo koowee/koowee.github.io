@@ -1,6 +1,6 @@
 ---
 title: "Kirjanpainajan tuki"
-description: "Kirjanpainajan käyttöönotto Macilla ja iPhonella, usein kysyttyä ja yhteystiedot."
+description: "Kirjanpainajan käyttöönotto Macilla, iPhonella ja iPadilla, usein kysyttyä ja yhteystiedot."
 ---
 [Ohje](/fi/kirjanpainaja/guide/) kertoo sovelluksen kaikista osista. Se on tiivistelmä Mac-sovelluksen omasta ohjeesta, joka on kohdassa **Ohje → Kirjanpainajan ohje**.
 
@@ -10,7 +10,7 @@ description: "Kirjanpainajan käyttöönotto Macilla ja iPhonella, usein kysytty
 2. Valitse toimialasi, joka määrää aloituskategoriat.
 3. Lisää kirjauksia, liitä kuitit ja tarkista luvut kohdasta **Veroilmoitukset**.
 
-iPhone-sovellusta varten valitse sama tallennuskansio Tiedostoissa. Skannaamasi kuitit menevät kansion kohtaan *Kirjanpainaja/Saapuneet*, ja Mac kirjaa ne tavalliseen tapaan.
+iPhone- ja iPad-sovellusta varten valitse sama tallennuskansio Tiedostoissa. Skannaamasi kuitit menevät kansion kohtaan *Kirjanpainaja/Saapuneet*, ja Mac kirjaa ne tavalliseen tapaan.
 
 ## Usein kysyttyä
 
@@ -21,9 +21,9 @@ Tietokanta on sovelluksen omassa säilössä Macillasi, ja kuitit ovat tallennus
 </details>
 
 <details>
-<summary>Miksi iPhone ei näytä uusimpia lukuja?</summary>
+<summary>Miksi iPhone tai iPad ei näytä uusimpia lukuja?</summary>
 
-iPhone näyttää tilannekuvan, jonka Mac kirjoittaa kohdassa Asetukset → Yleiset → Mobiilisovellus. Päivitä se Macilla, odota kansion synkronointia ja vedä iPhonessa alas päivittääksesi. Dropbox, Google Drive ja OneDrive voivat näyttää puhelimelle vanhaa versiota. Silloin luvuille kannattaa valita iCloud Driven mobiilikansio, katso [ohje](/fi/kirjanpainaja/guide/#iphone-ja-ipad).
+Mobiilisovellus näyttää tilannekuvan, jonka Mac kirjoittaa kohdassa Asetukset → Yleiset → Mobiilisovellus. Päivitä se Macilla, odota kansion synkronointia ja vedä mobiilisovelluksessa alas päivittääksesi. Dropbox, Google Drive ja OneDrive voivat näyttää puhelimelle vanhaa versiota. Silloin luvuille kannattaa valita iCloud Driven mobiilikansio, katso [ohje](/fi/kirjanpainaja/guide/#iphone-ja-ipad).
 </details>
 
 <details>

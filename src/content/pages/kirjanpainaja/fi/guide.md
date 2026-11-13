@@ -1,6 +1,6 @@
 ---
 title: "Kirjanpainajan ohje"
-description: "Näin käytät Kirjanpainajaa: käyttöönotto, kirjaukset ja kuitit, ALV, laskutus, sopimukset, maksujen täsmäytys, veroilmoitukset, vuoden päättäminen, varmuuskopiot ja iPhone-sovellus."
+description: "Näin käytät Kirjanpainajaa: käyttöönotto, kirjaukset ja kuitit, ALV, laskutus, sopimukset, maksujen täsmäytys, veroilmoitukset, vuoden päättäminen, varmuuskopiot sekä iPhone- ja iPad-sovellus."
 ---
 Tämä on tiivistelmä Mac-sovelluksen omasta ohjeesta, joka on kohdassa **Ohje → Kirjanpainajan ohje**. Sovelluksen ohje on tarkempi. Painikkeet on nimetty kuten sovelluksessa.
 
@@ -15,7 +15,7 @@ Kirjanpainaja **ei**:
 - hoida henkilöverotusta, kuten kotitalousvähennystä.
 - ota yhteyttä pankkiin. Tiliotteet tuodaan tiedostoina.
 
-Luvut lasketaan näiden oletusten mukaan. Jos jokin ei sovi tilanteeseesi, kysy kirjanpitäjältä tai Verohallinnolta ennen kuin käytät lukuja.
+Kirjanpainaja ei ole vero- tai kirjanpitoneuvontaa. Tarkista luvut ennen ilmoittamista. Luvut lasketaan näiden oletusten mukaan. Jos jokin ei sovi tilanteeseesi, kysy kirjanpitäjältä tai Verohallinnolta ennen kuin käytät lukuja.
 - Toimintamuodot ovat toiminimen elinkeinotoiminta (lomake 5) ja metsätalous (lomake 2C). Muita yritysmuotoja ei tueta.
 - ALV-ilmoitus lasketaan koko kalenterivuodelta, ja kanta valitaan kirjauksen päivän mukaan, paitsi hyvityslaskussa, joka käyttää alkuperäisen laskun kantaa.
 - Kirjaus kuuluu kirjauksen päivän vuoteen.
@@ -121,8 +121,8 @@ Lukitun vuoden saa auki painikkeella **Avaa lukitus…**. Syy tallentuu muutoslo
 iPhonen ja iPadin Kirjanpainajalla lähetetään kuitteja Macille ja katsotaan lukuja. Se ei muuta kirjanpitoa.
 
 1. Ota Macilla käyttöön **Asetukset → Yleiset → Mobiilisovellus**. Mac kirjoittaa silloin luvut tallennuskansioon.
-2. Varmista, että tallennuskansio näkyy puhelimen **Tiedostot**-sovelluksessa. Dropbox, Google Drive ja OneDrive tarvitsevat oman sovelluksensa, joka laitetaan päälle Tiedostot-sovelluksen kohdassa **Selaa → Muokkaa**.
-3. Valitse puhelimessa sama tallennuskansio kuin Macilla.
+2. Varmista, että tallennuskansio näkyy iPhonen tai iPadin **Tiedostot**-sovelluksessa. Dropbox, Google Drive ja OneDrive tarvitsevat oman sovelluksensa, joka laitetaan päälle Tiedostot-sovelluksen kohdassa **Selaa → Muokkaa**.
+3. Valitse iPhonessa tai iPadissa sama tallennuskansio kuin Macilla.
 
 Puhelimen välilehdet:
 - **Kuitit**: skannaa kuitti tai valitse kuva tai tiedosto. Kuitti menee Macin Saapuneisiin. Kytkimellä **Lähetä liitteenä** tiedosto lähetetään liitteeksi olemassa olevaan kirjaukseen.
