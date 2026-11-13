@@ -17,7 +17,7 @@ Kirjanpainaja **ei**:
 
 Kirjanpainaja ei ole vero- tai kirjanpitoneuvontaa. Tarkista luvut ennen ilmoittamista. Luvut lasketaan näiden oletusten mukaan. Jos jokin ei sovi tilanteeseesi, kysy kirjanpitäjältä tai Verohallinnolta ennen kuin käytät lukuja.
 - Toimintamuodot ovat toiminimen elinkeinotoiminta (lomake 5) ja metsätalous (lomake 2C). Muita yritysmuotoja ei tueta.
-- ALV-ilmoitus lasketaan koko kalenterivuodelta, ja kanta valitaan kirjauksen päivän mukaan, paitsi hyvityslaskussa, joka käyttää alkuperäisen laskun kantaa.
+- ALV-ilmoitus lasketaan vuodelle valitun ALV-kauden mukaan (kuukausi, neljännesvuosi tai kalenterivuosi), ja kanta valitaan kirjauksen päivän mukaan, paitsi hyvityslaskussa, joka käyttää alkuperäisen laskun kantaa.
 - Kirjaus kuuluu kirjauksen päivän vuoteen.
 - Myyntilaskun myynti kirjataan toimituspäivälle (suoriteperuste).
 
@@ -71,6 +71,8 @@ Jokaisella kirjauksella on summa, ALV-käsittely ja ALV-kanta. Valitse kohdasta 
 - Kanta haetaan päivän mukaan, joten esimerkiksi 1.9.2024 voimaan tullut 25,5 % ja 1.1.2026 voimaan tullut 13,5 % menevät oikein.
 - Kun toimiala on sähkötyöt tai rakennustyöt, mukana on rakentamispalvelun käännetty ALV.
 
+Vuoden ALV-kausi ja se, mistä kuukaudesta alkaen olet ALV-velvollinen, valitaan kohdassa **Asetukset → Verotus → Arvonlisävero**. Kautta ei voi vaihtaa kesken vuoden. Metsänomistaja on alkutuottaja: pelkän maa- tai metsätalouden ALV-kausi on kalenterivuosi. Jos sinulla on myös toiminimi, molempien ALV ilmoitetaan samalla ilmoituksella, joten tarkista oma kautesi OmaVerosta.
+
 ## Laskutus
 
 Laskutus-sivulla tehdään myyntilaskut, paikan päällä maksettujen myyntien kuitit ja hyvityslaskut. Täytä ensin **Asetukset → Yleiset → Toiminimen tiedot**: nimi, Y-tunnus, osoite ja IBAN.
@@ -102,14 +104,18 @@ Maksujen täsmäytys otetaan käyttöön kohdassa **Asetukset → Yleiset → N�
 
 Veroilmoitukset-sivu näyttää ALV-ilmoituksen sekä lomakkeet 2C ja 5 samassa järjestyksessä kuin OmaVerossa. Luvun vieressä on kopiointipainike, joka kopioi luvun OmaVeron muodossa (esimerkiksi 1092,96). Luvun avaaminen näyttää kirjaukset, joista se koostuu.
 
-Kun olet jättänyt ilmoituksen, liitä sen PDF lomakkeelle painikkeella **Liitä jätetty ilmoitus…**. Vuosilta ennen Kirjanpainajaa voi säilyttää vanhat aineistot sellaisinaan.
+Kuukauden tai neljännesvuoden ALV-kaudella ALV-lomake luettelee vuoden kaudet: tila, määräpäivä ja maksettava vero. Kauden avaaminen näyttää sen rivit. Tyhjäkin kausi ilmoitetaan.
+
+Kun olet antanut kauden ALV-ilmoituksen, paina **Merkitse ilmoitetuksi**. Kauden ALV-luvut jäädytetään, eikä kauden kirjauksia voi muuttaa niin, että ALV muuttuisi. **Avaa lukitus…** avaa kauden, ja syy tallentuu muutoslokiin. Jos luvut ovat muuttuneet, kun kausi merkitään uudelleen, Kirjanpainaja näyttää erotuksen ja kehottaa tekemään korjausilmoituksen OmaVerossa.
+
+Kun olet jättänyt ilmoituksen, liitä sen PDF lomakkeelle painikkeella **Liitä jätetty ilmoitus…**. Kuukauden tai neljännesvuoden kaudella ALV-ilmoitus liitetään avatulle kaudelle (`2026 ALV Q1.pdf`). Vuosilta ennen Kirjanpainajaa voi säilyttää vanhat aineistot sellaisinaan.
 
 ## Vuoden päättäminen ja lukitus
 
 **Vuoden päättäminen** -sivu kokoaa vuoden viimeiset vaiheet:
 
 1. **Tarkistukset.** **Tarkista nämä** -huomautukset, kuten puuttuva kuitti tai kategoria, pitää korjata tai kuitata. Kuittaukseen kirjoitetaan aina syy. **Tiedoksi**-kohdat eivät estä lukitusta.
-2. **Ilmoitukset.** Tarkista, että jokaiselle lomakkeelle, jolla on lukuja, on liitetty jätetty ilmoitus. Jos ilmoitusta ei tarvinnut antaa, kuittaa sen huomautus vaiheessa 1.
+2. **Ilmoitukset.** Tarkista, että jokaiselle lomakkeelle, jolla on lukuja, on liitetty jätetty ilmoitus. Jos ilmoitusta ei tarvinnut antaa, kuittaa sen huomautus vaiheessa 1. Jokainen ALV-kausi pitää myös merkitä ilmoitetuksi ennen lukitusta.
 3. **Lukitus.** **Lukitse vuosi…** jäädyttää veroilmoitusten luvut ja tallentaa niille tarkistussumman. Lukitun vuoden kirjauksia ei voi muuttaa.
 4. **Varmuuskopio.** Lukitus ottaa heti varmuuskopion.
 5. **Vuosiarkisto.** **Tallenna vuosiarkisto…** tallentaa vuoden Excelin, kuitit, liitteet, jätetyt ilmoitukset ja kuittaukset yhdeksi zip-tiedostoksi.
