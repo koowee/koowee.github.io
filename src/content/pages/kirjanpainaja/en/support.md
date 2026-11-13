@@ -1,6 +1,6 @@
 ---
 title: "Kirjanpainaja support"
-description: "Getting started with Kirjanpainaja on the Mac and iPhone, common questions and how to get help."
+description: "Getting started with Kirjanpainaja on the Mac, iPhone and iPad, common questions and how to get help."
 ---
 The [guide](/kirjanpainaja/guide/) covers every part of the app. It is a summary of the Mac app's own guide, under **Ohje → Kirjanpainajan ohje** (Help → Kirjanpainaja guide).
 
@@ -10,7 +10,7 @@ The [guide](/kirjanpainaja/guide/) covers every part of the app. It is a summary
 2. Choose your line of business, which sets the starting categories.
 3. Add entries, attach receipts and check the figures under **Veroilmoitukset**.
 
-To use the iPhone app, choose the same storage folder in Files. Receipts you scan go into the folder's *Kirjanpainaja/Saapuneet*, and the Mac books them as usual.
+To use the iPhone or iPad app, choose the same storage folder in Files. Receipts you scan go into the folder's *Kirjanpainaja/Saapuneet*, and the Mac books them as usual.
 
 ## Frequently asked questions
 
@@ -21,9 +21,9 @@ The database is stored in the app's own container on your Mac, and receipts are 
 </details>
 
 <details>
-<summary>Why does the iPhone app not show my latest figures?</summary>
+<summary>Why does the iPhone or iPad app not show my latest figures?</summary>
 
-The iPhone shows a snapshot that the Mac writes under Asetukset → Yleiset → Mobiilisovellus. Update it on the Mac, wait for your folder to sync, then pull down to reload on the iPhone. Dropbox, Google Drive and OneDrive can show the phone an older copy. In that case choose an iCloud Drive mobile folder for the figures, see the [guide](/kirjanpainaja/guide/#iphone-and-ipad).
+The mobile app shows a snapshot that the Mac writes under Asetukset → Yleiset → Mobiilisovellus. Update it on the Mac, wait for your folder to sync, then pull down to reload in the mobile app. Dropbox, Google Drive and OneDrive can show the phone an older copy. In that case choose an iCloud Drive mobile folder for the figures, see the [guide](/kirjanpainaja/guide/#iphone-and-ipad).
 </details>
 
 <details>

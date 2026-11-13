@@ -1,6 +1,6 @@
 ---
 title: "Kirjanpainaja guide"
-description: "How to use Kirjanpainaja: setup, entries and receipts, VAT, invoicing, contracts, payment matching, tax returns, closing the year, backups and the iPhone app."
+description: "How to use Kirjanpainaja: setup, entries and receipts, VAT, invoicing, contracts, payment matching, tax returns, closing the year, backups and the iPhone and iPad app."
 ---
 This is a summary of the Mac app's own guide, under **Ohje → Kirjanpainajan ohje** (Help → Kirjanpainaja guide). The guide in the app has more detail. The app is in Finnish, so the button names below are given in Finnish with a translation.
 
@@ -15,7 +15,7 @@ Kirjanpainaja does **not**:
 - handle personal taxation, such as the household tax credit.
 - connect to your bank. Bank statements are imported as files.
 
-The figures rest on these assumptions. If one doesn't fit your situation, ask an accountant or the Tax Administration before you use the figures.
+Kirjanpainaja is not tax or accounting advice. Check the figures before you file. The figures rest on these assumptions. If one doesn't fit your situation, ask an accountant or the Tax Administration before you use the figures.
 - The supported forms are a sole proprietorship's business income (form 5) and forestry (form 2C). Other company types are not supported.
 - The VAT return covers the whole calendar year, and the rate is chosen by the entry's date, except on a credit note, which uses the original invoice's rate.
 - An entry belongs to the year of its date.
@@ -121,8 +121,8 @@ A locked year is opened with **Avaa lukitus…** (Unlock), and the reason goes i
 The iPhone and iPad app sends receipts to your Mac and shows the figures. It never changes your books.
 
 1. On the Mac, turn on **Asetukset → Yleiset → Mobiilisovellus** (Settings → General → Mobile app). The Mac then writes the figures into the storage folder.
-2. Make sure the storage folder shows in the phone's **Files** app. Dropbox, Google Drive and OneDrive need their own app, which you then turn on in Files under **Browse → Edit**.
-3. On the phone, choose the same storage folder as on the Mac.
+2. Make sure the storage folder shows in the **Files** app on the iPhone or iPad. Dropbox, Google Drive and OneDrive need their own app, which you then turn on in Files under **Browse → Edit**.
+3. On the iPhone or iPad, choose the same storage folder as on the Mac.
 
 The phone's tabs:
 - **Kuitit** (Receipts): scan a receipt or pick a photo or file. It goes to the Mac's inbox. With **Lähetä liitteenä** (Send as attachment), the file goes to an existing entry as an attachment.
