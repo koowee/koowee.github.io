@@ -1,0 +1,18 @@
+{
+  "slug": "braining",
+  "name": "Braining",
+  "tagline": {
+    "en": "Speak a thought, get a Markdown note.",
+    "fi": "Puhu ajatus, saat Markdown-muistiinpanon."
+  },
+  "platforms": [
+    "iPhone",
+    "iPad",
+    "Mac"
+  ],
+  "status": "coming-soon",
+  "accent": "#7b6cff",
+  "icon": "../../assets/icons/braining.png",
+  "order": 5,
+  "iconStyle": "ios"
+}

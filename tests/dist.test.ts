@@ -14,7 +14,7 @@ test('home pages carry their language', () => {
   assert.match(readPage('fi'), /<html lang="fi"/);
 });
 
-const ORDER = ['cadence', 'kirjanpainaja', 'repovahti', 'hilpertti'];
+const ORDER = ['cadence', 'kirjanpainaja', 'repovahti', 'hilpertti', 'braining'];
 const HOME = {
   en: { dir: '', prefix: '/', hero: 'Apps for iPhone, iPad and Mac', status: 'Coming soon' },
   fi: { dir: 'fi', prefix: '/fi/', hero: 'Sovelluksia iPhonelle, iPadille ja Macille', status: 'Tulossa' },
@@ -24,6 +24,7 @@ const PLATFORM_TAGS: Record<string, string> = {
   kirjanpainaja: 'Mac · iPhone · iPad',
   repovahti: 'iPhone · iPad',
   hilpertti: 'iPad · iPhone',
+  braining: 'iPhone · iPad · Mac',
 };
 
 test('home lists all apps in order', () => {
@@ -92,7 +93,7 @@ test('exactly the expected pages', () => {
   const redirects = ['', 'fi/'].flatMap((lang) =>
     ['', 'guide/', 'support/', 'privacy/'].map((page) => `${lang}revontulet/${page}index.html`));
   const expected = [...EXPECTED_PATHS.map(toFile), '404.html', ...redirects].sort();
-  assert.equal(expected.length, 45);
+  assert.equal(expected.length, 51);
   assert.deepEqual(files, expected);
 });
 
@@ -316,4 +317,12 @@ test('English Repovahti pages have no Finnish UI words', () => {
       assert.ok(!plain.includes(word), `${page}: ${word}`);
     }
   }
+});
+
+test('braining pages say where transcription happens and who stores the files', () => {
+  assert.match(readPage('braining'), /transcribes.{0,40}on your Mac/);
+  assert.match(readPage('fi/braining'), /litteroi.{0,40}Macillasi/);
+  for (const p of ['braining/privacy', 'fi/braining/privacy']) assert.match(readPage(p), /iCloud Drive/, p);
+  assert.match(readPage('braining/privacy'), /microphone/);
+  assert.match(readPage('fi/braining/privacy'), /mikrofoni/);
 });
