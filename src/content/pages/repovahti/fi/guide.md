@@ -63,7 +63,7 @@ Kaaviossa palkit ovat tunnin arvio ja katkoviiva pilvisyys. Vihreä katkoviiva o
 
 Jokaiselle tunnille lasketaan neljä tekijää, ja arvio on niiden tulo: aktiivisuus, selkeys, pimeys ja kuunvalo.
 
-- **Aktiivisuus** tulee NOAA:n Kp-ennusteesta ja siitä, kuinka lähellä revontulivyöhykettä paikka on. Kuluvalle ja seuraavalle tunnille mukaan tulevat myös lähimmän Ilmatieteen laitoksen magnetometrin R-luku, jos asema on alle 300 km päässä, ja NOAA:n reaaliaikainen OVATION-malli.
+- **Aktiivisuus** tulee NOAA:n Kp-ennusteesta ja siitä, kuinka lähellä revontulivyöhykettä paikka on. Kuluvalle ja seuraavalle tunnille mukaan tulevat myös lähimmän Ilmatieteen laitoksen magnetometrin R-luku, jos asema on alle 300 km päässä, ja NOAA:n reaaliaikainen OVATION-malli. Etelään kääntynyt aurinkotuulen Bz nostaa näiden tuntien Kp:tä.
 - **Selkeys** on 100 % miinus pilvisyys Ilmatieteen laitoksen ennusteesta, joka ulottuu noin 9 vuorokauden päähän ja kattaa Pohjoismaat ja lähialueet (kauempana pilvisyydeksi oletetaan 50 %). Pilvet lasketaan kerroksittain: suurin luvuista matala, keskikorkea ja puolet korkeasta, enintään kokonaispilvisyys, koska ohut yläpilvi haittaa vähemmän.
 - **Pimeys** lasketaan Auringon korkeudesta: täysin pimeää on, kun Aurinko on yli 12 astetta horisontin alapuolella.
 - **Kuunvalo**: kirkas kuu peittää heikot revontulet. Kuunvalo lasketaan kuun vaiheesta ja korkeudesta, ja se laskee arviota enintään 30 %, eniten heikolla aktiivisuudella.
@@ -80,7 +80,7 @@ Kortin kartta näyttää NOAA:n OVATION-mallin revontulivyöhykkeen noin 30–90
 
 ### Aurinkotuuli
 
-Aurinkotuulen arvot tulevat NOAA:n mittauksista Maan ja Auringon välissä. Kun Bz on etelään (alle −5 nT), revontulet voimistuvat usein noin tunnin päästä. Mittauspiste on noin 1,5 miljoonan kilometrin päässä, joten kortti kertoo nopeudesta lasketun ajan, jolloin mitattu tuuli on Maassa. Käyrä näyttää Bz:n kahden viime tunnin ajalta, ja katkoviiva on −5 nT:n kohdalla. Pisteviiva on alin mahdollinen Bz: Bz voi kääntyä etelään enintään magneettikentän kokonaisvoimakkuuden (Bt) verran. Aurinkotuuli on vain tiedoksi, eikä se muuta arviota.
+Aurinkotuulen arvot tulevat NOAA:n mittauksista Maan ja Auringon välissä. Kun Bz on etelään (alle −5 nT), revontulet voimistuvat usein noin tunnin päästä. Mittauspiste on noin 1,5 miljoonan kilometrin päässä, joten kortti kertoo nopeudesta lasketun ajan, jolloin mitattu tuuli on Maassa. Käyrä näyttää Bz:n kahden viime tunnin ajalta, ja katkoviiva on −5 nT:n kohdalla. Pisteviiva on alin mahdollinen Bz: Bz voi kääntyä etelään enintään magneettikentän kokonaisvoimakkuuden (Bt) verran. Kun Bz on 15 minuutin keskiarvona alle −5 nT, se nostaa kuluvan ja seuraavan tunnin Kp:tä yhdellä, alle −10 nT kahdella ja alle −15 nT kolmella. Tunti saa silloin salaman (⚡︎). Pohjoiseen osoittava Bz ei laske arviota.
 
 ### Taivaskamera
 

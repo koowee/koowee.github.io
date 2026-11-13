@@ -63,7 +63,7 @@ In the chart, the bars are the hourly estimate and the dashed line is the cloud 
 
 Four factors are computed for each hour, and the estimate is their product: activity, clear sky, darkness and moonlight.
 
-- **Activity** comes from NOAA's Kp forecast and how close the place is to the auroral oval. For the current and next hour it also uses the R-index of the nearest Finnish Meteorological Institute magnetometer, if one is within 300 km, and NOAA's real-time OVATION model.
+- **Activity** comes from NOAA's Kp forecast and how close the place is to the auroral oval. For the current and next hour it also uses the R-index of the nearest Finnish Meteorological Institute magnetometer, if one is within 300 km, and NOAA's real-time OVATION model. A southward solar wind Bz raises the Kp of these hours.
 - **Clear sky** is 100 % minus cloud cover from the Finnish Meteorological Institute's forecast, which reaches about 9 days ahead and covers the Nordic countries and nearby areas (farther away 50 % cloud is assumed). Cloud is counted by layer: the largest of low, middle and half of high cloud, at most the total, because thin high cloud hides less.
 - **Darkness** comes from the Sun's elevation: it is fully dark when the Sun is more than 12 degrees below the horizon.
 - **Moonlight**: a bright moon hides a faint aurora. Moonlight is computed from the moon's phase and elevation, and it lowers the estimate by up to 30 %, most when activity is low.
@@ -80,7 +80,7 @@ The map on the card shows the aurora oval from NOAA's OVATION model about 30–9
 
 ### Solar wind
 
-The solar wind values come from NOAA's measurements between the Earth and the Sun. When Bz points south (below −5 nT), the aurora often strengthens about an hour later. The spacecraft is about 1.5 million km away, so the card gives the time, worked out from the speed, when the measured wind reaches the Earth. The curve shows Bz over the last two hours, with a dashed line at −5 nT. The dotted line is the lowest possible Bz, the total field strength (Bt) with a minus sign: Bz can turn south at most that far. The solar wind is shown for information only and does not change the estimate.
+The solar wind values come from NOAA's measurements between the Earth and the Sun. When Bz points south (below −5 nT), the aurora often strengthens about an hour later. The spacecraft is about 1.5 million km away, so the card gives the time, worked out from the speed, when the measured wind reaches the Earth. The curve shows Bz over the last two hours, with a dashed line at −5 nT. The dotted line is the lowest possible Bz, the total field strength (Bt) with a minus sign: Bz can turn south at most that far. When the 15-minute mean Bz is below −5 nT, it raises the Kp of the current and the next hour by one, below −10 nT by two and below −15 nT by three. The hour then gets a lightning mark (⚡︎). A northward Bz never lowers the estimate.
 
 ### Sky camera
 
