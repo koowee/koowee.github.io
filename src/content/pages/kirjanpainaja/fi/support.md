@@ -41,7 +41,7 @@ Vain avaamalla lukituksen kirjallisella perustelulla. Perustelu ja aiemmat luvut
 <details>
 <summary>Voinko tuoda vanhan kirjanpitoni toisesta ohjelmasta?</summary>
 
-Voit tuoda menneet vuodet historiaksi Tuonti-sivulla painikkeella Tuo vanha vuosi taulukosta… Vie vanha kirjanpito ohjelmasta CSV- tai Excel-tiedostona. Historia näkyy Analyysissä vertailua varten, mutta siitä ei tehdä veroilmoituksia. Katso [ohje](/fi/kirjanpainaja/guide/#käyttöönotto).
+Voit tuoda menneet vuodet historiaksi Tuonti-sivulla painikkeella Tuo vanha vuosi taulukosta… Vie vanha kirjanpito ohjelmasta CSV- tai Excel-tiedostona. Historia näkyy Analyysissä vertailua varten, mutta siitä ei tehdä veroilmoituksia. Katso [ohjeen](/fi/kirjanpainaja/guide/) kohta Käyttöönotto.
 </details>
 
 <details>
