@@ -62,15 +62,15 @@ await check('long Finnish words fit at 320 px', async () => {
   await page.close();
 });
 
-await check('keyboard reaches header links, then the five cards in order', async () => {
+await check('keyboard reaches header links, then the six cards in order', async () => {
   const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
   await page.goto(BASE + '/');
   const seen = [];
-  for (let i = 0; i < 8; i++) {
+  for (let i = 0; i < 9; i++) {
     await page.keyboard.press('Tab');
     seen.push(await page.evaluate(() => document.activeElement?.getAttribute('href')));
   }
-  assert.deepEqual(seen, ['/', '/', '/fi/', '/cadence/', '/kirjanpainaja/', '/repovahti/', '/hilpertti/', '/braining/']);
+  assert.deepEqual(seen, ['/', '/', '/fi/', '/cadence/', '/kirjanpainaja/', '/repovahti/', '/hilpertti/', '/braining/', '/lataamo/']);
   await page.close();
 });
 

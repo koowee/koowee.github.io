@@ -1,0 +1,16 @@
+{
+  "slug": "lataamo",
+  "name": "Lataamo",
+  "tagline": {
+    "en": "The nearest free charger, with its price.",
+    "fi": "Lähin vapaa laturi ja sen hinta yhdellä silmäyksellä."
+  },
+  "platforms": [
+    "iPhone"
+  ],
+  "status": "coming-soon",
+  "accent": "#3ddc84",
+  "icon": "../../assets/icons/lataamo.png",
+  "order": 6,
+  "iconStyle": "ios"
+}
