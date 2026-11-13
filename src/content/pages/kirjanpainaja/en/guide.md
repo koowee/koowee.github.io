@@ -17,7 +17,7 @@ Kirjanpainaja does **not**:
 
 Kirjanpainaja is not tax or accounting advice. Check the figures before you file. The figures rest on these assumptions. If one doesn't fit your situation, ask an accountant or the Tax Administration before you use the figures.
 - The supported forms are a sole proprietorship's business income (form 5) and forestry (form 2C). Other company types are not supported.
-- The VAT return covers the whole calendar year, and the rate is chosen by the entry's date, except on a credit note, which uses the original invoice's rate.
+- The VAT return follows the VAT period chosen for the year (month, quarter or calendar year), and the rate is chosen by the entry's date, except on a credit note, which uses the original invoice's rate.
 - An entry belongs to the year of its date.
 - A sales invoice is booked on its delivery date (accrual basis).
 
@@ -71,6 +71,8 @@ Each entry has an amount, a VAT treatment and a VAT rate. Under **Summa on** (Am
 - The rate comes from the entry's date, so for example 25.5 %, in force from 1 September 2024, and 13.5 %, in force from 1 January 2026, are applied correctly.
 - When the line of business is electrical or construction work, the reverse-charge VAT for construction services is available.
 
+The year's VAT period, and the month from which you are liable for VAT, are chosen under **Asetukset → Verotus → Arvonlisävero** (Settings → Taxation → VAT). The period can't change in the middle of a year. A forest owner is a primary producer: farming or forestry alone has the calendar year as its VAT period. If you also have a sole proprietorship, the VAT of both goes on the same return, so check your own period in OmaVero.
+
 ## Invoicing
 
 The Laskutus (Invoicing) page makes sales invoices, receipts for sales paid on the spot, and credit notes. First fill in **Asetukset → Yleiset → Toiminimen tiedot** (Settings → General → Business details): name, business ID, address and IBAN.
@@ -102,14 +104,18 @@ The **Maksut** (Payments) page suggests which statement row pays which entry. A 
 
 The Veroilmoitukset (Tax returns) page shows the VAT return and forms 2C and 5 in the same order as OmaVero. Next to each figure is a copy button that copies it in OmaVero's format (for example 1092,96). Opening a figure shows the entries it is made of.
 
-Once you have filed a return, attach its PDF to the form with **Liitä jätetty ilmoitus…** (Attach filed return). For years before Kirjanpainaja you can keep old material as it is.
+With a monthly or quarterly VAT period, the VAT form lists the year's periods with their state, deadline and VAT payable. Opening a period shows its lines. An empty period is still reported.
+
+Once you have filed a period's VAT return, press **Merkitse ilmoitetuksi** (Mark as filed). The period's VAT figures are frozen, and its entries can't change in a way that would change the VAT. **Avaa lukitus…** (Unlock) opens the period again, and the reason goes into the change log. If the figures changed when you mark the period again, Kirjanpainaja shows the difference and tells you to file a correction return in OmaVero.
+
+Once you have filed a return, attach its PDF to the form with **Liitä jätetty ilmoitus…** (Attach filed return). With a monthly or quarterly period, the VAT return is attached to the opened period (`2026 ALV Q1.pdf`). For years before Kirjanpainaja you can keep old material as it is.
 
 ## Closing and locking the year
 
 The **Vuoden päättäminen** (Closing the year) page brings the last steps together:
 
 1. **Review.** Each **Tarkista nämä** (Check these) finding, such as a missing receipt or category, must be fixed or acknowledged. An acknowledgement always needs a reason. **Tiedoksi** (For information) items don't block locking.
-2. **Returns.** Check that a filed return is attached to every form that has figures. If a return wasn't needed, acknowledge its finding in step 1.
+2. **Returns.** Check that a filed return is attached to every form that has figures. If a return wasn't needed, acknowledge its finding in step 1. Every VAT period must also be marked as filed before locking.
 3. **Lock.** **Lukitse vuosi…** (Lock year) freezes the tax return figures and stores a checksum for them. A locked year's entries can't be changed.
 4. **Backup.** Locking takes a backup straight away.
 5. **Year archive.** **Tallenna vuosiarkisto…** (Save year archive) saves the year's Excel file, receipts, attachments, filed returns and acknowledgements as one zip file.
