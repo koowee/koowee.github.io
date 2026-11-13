@@ -39,6 +39,18 @@ Vain avaamalla lukituksen kirjallisella perustelulla. Perustelu ja aiemmat luvut
 </details>
 
 <details>
+<summary>Voinko tuoda vanhan kirjanpitoni toisesta ohjelmasta?</summary>
+
+Voit tuoda menneet vuodet historiaksi Tuonti-sivulla painikkeella Tuo vanha vuosi taulukosta… Vie vanha kirjanpito ohjelmasta CSV- tai Excel-tiedostona. Historia näkyy Analyysissä vertailua varten, mutta siitä ei tehdä veroilmoituksia. Katso [ohje](/fi/kirjanpainaja/guide/#käyttöönotto).
+</details>
+
+<details>
+<summary>Pankkini tiliotetta ei tunnisteta. Mitä teen?</summary>
+
+Valitse avautuvassa ikkunassa, mikä sarake on päivä, summa ja muut tiedot, sekä tili, jonka ote on. Valinnat muistetaan saman pankin seuraavaa otetta varten.
+</details>
+
+<details>
 <summary>Miten saan yhteyden?</summary>
 
 Lähetä sähköpostia alla olevaan osoitteeseen. Kerro mielellään laitteesi ja järjestelmäversiosi, jos jokin ei toimi.

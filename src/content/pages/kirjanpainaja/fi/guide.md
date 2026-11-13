@@ -32,6 +32,8 @@ Kirjanpainaja ei ole vero- tai kirjanpitoneuvontaa. Tarkista luvut ennen ilmoitt
 
 Vanhan Excel-pohjan vuoden voi tuoda **Tuonti**-sivulla painikkeella **Tuo Excel-työkirja…**. Ennen tallennusta näet esikatselun, ja tuonnin voi perua.
 
+Muulla ohjelmalla tai omalla taulukolla pidetyt vanhat vuodet voi tuoda **historiaksi** painikkeella **Tuo vanha vuosi taulukosta…** (CSV tai Excel). Valitse, mikä sarake on päivä, selite, summa, ALV ja kategoria tai tili, ja anna jokaiselle tiedoston kategorialle sovelluksen kategoria. Valinnat muistetaan seuraavaa tiedostoa varten. Esikatselussa näet rivit sekä vuoden tulot, menot ja tuloksen osioittain. Historiavuosi näkyy Analyysissä ja vuosivertailussa merkinnällä "(historia)", mutta siitä ei tehdä veroilmoituksia, sitä ei lukita eikä siihen voi kirjata. Alkuperäinen tiedosto tallentuu vuoden Vanhat aineistot -kansioon. Historian voi perua Tuonti-sivulla.
+
 ## Vuoden kulku
 
 1. **Kuitit talteen.** Tallenna kuitit Saapuneet-kansioon tai suoraan Kirjaukset-sivulle.
@@ -91,6 +93,8 @@ Laskutus-sivulla tehdään myyntilaskut, paikan päällä maksettujen myyntien k
 ## Maksut ja tiliotteet
 
 Maksujen täsmäytys otetaan käyttöön kohdassa **Asetukset → Yleiset → Näytettävät ominaisuudet**. Pankin CSV, luottokortin Excel ja PayPalin CSV tuodaan **Tuonti**-sivulla. Jo tuodut rivit ohitetaan, joten päällekkäisiä tiliotteita voi tuoda huoletta.
+
+Muiden pankkien ja korttien CSV- tai Excel-otteet tuodaan samalla tavalla. Jos muotoa ei tunnisteta, valitse sarakkeet (päivä, summa tai erikseen pois ja sisään, saaja, selite, viesti, viite, saldo) ja tili, jonka ote on, tai luo uusi tili. Valinnat muistetaan, joten saman pankin seuraava ote avautuu valmiina ja vahvistat vain tilin. Valitse samalle tilille aina sama tili, niin jo tuodut rivit tunnistetaan.
 
 **Maksut**-sivu ehdottaa, mikä tiliotteen rivi maksaa minkäkin kirjauksen. Rivistä, jolle ei ole kirjausta, voi tehdä kirjauksen painikkeella **Tee kirjaus…**. Omat siirrot, kuten kortin maksu pankkitililtä, tunnistetaan, jotta mitään ei lasketa kahdesti. Tiliotteen rivi ei itse muuta veroilmoituksen lukuja.
 
