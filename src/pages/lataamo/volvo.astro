@@ -1,0 +1,30 @@
+---
+// Volvo ID sends the sign-in result here (an https redirect URI is required);
+// this page hands it to the Lataamo app, whose sign-in sheet waits for lataamo://volvo.
+---
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Lataamo · Volvo</title>
+    <style>
+      body { font-family: -apple-system, system-ui, sans-serif; margin: 0; padding: 48px 16px; text-align: center;
+             background: #fff; color: #111; }
+      @media (prefers-color-scheme: dark) { body { background: #000; color: #eee; } }
+      a { display: inline-block; margin-top: 16px; padding: 12px 20px; border-radius: 999px;
+          background: #3ddc84; color: #000; text-decoration: none; font-weight: 600; }
+    </style>
+    <script is:inline>
+      location.replace("lataamo://volvo" + location.search);
+    </script>
+  </head>
+  <body>
+    <p>Palataan Lataamoon…</p>
+    <a id="back" href="lataamo://volvo">Palaa Lataamoon</a>
+    <script is:inline>
+      document.getElementById("back").href = "lataamo://volvo" + location.search;
+    </script>
+  </body>
+</html>

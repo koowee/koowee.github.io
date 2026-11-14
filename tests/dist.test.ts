@@ -93,8 +93,8 @@ test('exactly the expected pages', () => {
   const files = listHtml(DIST).sort();
   const redirects = ['', 'fi/'].flatMap((lang) =>
     ['', 'guide/', 'support/', 'privacy/'].map((page) => `${lang}revontulet/${page}index.html`));
-  const expected = [...EXPECTED_PATHS.map(toFile), '404.html', ...redirects].sort();
-  assert.equal(expected.length, 57);
+  const expected = [...EXPECTED_PATHS.map(toFile), '404.html', ...redirects, 'lataamo/volvo/index.html'].sort();
+  assert.equal(expected.length, 58);
   assert.deepEqual(files, expected);
 });
 
@@ -333,4 +333,12 @@ test('lataamo pages credit the data source and keep the location on the phone', 
   assert.match(readPage('fi/lataamo'), /Fintraffic \/ digitraffic\.fi, lisenssi CC 4\.0 BY/);
   assert.match(readPage('lataamo/privacy'), /location is never sent anywhere/);
   assert.match(readPage('fi/lataamo/privacy'), /sijaintiasi lähetetä minnekään/);
+});
+
+test('Volvo sign-in returns to the Lataamo app', () => {
+  const html = readPage('lataamo/volvo');
+  assert.match(html, /<meta name="robots" content="noindex"/);
+  assert.ok(html.includes('"lataamo://volvo" + location.search'), 'script forwards the query');
+  assert.ok(html.includes('href="lataamo://volvo"'), 'fallback link');
+  assert.match(html, /<html lang="fi"/);
 });
