@@ -10,6 +10,6 @@ Keli is a free weather app for Garmin watches, guided by a moose of the same nam
 - **Hours and days.** The next twelve hours, then today and the next couple of days with highs, lows, wind and rain.
 - **Glance.** Check the weather at your current location straight from the watch's glance list.
 
-Keli is coming first to the Garmin fenix 8 Pro, with more watches to follow. The app is in English and Finnish.
+Keli is coming first to the Garmin fenix 7 Pro and fenix 8 Pro, with more watches to follow. The app is in English and Finnish.
 
 Weather data: Open-Meteo.com, license CC BY 4.0.

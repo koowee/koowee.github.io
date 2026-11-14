@@ -25,7 +25,7 @@ Open-Meteo.com-palvelusta, lisenssi CC BY 4.0. Keli hakee tiedot puhelimesi kaut
 <details>
 <summary>Missä kelloissa Keli toimii?</summary>
 
-Ensin Garmin fenix 8 Pro -kellossa. Muita malleja lisätään myöhemmin.
+Ensin Garmin fenix 7 Pro- ja fenix 8 Pro -kelloissa. Muita malleja lisätään myöhemmin.
 </details>
 
 <details>

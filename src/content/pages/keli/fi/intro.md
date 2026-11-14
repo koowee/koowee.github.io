@@ -10,6 +10,6 @@ Keli on ilmainen sääsovellus Garmin-kelloihin, oppaanaan samanniminen hirvi. S
 - **Tunnit ja päivät.** Seuraavat kaksitoista tuntia sekä tämä päivä ja pari seuraavaa ylin- ja alinlämpötiloineen, tuulineen ja sateineen.
 - **Pikanäkymä.** Katso nykyisen sijaintisi sää suoraan kellon pikanäkymälistasta.
 
-Keli tulee ensin Garmin fenix 8 Pro -kelloon, ja muita malleja seuraa. Sovellus on suomeksi ja englanniksi.
+Keli tulee ensin Garmin fenix 7 Pro- ja fenix 8 Pro -kelloihin, ja muita malleja seuraa. Sovellus on suomeksi ja englanniksi.
 
 Säädata: Open-Meteo.com, lisenssi CC BY 4.0.

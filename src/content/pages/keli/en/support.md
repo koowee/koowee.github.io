@@ -25,7 +25,7 @@ From Open-Meteo.com, licensed CC BY 4.0. Keli fetches it through your phone, so 
 <details>
 <summary>Which watches does Keli work on?</summary>
 
-First the Garmin fenix 8 Pro. More models will be added later.
+First the Garmin fenix 7 Pro and fenix 8 Pro. More models will be added later.
 </details>
 
 <details>
