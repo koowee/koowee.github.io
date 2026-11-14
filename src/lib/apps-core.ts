@@ -1,6 +1,6 @@
 // Pure helpers with no astro:* imports, so plain `node --test` can load them.
 
-export const PLATFORMS = ['iPhone', 'iPad', 'Mac', 'Apple Watch', 'Apple TV', 'Vision Pro', 'Android', 'Web'] as const;
+export const PLATFORMS = ['iPhone', 'iPad', 'Mac', 'Apple Watch', 'Apple TV', 'Vision Pro', 'Android', 'Garmin', 'Web'] as const;
 export type Platform = (typeof PLATFORMS)[number];
 export const PAGE_KINDS = ['intro', 'support', 'privacy'] as const;
 /** Pages an app has only when its JSON says so (`guide: true`). */

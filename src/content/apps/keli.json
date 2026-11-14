@@ -1,0 +1,16 @@
+{
+  "slug": "keli",
+  "name": "Keli",
+  "tagline": {
+    "en": "Weather for your places, wind included, on your Garmin.",
+    "fi": "Omien paikkojen sää tuulineen Garmin-kelloon."
+  },
+  "platforms": [
+    "Garmin"
+  ],
+  "status": "coming-soon",
+  "accent": "#466982",
+  "icon": "../../assets/icons/keli.png",
+  "order": 7,
+  "iconStyle": "ios"
+}
