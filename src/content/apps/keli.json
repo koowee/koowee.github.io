@@ -2,8 +2,8 @@
   "slug": "keli",
   "name": "Keli",
   "tagline": {
-    "en": "Weather for your places, wind included, on your Garmin.",
-    "fi": "Omien paikkojen sää tuulineen Garmin-kelloon."
+    "en": "Your weather buddy.",
+    "fi": "Sääkaveri aina mukana."
   },
   "platforms": [
     "Garmin"
