@@ -14,7 +14,7 @@ test('home pages carry their language', () => {
   assert.match(readPage('fi'), /<html lang="fi"/);
 });
 
-const ORDER = ['cadence', 'kirjanpainaja', 'repovahti', 'hilpertti', 'braining', 'lataamo', 'keli'];
+const ORDER = ['cadence', 'kirjanpainaja', 'repovahti', 'hilpertti', 'braining', 'lataamo', 'keli', 'palat-hukassa'];
 const HOME = {
   en: { dir: '', prefix: '/', hero: 'Apps for iPhone, iPad and Mac', status: 'Coming soon' },
   fi: { dir: 'fi', prefix: '/fi/', hero: 'Sovelluksia iPhonelle, iPadille ja Macille', status: 'Tulossa' },
@@ -27,6 +27,7 @@ const PLATFORM_TAGS: Record<string, string> = {
   braining: 'iPhone · iPad · Mac',
   lataamo: 'iPhone',
   keli: 'Garmin',
+  'palat-hukassa': 'iPad · iPhone',
 };
 
 test('home lists all apps in order', () => {
@@ -95,7 +96,7 @@ test('exactly the expected pages', () => {
   const redirects = ['', 'fi/'].flatMap((lang) =>
     ['', 'guide/', 'support/', 'privacy/'].map((page) => `${lang}revontulet/${page}index.html`));
   const expected = [...EXPECTED_PATHS.map(toFile), '404.html', ...redirects, 'lataamo/volvo/index.html'].sort();
-  assert.equal(expected.length, 64);
+  assert.equal(expected.length, 70);
   assert.deepEqual(files, expected);
 });
 
