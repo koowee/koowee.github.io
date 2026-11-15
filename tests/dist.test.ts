@@ -16,8 +16,8 @@ test('home pages carry their language', () => {
 
 const ORDER = ['cadence', 'kirjanpainaja', 'repovahti', 'hilpertti', 'braining', 'lataamo', 'keli', 'palat-hukassa'];
 const HOME = {
-  en: { dir: '', prefix: '/', hero: 'Apps for iPhone, iPad and Mac', status: 'Coming soon' },
-  fi: { dir: 'fi', prefix: '/fi/', hero: 'Sovelluksia iPhonelle, iPadille ja Macille', status: 'Tulossa' },
+  en: { dir: '', prefix: '/', hero: 'Apps for iPhone, iPad, Mac and Garmin watches', status: 'Coming soon' },
+  fi: { dir: 'fi', prefix: '/fi/', hero: 'Sovelluksia iPhonelle, iPadille, Macille ja Garmin-kelloihin', status: 'Tulossa' },
 };
 const PLATFORM_TAGS: Record<string, string> = {
   cadence: 'iPhone · iPad',
