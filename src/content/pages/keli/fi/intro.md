@@ -8,8 +8,10 @@ Keli on ilmainen sääsovellus Garmin-kelloihin, oppaanaan samanniminen hirvi. S
 - **Tuuli edellä.** Tuulen nopeus metreinä sekunnissa ja sen suunta suoraan pikanäkymässä ja päänäytöllä.
 - **Nyt ja kolmen tunnin päästä.** Lämpötila, tuntuu kuin, sää ja tuuli nyt sekä millainen keli on kolmen tunnin kuluttua.
 - **Tunnit ja päivät.** Seuraavat kaksitoista tuntia sekä tämä päivä ja pari seuraavaa ylin- ja alinlämpötiloineen, tuulineen ja sateineen.
+- **Ilma.** Ilmanlaatu sekä koivun, lepän ja heinän siitepöly sesonkina.
+- **Revontulet.** Tämän yön revontulten todennäköisyys paikalla ja paras tunti Kp-ennusteen, pilvien ja pimeyden perusteella sekä lähimmän magnetometrin tilanne nyt.
 - **Pikanäkymä.** Katso nykyisen sijaintisi sää suoraan kellon pikanäkymälistasta.
 
 Keli tulee ensin Garmin fenix 7 Pro- ja fenix 8 Pro -kelloihin, ja muita malleja seuraa. Sovellus on suomeksi ja englanniksi.
 
-Säädata: Open-Meteo.com, lisenssi CC BY 4.0.
+Säädata: Open-Meteo.com, lisenssi CC BY 4.0. Ilmanlaatu: Copernicus CAMS / Open-Meteo. Revontulet: NOAA SWPC ja Ilmatieteen laitos (CC BY 4.0).

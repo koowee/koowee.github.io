@@ -1,7 +1,7 @@
 ---
 title: "Kelin tietosuojaseloste"
 description: "Miten Keli käsittelee tietojasi: ei tilejä, ei Kelin omia palvelimia, ja kellosta lähtevät vain ennusteeseen tarvittavat koordinaatit."
-lastUpdated: 2026-11-14
+lastUpdated: 2026-11-15
 ---
 ## Lyhyesti
 
@@ -21,7 +21,8 @@ Kellossasi, ja tallentamasi paikat Garminin Connect IQ -sovelluksen asetuksissa.
 
 Pyynnöt kulkevat kellosta puhelimesi Garmin Connect -sovelluksen kautta.
 
-- **Open-Meteo** tarjoaa ennusteet ja muuttaa paikkojen nimet koordinaateiksi. Pyynnöissä on koordinaatit tai paikan nimi, ei muuta tietoa sinusta. Kuten missä tahansa internetpyynnössä, Open-Meteon palvelimet näkevät IP-osoitteesi. Siihen sovelletaan Open-Meteon tietosuojakäytäntöä.
+- **Open-Meteo** tarjoaa ennusteet sekä ilmanlaadun ja siitepölyn (Copernicus CAMS -mallista) ja muuttaa paikkojen nimet koordinaateiksi. Ilmanlaatu haetaan vain, kun avaat paikan Ilma-sivun. Pyynnöissä on koordinaatit tai paikan nimi, ei muuta tietoa sinusta. Kuten missä tahansa internetpyynnössä, Open-Meteon palvelimet näkevät IP-osoitteesi. Siihen sovelletaan Open-Meteon tietosuojakäytäntöä.
+- **NOAA SWPC** (Kp-ennuste) ja **Ilmatieteen laitos** (R-indeksi) antavat revontulisivun avaruussään. Nämä pyynnöt eivät sisällä sijaintiasi, ja paikan laskenta tehdään kellossa.
 - **BigDataCloud** muuttaa nykyisen sijaintisi paikan nimeksi. Pyynnössä on vain koordinaatit. Siihen sovelletaan BigDataCloudin tietosuojakäytäntöä.
 - **Garmin** hoitaa kellon ja puhelimen välisen yhteyden ja säilyttää sovelluksen asetukset. Siihen sovelletaan Garminin tietosuojakäytäntöä.
 
