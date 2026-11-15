@@ -22,6 +22,7 @@ On your watch, and your saved places in Garmin's Connect IQ app settings. Keli s
 Requests go from your watch through your phone's Garmin Connect app.
 
 - **Open-Meteo** provides the forecasts, air quality and pollen (from the Copernicus CAMS model) and turns place names into coordinates. Air quality is fetched only when you open a place's Air page. The requests contain coordinates or a place name, nothing else about you. As with any internet request, Open-Meteo's servers see your IP address. Open-Meteo's privacy policy applies to it.
+- **NOAA SWPC** (Kp forecast) and the **Finnish Meteorological Institute** (R-index) provide the space weather for the Aurora page. These requests contain no location; the chance for your place is worked out on the watch.
 - **BigDataCloud** turns your current location into a place name. The request contains only the coordinates. BigDataCloud's privacy policy applies to it.
 - **Garmin** handles the connection between watch and phone and stores the app settings. Garmin's privacy policy applies to it.
 
