@@ -70,7 +70,7 @@ await check('keyboard reaches header links, then the seven cards in order', asyn
     await page.keyboard.press('Tab');
     seen.push(await page.evaluate(() => document.activeElement?.getAttribute('href')));
   }
-  assert.deepEqual(seen, ['/', '/', '/fi/', '/cadence/', '/kirjanpainaja/', '/repovahti/', '/hilpertti/', '/braining/', '/lataamo/', '/keli/']);
+  assert.deepEqual(seen, ['/', '/', '/fi/', '/cadence/', '/kirjanpainaja/', '/repovahti/', '/hilpertti/', '/braining/', '/lataamo/', '/keli/', '/palat-hukassa/']);
   await page.close();
 });
 

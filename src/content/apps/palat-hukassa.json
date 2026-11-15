@@ -1,0 +1,17 @@
+{
+  "slug": "palat-hukassa",
+  "name": "Palat Hukassa",
+  "tagline": {
+    "en": "Jigsaw puzzles for little hands.",
+    "fi": "Palapelejä pienille käsille."
+  },
+  "platforms": [
+    "iPad",
+    "iPhone"
+  ],
+  "status": "coming-soon",
+  "accent": "#f07a1f",
+  "icon": "../../assets/icons/palat-hukassa.png",
+  "order": 8,
+  "iconStyle": "ios"
+}
