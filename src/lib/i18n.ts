@@ -5,7 +5,7 @@ export const DEFAULT_LOCALE: Locale = 'en';
 
 export const ui = {
   en: {
-    hero: 'Apps for iPhone, iPad and Mac',
+    hero: 'Apps for iPhone, iPad, Mac and Garmin watches',
     comingSoon: 'Coming soon',
     onAppStore: 'On the App Store',
     support: 'Support',
@@ -29,7 +29,7 @@ export const ui = {
     supportSubject: 'support',
   },
   fi: {
-    hero: 'Sovelluksia iPhonelle, iPadille ja Macille',
+    hero: 'Sovelluksia iPhonelle, iPadille, Macille ja Garmin-kelloihin',
     comingSoon: 'Tulossa',
     onAppStore: 'App Storessa',
     support: 'Tuki',
