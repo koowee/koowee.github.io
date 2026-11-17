@@ -5,4 +5,4 @@ interface Props { app: AppMeta; locale: Locale }
 const { app, locale } = Astro.props;
 const released = app.status === 'released';
 ---
-<span class:list={['status', { released }]}>{t(locale, released ? 'onAppStore' : 'comingSoon')}</span>
+<span class:list={['status', { released }]}>{t(locale, released ? (app.platforms.includes('Garmin') ? 'onConnectIq' : 'onAppStore') : 'comingSoon')}</span>

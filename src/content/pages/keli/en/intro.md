@@ -12,6 +12,6 @@ Keli is a free weather app for Garmin watches, guided by a moose of the same nam
 - **Aurora.** Tonight's aurora chance at the place and its best hour, from the Kp forecast, clouds and darkness, and what the nearest magnetometer shows now.
 - **Glance.** Check the weather at your current location straight from the watch's glance list.
 
-Keli is coming first to the Garmin fenix 7 Pro and fenix 8 Pro, with more watches to follow. The app is in English and Finnish.
+Keli is available in the [Connect IQ Store](https://apps.garmin.com/apps/45d15f96-64d0-43d1-9010-27118b1fee38) for the Garmin fenix 7 Pro and fenix 8 Pro, with more watches to follow. The app is in English and Finnish.
 
 Weather data: Open-Meteo.com, license CC BY 4.0. Air quality: Copernicus CAMS / Open-Meteo. Aurora: NOAA SWPC and the Finnish Meteorological Institute (CC BY 4.0).
