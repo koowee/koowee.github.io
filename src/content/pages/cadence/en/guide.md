@@ -85,7 +85,7 @@ If rides don't show up, open **Health → profile picture → Privacy → Apps**
 
 ### Strava
 
-Strava connects with your own API keys. Strava also says which bike a ride was on, so the ride wears the right bike's parts.
+Strava connects with your own API keys. Strava also says which bike a ride was on, so the ride wears the right bike's parts. Disconnect also removes Cadence's access in Strava, but your saved rides stay in Cadence.
 
 **How to set up Strava:**
 

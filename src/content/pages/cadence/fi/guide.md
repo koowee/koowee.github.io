@@ -85,7 +85,7 @@ Jos lenkit eivät näy, avaa **Terveys → profiilikuva → Yksityisyys → Apit
 
 ### Strava
 
-Strava yhdistetään omilla API-avaimilla. Stravasta tulee myös tieto ajon pyörästä, joten ajo kuluttaa oikean pyörän osia.
+Strava yhdistetään omilla API-avaimilla. Stravasta tulee myös tieto ajon pyörästä, joten ajo kuluttaa oikean pyörän osia. Katkaise yhteys poistaa Cadencen käyttöoikeuden myös Stravasta, mutta tallennetut ajot jäävät Cadenceen.
 
 **Näin otat Stravan käyttöön:**
 
