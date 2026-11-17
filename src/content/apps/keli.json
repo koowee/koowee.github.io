@@ -8,7 +8,8 @@
   "platforms": [
     "Garmin"
   ],
-  "status": "coming-soon",
+  "status": "released",
+  "appStoreUrl": "https://apps.garmin.com/apps/45d15f96-64d0-43d1-9010-27118b1fee38",
   "accent": "#466982",
   "icon": "../../assets/icons/keli.png",
   "order": 7,
