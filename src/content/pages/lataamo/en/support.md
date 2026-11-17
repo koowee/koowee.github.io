@@ -11,6 +11,12 @@ From Fintraffic's open charging data at digitraffic.fi, which charging operators
 </details>
 
 <details>
+<summary>Why is a charger missing?</summary>
+
+Lataamo shows every charger that its operator has reported to the open data. Not every operator has reported all of its stations yet. If a charger you know is missing, ask the operator to report it to Fintraffic.
+</details>
+
+<details>
 <summary>How up to date is "free"?</summary>
 
 Lataamo fetches the charger statuses about once a minute while the app is open. Many operators only report a change, so an old timestamp often just means nothing has changed. If a free charger's status is older than half an hour, the app says so.

@@ -11,6 +11,12 @@ Fintrafficin avoimesta latausdatasta digitraffic.fi-palvelussa, johon Suomen lat
 </details>
 
 <details>
+<summary>Miksi jokin laturi puuttuu?</summary>
+
+Lataamo näyttää kaikki laturit, jotka operaattori on ilmoittanut avoimeen dataan. Kaikki operaattorit eivät ole vielä ilmoittaneet kaikkia asemiaan. Jos tuntemasi laturi puuttuu, kannattaa pyytää operaattoria ilmoittamaan se Fintrafficille.
+</details>
+
+<details>
 <summary>Kuinka tuore tieto vapaasta laturista on?</summary>
 
 Lataamo hakee latureiden tilat noin minuutin välein, kun sovellus on auki. Moni operaattori ilmoittaa vain muutokset, joten vanha aikaleima tarkoittaa usein vain, ettei mikään ole muuttunut. Jos vapaan laturin tieto on yli puoli tuntia vanha, sovellus kertoo sen.
