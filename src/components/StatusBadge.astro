@@ -4,5 +4,6 @@ import type { AppMeta } from '../lib/apps-core.ts';
 interface Props { app: AppMeta; locale: Locale }
 const { app, locale } = Astro.props;
 const released = app.status === 'released';
+const key = released ? (app.platforms.includes('Garmin') ? 'onConnectIq' : 'onAppStore') : app.status === 'beta' ? 'beta' : 'comingSoon';
 ---
-<span class:list={['status', { released }]}>{t(locale, released ? (app.platforms.includes('Garmin') ? 'onConnectIq' : 'onAppStore') : 'comingSoon')}</span>
+<span class:list={['status', { released }]}>{t(locale, key)}</span>

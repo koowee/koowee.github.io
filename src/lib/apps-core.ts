@@ -13,8 +13,10 @@ export type AppMeta = {
   name: string;
   tagline: { en: string; fi: string };
   platforms: Platform[];
-  status: 'coming-soon' | 'released';
+  status: 'coming-soon' | 'beta' | 'released';
   appStoreUrl?: string;
+  /** Public TestFlight link; required while status is "beta". */
+  testFlightUrl?: string;
   accent: string;
   icon?: unknown;
   iconStyle?: 'ios' | 'mac';
@@ -46,6 +48,9 @@ export function validateContent(
     }
     if (app.status === 'released' && !app.appStoreUrl) {
       errors.push(`${app.slug}: status "released" needs an appStoreUrl`);
+    }
+    if (app.status === 'beta' && !app.testFlightUrl) {
+      errors.push(`${app.slug}: status "beta" needs a testFlightUrl`);
     }
   }
   return errors;

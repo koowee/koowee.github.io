@@ -29,6 +29,12 @@ The image comes from the nearest Finnish Meteorological Institute all-sky camera
 </details>
 
 <details>
+<summary>How do I join the beta?</summary>
+
+Repovahti is in open beta before its App Store release. Install the free [TestFlight](https://apps.apple.com/app/testflight/id899247664) app from the App Store on your iPhone or iPad, then open the [beta link](https://testflight.apple.com/join/pbnaGjNr) on that device. Updates to the test version arrive through TestFlight. To send feedback, take a screenshot in the app and choose Share Beta Feedback, or send an email to the address below.
+</details>
+
+<details>
 <summary>Do I need an account?</summary>
 
 No. Repovahti has no accounts and no sign-in.

@@ -7,6 +7,9 @@ export const ui = {
   en: {
     hero: 'Apps for iPhone, iPad, Mac and Garmin watches',
     comingSoon: 'Coming soon',
+    beta: 'Open beta',
+    joinBeta: 'Join the beta on TestFlight',
+    betaNote: 'Free test version for iPhone and iPad. Install TestFlight from the App Store, then open the link on your device.',
     onAppStore: 'On the App Store',
     onConnectIq: 'On Connect IQ Store',
     support: 'Support',
@@ -33,6 +36,9 @@ export const ui = {
   fi: {
     hero: 'Sovelluksia iPhonelle, iPadille, Macille ja Garmin-kelloihin',
     comingSoon: 'Tulossa',
+    beta: 'Avoin beta',
+    joinBeta: 'Liity beta-testiin TestFlightissa',
+    betaNote: 'Ilmainen testiversio iPhonelle ja iPadille. Asenna ensin TestFlight App Storesta ja avaa linkki laitteellasi.',
     onAppStore: 'App Storessa',
     onConnectIq: 'Connect IQ -kaupassa',
     support: 'Tuki',

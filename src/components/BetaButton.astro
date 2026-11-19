@@ -1,0 +1,11 @@
+---
+import { t, type Locale } from '../lib/i18n.ts';
+import type { AppMeta } from '../lib/apps-core.ts';
+interface Props { app: AppMeta; locale: Locale }
+const { app, locale } = Astro.props;
+---
+<div class="beta">
+  <span class="status">{t(locale, 'beta')}</span>
+  <a class="app-store-button" href={app.testFlightUrl}><span>{t(locale, 'joinBeta')}</span></a>
+  <p class="beta__note">{t(locale, 'betaNote')}</p>
+</div>

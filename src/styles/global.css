@@ -283,6 +283,8 @@ main > .prose { margin-inline: auto; }
 
 .app-store-button { display: inline-block; margin-top: 12px; }
 .app-store-button img { height: 52px; width: auto; }
+.beta { display: flex; flex-direction: column; align-items: center; }
+.beta__note { margin: 10px 0 0; max-width: 40ch; font-size: 0.9rem; color: var(--text-2); }
 .app-store-button span { display: inline-block; padding: 12px 22px; border-radius: 12px; background: #000; border: 1px solid #a6a6a6; color: #fff; text-decoration: none; font-weight: 600; }
 
 .screenshots { display: flex; gap: 20px; overflow-x: auto; padding: 48px 0 8px; scroll-snap-type: x mandatory; }

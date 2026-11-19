@@ -10,7 +10,8 @@
     "iPad"
   ],
   "guide": true,
-  "status": "coming-soon",
+  "status": "beta",
+  "testFlightUrl": "https://testflight.apple.com/join/pbnaGjNr",
   "accent": "#3ee8a0",
   "icon": "../../assets/icons/repovahti.png",
   "order": 3,

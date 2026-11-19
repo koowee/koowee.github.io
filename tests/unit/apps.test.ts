@@ -30,6 +30,12 @@ test('released requires appStoreUrl', () => {
   assert.ok(errors.some((e) => e.includes('appStoreUrl')), errors.join('\n'));
 });
 
+test('beta requires testFlightUrl', () => {
+  const errors = validateContent([{ ...cadence, status: 'beta' }], allIds, dates);
+  assert.ok(errors.some((e) => e.includes('testFlightUrl')), errors.join('\n'));
+  assert.deepEqual(validateContent([{ ...cadence, status: 'beta', testFlightUrl: 'https://testflight.apple.com/join/x' }], allIds, dates), []);
+});
+
 test('privacy needs lastUpdated', () => {
   const errors = validateContent([cadence], allIds, { ...dates, 'cadence/en/privacy': undefined });
   assert.ok(errors.some((e) => e.includes('lastUpdated')), errors.join('\n'));

@@ -3,6 +3,7 @@ import AppIcon from './AppIcon.astro';
 import PlatformTags from './PlatformTags.astro';
 import StatusBadge from './StatusBadge.astro';
 import AppStoreButton from './AppStoreButton.astro';
+import BetaButton from './BetaButton.astro';
 import type { Locale } from '../lib/i18n.ts';
 import type { AppMeta } from '../lib/apps-core.ts';
 interface Props { app: AppMeta; locale: Locale; heading?: string; compact?: boolean }
@@ -19,7 +20,9 @@ const { app, locale, heading, compact = false } = Astro.props;
       <PlatformTags platforms={app.platforms} />
       {app.status === 'released' && app.appStoreUrl
         ? <AppStoreButton app={app} locale={locale} />
-        : <StatusBadge app={app} locale={locale} />}
+        : app.status === 'beta' && app.testFlightUrl
+          ? <BetaButton app={app} locale={locale} />
+          : <StatusBadge app={app} locale={locale} />}
     </>
   )}
 </header>
