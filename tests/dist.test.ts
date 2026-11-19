@@ -336,11 +336,12 @@ test('braining pages say where transcription happens and who stores the files', 
   assert.match(readPage('fi/braining/privacy'), /mikrofoni/);
 });
 
-test('lataamo pages credit the data source and keep the location on the phone', () => {
+test('lataamo pages credit the data source and say where the location goes', () => {
   assert.match(readPage('lataamo'), /Fintraffic \/ digitraffic\.fi, license CC 4\.0 BY/);
   assert.match(readPage('fi/lataamo'), /Fintraffic \/ digitraffic\.fi, lisenssi CC 4\.0 BY/);
-  assert.match(readPage('lataamo/privacy'), /location is never sent anywhere/);
-  assert.match(readPage('fi/lataamo/privacy'), /sijaintiasi lähetetä minnekään/);
+  assert.match(readPage('lataamo/privacy'), /only leaves the phone to Apple(’|')s map services/);
+  assert.match(readPage('fi/lataamo/privacy'), /lähtee puhelimesta vain Applen karttapalveluun/);
+  for (const p of ['lataamo/privacy', 'fi/lataamo/privacy']) assert.match(readPage(p), /Volvo ID/, p);
 });
 
 test('Volvo sign-in returns to the Lataamo app', () => {
