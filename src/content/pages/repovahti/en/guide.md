@@ -142,10 +142,12 @@ Notifications, the keyboard and other parts drawn by iOS do not turn red. iOS’
 ## Data sources
 
 - [NOAA SWPC](https://www.swpc.noaa.gov/): Kp forecast, 27-day outlook, OVATION, solar wind
-- [Finnish Meteorological Institute and ESA](https://space.fmi.fi/MIRACLE/RWC/): R-index
-- [Finnish Meteorological Institute](https://rwc-finland.fmi.fi/index.php/all-sky-camera-images/): all-sky cameras
+- [Finnish Meteorological Institute and ESA](https://space.fmi.fi/MIRACLE/RWC/): R-index (CC BY 4.0)
+- [Finnish Meteorological Institute](https://rwc-finland.fmi.fi/index.php/all-sky-camera-images/): all-sky cameras (CC BY 4.0)
 - [Finnish Meteorological Institute](https://en.ilmatieteenlaitos.fi/open-data-licence): cloud forecast (open data, CC BY 4.0)
 - Apple Maps: maps and place search
+
+We acknowledge the Finnish Meteorological Institute for providing the magnetometer (R-index) observations and all-sky camera images.
 
 The app fetches the data straight from these sources. It has no servers of its own and no accounts. Darkness and moonlight are computed on the phone from the place and the time.
 

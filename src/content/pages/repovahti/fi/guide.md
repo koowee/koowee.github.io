@@ -142,10 +142,12 @@ Ilmoitukset, näppäimistö ja muut iOS:n omat osat eivät muutu punaisiksi. Kok
 ## Tietolähteet
 
 - [NOAA SWPC](https://www.swpc.noaa.gov/): Kp-ennuste, 27 vuorokauden ennuste, OVATION, aurinkotuuli
-- [Ilmatieteen laitos ja ESA](https://space.fmi.fi/MIRACLE/RWC/): R-luku
-- [Ilmatieteen laitos](https://rwc-finland.fmi.fi/index.php/revontulikameroiden-kuvat/): taivaskamerat
+- [Ilmatieteen laitos ja ESA](https://space.fmi.fi/MIRACLE/RWC/): R-luku (CC BY 4.0)
+- [Ilmatieteen laitos](https://rwc-finland.fmi.fi/index.php/revontulikameroiden-kuvat/): taivaskamerat (CC BY 4.0)
 - [Ilmatieteen laitos](https://en.ilmatieteenlaitos.fi/open-data-licence): pilviennuste (avoin data, CC BY 4.0)
 - Apple Kartat: kartat ja paikkahaku
+
+Kiitämme Ilmatieteen laitosta magnetometrihavainnoista (R-luku) ja revontulikameroiden kuvista.
 
 Sovellus hakee datan suoraan näistä lähteistä. Sillä ei ole omia palvelimia eikä tilejä. Pimeys ja kuunvalo lasketaan puhelimessa paikan ja kellonajan perusteella.
 
