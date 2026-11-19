@@ -29,9 +29,33 @@ Kaikki operaattorit eivät julkaise hintojaan avoimessa datassa. Näytetty hinta
 </details>
 
 <details>
+<summary>Miten pitkän matkan tauot ja lataukset lasketaan?</summary>
+
+Anna kohde kartan hakuun. Tauot-tavassa Lataamo ehdottaa kahvi- ja ruokatauot asetuksissa valitsemiesi kellonaikojen mukaan pikalatureille, joiden lähellä on kahvila tai ravintola, ja lisää latauspysähdyksen, jos akku ei muuten riittäisi. Nopein-tavassa se etsii latauspysähdykset, joilla olet perillä mahdollisimman aikaisin, ja suosii latureita, joiden lähellä on kahvila. Latausajat ovat arvioita, jotka perustuvat akun kokoon ja suurimpaan latausnopeuteen asetuksissa.
+</details>
+
+<details>
+<summary>Mistä akun varaus tulee?</summary>
+
+Jos kirjaudut Volvoon, Lataamo lukee varauksen ja toimintamatkan autosta. Muuten annat lähtövarauksen itse reitin tiedoissa, ja Lataamo arvioi kulutuksen matkan varrella. Volvo-kirjautuminen vaatii omat Volvon kehittäjäavaimet, ja se on vapaaehtoinen lisäominaisuus.
+</details>
+
+<details>
+<summary>Miten kysyn Siriltä?</summary>
+
+Sano "Lähin vapaa laturi Lataamo", niin Siri kertoo lähimmän vapaan laturin ajomatkan mukaan. Suosikkiryhmää varten sano "Lataamo onko vapaata", niin Siri kysyy "Mikä ryhmä?", ja vastaat ryhmän nimellä. Asemaa voi hakea sanomalla "Etsi asema Lataamo".
+</details>
+
+<details>
+<summary>Miksi widget ei päivity heti?</summary>
+
+iOS päättää, milloin widget päivittyy, yleensä noin vartin välein. Widget kertoo, kuinka vanha tieto on. Jos se ei saa omaa sijaintia, se käyttää viimeksi sovelluksessa käytettyä sijaintia enintään viikon ajan.
+</details>
+
+<details>
 <summary>Tarvitsenko tilin?</summary>
 
-Et. Lataamossa ei ole tilejä eikä kirjautumista.
+Et. Lataamossa ei ole tilejä. Ainoa kirjautuminen on vapaaehtoinen Volvo ID auton akkutietoja varten.
 </details>
 
 <details>

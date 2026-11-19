@@ -12,6 +12,6 @@ Lataamo is an iPhone app for finding a free EV charger in Finland. Open it and y
 - **Widget and Siri.** Check the chargers from your home screen, or ask Siri in Finnish.
 - **Navigate.** One tap opens directions to the charger in Apple Maps.
 
-Lataamo uses Finland's open charging data. Your location stays on your phone. No accounts. The app is in Finnish.
+Lataamo uses Finland's open charging data. No accounts, no ads and no tracking. The app is in Finnish.
 
 Source of the charging data: Fintraffic / digitraffic.fi, license CC 4.0 BY.

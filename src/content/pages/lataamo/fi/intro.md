@@ -12,6 +12,6 @@ Lataamo on iPhone-sovellus vapaan sähköauton laturin löytämiseen Suomessa. A
 - **Widget ja Siri.** Katso laturit kotinäytöltä tai kysy Siriltä suomeksi.
 - **Navigointi.** Yksi napautus avaa reittiohjeet laturille Apple Karttoihin.
 
-Lataamo käyttää Suomen avointa latausdataa. Sijaintisi pysyy puhelimessasi. Ei tilejä.
+Lataamo käyttää Suomen avointa latausdataa. Ei tilejä, ei mainoksia eikä seurantaa.
 
 Latausdatan lähde: Fintraffic / digitraffic.fi, lisenssi CC 4.0 BY.
