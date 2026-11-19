@@ -29,9 +29,33 @@ Not every operator publishes its prices in the open data. The price shown is the
 </details>
 
 <details>
+<summary>How are breaks and charging stops worked out on a long trip?</summary>
+
+Type a destination in the map's search. With Breaks, Lataamo suggests coffee and meal breaks at the times you choose in the settings, at fast chargers with a café or restaurant nearby, and adds a charging stop when the battery wouldn't last otherwise. With Fastest, it looks for the charging stops that get you there earliest and favours chargers with a café nearby. Charging times are estimates based on the battery size and the top charging power in the settings.
+</details>
+
+<details>
+<summary>Where does the battery level come from?</summary>
+
+If you sign in to Volvo, Lataamo reads the level and range from the car. Otherwise you enter the starting charge in the route details, and Lataamo estimates the use along the way. The Volvo sign-in needs your own Volvo developer keys and is an optional extra.
+</details>
+
+<details>
+<summary>How do I ask Siri?</summary>
+
+Siri works in Finnish. Say "Lähin vapaa laturi Lataamo" and Siri tells you the nearest free charger by road. For a group of favourites, say "Lataamo onko vapaata"; Siri asks "Mikä ryhmä?" and you answer with the group's name. To look up a station, say "Etsi asema Lataamo".
+</details>
+
+<details>
+<summary>Why doesn't the widget update right away?</summary>
+
+iOS decides when widgets refresh, usually about every 15 minutes. The widget shows how old its data is. When it can't get a location of its own, it uses the one the app last used, for up to a week.
+</details>
+
+<details>
 <summary>Do I need an account?</summary>
 
-No. Lataamo has no accounts and no sign-in.
+No. Lataamo has no accounts. The only sign-in is the optional Volvo ID for the car's battery data.
 </details>
 
 <details>
