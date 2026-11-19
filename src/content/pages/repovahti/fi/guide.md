@@ -1,6 +1,6 @@
 ---
-title: "Revontulten ohje"
-description: "Näin luet Revontulten arviota: tämä yö, hyvä aika, tuntitaulukko, miten arvio lasketaan, Juuri nyt -mittaukset, avaruussää, ilmoitukset, widgetit ja havaintoloki sekä revontuliopas retkelle."
+title: "Repovahdin ohje"
+description: "Näin luet Repovahdin arviota: tämä yö, hyvä aika, tuntitaulukko, miten arvio lasketaan, Juuri nyt -mittaukset, avaruussää, ilmoitukset, widgetit ja havaintoloki sekä revontuliopas retkelle."
 ---
 Tämä ohje on sama kuin sovelluksessa kohdassa **Asetukset → Ohje**. Painikkeet on nimetty kuten sovelluksessa.
 

@@ -1,11 +1,11 @@
 ---
-title: "Revontulten tietosuojaseloste"
+title: "Repovahdin tietosuojaseloste"
 description: "Miten Repovahti käsittelee tietojasi: ei tilejä, ei omia palvelimia, ja paikkasi pysyvät laitteellasi."
 lastUpdated: 2026-11-10
 ---
 ## Lyhyesti
 
-Revontulissa ei ole tilejä eikä omia palvelimia. Paikkasi ja asetuksesi pysyvät iPhonessasi, ja sovellus hakee vain avointa ennustedataa.
+Repovahdissa ei ole tilejä eikä omia palvelimia. Paikkasi ja asetuksesi pysyvät iPhonessasi, ja sovellus hakee vain avointa ennustedataa.
 
 ## Käsiteltävät tiedot
 
@@ -29,7 +29,7 @@ Sovelluksessa ei ole mainonta-, analytiikka- tai virheraportointipalveluja.
 
 ## Lapset
 
-Revontulia ei ole suunnattu lapsille, eikä se tietoisesti kerää lasten tietoja.
+Repovahtia ei ole suunnattu lapsille, eikä se tietoisesti kerää lasten tietoja.
 
 ## Oikeutesi ja yhteystiedot
 

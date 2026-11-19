@@ -1,6 +1,6 @@
 ---
-title: "Revontulten tuki"
-description: "Revontulten käyttöönotto, vastauksia usein kysyttyihin kysymyksiin ja yhteystiedot."
+title: "Repovahdin tuki"
+description: "Repovahdin käyttöönotto, vastauksia usein kysyttyihin kysymyksiin ja yhteystiedot."
 ---
 ## Aloitus
 
@@ -19,7 +19,7 @@ Arvio yhdistää NOAA:n Kp-ennusteen sekä Ilmatieteen laitoksen ja NOAA:n reaal
 <details>
 <summary>Miksi en saanut ilmoitusta?</summary>
 
-Ilmoitus lähetetään vain suosikeista ja vain, kun yön paras tunti ylittää rajasi (oletuksena 50 %). Tarkista, että Revontulten ilmoitukset on sallittu iOS:n asetuksissa. Suosikit-välilehti kertoo ylhäällä, jos ne ovat pois päältä.
+Ilmoitus lähetetään vain suosikeista ja vain, kun yön paras tunti ylittää rajasi (oletuksena 50 %). Tarkista, että Repovahdin ilmoitukset on sallittu iOS:n asetuksissa. Suosikit-välilehti kertoo ylhäällä, jos ne ovat pois päältä.
 </details>
 
 <details>
@@ -29,9 +29,15 @@ Kuva tulee lähimmästä Ilmatieteen laitoksen taivaskamerasta, Kilpisjärveltä
 </details>
 
 <details>
+<summary>Miten pääsen testaamaan betaa?</summary>
+
+Repovahti on avoimessa beta-testissä ennen App Store -julkaisua. Asenna iPhoneen tai iPadiin ilmainen [TestFlight](https://apps.apple.com/app/testflight/id899247664) App Storesta ja avaa sitten laitteellasi [beta-linkki](https://testflight.apple.com/join/pbnaGjNr). Testiversio päivittyy TestFlightin kautta. Palautetta voit lähettää ottamalla sovelluksessa kuvakaappauksen ja valitsemalla Jaa beta-palaute, tai sähköpostilla alla olevaan osoitteeseen.
+</details>
+
+<details>
 <summary>Tarvitsenko tilin?</summary>
 
-Et. Revontulissa ei ole tilejä eikä kirjautumista.
+Et. Repovahdissa ei ole tilejä eikä kirjautumista.
 </details>
 
 <details>

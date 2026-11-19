@@ -17,10 +17,12 @@ test('home pages carry their language', () => {
 const ORDER = ['cadence', 'kirjanpainaja', 'repovahti', 'hilpertti', 'braining', 'lataamo', 'keli', 'palat-hukassa'];
 // Released apps show their store badge instead of "Coming soon".
 const RELEASED = new Set(['keli']);
+// Apps in open beta show "Open beta" and link to TestFlight on their own page.
+const BETA = new Set(['repovahti']);
 
 const HOME = {
-  en: { dir: '', prefix: '/', hero: 'Apps for iPhone, iPad, Mac and Garmin watches', status: 'Coming soon', released: 'On Connect IQ Store' },
-  fi: { dir: 'fi', prefix: '/fi/', hero: 'Sovelluksia iPhonelle, iPadille, Macille ja Garmin-kelloihin', status: 'Tulossa', released: 'Connect IQ -kaupassa' },
+  en: { dir: '', prefix: '/', hero: 'Apps for iPhone, iPad, Mac and Garmin watches', status: 'Coming soon', released: 'On Connect IQ Store', beta: 'Open beta' },
+  fi: { dir: 'fi', prefix: '/fi/', hero: 'Sovelluksia iPhonelle, iPadille, Macille ja Garmin-kelloihin', status: 'Tulossa', released: 'Connect IQ -kaupassa', beta: 'Avoin beta' },
 };
 const PLATFORM_TAGS: Record<string, string> = {
   cadence: 'iPhone · iPad',
@@ -43,7 +45,8 @@ test('home lists all apps in order', () => {
     for (const slug of ORDER) {
       const card = html.slice(html.indexOf(`href="${h.prefix}${slug}/"`), html.indexOf('</a>', html.indexOf(`href="${h.prefix}${slug}/"`)));
       assert.ok(card.includes(PLATFORM_TAGS[slug]), `${slug} platforms`);
-      assert.ok(card.includes(RELEASED.has(slug) ? h.released : h.status), `${slug} status`);
+      assert.ok(card.includes(RELEASED.has(slug) ? h.released : BETA.has(slug) ? h.beta : h.status), `${slug} status`);
+      if (BETA.has(slug)) assert.ok(readPage(`${h.dir ? h.dir + '/' : ''}${slug}`).includes('href="https://testflight.apple.com/join/'), `${slug} TestFlight link`);
     }
   }
 });
