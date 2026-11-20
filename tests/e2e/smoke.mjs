@@ -1,6 +1,6 @@
 // Playwright smoke run against `astro preview` (see npm run test:e2e).
 import { createRequire } from 'node:module';
-import { mkdirSync } from 'node:fs';
+import { mkdirSync, readdirSync, readFileSync } from 'node:fs';
 import assert from 'node:assert/strict';
 
 const require = createRequire(import.meta.url);
@@ -62,15 +62,22 @@ await check('long Finnish words fit at 320 px', async () => {
   await page.close();
 });
 
-await check('keyboard reaches header links, then the seven cards in order', async () => {
+await check('keyboard reaches header links, then every app card in order', async () => {
+  const appsDir = new URL('../../src/content/apps/', import.meta.url);
+  const cards = readdirSync(appsDir)
+    .filter((f) => f.endsWith('.json'))
+    .map((f) => JSON.parse(readFileSync(new URL(f, appsDir), 'utf8')))
+    .sort((a, b) => a.order - b.order)
+    .map((app) => `/${app.slug}/`);
+  const expected = ['/', '/', '/fi/', ...cards];
   const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
   await page.goto(BASE + '/');
   const seen = [];
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < expected.length; i++) {
     await page.keyboard.press('Tab');
     seen.push(await page.evaluate(() => document.activeElement?.getAttribute('href')));
   }
-  assert.deepEqual(seen, ['/', '/', '/fi/', '/cadence/', '/kirjanpainaja/', '/repovahti/', '/hilpertti/', '/braining/', '/lataamo/', '/keli/', '/palat-hukassa/']);
+  assert.deepEqual(seen, expected);
   await page.close();
 });
 
