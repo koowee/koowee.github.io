@@ -37,7 +37,7 @@ Anna kohde kartan hakuun. Tauot-tavassa Lataamo ehdottaa kahvi- ja ruokatauot as
 <details>
 <summary>Mistä akun varaus tulee?</summary>
 
-Jos kirjaudut Volvoon, Lataamo lukee varauksen ja toimintamatkan autosta. Muuten annat lähtövarauksen itse reitin tiedoissa, ja Lataamo arvioi kulutuksen matkan varrella. Volvo-kirjautuminen vaatii omat Volvon kehittäjäavaimet, ja se on vapaaehtoinen lisäominaisuus.
+Jos kirjaudut Volvoon, Lataamo lukee varauksen ja toimintamatkan autosta. Muuten annat lähtövarauksen itse reitin tiedoissa, ja Lataamo arvioi kulutuksen matkan varrella. Volvo-kirjautuminen vaatii omat Volvon kehittäjäavaimet, ja se on vapaaehtoinen lisäominaisuus. Avainten hankkiminen on neuvottu [ohjeessa](/fi/lataamo/guide/).
 </details>
 
 <details>

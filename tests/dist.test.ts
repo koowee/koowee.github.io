@@ -87,7 +87,7 @@ function listHtml(dir: string, base = ''): string[] {
   });
 }
 
-const GUIDES = ['cadence', 'hilpertti', 'kirjanpainaja', 'repovahti'];
+const GUIDES = ['cadence', 'hilpertti', 'kirjanpainaja', 'lataamo', 'repovahti'];
 
 const EXPECTED_PATHS = [
   '/', '/privacy/',
@@ -102,7 +102,7 @@ test('exactly the expected pages', () => {
   const redirects = ['', 'fi/'].flatMap((lang) =>
     ['', 'guide/', 'support/', 'privacy/'].map((page) => `${lang}revontulet/${page}index.html`));
   const expected = [...EXPECTED_PATHS.map(toFile), '404.html', ...redirects, 'lataamo/volvo/index.html'].sort();
-  assert.equal(expected.length, 70);
+  assert.equal(expected.length, 72);
   assert.deepEqual(files, expected);
 });
 
@@ -355,4 +355,17 @@ test('Volvo sign-in returns to the Lataamo app', () => {
 test('keli pages credit the weather data', () => {
   assert.match(readPage('keli'), /Open-Meteo\.com, license CC BY 4\.0/);
   assert.match(readPage('fi/keli'), /Open-Meteo\.com, lisenssi CC BY 4\.0/);
+});
+
+test('lataamo guide explains the Volvo keys and the support page links to it', () => {
+  for (const prefix of ['/', '/fi/']) {
+    const rel = `${prefix.slice(1)}lataamo/guide`;
+    const html = readPage(rel);
+    assert.ok(html.includes('https://koowee.github.io/lataamo/volvo/'), `${rel} redirect URI`);
+    for (const scope of ['openid', 'energy:state:read', 'conve:vehicle_relation', 'offline_access']) {
+      assert.ok(html.includes(scope), `${rel} ${scope}`);
+    }
+    assert.ok(html.includes('developer.volvocars.com'), `${rel} portal`);
+    assert.ok(readPage(`${prefix.slice(1)}lataamo/support`).includes(`href="${prefix}lataamo/guide/`), `${rel} support → guide`);
+  }
 });

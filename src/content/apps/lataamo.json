@@ -8,6 +8,7 @@
   "platforms": [
     "iPhone"
   ],
+  "guide": true,
   "status": "beta",
   "testFlightUrl": "https://testflight.apple.com/join/rGHTGfPe",
   "accent": "#3ddc84",
