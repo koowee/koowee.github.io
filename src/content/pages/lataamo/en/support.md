@@ -37,7 +37,7 @@ Type a destination in the map's search. With Breaks, Lataamo suggests coffee and
 <details>
 <summary>Where does the battery level come from?</summary>
 
-If you sign in to Volvo, Lataamo reads the level and range from the car. Otherwise you enter the starting charge in the route details, and Lataamo estimates the use along the way. The Volvo sign-in needs your own Volvo developer keys and is an optional extra.
+If you sign in to Volvo, Lataamo reads the level and range from the car. Otherwise you enter the starting charge in the route details, and Lataamo estimates the use along the way. The Volvo sign-in needs your own Volvo developer keys and is an optional extra. The [guide](/lataamo/guide/) explains how to get them.
 </details>
 
 <details>
