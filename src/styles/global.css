@@ -40,9 +40,11 @@ body::before {
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(40vmax 22vmax at 25% 18%, rgb(62 232 160 / 0.16), transparent 70%),
-    radial-gradient(36vmax 20vmax at 72% 10%, rgb(140 92 255 / 0.13), transparent 70%),
-    radial-gradient(30vmax 18vmax at 55% 32%, rgb(60 170 255 / 0.08), transparent 70%);
+    radial-gradient(48vmax 16vmax at 30% 24%, rgb(62 232 160 / 0.34), transparent 70%),
+    radial-gradient(40vmax 18vmax at 70% 20%, rgb(140 92 255 / 0.26), transparent 70%),
+    radial-gradient(34vmax 14vmax at 50% 34%, rgb(60 170 255 / 0.16), transparent 70%),
+    radial-gradient(36vmax 12vmax at 22% 44%, rgb(62 232 160 / 0.12), transparent 70%),
+    radial-gradient(28vmax 12vmax at 82% 40%, rgb(230 90 200 / 0.09), transparent 70%);
   filter: blur(40px);
 }
 
