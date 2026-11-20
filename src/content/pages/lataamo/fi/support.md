@@ -53,6 +53,12 @@ iOS päättää, milloin widget päivittyy, yleensä noin vartin välein. Widget
 </details>
 
 <details>
+<summary>Miten pääsen testaamaan betaa?</summary>
+
+Lataamo on avoimessa beta-testissä ennen App Store -julkaisua. Asenna iPhoneen ilmainen [TestFlight](https://apps.apple.com/app/testflight/id899247664) App Storesta ja avaa sitten puhelimellasi [beta-linkki](https://testflight.apple.com/join/rGHTGfPe). Testiversio päivittyy TestFlightin kautta. Palautetta voit lähettää ottamalla sovelluksessa kuvakaappauksen ja valitsemalla Jaa beta-palaute, tai sähköpostilla alla olevaan osoitteeseen.
+</details>
+
+<details>
 <summary>Tarvitsenko tilin?</summary>
 
 Et. Lataamossa ei ole tilejä. Ainoa kirjautuminen on vapaaehtoinen Volvo ID auton akkutietoja varten.

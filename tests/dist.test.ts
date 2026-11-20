@@ -18,7 +18,7 @@ const ORDER = ['cadence', 'kirjanpainaja', 'repovahti', 'hilpertti', 'braining',
 // Released apps show their store badge instead of "Coming soon".
 const RELEASED = new Set(['keli']);
 // Apps in open beta show "Open beta" and link to TestFlight on their own page.
-const BETA = new Set(['repovahti']);
+const BETA = new Set(['repovahti', 'lataamo']);
 
 const HOME = {
   en: { dir: '', prefix: '/', hero: 'Apps for iPhone, iPad, Mac and Garmin watches', status: 'Coming soon', released: 'On Connect IQ Store', beta: 'Open beta' },
