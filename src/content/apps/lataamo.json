@@ -8,7 +8,8 @@
   "platforms": [
     "iPhone"
   ],
-  "status": "coming-soon",
+  "status": "beta",
+  "testFlightUrl": "https://testflight.apple.com/join/rGHTGfPe",
   "accent": "#3ddc84",
   "icon": "../../assets/icons/lataamo.png",
   "order": 6,

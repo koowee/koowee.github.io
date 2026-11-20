@@ -53,6 +53,12 @@ iOS decides when widgets refresh, usually about every 15 minutes. The widget sho
 </details>
 
 <details>
+<summary>How do I join the beta?</summary>
+
+Lataamo is in open beta before its App Store release. Install the free [TestFlight](https://apps.apple.com/app/testflight/id899247664) app from the App Store on your iPhone, then open the [beta link](https://testflight.apple.com/join/rGHTGfPe) on that iPhone. Updates to the test version arrive through TestFlight. To send feedback, take a screenshot in the app and choose Share Beta Feedback, or send an email to the address below.
+</details>
+
+<details>
 <summary>Do I need an account?</summary>
 
 No. Lataamo has no accounts. The only sign-in is the optional Volvo ID for the car's battery data.
