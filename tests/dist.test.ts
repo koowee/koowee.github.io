@@ -342,6 +342,9 @@ test('lataamo pages credit the data source and say where the location goes', () 
   assert.match(readPage('lataamo/privacy'), /only leaves the phone to Apple(’|')s map services/);
   assert.match(readPage('fi/lataamo/privacy'), /lähtee puhelimesta vain Applen karttapalveluun/);
   for (const p of ['lataamo/privacy', 'fi/lataamo/privacy']) assert.match(readPage(p), /Volvo ID/, p);
+  for (const p of ['lataamo/privacy', 'fi/lataamo/privacy', 'lataamo/support', 'fi/lataamo/support']) {
+    assert.match(readPage(p), /Google Maps/, p);
+  }
 });
 
 test('Volvo sign-in returns to the Lataamo app', () => {

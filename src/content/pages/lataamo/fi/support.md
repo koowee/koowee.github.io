@@ -35,6 +35,12 @@ Anna kohde kartan hakuun. Tauot-tavassa Lataamo ehdottaa kahvi- ja ruokatauot as
 </details>
 
 <details>
+<summary>Voiko reitin avata Google Mapsissa?</summary>
+
+Voi. Kun reitti on laskettu, napauta reitin tiedoissa "Avaa Google Mapsissa". Google Maps saa kohteen ja ehdotetut latauspaikat välietappeina samassa järjestyksessä (enintään yhdeksän), ja navigointi toimii myös CarPlayssä. Jos lähdet nykyisestä sijainnista, Google Maps aloittaa puhelimen sen hetken sijainnista.
+</details>
+
+<details>
 <summary>Mistä akun varaus tulee?</summary>
 
 Jos kirjaudut Volvoon, Lataamo lukee varauksen ja toimintamatkan autosta. Muuten annat lähtövarauksen itse reitin tiedoissa, ja Lataamo arvioi kulutuksen matkan varrella. Volvo-kirjautuminen vaatii omat Volvon kehittäjäavaimet, ja se on vapaaehtoinen lisäominaisuus. Avainten hankkiminen on neuvottu [ohjeessa](/fi/lataamo/guide/).
