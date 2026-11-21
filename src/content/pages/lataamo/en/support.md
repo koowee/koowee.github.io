@@ -35,6 +35,12 @@ Type a destination in the map's search. With Breaks, Lataamo suggests coffee and
 </details>
 
 <details>
+<summary>Can I open the route in Google Maps?</summary>
+
+Yes. Once the route is worked out, tap "Open in Google Maps" in the route details. Google Maps gets the destination and the suggested charging stops as waypoints in the same order (up to nine), and navigation also works in CarPlay. If you start from your current location, Google Maps starts from where the phone is at that moment.
+</details>
+
+<details>
 <summary>Where does the battery level come from?</summary>
 
 If you sign in to Volvo, Lataamo reads the level and range from the car. Otherwise you enter the starting charge in the route details, and Lataamo estimates the use along the way. The Volvo sign-in needs your own Volvo developer keys and is an optional extra. The [guide](/lataamo/guide/) explains how to get them.
