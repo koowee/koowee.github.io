@@ -347,6 +347,17 @@ test('lataamo pages credit the data source and say where the location goes', () 
   }
 });
 
+// #595: BMW / MINI CarData in the Lataamo guide (the app links to #bmw--mini) and privacy page.
+test('lataamo guide and privacy cover BMW / MINI', () => {
+  for (const p of ['lataamo/guide', 'fi/lataamo/guide']) {
+    const html = readPage(p);
+    assert.match(html, /id="bmw--mini"/, p);
+    assert.match(html, /Create CarData Client/, p);
+    assert.match(html, /bmw\.co\.uk/, p);
+  }
+  for (const p of ['lataamo/privacy', 'fi/lataamo/privacy']) assert.match(readPage(p), /CarData/, p);
+});
+
 test('Volvo sign-in returns to the Lataamo app', () => {
   const html = readPage('lataamo/volvo');
   assert.match(html, /<meta name="robots" content="noindex"/);
