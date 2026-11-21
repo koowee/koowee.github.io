@@ -37,7 +37,7 @@ Anna kohde kartan hakuun. Tauot-tavassa Lataamo ehdottaa kahvi- ja ruokatauot as
 <details>
 <summary>Voiko reitin avata Google Mapsissa?</summary>
 
-Voi. Kun reitti on laskettu, napauta reitin tiedoissa "Avaa Google Mapsissa". Google Maps saa kohteen ja ehdotetut latauspaikat välietappeina samassa järjestyksessä (enintään yhdeksän), ja navigointi toimii myös CarPlayssä. Jos lähdet nykyisestä sijainnista, Google Maps aloittaa puhelimen sen hetken sijainnista.
+Voi. Kun reitti on laskettu, napauta reitin tiedoissa "Avaa Google Mapsissa". Google Maps saa kohteen ja ehdotetut latauspaikat välietappeina samassa järjestyksessä (enintään yhdeksän), ja navigointi toimii myös CarPlayssä. Jos lähdet nykyisestä sijainnista, Google Maps aloittaa puhelimen sen hetken sijainnista. Jos haluat myös asemien Navigoi-napin ja Sirin avaavan Google Mapsin, valitse Asetuksista Navigointisovellus: Google Maps.
 </details>
 
 <details>
