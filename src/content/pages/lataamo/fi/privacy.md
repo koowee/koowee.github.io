@@ -5,7 +5,7 @@ lastUpdated: 2026-11-21
 ---
 ## Lyhyesti
 
-Lataamossa ei ole tilejä eikä omia palvelimia. Se käyttää sijaintiasi iPhonessa latureiden järjestämiseen etäisyyden mukaan. Sijainti lähtee puhelimesta vain Applen karttapalveluun, kun sovellus laskee ajomatkoja tai reittiä tai hakee paikkoja, ja Google Mapsiin vain, jos itse avaat reitin siellä. Emme näe tietojasi.
+Lataamossa ei ole tilejä eikä omia palvelimia. Se käyttää sijaintiasi iPhonessa latureiden järjestämiseen etäisyyden mukaan. Sijainti lähtee puhelimesta vain Applen karttapalveluun, kun sovellus laskee ajomatkoja tai reittiä tai hakee paikkoja, ja Google Mapsiin vain, jos itse navigoit sillä. Emme näe tietojasi.
 
 ## Käsiteltävät tiedot
 
@@ -22,7 +22,7 @@ Kaikki pysyy iPhonessasi. Widget ja Siri lukevat samoja tietoja puhelimen sisäl
 
 - **Digitraffic** (Fintraffic) tarjoaa avoimen latausdatan. Sovellus lataa samat julkiset listat jokaiselle käyttäjälle, eikä pyynnöissä ole sijaintia tai muita tietoja sinusta. Kuten missä tahansa internetpyynnössä, Fintrafficin palvelimet näkevät IP-osoitteesi. Siihen sovelletaan Fintrafficin tietosuojakäytäntöä.
 - **Applen karttapalvelut** (MapKit) laskevat ajomatkat latureille, matkan reitin ja taukopaikkojen kahvilat ja ravintolat sekä hakevat kirjoittamasi paikan. Näissä pyynnöissä Applelle lähtevät reitin alku- ja loppupiste tai hakusana ja sijainnin lähialue. Apple Kartat avautuu myös, kun pyydät reittiohjeet. Niihin sovelletaan Applen tietosuojakäytäntöä.
-- **Google Maps** (vapaaehtoinen): kun napautat reitillä "Avaa Google Mapsissa", reitin kohde ja latauspaikat (ja kirjoittamasi lähtöpaikka) avautuvat Google Mapsissa navigointia varten. Lataamo ei lähetä Googlelle mitään muuten. Google Mapsiin sovelletaan Googlen tietosuojakäytäntöä.
+- **Google Maps** (vapaaehtoinen): jos valitset asetuksista navigointisovellukseksi Google Mapsin, Navigoi-napit ja Siri avaavat reittiohjeet asemalle Google Mapsissa. Kun napautat reitillä "Avaa Google Mapsissa", reitin kohde ja latauspaikat (ja kirjoittamasi lähtöpaikka) avautuvat Google Mapsissa. Lataamo ei lähetä Googlelle mitään muuten. Google Mapsiin sovelletaan Googlen tietosuojakäytäntöä.
 - **Volvo Cars** (vapaaehtoinen): jos kirjaudut Volvo ID:llä, sovellus hakee auton akun tiedot suoraan Volvon rajapinnasta. Kirjautuminen palaa sovellukseen tämän sivuston kautta (koowee.github.io/lataamo/volvo), joka vain ohjaa sen eteenpäin eikä tallenna mitään. Volvon tietosuojakäytäntö koskee Volvo ID:tä ja auton tietoja. Voit kirjautua ulos Lataamon Volvo-asetuksista.
 
 Sovelluksessa ei ole mainonta-, analytiikka- tai virheraportointipalveluja.

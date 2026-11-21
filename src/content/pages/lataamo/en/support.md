@@ -37,7 +37,7 @@ Type a destination in the map's search. With Breaks, Lataamo suggests coffee and
 <details>
 <summary>Can I open the route in Google Maps?</summary>
 
-Yes. Once the route is worked out, tap "Open in Google Maps" in the route details. Google Maps gets the destination and the suggested charging stops as waypoints in the same order (up to nine), and navigation also works in CarPlay. If you start from your current location, Google Maps starts from where the phone is at that moment.
+Yes. Once the route is worked out, tap "Open in Google Maps" in the route details. Google Maps gets the destination and the suggested charging stops as waypoints in the same order (up to nine), and navigation also works in CarPlay. If you start from your current location, Google Maps starts from where the phone is at that moment. To have the chargers' Navigate button and Siri open Google Maps too, choose Google Maps as the navigation app in the settings.
 </details>
 
 <details>
