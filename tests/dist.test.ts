@@ -337,6 +337,12 @@ test('braining pages say where transcription happens and who stores the files', 
   assert.match(readPage('fi/braining/privacy'), /30 päivää litteroinnin jälkeen/);
   assert.match(readPage('braining/privacy'), /microphone/);
   assert.match(readPage('fi/braining/privacy'), /mikrofoni/);
+  // Intro and support describe the CloudKit app, not the old iCloud Drive folder setup.
+  for (const p of ['braining', 'fi/braining', 'braining/support', 'fi/braining/support']) {
+    assert.doesNotMatch(readPage(p), /iCloud Drive/, p);
+  }
+  assert.match(readPage('braining/support'), /Mac app/);
+  assert.match(readPage('fi/braining/support'), /Mac-sovellus/);
 });
 
 test('lataamo pages credit the data source and say where the location goes', () => {

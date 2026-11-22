@@ -4,22 +4,22 @@ description: "Getting started with Braining, answers to common questions and how
 ---
 ## Getting started
 
-1. On your iPhone or iPad, choose a *Braining* folder in iCloud Drive. Braining saves your recordings in its *Audio* folder.
-2. On your Mac, choose the same *Braining* folder. Transcribed notes go into its *Notes* folder.
-3. Record a thought. When the recording has synced, the Mac transcribes it and the note appears on all your devices.
+1. Install Braining on your iPhone or iPad and on your Mac, and sign in to the same iCloud account on all of them. Braining needs no account of its own.
+2. Open Braining on your Mac. The Mac app transcribes recordings while it is open.
+3. Record a thought. The recording travels to your Mac through iCloud, the Mac transcribes it, and the note appears on all your devices.
 
 ## Frequently asked questions
 
 <details>
 <summary>Why hasn't my recording become a note yet?</summary>
 
-The Mac checks for new recordings every 15 seconds, but only while Braining is open on the Mac. iCloud Drive can also take a while to sync the recording. On the Mac, **Äänijono** (Audio queue) shows what is happening to each recording, and **Yritä uudelleen** (Try again) retries.
+Transcription happens in the Braining Mac app, so Braining needs to be open on a Mac signed in to the same iCloud account. iCloud can also take a moment to sync. On the Mac, **Äänijono** (Audio queue) shows what is happening to each recording, and **Yritä uudelleen** (Try again) retries.
 </details>
 
 <details>
 <summary>Is my speech sent to the cloud for transcription?</summary>
 
-No. The Mac transcribes the recording itself with WhisperKit. The first time, the Mac downloads the speech model, which needs an internet connection. The recordings and notes do sync through your iCloud Drive.
+No. The Mac transcribes the recording itself with WhisperKit. The first time, the Mac downloads the speech model, which needs an internet connection. Recordings and notes travel between your devices in your own iCloud. A recording is deleted 30 days after it is transcribed.
 </details>
 
 <details>
@@ -43,7 +43,19 @@ A reminder is scheduled on the device where you saved it. To be reminded on anot
 <details>
 <summary>Do I need an account?</summary>
 
-No. Braining has no accounts and no sign-in. It only needs iCloud Drive on your devices.
+No. Braining has no accounts and no sign-in. It only needs the same iCloud account on your devices.
+</details>
+
+<details>
+<summary>How do I get my notes out of Braining?</summary>
+
+Choose **Vie Markdownina** (Export as Markdown). Braining saves each note as an ordinary Markdown file in a folder you pick, and they open in any text editor.
+</details>
+
+<details>
+<summary>Can I use Braining without syncing?</summary>
+
+Yes. In the settings, choose **Pidä vain tällä laitteella** (Keep only on this device), and your notes stay on that device. **Ota synkronointi käyttöön** (Turn on sync) sends them to iCloud again.
 </details>
 
 <details>
