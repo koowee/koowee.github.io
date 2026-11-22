@@ -1,7 +1,7 @@
 ---
 title: "Cadencen tietosuojaseloste"
 description: "Miten Cadence käsittelee tietojasi: kaikki pysyy laitteellasi, ja yhdistettyjä palveluja käytetään vain omilla tileilläsi."
-lastUpdated: 2026-11-10
+lastUpdated: 2026-11-22
 ---
 ## Lyhyesti
 
@@ -34,6 +34,6 @@ Cadencea ei ole suunnattu lapsille, eikä se tietoisesti kerää lasten tietoja.
 
 ## Oikeutesi ja yhteystiedot
 
-Koska tietosi pysyvät laitteellasi, voit katsoa, muuttaa ja poistaa niitä sovelluksessa milloin tahansa. Sovelluksen poistaminen poistaa sen tiedot. Omaan kansioosi tallentamasi varmuuskopiot säilyvät siellä, kunnes poistat ne. Kun katkaiset Strava- tai Bosch-yhteyden, sovellus lakkaa hakemasta niistä tietoja. Tietosuojaa koskevat kysymykset: [valkama.app@gmail.com](mailto:valkama.app@gmail.com).
+Koska tietosi pysyvät laitteellasi, voit katsoa, muuttaa ja poistaa niitä sovelluksessa milloin tahansa. Sovelluksen poistaminen poistaa sen tiedot. Omaan kansioosi tallentamasi varmuuskopiot säilyvät siellä, kunnes poistat ne. Kun katkaiset Strava- tai Bosch-yhteyden, sovellus lakkaa hakemasta niistä tietoja. Strava-yhteyden katkaisu poistaa Cadencen käyttöoikeuden myös Stravasta. Tietosuojaa koskevat kysymykset: [valkama.app@gmail.com](mailto:valkama.app@gmail.com).
 
 Jos tämä seloste muuttuu, uusi versio julkaistaan tällä sivulla uudella päivämäärällä.
