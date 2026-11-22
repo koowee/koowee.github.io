@@ -1,12 +1,12 @@
 ---
 title: "Braining"
-description: "Braining tekee puhemuistiinpanoista Markdown-muistiinpanoja: äänitä iPhonella tai iPadilla, ja Mac litteroi ne paikallisesti."
+description: "Braining on puhuttu muistikirja: äänitä ajatus iPhonella tai iPadilla, ja Mac litteroi sen paikallisesti muistiinpanoksi."
 ---
-Braining on puhuttu muistikirja iPhonelle, iPadille ja Macille. Puhu ajatus iPhonelle tai iPadille, ja Braining litteroi sen Macillasi tavalliseksi Markdown-muistiinpanoksi omaan iCloud Drive -kansioosi.
+Braining on puhuttu muistikirja iPhonelle, iPadille ja Macille. Puhu ajatus iPhonelle tai iPadille, niin Braining litteroi sen Macillasi muistiinpanoksi, joka näkyy kaikilla laitteillasi.
 
-- **Äänitys yhdellä napautuksella.** Aloita äänitys sovelluksesta tai suoraan kotinäytön widgetistä.
-- **Litterointi Macilla.** Puhe muutetaan tekstiksi paikallisesti WhisperKitillä, suomeksi. Äänitteitä ei lähetetä litterointipalveluun.
-- **Tavallisia Markdown-tiedostoja.** Jokainen muistiinpano on tavallinen Markdown-tiedosto valitsemassasi kansiossa, joten voit avata sen myös muilla sovelluksilla.
-- **Järjestä ja löydä.** Muokkaa muistiinpanoja millä tahansa laitteellasi ja lisää kategoriat, tagit, määräpäivät ja muistutukset. Haku ja suodattimet löytävät tarvitsemasi muistiinpanon.
+- **Äänitys heti.** Aloita äänitys lukitusnäytöltä, Ohjauskeskuksesta, toimintopainikkeella, kotinäytön widgetistä tai Siriltä: "Braining, sanele". Äänitys jatkuu, vaikka puhelin lukittuu.
+- **Litterointi Macilla.** Brainingin Mac-sovellus muuttaa puheen tekstiksi paikallisesti WhisperKitillä, suomeksi. Äänitteitä ei lähetetä litterointipalveluun.
+- **Muistiinpanot kaikilla laitteilla.** Muistiinpanot synkronoituvat omassa iCloudissasi, ja niitä voi kirjoittaa ja muokata myös ilman verkkoa. Ne voi viedä Markdown-tiedostoiksi milloin tahansa.
+- **Järjestä ja löydä.** Lisää kategoriat, tagit, määräpäivät ja muistutukset. Haku ja suodattimet löytävät tarvitsemasi muistiinpanon.
 
 Ei tilejä eikä Brainingin omia palvelimia.
