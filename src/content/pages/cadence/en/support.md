@@ -13,6 +13,12 @@ The [full guide](/cadence/guide/) explains every part of the app. It is the same
 ## Questions and answers
 
 <details>
+<summary>How do I join the beta?</summary>
+
+Cadence is in open beta before its App Store release. Install the free [TestFlight](https://apps.apple.com/app/testflight/id899247664) app from the App Store on your iPhone or iPad, then open the [beta link](https://testflight.apple.com/join/CebcX9kC) on that device. Updates to the test version arrive through TestFlight. To send feedback, take a screenshot in the app and choose Share Beta Feedback, or send an email to the address below.
+</details>
+
+<details>
 <summary>Should I use Apple Health or Strava?</summary>
 
 Apple Health is the simplest choice and needs no setup beyond allowing Cadence to read your workouts. Health doesn't know which bike you rode, so new rides go to the **Default bike** and you can move a ride to another bike in the ride list. Strava tells Cadence which bike each ride was on, but it needs your own Strava API keys. You can use one source at a time and change it later without losing earlier rides.

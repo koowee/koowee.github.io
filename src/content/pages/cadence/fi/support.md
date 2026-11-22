@@ -13,6 +13,12 @@ description: "Cadencen käyttöönotto, kysymyksiä ja vastauksia sekä yhteysti
 ## Kysymyksiä ja vastauksia
 
 <details>
+<summary>Miten pääsen testaamaan betaa?</summary>
+
+Cadence on avoimessa beta-testissä ennen App Store -julkaisua. Asenna iPhoneen tai iPadiin ilmainen [TestFlight](https://apps.apple.com/app/testflight/id899247664) App Storesta ja avaa sitten laitteellasi [beta-linkki](https://testflight.apple.com/join/CebcX9kC). Testiversio päivittyy TestFlightin kautta. Palautetta voit lähettää ottamalla sovelluksessa kuvakaappauksen ja valitsemalla Jaa beta-palaute, tai sähköpostilla alla olevaan osoitteeseen.
+</details>
+
+<details>
 <summary>Kumpi kannattaa valita, Terveys vai Strava?</summary>
 
 Apple Health on helpoin: riittää, että sallit Cadencen lukea treenisi. Terveys ei tiedä, millä pyörällä ajoit, joten uudet ajot menevät **Oletuspyörälle**, ja ajon voi siirtää toiselle pyörälle ajolistassa. Stravasta tulee tieto ajon pyörästä, mutta se tarvitsee omat Strava-API-avaimet. Lähteitä käytetään yksi kerrallaan, ja lähteen voi vaihtaa myöhemmin ilman, että aiemmat ajot katoavat.
