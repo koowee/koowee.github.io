@@ -1,7 +1,7 @@
 ---
 title: "Cadence privacy policy"
 description: "How Cadence handles your data: everything stays on your device, and connected services are used only with your own accounts."
-lastUpdated: 2026-11-10
+lastUpdated: 2026-11-22
 ---
 ## Summary
 
@@ -34,6 +34,6 @@ Cadence is not directed at children and does not knowingly collect data from the
 
 ## Your rights and contact
 
-Because your data stays on your device, you can view, change and delete it in the app at any time. Deleting the app removes its data. Backup files you saved to your own folder stay there until you delete them. If you disconnect Strava or Bosch, the app stops fetching data from them. For any questions about privacy, email [valkama.app@gmail.com](mailto:valkama.app@gmail.com).
+Because your data stays on your device, you can view, change and delete it in the app at any time. Deleting the app removes its data. Backup files you saved to your own folder stay there until you delete them. If you disconnect Strava or Bosch, the app stops fetching data from them. Disconnecting Strava also removes Cadence's access in Strava. For any questions about privacy, email [valkama.app@gmail.com](mailto:valkama.app@gmail.com).
 
 If this policy changes, the new version will be published on this page with a new date.
