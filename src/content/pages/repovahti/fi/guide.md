@@ -113,9 +113,11 @@ Ilmoitukset tulevat suosikeista, kun yön paras tunti saavuttaa ilmoitusrajan (o
 
 Ilmoitukset ajastetaan aina, kun ennuste päivittyy, joten ne tulevat, vaikka sovellus ei olisi auki.
 
-**Tarkista suosikit nyt** lähettää testi-ilmoituksen heti, jos jonkin suosikin tämä yö saavuttaa ilmoitusrajan. Se ei muuta ajastettuja ilmoituksia.
+iOS päättää, milloin sovellus saa päivittää taustalla. Jos ennuste muuttuu myöhään illalla, ilmoitus voi jäädä tulematta. Avaa sovellus, niin ilmoitukset ajastetaan uudelleen. Asetuksissa näkyy, milloin suosikit tarkistettiin viimeksi.
 
-Suosikit-välilehti kertoo ylhäällä, jos ilmoitukset ovat pois päältä sovelluksessa tai iPhonen asetuksissa. Napauta sen painiketta, niin pääset korjaamaan asian.
+**Tarkista suosikit nyt** hakee suosikkien ennusteen ja ajastaa niiden ilmoitukset uudelleen. Lisäksi se lähettää testi-ilmoituksen heti, jos jonkin suosikin tämä yö saavuttaa ilmoitusrajan. Jos ennakkoilmoituksen aika on jo ohi, myös ennakkoilmoitus voi tulla heti.
+
+Suosikit-välilehti kertoo ylhäällä, jos ilmoitukset ovat pois päältä sovelluksessa tai laitteen asetuksissa. Napauta sen painiketta, niin pääset korjaamaan asian.
 
 ## Widgetit
 
@@ -125,31 +127,37 @@ Suosikit-välilehti kertoo ylhäällä, jos ilmoitukset ovat pois päältä sove
 
 Widgetin napautus avaa sovelluksen sen paikan kohdalta. Widgetit päivittyvät iOS:n aikataulussa, joten ne voivat olla hetken sovellusta jäljessä.
 
+Widgetit eivät itse hae aurinkotuulta eivätkä OVATION-mallia. Kun sovellus on nostanut niillä kuluvan tai seuraavan tunnin arviota, widget näyttää saman arvion vielä enintään tunnin. Muuten widgetin arvio voi olla sovelluksen arviota pienempi.
+
+Oranssi teksti, kuten *pilviennuste puuttuu*, kertoo, että arvio on laskettu ilman sitä tietoa ja on siksi epävarma.
+
 ## Havaintoloki
 
 Kun havaintoloki on päällä (**Asetukset → Havaintoloki**), Tänä yönä -kortilla on painikkeet **Näin revontulet** ja **En nähnyt**. Kirjaus tallentaa sen hetken arvion, ja voimakkuuden voi lisätä.
 
-**Näytä loki** kertoo, kuinka usein näit revontulia eri arvioilla, ja tiedot voi viedä CSV-tiedostona. Loki pysyy puhelimessa.
+**Näytä loki** kertoo, kuinka usein näit revontulia eri arvioilla, ja tiedot voi viedä CSV-tiedostona. Loki pysyy laitteella ja sen varmuuskopioissa.
 
 ## Yötila
 
 Yötila muuttaa sovelluksen himmeän punaiseksi. Punainen valo ei pilaa silmien pimeään tottumista, johon kuluu 20–30 minuuttia. Kytke se **Ennusteen** kuun kuvakkeesta tai kohdasta **Asetukset → Yötila**. Laske myös näytön kirkkaus pieneksi.
 
-### Koko puhelin punaiseksi
+### Koko näyttö punaiseksi
 
-Ilmoitukset, näppäimistö ja muut iOS:n omat osat eivät muutu punaisiksi. Koko puhelimen saa punaiseksi iOS:n värisuodattimella: **Asetukset → Käyttöapu → Näyttö ja tekstin koko → Värisuodattimet → Värisävy**, ja sävy sekä voimakkuus täysille. Kun valitset kohdassa **Asetukset → Käyttöapu → Käyttöapuoikotie** Värisuodattimet, suodatin kytkeytyy sivupainikkeen kolmoispainalluksella.
+Ilmoitukset, näppäimistö ja muut iOS:n omat osat eivät muutu punaisiksi. Koko näytön saa punaiseksi iOS:n värisuodattimella: **Asetukset → Käyttöapu → Näyttö ja tekstin koko → Värisuodattimet → Värisävy**, ja sävy sekä voimakkuus täysille. Kun valitset kohdassa **Asetukset → Käyttöapu → Käyttöapuoikotie** Värisuodattimet, suodatin kytkeytyy sivupainikkeen kolmoispainalluksella.
 
 ## Tietolähteet
 
 - [NOAA SWPC](https://www.swpc.noaa.gov/): Kp-ennuste, 27 vuorokauden ennuste, OVATION, aurinkotuuli
 - [Ilmatieteen laitos ja ESA](https://space.fmi.fi/MIRACLE/RWC/): R-luku (CC BY 4.0)
-- [Ilmatieteen laitos](https://rwc-finland.fmi.fi/index.php/revontulikameroiden-kuvat/): taivaskamerat (CC BY 4.0)
+- [Ilmatieteen laitos](https://rwc-finland.fmi.fi/index.php/revontulikameroiden-kuvat/): taivaskamerat (CC BY 4.0, kuva rajattu)
 - [Ilmatieteen laitos](https://en.ilmatieteenlaitos.fi/open-data-licence): pilviennuste (avoin data, CC BY 4.0)
 - Apple Kartat: kartat ja paikkahaku
 
+Lisenssi: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
 Kiitämme Ilmatieteen laitosta magnetometrihavainnoista (R-luku) ja revontulikameroiden kuvista.
 
-Sovellus hakee datan suoraan näistä lähteistä. Sillä ei ole omia palvelimia eikä tilejä. Pimeys ja kuunvalo lasketaan puhelimessa paikan ja kellonajan perusteella.
+Sovellus hakee datan suoraan näistä lähteistä. Sillä ei ole omia palvelimia eikä tilejä. Pimeys ja kuunvalo lasketaan laitteella paikan ja kellonajan perusteella.
 
 Tietolähteet löytyvät sovelluksesta myös kohdasta Asetukset → Tietolähteet.
 
@@ -157,9 +165,9 @@ Tietolähteet löytyvät sovelluksesta myös kohdasta Asetukset → Tietolähtee
 
 Jos ennustetta ei saada, tarkista verkkoyhteys ja vedä näkymää alas. Jos jokin lähde ei vastaa, siitä näkyy oranssi huomautus, ja arvio lasketaan muista lähteistä.
 
-Jos paikkaa ei löydy, kokeile lähintä kaupunkia tai kylää. Oma sijainti vaatii sijaintiluvan iPhonen asetuksista.
+Jos paikkaa ei löydy, kokeile lähintä kaupunkia tai kylää. Oma sijainti vaatii sijaintiluvan laitteen asetuksista.
 
-Muissa asioissa katso [tukisivu](/fi/repovahti/support/) tai lähetä sähköpostia osoitteeseen [valkama.app@gmail.com](mailto:valkama.app@gmail.com). Kerro mielellään iPhonesi malli ja iOS-versio.
+Muissa asioissa katso [tukisivu](/fi/repovahti/support/) tai lähetä sähköpostia osoitteeseen [valkama.app@gmail.com](mailto:valkama.app@gmail.com). Kerro mielellään laitteesi malli ja iOS- tai iPadOS-versio.
 
 ## Revontuliopas
 

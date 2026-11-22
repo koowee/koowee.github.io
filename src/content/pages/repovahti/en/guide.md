@@ -2,7 +2,7 @@
 title: "Repovahti guide"
 description: "How to read Repovahti's estimate: tonight, the good window, the hourly table, how the estimate is computed, the Right now readings, space weather, notifications, widgets and the sighting log, plus an aurora guide for going out."
 ---
-This guide matches the one in the app, under **Settings → Help**. The app is in English and Finnish and follows your iPhone's language.
+This guide matches the one in the app, under **Settings → Help**. The app is in English and Finnish and follows your device's language.
 
 ## Getting started
 
@@ -113,9 +113,11 @@ Notifications are sent for favourites when the night's best hour reaches your al
 
 Notifications are scheduled whenever the forecast updates, so they arrive even when the app is not open.
 
-**Tarkista suosikit nyt** (Check favourites now) sends a test notification right away if a favourite's night reaches the limit. It does not change the scheduled notifications.
+iOS decides when the app may update in the background. If the forecast changes late in the evening, a notification may not arrive. Open the app and the notifications are scheduled again. Settings shows when the favourites were last checked.
 
-The Favourites tab says at the top if notifications are off in the app or in iPhone Settings. Tap its button to fix it.
+**Check favourites now** fetches the favourites' forecast and schedules their notifications again. It also sends a test notification right away if a favourite's night reaches the notification limit. If the advance alert time has already passed, the advance alert may also arrive right away.
+
+The Favourites tab says at the top if notifications are off in the app or in the device settings. Tap its button to fix it.
 
 ## Widgets
 
@@ -125,31 +127,37 @@ The Favourites tab says at the top if notifications are off in the app or in iPh
 
 Tapping a widget opens the app on that place. Widgets update on iOS's schedule, so they can lag a little behind the app.
 
+Widgets don't fetch the solar wind or the OVATION model themselves. When the app has raised the estimate for the current or next hour with them, the widget shows the same estimate for up to an hour more. Otherwise the widget's estimate can be lower than the app's.
+
+Orange text, such as *no cloud forecast*, means the estimate was computed without that data and is therefore uncertain.
+
 ## Sighting log
 
 When the sighting log is on (**Settings → Sighting log**), the tonight card has the buttons **I saw the aurora** and **Didn't see it**. An entry saves the estimate of that moment, and you can add the strength.
 
-**Show log** tells how often you saw the aurora at each estimate, and the entries can be exported as a CSV file. The log stays on your iPhone.
+**Show log** tells how often you saw the aurora at each estimate, and the entries can be exported as a CSV file. The log stays on the device and in its backups.
 
 ## Night mode
 
 Night mode turns the app dim red. Red light does not spoil your eyes’ adaptation to the dark, which takes 20–30 minutes. Switch it with the moon icon on **Forecast** or in **Settings → Night mode**. Turn the screen brightness down too.
 
-### The whole phone in red
+### The whole screen in red
 
-Notifications, the keyboard and other parts drawn by iOS do not turn red. iOS’s colour filter turns the whole phone red: **Settings → Accessibility → Display & Text Size → Colour Filters → Colour Tint**, with Hue and Intensity all the way up. When you choose Colour Filters in **Settings → Accessibility → Accessibility Shortcut**, a triple-click of the side button switches the filter.
+Notifications, the keyboard and other parts drawn by iOS do not turn red. iOS’s colour filter turns the whole screen red: **Settings → Accessibility → Display & Text Size → Colour Filters → Colour Tint**, with Hue and Intensity all the way up. When you choose Colour Filters in **Settings → Accessibility → Accessibility Shortcut**, a triple-click of the side button switches the filter.
 
 ## Data sources
 
 - [NOAA SWPC](https://www.swpc.noaa.gov/): Kp forecast, 27-day outlook, OVATION, solar wind
 - [Finnish Meteorological Institute and ESA](https://space.fmi.fi/MIRACLE/RWC/): R-index (CC BY 4.0)
-- [Finnish Meteorological Institute](https://rwc-finland.fmi.fi/index.php/all-sky-camera-images/): all-sky cameras (CC BY 4.0)
+- [Finnish Meteorological Institute](https://rwc-finland.fmi.fi/index.php/all-sky-camera-images/): all-sky cameras (CC BY 4.0, image cropped)
 - [Finnish Meteorological Institute](https://en.ilmatieteenlaitos.fi/open-data-licence): cloud forecast (open data, CC BY 4.0)
 - Apple Maps: maps and place search
 
+Licence: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
 We acknowledge the Finnish Meteorological Institute for providing the magnetometer (R-index) observations and all-sky camera images.
 
-The app fetches the data straight from these sources. It has no servers of its own and no accounts. Darkness and moonlight are computed on the phone from the place and the time.
+The app fetches the data straight from these sources. It has no servers of its own and no accounts. Darkness and moonlight are computed on the device from the place and the time.
 
 In the app, the sources are also under Settings → Data sources.
 
@@ -157,9 +165,9 @@ In the app, the sources are also under Settings → Data sources.
 
 If the forecast can't be fetched, check your connection and pull down to refresh. If a source doesn't answer, an orange note says so and the estimate is computed from the other sources.
 
-If a place can't be found, try the nearest town or village. Your current location needs location permission in iPhone Settings.
+If a place can't be found, try the nearest town or village. Your current location needs location permission in the device settings.
 
-For anything else, see [support](/repovahti/support/) or email [valkama.app@gmail.com](mailto:valkama.app@gmail.com). Mention your iPhone model and iOS version if you can.
+For anything else, see [support](/repovahti/support/) or email [valkama.app@gmail.com](mailto:valkama.app@gmail.com). Mention your device model and iOS or iPadOS version if you can.
 
 ## Aurora guide
 
