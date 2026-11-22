@@ -331,7 +331,10 @@ test('English Repovahti pages have no Finnish UI words', () => {
 test('braining pages say where transcription happens and who stores the files', () => {
   assert.match(readPage('braining'), /transcribes.{0,40}on your Mac/);
   assert.match(readPage('fi/braining'), /litteroi.{0,40}Macillasi/);
-  for (const p of ['braining/privacy', 'fi/braining/privacy']) assert.match(readPage(p), /iCloud Drive/, p);
+  // Since the CloudKit move the data syncs through the private iCloud database, not an iCloud Drive folder.
+  for (const p of ['braining/privacy', 'fi/braining/privacy']) assert.match(readPage(p), /CloudKit/, p);
+  assert.match(readPage('braining/privacy'), /30 days after it is transcribed/);
+  assert.match(readPage('fi/braining/privacy'), /30 päivää litteroinnin jälkeen/);
   assert.match(readPage('braining/privacy'), /microphone/);
   assert.match(readPage('fi/braining/privacy'), /mikrofoni/);
 });
