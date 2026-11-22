@@ -1,11 +1,11 @@
 ---
 title: "Repovahti privacy policy"
 description: "How Repovahti handles your data: no accounts, no servers of our own, and your places stay on your device."
-lastUpdated: 2026-11-10
+lastUpdated: 2026-11-22
 ---
 ## Summary
 
-Repovahti has no accounts and no servers of our own. Your places and settings stay on your iPhone, and the app only fetches open forecast data.
+Repovahti has no accounts and no servers of our own. Your places and settings stay on your device, and the app only fetches open forecast data.
 
 ## Data the app handles
 
@@ -15,13 +15,13 @@ Repovahti has no accounts and no servers of our own. Your places and settings st
 
 ## Where it is stored
 
-Everything is stored on your device, shared only with the app's own widgets. Nothing is synced to iCloud or sent to us. A CSV export of the sighting log goes only where you choose to share it.
+Everything is stored on your device, shared only with the app's own widgets. The app syncs nothing to iCloud and sends nothing to us. The data is included in your device's own backups, like other apps' data. A CSV export of the sighting log goes only where you choose to share it.
 
 ## Third-party services
 
 To make the forecast, the app requests open data directly from these services:
 
-- **Finnish Meteorological Institute open data**, for the cloud forecast. The request contains the place's coordinates rounded to about one kilometre, as any weather request does. See FMI's [privacy notice](https://en.ilmatieteenlaitos.fi/data-protection).
+- **Finnish Meteorological Institute open data**, for the cloud forecast. The request contains the place's coordinates rounded to about one kilometre, as any weather request does. A request is made when you view a place's forecast. In addition, the widgets (about every half hour) and iOS background refresh fetch the cloud forecast for your favourites and the place chosen for a widget even when the app is not open. When clouds lower a place's estimate a lot, the app also fetches the cloud forecast for 16 points 30 and 60 km away to find a clearer spot. The requests contain no account or device identifier, but the service sees the IP address, as with any web request. See FMI's [privacy notice](https://en.ilmatieteenlaitos.fi/data-protection).
 - **NOAA Space Weather Prediction Center** and the **Finnish Meteorological Institute**, for space weather, the Kp forecast and sky camera images. These requests contain no information about you or your place.
 - **Apple Maps**, when you search for a place or use your current location (to find the place's name), and when the aurora map loads the map tiles of the area shown. Apple's privacy policy applies.
 
