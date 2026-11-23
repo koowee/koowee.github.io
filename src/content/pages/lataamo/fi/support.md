@@ -31,7 +31,7 @@ Kaikki operaattorit eivät julkaise hintojaan avoimessa datassa. Näytetty hinta
 <details>
 <summary>Miten pitkän matkan tauot ja lataukset lasketaan?</summary>
 
-Anna kohde kartan hakuun. Tauot-tavassa Lataamo ehdottaa kahvi- ja ruokatauot asetuksissa valitsemiesi kellonaikojen mukaan pikalatureille, joiden lähellä on kahvila tai ravintola, ja lisää latauspysähdyksen, jos akku ei muuten riittäisi. Nopein-tavassa se etsii latauspysähdykset, joilla olet perillä mahdollisimman aikaisin, ja suosii latureita, joiden lähellä on kahvila. Latausajat ovat arvioita, jotka perustuvat akun kokoon ja suurimpaan latausnopeuteen asetuksissa.
+Anna kohde kartan hakuun tai paina karttaa pitkään kohteen kohdalla ja valitse "Reitti tänne". Tauot-tavassa Lataamo ehdottaa kahvi- ja ruokatauot asetuksissa valitsemiesi kellonaikojen mukaan pikalatureille, joiden lähellä on kahvila tai ravintola, ja lisää latauspysähdyksen, jos akku ei muuten riittäisi. Nopein-tavassa se etsii latauspysähdykset, joilla olet perillä mahdollisimman aikaisin, ja suosii latureita, joiden lähellä on kahvila. Latausajat ovat arvioita, jotka perustuvat akun kokoon ja suurimpaan latausnopeuteen asetuksissa.
 </details>
 
 <details>
