@@ -31,7 +31,7 @@ Not every operator publishes its prices in the open data. The price shown is the
 <details>
 <summary>How are breaks and charging stops worked out on a long trip?</summary>
 
-Type a destination in the map's search. With Breaks, Lataamo suggests coffee and meal breaks at the times you choose in the settings, at fast chargers with a café or restaurant nearby, and adds a charging stop when the battery wouldn't last otherwise. With Fastest, it looks for the charging stops that get you there earliest and favours chargers with a café nearby. Charging times are estimates based on the battery size and the top charging power in the settings.
+Type a destination in the map's search, or press and hold the map at the destination and choose "Reitti tänne" (Route here). With Breaks, Lataamo suggests coffee and meal breaks at the times you choose in the settings, at fast chargers with a café or restaurant nearby, and adds a charging stop when the battery wouldn't last otherwise. With Fastest, it looks for the charging stops that get you there earliest and favours chargers with a café nearby. Charging times are estimates based on the battery size and the top charging power in the settings.
 </details>
 
 <details>
