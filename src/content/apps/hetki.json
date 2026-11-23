@@ -1,0 +1,16 @@
+{
+  "slug": "hetki",
+  "name": "Hetki",
+  "tagline": {
+    "en": "The weather that matters, at a glance.",
+    "fi": "Olennainen sää yhdellä silmäyksellä."
+  },
+  "platforms": [
+    "Garmin"
+  ],
+  "status": "coming-soon",
+  "accent": "#7A2E6E",
+  "icon": "../../assets/icons/hetki.png",
+  "order": 9,
+  "iconStyle": "ios"
+}

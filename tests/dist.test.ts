@@ -14,7 +14,7 @@ test('home pages carry their language', () => {
   assert.match(readPage('fi'), /<html lang="fi"/);
 });
 
-const ORDER = ['cadence', 'kirjanpainaja', 'repovahti', 'hilpertti', 'braining', 'lataamo', 'keli', 'palat-hukassa'];
+const ORDER = ['cadence', 'kirjanpainaja', 'repovahti', 'hilpertti', 'braining', 'lataamo', 'keli', 'palat-hukassa', 'hetki'];
 // Released apps show their store badge instead of "Coming soon".
 const RELEASED = new Set(['keli']);
 // Apps in open beta show "Open beta" and link to TestFlight on their own page.
@@ -33,6 +33,7 @@ const PLATFORM_TAGS: Record<string, string> = {
   lataamo: 'iPhone',
   keli: 'Garmin',
   'palat-hukassa': 'iPad · iPhone',
+  hetki: 'Garmin',
 };
 
 test('home lists all apps in order', () => {
@@ -102,7 +103,7 @@ test('exactly the expected pages', () => {
   const redirects = ['', 'fi/'].flatMap((lang) =>
     ['', 'guide/', 'support/', 'privacy/'].map((page) => `${lang}revontulet/${page}index.html`));
   const expected = [...EXPECTED_PATHS.map(toFile), '404.html', ...redirects, 'lataamo/volvo/index.html'].sort();
-  assert.equal(expected.length, 72);
+  assert.equal(expected.length, 78);
   assert.deepEqual(files, expected);
 });
 
@@ -373,6 +374,11 @@ test('Volvo sign-in returns to the Lataamo app', () => {
   assert.ok(html.includes('"lataamo://volvo" + location.search'), 'script forwards the query');
   assert.ok(html.includes('href="lataamo://volvo"'), 'fallback link');
   assert.match(html, /<html lang="fi"/);
+});
+
+test('hetki pages credit the weather data', () => {
+  assert.match(readPage('hetki/privacy'), /Open-Meteo/);
+  assert.match(readPage('fi/hetki/privacy'), /Open-Meteo/);
 });
 
 test('keli pages credit the weather data', () => {
