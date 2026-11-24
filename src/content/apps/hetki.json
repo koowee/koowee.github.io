@@ -8,7 +8,8 @@
   "platforms": [
     "Garmin"
   ],
-  "status": "coming-soon",
+  "status": "released",
+  "appStoreUrl": "https://apps.garmin.com/apps/d767869e-c2ee-4836-a1fb-bcb2f4d1e573",
   "accent": "#7A2E6E",
   "icon": "../../assets/icons/hetki.png",
   "order": 9,
