@@ -16,7 +16,7 @@ test('home pages carry their language', () => {
 
 const ORDER = ['cadence', 'kirjanpainaja', 'repovahti', 'hilpertti', 'braining', 'lataamo', 'keli', 'palat-hukassa', 'hetki'];
 // Released apps show their store badge instead of "Coming soon".
-const RELEASED = new Set(['keli']);
+const RELEASED = new Set(['keli', 'hetki']);
 // Apps in open beta show "Open beta" and link to TestFlight on their own page.
 const BETA = new Set(['repovahti', 'lataamo']);
 
