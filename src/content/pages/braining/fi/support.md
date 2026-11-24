@@ -5,21 +5,33 @@ description: "Brainingin käyttöönotto, vastauksia usein kysyttyihin kysymyksi
 ## Aloitus
 
 1. Asenna Braining iPhoneen tai iPadiin ja Maciin, ja kirjaudu kaikilla samaan iCloud-tiliin. Braining ei tarvitse omaa tiliä.
-2. Avaa Braining Macilla. Mac-sovellus litteroi äänitteet, kun se on auki.
-3. Äänitä ajatus. Äänite siirtyy iCloudin kautta Macille, Mac litteroi sen, ja muistiinpano näkyy kaikilla laitteillasi.
+2. Avaa Braining Macilla. Mac-sovellus litteroi äänitteet, kun se on auki. Uudemmalla iPhonella tai iPadilla voit ottaa käyttöön myös litteroinnin itse laitteella (ks. alla).
+3. Äänitä ajatus. Oletuksena äänite siirtyy iCloudin kautta Macille, Mac litteroi sen, ja muistiinpano näkyy kaikilla laitteillasi.
 
 ## Usein kysyttyä
 
 <details>
 <summary>Miksi äänitteestäni ei ole vielä tullut muistiinpanoa?</summary>
 
-Litterointi tehdään Brainingin Mac-sovelluksessa, joten Braining pitää olla auki Macilla samalla iCloud-tilillä. Myös iCloudin synkronointi voi kestää hetken. Macin **Äänijono** näyttää, mitä kullekin äänitteelle tapahtuu, ja **Yritä uudelleen** yrittää uudestaan.
+Jos et ole ottanut litterointia käyttöön iPhonella, litterointi tehdään Brainingin Mac-sovelluksessa, joten Braining pitää olla auki Macilla samalla iCloud-tilillä. Jos litterointi on iPhonella päällä, iPhone litteroi vain, kun Braining on auki, joten lukitusnäytöltä tehty äänite odottaa, kunnes avaat sovelluksen seuraavan kerran tai Mac ehtii ensin. Myös iCloudin synkronointi voi kestää hetken. Macin **Äänijono** näyttää, mitä kullekin äänitteelle tapahtuu, ja **Yritä uudelleen** yrittää uudestaan.
+</details>
+
+<details>
+<summary>Litteroiko iPhone itse?</summary>
+
+Vain jos otat sen käyttöön. Uudemmissa iPhoneissa ja iPadeissa Braining tarjoaa kerran **Litteroi iPhonella** -valintaa. Voit ottaa sen käyttöön tai pois myöhemmin synkronointivalikon asetuksella **Litteroi tällä laitteella**. Vanhemmissa laitteissa valintaa ei näy.
+
+Kun litterointi on päällä, laite lataa kerran 627 Mt:n puhemallin, vain Wi-Fi-yhteydellä, ja litteroi omat äänitteensä itse laitteella, kun Braining on auki. Kun puhelin on lukittu, tehdyt äänitteet odottavat, kunnes avaat sovelluksen seuraavan kerran. Mac litteroi edelleen ne, joihin iPhone ei ehdi, eikä sama äänite tule litteroiduksi kahdesti. Kunnes malli on ladattu, äänitteet odottavat Macia kuten ennenkin.
+
+iPhone säilyttää oman äänitteensä, kunnes se on litteroitu, enintään 30 päivää. Jokaiseen äänitteeseen tallentuu, mikä laite ja mikä puhemalli sen litteroi.
+
+Jos otat asetuksen pois päältä, äänitteet, joita iPhone oli litteroimassa, palaavat jonoon Macille, ja Braining kysyy, poistetaanko puhemalli (627 Mt) laitteelta.
 </details>
 
 <details>
 <summary>Lähetetäänkö puheeni pilveen litteroitavaksi?</summary>
 
-Ei. Mac litteroi äänitteen itse WhisperKitillä. Ensimmäisellä kerralla Mac lataa puhemallin, mihin tarvitaan internetyhteys. Äänitteet ja muistiinpanot kulkevat laitteiden välillä omassa iCloudissasi. Äänite poistetaan 30 päivää litteroinnin jälkeen.
+Ei. Litterointi tapahtuu jollakin laitteistasi, Macilla tai, jos otit sen käyttöön, iPhonella tai iPadilla, WhisperKitillä, eikä mikään kolmannen osapuolen palvelu näe puhettasi. Ensimmäisellä kerralla laite lataa puhemallin, mihin tarvitaan internetyhteys (iPhonella ja iPadilla 627 Mt, vain Wi-Fi-yhteydellä). Äänitteet ja muistiinpanot kulkevat laitteiden välillä omassa iCloudissasi. Äänite poistetaan 30 päivää litteroinnin jälkeen.
 </details>
 
 <details>

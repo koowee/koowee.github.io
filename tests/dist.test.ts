@@ -330,8 +330,8 @@ test('English Repovahti pages have no Finnish UI words', () => {
 });
 
 test('braining pages say where transcription happens and who stores the files', () => {
-  assert.match(readPage('braining'), /transcribes.{0,40}on your Mac/);
-  assert.match(readPage('fi/braining'), /litteroi.{0,40}Macillasi/);
+  assert.match(text('braining'), /Mac app transcribes/);
+  assert.match(text('fi/braining'), /Mac litteroi/);
   // Since the CloudKit move the data syncs through the private iCloud database, not an iCloud Drive folder.
   for (const p of ['braining/privacy', 'fi/braining/privacy']) assert.match(readPage(p), /CloudKit/, p);
   assert.match(readPage('braining/privacy'), /30 days after it is transcribed/);
@@ -352,6 +352,15 @@ test('braining support says reminders follow the notes to every device', () => {
   assert.match(readPage('fi/braining/support'), /Tuleeko muistutus kaikille laitteille\?/);
   assert.doesNotMatch(readPage('braining/support'), /save it there/);
   assert.doesNotMatch(readPage('fi/braining/support'), /tallenna se siellä/);
+});
+
+test('braining pages say the iPhone can transcribe by itself when turned on', () => {
+  assert.match(text('braining/support'), /Does the iPhone transcribe by itself\?/);
+  assert.match(text('fi/braining/support'), /Litteroiko iPhone itse\?/);
+  for (const p of ['braining/support', 'fi/braining/support']) assert.match(text(p), /627 MB|627 Mt/, p);
+  for (const p of ['braining', 'fi/braining', 'braining/privacy', 'fi/braining/privacy']) assert.match(text(p), /iPhone/, p);
+  assert.match(text('braining/privacy'), /transcribes its own recordings on the device/);
+  assert.match(text('fi/braining/privacy'), /litteroi omat äänitteensä laitteella/);
 });
 
 test('lataamo pages credit the data source and say where the location goes', () => {
