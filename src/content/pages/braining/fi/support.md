@@ -41,6 +41,12 @@ Muistutus ajastetaan sillä laitteella, jolla tallensit sen. Jos haluat muistutu
 </details>
 
 <details>
+<summary>Miten pääsen testaamaan betaa?</summary>
+
+Braining on avoimessa beta-testissä ennen App Store -julkaisua. Asenna ilmainen [TestFlight](https://apps.apple.com/app/testflight/id899247664) App Storesta iPhoneen ja Maciin, ja avaa sitten [beta-linkki](https://testflight.apple.com/join/NVhBfxAf) kummallakin laitteella. Testiversio päivittyy TestFlightin kautta. Palautetta voit lähettää ottamalla sovelluksessa kuvakaappauksen ja valitsemalla Jaa beta-palaute, tai sähköpostilla alla olevaan osoitteeseen.
+</details>
+
+<details>
 <summary>Tarvitsenko tilin?</summary>
 
 Et. Brainingissa ei ole tilejä eikä kirjautumista. Se tarvitsee vain saman iCloud-tilin laitteillesi.

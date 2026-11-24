@@ -10,7 +10,8 @@
     "iPad",
     "Mac"
   ],
-  "status": "coming-soon",
+  "status": "beta",
+  "testFlightUrl": "https://testflight.apple.com/join/NVhBfxAf",
   "accent": "#7b6cff",
   "icon": "../../assets/icons/braining.png",
   "order": 5,

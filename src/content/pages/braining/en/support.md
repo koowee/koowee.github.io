@@ -41,6 +41,12 @@ A reminder is scheduled on the device where you saved it. To be reminded on anot
 </details>
 
 <details>
+<summary>How do I join the beta?</summary>
+
+Braining is in open beta before its App Store release. Install the free [TestFlight](https://apps.apple.com/app/testflight/id899247664) app from the App Store on your iPhone and your Mac, then open the [beta link](https://testflight.apple.com/join/NVhBfxAf) on each of them. Updates to the test version arrive through TestFlight. To send feedback, take a screenshot in the app and choose Share Beta Feedback, or send an email to the address below.
+</details>
+
+<details>
 <summary>Do I need an account?</summary>
 
 No. Braining has no accounts and no sign-in. It only needs the same iCloud account on your devices.
