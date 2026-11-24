@@ -53,6 +53,12 @@ Tulee. Jokainen laite ajastaa muistutukset, kun muistiinpanot ovat synkronoitune
 </details>
 
 <details>
+<summary>Voinko torkuttaa muistutuksen?</summary>
+
+Voit. Kun muistutus tulee, paina ilmoitusta pitkään iPhonella tai iPadilla tai valitse Macilla Valinnat ja valitse 15 min, 1 h tai Huomenna 8.00. Sovellusta ei tarvitse avata. Muistiinpanon muistutusaika vaihtuu uuteen aikaan, ja muutos synkronoituu muille laitteille.
+</details>
+
+<details>
 <summary>Miten pääsen testaamaan betaa?</summary>
 
 Braining on avoimessa beta-testissä ennen App Store -julkaisua. Asenna ilmainen [TestFlight](https://apps.apple.com/app/testflight/id899247664) App Storesta iPhoneen ja Maciin, ja avaa sitten [beta-linkki](https://testflight.apple.com/join/NVhBfxAf) kummallakin laitteella. Testiversio päivittyy TestFlightin kautta. Palautetta voit lähettää ottamalla sovelluksessa kuvakaappauksen ja valitsemalla Jaa beta-palaute, tai sähköpostilla alla olevaan osoitteeseen.

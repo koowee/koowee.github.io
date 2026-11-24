@@ -53,6 +53,12 @@ Yes. Each device schedules the reminders once the notes have synced to it, so a 
 </details>
 
 <details>
+<summary>Can I snooze a reminder?</summary>
+
+Yes. When a reminder arrives, long-press the notification on iPhone or iPad, or choose Options on the Mac, and pick 15 min, 1 h or Huomenna 8.00 (tomorrow at 8.00). You don't need to open the app. The note's reminder time changes to the new time, and the change syncs to your other devices.
+</details>
+
+<details>
 <summary>How do I join the beta?</summary>
 
 Braining is in open beta before its App Store release. Install the free [TestFlight](https://apps.apple.com/app/testflight/id899247664) app from the App Store on your iPhone and your Mac, then open the [beta link](https://testflight.apple.com/join/NVhBfxAf) on each of them. Updates to the test version arrive through TestFlight. To send feedback, take a screenshot in the app and choose Share Beta Feedback, or send an email to the address below.
