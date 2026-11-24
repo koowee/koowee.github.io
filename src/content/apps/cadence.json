@@ -9,7 +9,8 @@
     "iPhone",
     "iPad"
   ],
-  "status": "coming-soon",
+  "status": "beta",
+  "testFlightUrl": "https://testflight.apple.com/join/CebcX9kC",
   "accent": "#4fb877",
   "icon": "../../assets/icons/cadence.png",
   "order": 1,
