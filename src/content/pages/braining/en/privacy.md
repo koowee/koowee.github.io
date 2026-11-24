@@ -1,11 +1,11 @@
 ---
 title: "Braining privacy policy"
 description: "How Braining handles your data: no accounts and no Braining servers, and your notes and recordings sync through the private database of your own iCloud account."
-lastUpdated: 2026-11-22
+lastUpdated: 2026-11-24
 ---
 ## Summary
 
-Braining has no accounts and no servers of its own. Your notes and recordings are stored on your devices and sync through the private database of your own iCloud account. Your Mac does the transcription. We never see your data.
+Braining has no accounts and no servers of its own. Your notes and recordings are stored on your devices and sync through the private database of your own iCloud account. Transcription happens on your own device: your Mac, or your iPhone or iPad if you turn that on. We never see your data.
 
 ## Data the app handles
 
@@ -22,15 +22,16 @@ Reminders use notifications on your device. The app asks for permission the firs
 
 ## How long it is kept
 
-- A recording is deleted from iCloud and the Mac 30 days after it is transcribed. The iPhone deletes its own copy as soon as the recording has reached iCloud.
+- A recording is deleted from iCloud and the Mac 30 days after it is transcribed. The iPhone deletes its own copy as soon as the recording has reached iCloud. If you have turned on transcription on the iPhone, it keeps its own copy of the recording until it is transcribed, and at most 30 days.
 - Recordings without speech and failed ones are kept until you retry or delete them.
 - Deleted notes are kept for 30 days and then removed for good.
 - Other notes are kept until you delete them.
 
 ## Third-party services
 
-- **Transcription** runs on your Mac with WhisperKit. Your recordings are not sent anywhere to be transcribed.
-- The first time it transcribes, the Mac downloads the speech model from the internet. No recordings or notes are sent with that download.
+- **Transcription** runs on your own device with WhisperKit. By default the Mac transcribes recordings. If you turn on transcription on the iPhone or iPad, the device transcribes its own recordings on the device, and the Mac transcribes the rest. Your recordings are not sent anywhere to be transcribed, and no third-party service sees them.
+- The first time it transcribes, the device downloads the speech model from the internet (about 627 MB on an iPhone or iPad, over Wi-Fi only). No recordings or notes are sent with that download.
+- Each recording stores which device and speech model transcribed it.
 - **iCloud (CloudKit)** syncs the data between your devices. Apple's privacy policy applies to it.
 
 The app contains no advertising, analytics or crash-reporting services.

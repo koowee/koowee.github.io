@@ -1,11 +1,11 @@
 ---
 title: "Brainingin tietosuojaseloste"
 description: "Miten Braining käsittelee tietojasi: ei tilejä eikä Brainingin omia palvelimia, ja muistiinpanot ja äänitteet synkronoituvat oman iCloud-tilisi yksityisessä tietokannassa."
-lastUpdated: 2026-11-22
+lastUpdated: 2026-11-24
 ---
 ## Lyhyesti
 
-Brainingissa ei ole tilejä eikä omia palvelimia. Muistiinpanosi ja äänitteesi tallentuvat laitteillesi ja synkronoituvat oman iCloud-tilisi yksityisen tietokannan kautta. Macisi tekee litteroinnin. Emme näe tietojasi.
+Brainingissa ei ole tilejä eikä omia palvelimia. Muistiinpanosi ja äänitteesi tallentuvat laitteillesi ja synkronoituvat oman iCloud-tilisi yksityisen tietokannan kautta. Litterointi tapahtuu omalla laitteellasi: Macillasi tai, jos otat sen käyttöön, iPhonellasi tai iPadillasi. Emme näe tietojasi.
 
 ## Käsiteltävät tiedot
 
@@ -22,15 +22,16 @@ Muistutukset käyttävät laitteesi ilmoituksia. Sovellus pyytää niihin luvan,
 
 ## Kuinka kauan tiedot säilyvät
 
-- Äänite poistetaan iCloudista ja Macilta 30 päivää litteroinnin jälkeen. iPhone poistaa oman kopionsa heti, kun äänite on siirtynyt iCloudiin.
+- Äänite poistetaan iCloudista ja Macilta 30 päivää litteroinnin jälkeen. iPhone poistaa oman kopionsa heti, kun äänite on siirtynyt iCloudiin. Jos olet ottanut litteroinnin käyttöön iPhonella, se säilyttää oman kopionsa äänitteestä, kunnes se on litteroitu, enintään 30 päivää.
 - Äänitteet, joissa ei ollut puhetta, ja epäonnistuneet säilyvät, kunnes yrität uudelleen tai poistat ne.
 - Poistetut muistiinpanot säilyvät 30 päivää ja poistuvat sitten pysyvästi.
 - Muut muistiinpanot säilyvät, kunnes poistat ne.
 
 ## Ulkopuoliset palvelut
 
-- **Litterointi** tehdään Macillasi WhisperKitillä. Äänitteitäsi ei lähetetä minnekään litteroitavaksi.
-- Ensimmäisellä litterointikerralla Mac lataa puhemallin internetistä. Latauksen mukana ei lähetetä äänitteitä eikä muistiinpanoja.
+- **Litterointi** tehdään omalla laitteellasi WhisperKitillä. Oletuksena Mac litteroi äänitteet. Jos otat litteroinnin käyttöön iPhonella tai iPadilla, laite litteroi omat äänitteensä laitteella ja Mac litteroi loput. Äänitteitäsi ei lähetetä minnekään litteroitavaksi, eikä mikään kolmannen osapuolen palvelu näe niitä.
+- Ensimmäisellä litterointikerralla laite lataa puhemallin internetistä (iPhonella ja iPadilla noin 627 Mt, vain Wi-Fi-yhteydellä). Latauksen mukana ei lähetetä äänitteitä eikä muistiinpanoja.
+- Jokaiseen äänitteeseen tallentuu, mikä laite ja mikä puhemalli sen litteroi.
 - **iCloud (CloudKit)** synkronoi tiedot laitteidesi välillä. Siihen sovelletaan Applen tietosuojakäytäntöä.
 
 Sovelluksessa ei ole mainonta-, analytiikka- tai virheraportointipalveluja.
