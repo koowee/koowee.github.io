@@ -35,9 +35,9 @@ Yes. You can write a new note, or edit an existing one, on your iPhone, iPad or 
 </details>
 
 <details>
-<summary>Why did a reminder only show on one device?</summary>
+<summary>Do reminders arrive on every device?</summary>
 
-A reminder is scheduled on the device where you saved it. To be reminded on another device too, open the note and save it there.
+Yes. Each device schedules the reminders once the notes have synced to it, so a reminder arrives on your iPhone, iPad and Mac. The device needs the change before the reminder time: open Braining for a moment if the device has been offline for long. When you remove or move a reminder, it goes away on your other devices too.
 </details>
 
 <details>

@@ -35,9 +35,9 @@ Voit. Voit kirjoittaa uuden muistiinpanon tai muokata vanhaa iPhonella, iPadilla
 </details>
 
 <details>
-<summary>Miksi muistutus näkyi vain yhdellä laitteella?</summary>
+<summary>Tuleeko muistutus kaikille laitteille?</summary>
 
-Muistutus ajastetaan sillä laitteella, jolla tallensit sen. Jos haluat muistutuksen myös toiselle laitteelle, avaa muistiinpano ja tallenna se siellä.
+Tulee. Jokainen laite ajastaa muistutukset, kun muistiinpanot ovat synkronoituneet sille, joten muistutus tulee iPhoneen, iPadiin ja Maciin. Laitteen pitää saada muutos ennen muistutusaikaa: avaa Braining hetkeksi, jos laite on ollut pitkään poissa verkosta. Kun poistat tai siirrät muistutuksen, se poistuu myös muilta laitteilta.
 </details>
 
 <details>
