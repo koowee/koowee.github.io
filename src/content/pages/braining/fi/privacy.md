@@ -13,7 +13,7 @@ Brainingissa ei ole tilejä eikä omia palvelimia. Muistiinpanosi ja äänittees
 - Muistiinpanosi: otsikko, teksti, litterointi, kategoria, tagit, määräpäivä ja muistutus.
 - Kategorialuettelosi.
 
-Muistutukset käyttävät laitteesi ilmoituksia, ja sovellus pyytää niihin luvan, kun tallennat ensimmäisen muistutuksen.
+Muistutukset käyttävät laitteesi ilmoituksia. Sovellus pyytää niihin luvan, kun tallennat ensimmäisen muistutuksen tai kun ensimmäinen muistutus tulee toiselta laitteeltasi.
 
 ## Missä tiedot säilyvät
 

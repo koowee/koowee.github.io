@@ -346,6 +346,14 @@ test('braining pages say where transcription happens and who stores the files', 
   assert.match(readPage('fi/braining/support'), /Mac-sovellus/);
 });
 
+test('braining support says reminders follow the notes to every device', () => {
+  // Since Apps#658 every device schedules the synced reminders; saving on each device is no longer needed.
+  assert.match(readPage('braining/support'), /Do reminders arrive on every device\?/);
+  assert.match(readPage('fi/braining/support'), /Tuleeko muistutus kaikille laitteille\?/);
+  assert.doesNotMatch(readPage('braining/support'), /save it there/);
+  assert.doesNotMatch(readPage('fi/braining/support'), /tallenna se siellä/);
+});
+
 test('lataamo pages credit the data source and say where the location goes', () => {
   assert.match(readPage('lataamo'), /Fintraffic \/ digitraffic\.fi, license CC 4\.0 BY/);
   assert.match(readPage('fi/lataamo'), /Fintraffic \/ digitraffic\.fi, lisenssi CC 4\.0 BY/);

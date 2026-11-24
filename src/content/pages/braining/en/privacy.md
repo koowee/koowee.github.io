@@ -13,7 +13,7 @@ Braining has no accounts and no servers of its own. Your notes and recordings ar
 - Your notes: title, text, transcript, category, tags, due date and reminder.
 - Your list of categories.
 
-Reminders use notifications on your device, and the app asks for permission to send them the first time you save a reminder.
+Reminders use notifications on your device. The app asks for permission the first time you save a reminder, or when the first reminder arrives from another of your devices.
 
 ## Where it is stored
 
