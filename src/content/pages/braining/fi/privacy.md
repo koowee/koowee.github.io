@@ -9,7 +9,7 @@ Brainingissa ei ole tilejä eikä omia palvelimia. Muistiinpanosi ja äänittees
 
 ## Käsiteltävät tiedot
 
-- Äänitteet, jotka teet iPhonella. iPhone pyytää mikrofonin käyttöoikeutta vain niiden äänittämiseen.
+- Äänitteet, jotka teet iPhonella tai Macilla. Laite pyytää mikrofonin käyttöoikeutta vain niiden äänittämiseen.
 - Muistiinpanosi: otsikko, teksti, litterointi, kategoria, tagit, määräpäivä ja muistutus.
 - Kategorialuettelosi.
 

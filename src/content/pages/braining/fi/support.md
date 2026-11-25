@@ -47,9 +47,23 @@ Voit. Voit kirjoittaa uuden muistiinpanon tai muokata vanhaa iPhonella, iPadilla
 </details>
 
 <details>
+<summary>Voinko äänittää Macilla?</summary>
+
+Voit. Paina työkalupalkin **Äänitä** tai ⌥⌘R, ja lopeta samasta napista tai uudelleen ⌥⌘R:llä. Mac litteroi äänitteen itse, ja muistiinpano synkronoituu muille laitteillesi kuten iPhonella tehty. Ensimmäisellä kerralla macOS kysyy lupaa käyttää mikrofonia. Jos olet estänyt sen, salli se kohdassa Järjestelmäasetukset → Tietosuoja ja turvallisuus → Mikrofoni.
+
+Jos suljet sovelluksen tai pääikkunan, Mac menee lepotilaan tai mikrofoni irtoaa (esim. AirPodsit koteloon), äänitys loppuu ja siihen asti puhuttu tallentuu. Jos sovellus kaatuu kesken, äänite pelastetaan seuraavalla käynnistyksellä. Ilman iCloud-synkronointia Mac tallentaa äänitteen, mutta litteroi sen vasta, kun synkronointi on käytössä.
+</details>
+
+<details>
 <summary>Tuleeko muistutus kaikille laitteille?</summary>
 
 Tulee. Jokainen laite ajastaa muistutukset, kun muistiinpanot ovat synkronoituneet sille, joten muistutus tulee iPhoneen, iPadiin ja Maciin. Laitteen pitää saada muutos ennen muistutusaikaa: avaa Braining hetkeksi, jos laite on ollut pitkään poissa verkosta. Kun poistat tai siirrät muistutuksen, se poistuu myös muilta laitteilta.
+</details>
+
+<details>
+<summary>Voinko torkuttaa muistutuksen?</summary>
+
+Voit. Kun muistutus tulee, paina ilmoitusta pitkään iPhonella tai iPadilla tai valitse Macilla Valinnat ja valitse 15 min, 1 h tai Huomenna 8.00. Sovellusta ei tarvitse avata. Muistiinpanon muistutusaika vaihtuu uuteen aikaan, ja muutos synkronoituu muille laitteille.
 </details>
 
 <details>
