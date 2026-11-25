@@ -47,6 +47,14 @@ Yes. You can write a new note, or edit an existing one, on your iPhone, iPad or 
 </details>
 
 <details>
+<summary>Can I record on the Mac?</summary>
+
+Yes. Click **Äänitä** in the toolbar or press ⌥⌘R, and stop with the same button or ⌥⌘R again. The Mac transcribes the recording itself, and the note syncs to your other devices like one made on the iPhone. The first time, macOS asks for permission to use the microphone. If you have denied it, allow it in System Settings → Privacy & Security → Microphone.
+
+If you quit the app or close its main window, the Mac goes to sleep or the microphone goes away (for example AirPods back in their case), recording stops and what you said so far is saved. If the app crashes mid-recording, the recording is rescued the next time it starts. Without iCloud sync the Mac saves the recording but transcribes it only once sync is on.
+</details>
+
+<details>
 <summary>Do reminders arrive on every device?</summary>
 
 Yes. Each device schedules the reminders once the notes have synced to it, so a reminder arrives on your iPhone, iPad and Mac. The device needs the change before the reminder time: open Braining for a moment if the device has been offline for long. When you remove or move a reminder, it goes away on your other devices too.

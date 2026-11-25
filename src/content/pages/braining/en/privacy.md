@@ -9,7 +9,7 @@ Braining has no accounts and no servers of its own. Your notes and recordings ar
 
 ## Data the app handles
 
-- Voice recordings you make on your iPhone. The iPhone asks for microphone access only to record them.
+- Voice recordings you make on your iPhone or Mac. The device asks for microphone access only to record them.
 - Your notes: title, text, transcript, category, tags, due date and reminder.
 - Your list of categories.
 
