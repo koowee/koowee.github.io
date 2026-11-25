@@ -47,6 +47,20 @@ Yes. You can write a new note, or edit an existing one, on your iPhone, iPad or 
 </details>
 
 <details>
+<summary>Can I format text?</summary>
+
+Yes. Notes are Markdown. On iPhone and iPad, the **Aa** menu above the keyboard has bold, italic, strikethrough, heading, bulleted list and numbered list, and the button next to it adds a checkbox. On the Mac, the same commands are in the **Muotoile** (Format) menu and in the buttons above the editor, with the shortcuts ⌘B, ⌘I, ⇧⌘X, ⌥⌘2, ⇧⌘8, ⇧⌘7 and ⇧⌘L. The same command again removes the formatting. Formatting shows in the text as marks, such as `**bold**` or `- [ ] task`.
+</details>
+
+<details>
+<summary>Can I add pictures to a note?</summary>
+
+Yes, up to 20 per note. On iPhone and iPad, tap the picture button above the keyboard or **Lisää kuva** (Add picture) below the text, and choose the camera, your photos or files. You can also paste a copied image. On the Mac, drag an image into the editor, paste it with ⌘V or choose **Muotoile → Lisää kuva…** (⇧⌘I).
+
+Pictures show as thumbnails below the text. Tap or click one to see it large, and remove it with a long press, or a Control-click on the Mac. Pictures are saved when you save the note, and sync to your other devices. Braining shrinks them (longest side 2048 pixels) and removes location data before saving.
+</details>
+
+<details>
 <summary>Can I record on the Mac?</summary>
 
 Yes. Click **Äänitä** in the toolbar or press ⌥⌘R, and stop with the same button or ⌥⌘R again. The Mac transcribes the recording itself, and the note syncs to your other devices like one made on the iPhone. The first time, macOS asks for permission to use the microphone. If you have denied it, allow it in System Settings → Privacy & Security → Microphone.
@@ -81,7 +95,7 @@ No. Braining has no accounts and no sign-in. It only needs the same iCloud accou
 <details>
 <summary>How do I get my notes out of Braining?</summary>
 
-Choose **Vie Markdownina** (Export as Markdown). Braining saves each note as an ordinary Markdown file in a folder you pick, and they open in any text editor.
+Choose **Vie Markdownina** (Export as Markdown). Braining saves each note as an ordinary Markdown file in a folder you pick, and they open in any text editor. A note's pictures are saved as JPEG files in an `assets` folder, linked at the end of the note.
 </details>
 
 <details>

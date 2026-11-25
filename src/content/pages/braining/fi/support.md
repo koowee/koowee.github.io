@@ -47,6 +47,20 @@ Voit. Voit kirjoittaa uuden muistiinpanon tai muokata vanhaa iPhonella, iPadilla
 </details>
 
 <details>
+<summary>Voinko muotoilla tekstiä?</summary>
+
+Voit. Teksti on Markdownia. iPhonella ja iPadilla näppäimistön yläpuolen **Aa**-valikossa ovat lihavointi, kursivointi, yliviivaus, otsikko, luettelo ja numeroitu luettelo, ja viereinen nappi lisää rastiruudun. Macilla samat löytyvät **Muotoile**-valikosta ja editorin yläpuolen napeista, ja pikanäppäimet ovat ⌘B, ⌘I, ⇧⌘X, ⌥⌘2, ⇧⌘8, ⇧⌘7 ja ⇧⌘L. Sama komento uudestaan poistaa muotoilun. Muotoilu näkyy tekstissä merkkeinä, kuten `**lihava**` tai `- [ ] tehtävä`.
+</details>
+
+<details>
+<summary>Voinko lisätä muistiinpanoon kuvia?</summary>
+
+Voit, enintään 20 kuvaa muistiinpanoa kohden. iPhonella ja iPadilla paina kuvanappia näppäimistön yläpuolella tai **Lisää kuva** tekstin alla ja valitse kamera, kuvat tai tiedostot. Voit myös liittää kopioidun kuvan. Macilla vedä kuva editoriin, liitä se ⌘V:llä tai valitse **Muotoile → Lisää kuva…** (⇧⌘I).
+
+Kuvat näkyvät pikkukuvina tekstin alla. Napauta tai klikkaa kuvaa nähdäksesi sen isona, ja poista se painamalla sitä pitkään tai Macilla Ctrl-klikkaamalla. Kuvat tallentuvat, kun tallennat muistiinpanon, ja synkronoituvat muille laitteillesi. Braining pienentää kuvat (pisin sivu 2048 pikseliä) ja poistaa niistä sijaintitiedot ennen tallennusta.
+</details>
+
+<details>
 <summary>Voinko äänittää Macilla?</summary>
 
 Voit. Paina työkalupalkin **Äänitä** tai ⌥⌘R, ja lopeta samasta napista tai uudelleen ⌥⌘R:llä. Mac litteroi äänitteen itse, ja muistiinpano synkronoituu muille laitteillesi kuten iPhonella tehty. Ensimmäisellä kerralla macOS kysyy lupaa käyttää mikrofonia. Jos olet estänyt sen, salli se kohdassa Järjestelmäasetukset → Tietosuoja ja turvallisuus → Mikrofoni.
@@ -81,7 +95,7 @@ Et. Brainingissa ei ole tilejä eikä kirjautumista. Se tarvitsee vain saman iCl
 <details>
 <summary>Miten saan muistiinpanot ulos Brainingista?</summary>
 
-Valitse **Vie Markdownina**. Braining tallentaa jokaisen muistiinpanon tavalliseksi Markdown-tiedostoksi valitsemaasi kansioon, ja ne aukeavat missä tahansa tekstieditorissa.
+Valitse **Vie Markdownina**. Braining tallentaa jokaisen muistiinpanon tavalliseksi Markdown-tiedostoksi valitsemaasi kansioon, ja ne aukeavat missä tahansa tekstieditorissa. Muistiinpanon kuvat tallentuvat JPEG-tiedostoina `assets`-kansioon, ja muistiinpanon lopussa on niihin linkit.
 </details>
 
 <details>
