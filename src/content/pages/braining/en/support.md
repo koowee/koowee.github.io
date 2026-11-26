@@ -21,7 +21,7 @@ Unless you have turned on transcription on your iPhone, transcription happens in
 
 Only if you turn it on. On newer iPhones and iPads, Braining offers **Litteroi iPhonella** (Transcribe on the iPhone) once. You can turn it on or off later with **Litteroi tällä laitteella** (Transcribe on this device) in the sync menu. Older devices do not show the option.
 
-When it is on, the device downloads a speech model of 627 MB once, over Wi-Fi only, and transcribes its own recordings on the device while Braining is open. Recordings made while the phone is locked wait until you next open the app. The Mac still transcribes anything the iPhone has not got to, and the two never transcribe the same recording twice. Until the model has downloaded, recordings wait for the Mac as before.
+When it is on, the device downloads a speech model of 627 MB once, over Wi-Fi only, and transcribes its own recordings on the device while Braining is open. Recordings made while the phone is locked wait until you next open the app. The Mac still transcribes anything the iPhone has not got to, and the two never transcribe the same recording twice. Until the model has downloaded, recordings wait for the Mac as before. Transcription on the device needs iCloud sync to be on, because your devices agree through iCloud on which of them transcribes a recording.
 
 The iPhone keeps a recording's own audio until it is transcribed, and at most 30 days. Each recording remembers which device and speech model transcribed it.
 

@@ -21,7 +21,7 @@ Jos et ole ottanut litterointia käyttöön iPhonella, litterointi tehdään Bra
 
 Vain jos otat sen käyttöön. Uudemmissa iPhoneissa ja iPadeissa Braining tarjoaa kerran **Litteroi iPhonella** -valintaa. Voit ottaa sen käyttöön tai pois myöhemmin synkronointivalikon asetuksella **Litteroi tällä laitteella**. Vanhemmissa laitteissa valintaa ei näy.
 
-Kun litterointi on päällä, laite lataa kerran 627 Mt:n puhemallin, vain Wi-Fi-yhteydellä, ja litteroi omat äänitteensä itse laitteella, kun Braining on auki. Kun puhelin on lukittu, tehdyt äänitteet odottavat, kunnes avaat sovelluksen seuraavan kerran. Mac litteroi edelleen ne, joihin iPhone ei ehdi, eikä sama äänite tule litteroiduksi kahdesti. Kunnes malli on ladattu, äänitteet odottavat Macia kuten ennenkin.
+Kun litterointi on päällä, laite lataa kerran 627 Mt:n puhemallin, vain Wi-Fi-yhteydellä, ja litteroi omat äänitteensä itse laitteella, kun Braining on auki. Kun puhelin on lukittu, tehdyt äänitteet odottavat, kunnes avaat sovelluksen seuraavan kerran. Mac litteroi edelleen ne, joihin iPhone ei ehdi, eikä sama äänite tule litteroiduksi kahdesti. Kunnes malli on ladattu, äänitteet odottavat Macia kuten ennenkin. Litterointi tällä laitteella vaatii, että iCloud-synkronointi on käytössä, koska laitteet sopivat iCloudin kautta, kuka äänitteen litteroi.
 
 iPhone säilyttää oman äänitteensä, kunnes se on litteroitu, enintään 30 päivää. Jokaiseen äänitteeseen tallentuu, mikä laite ja mikä puhemalli sen litteroi.
 
