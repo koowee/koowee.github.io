@@ -16,6 +16,8 @@ Brainingissa ei ole tilejä eikä omia palvelimia. Muistiinpanosi ja äänittees
 
 Muistutukset käyttävät laitteesi ilmoituksia. Sovellus pyytää niihin luvan, kun tallennat ensimmäisen muistutuksen tai kun ensimmäinen muistutus tulee toiselta laitteeltasi.
 
+Jos otat käyttöön asetuksen **Muistutukset Muistutukset-appiin**, Braining lukee ja kirjoittaa muistutuksia vain oman iCloud-tilisi Muistutukset-appin **Braining**-listalla, kun olet sallinut sen. Muita listojasi ei muuteta. Mikään ei lähde meidän palvelimillemme, koska meillä ei ole niitä. Asetus on oletuksena pois päältä.
+
 ## Missä tiedot säilyvät
 
 - **Laitteillasi:** jokaisella laitteella on täysi paikallinen kopio, joten Braining toimii myös ilman verkkoa. iPhonessa tiedostoja suojaa laitteen oma tietosuoja, ja Macissa sovelluksen eristys (sandbox) ja käyttäjätilisi.
