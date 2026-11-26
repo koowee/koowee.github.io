@@ -55,9 +55,15 @@ Voit. Teksti on Markdownia. iPhonella ja iPadilla näppäimistön yläpuolen **A
 <details>
 <summary>Voinko lisätä muistiinpanoon kuvia?</summary>
 
-Voit, enintään 20 kuvaa muistiinpanoa kohden. iPhonella ja iPadilla paina kuvanappia näppäimistön yläpuolella tai **Lisää kuva** tekstin alla ja valitse kamera, kuvat tai tiedostot. Voit myös liittää kopioidun kuvan. Macilla vedä kuva editoriin, liitä se ⌘V:llä tai valitse **Muotoile → Lisää kuva…** (⇧⌘I).
+Voit, enintään 20 kuvaa muistiinpanoa kohden. iPhonella ja iPadilla paina kuvanappia näppäimistön yläpuolella tai **Lisää kuva** tekstin alla ja valitse kamera, kuvat tai tiedostot. Valinnalla **Piirrä** voit piirtää tyhjälle sivulle, ja piirros tallentuu muistiinpanoon kuvana. Voit myös liittää kopioidun kuvan. Macilla vedä kuva editoriin, liitä se ⌘V:llä tai valitse **Muotoile → Lisää kuva…** (⇧⌘I).
 
 Kuvat näkyvät pikkukuvina tekstin alla. Napauta tai klikkaa kuvaa nähdäksesi sen isona, ja poista se painamalla sitä pitkään tai Macilla Ctrl-klikkaamalla. Kuvat tallentuvat, kun tallennat muistiinpanon, ja synkronoituvat muille laitteillesi. Braining pienentää kuvat (pisin sivu 2048 pikseliä) ja poistaa niistä sijaintitiedot ennen tallennusta.
+</details>
+
+<details>
+<summary>Voiko poistetun muistiinpanon palauttaa?</summary>
+
+Ei. Poisto poistaa muistiinpanon ja sen kuvat kaikilta laitteiltasi ja iCloudista, eikä sitä voi kumota. Braining kertoo ennen poistoa, montako kuvaa lähtee mukana. Jos haluat vain siirtää muistiinpanon syrjään, arkistoi se: Arkistosta sen saa takaisin.
 </details>
 
 <details>
