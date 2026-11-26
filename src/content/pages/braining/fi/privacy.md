@@ -11,6 +11,7 @@ Brainingissa ei ole tilejä eikä omia palvelimia. Muistiinpanosi ja äänittees
 
 - Äänitteet, jotka teet iPhonella tai Macilla. Laite pyytää mikrofonin käyttöoikeutta vain niiden äänittämiseen.
 - Muistiinpanosi: otsikko, teksti, litterointi, kategoria, tagit, määräpäivä ja muistutus.
+- Kuvat, jotka lisäät muistiinpanoihin. Braining pienentää ne ja poistaa niistä sijainti- ja muut metatiedot ennen tallennusta. iPhone pyytää kameran käyttöoikeutta vain, kun otat kuvan muistiinpanoon, ja kuvakirjastostasi Braining saa vain ne kuvat, jotka valitset.
 - Kategorialuettelosi.
 
 Muistutukset käyttävät laitteesi ilmoituksia. Sovellus pyytää niihin luvan, kun tallennat ensimmäisen muistutuksen tai kun ensimmäinen muistutus tulee toiselta laitteeltasi.
@@ -20,13 +21,13 @@ Jos otat käyttöön asetuksen **Muistutukset Muistutukset-appiin**, Braining lu
 ## Missä tiedot säilyvät
 
 - **Laitteillasi:** jokaisella laitteella on täysi paikallinen kopio, joten Braining toimii myös ilman verkkoa. iPhonessa tiedostoja suojaa laitteen oma tietosuoja, ja Macissa sovelluksen eristys (sandbox) ja käyttäjätilisi.
-- **iCloudissa:** muistiinpanot, kategoriat ja äänitteet synkronoituvat iCloud-tilisi yksityiseen CloudKit-tietokantaan. Muistiinpanon otsikko, teksti, litterointi ja tagit sekä kategorian nimi tallentuvat iCloudiin salattuina kenttinä. Apple säilyttää tiedot omien ehtojensa mukaan, eikä Braining lisää omaa salaustaan.
+- **iCloudissa:** muistiinpanot, kategoriat, kuvat ja äänitteet synkronoituvat iCloud-tilisi yksityiseen CloudKit-tietokantaan. Muistiinpanon otsikko, teksti, litterointi ja tagit sekä kategorian nimi tallentuvat iCloudiin salattuina kenttinä. Apple säilyttää tiedot omien ehtojensa mukaan, eikä Braining lisää omaa salaustaan.
 
 ## Kuinka kauan tiedot säilyvät
 
 - Äänite poistetaan iCloudista ja Macilta 30 päivää litteroinnin jälkeen. iPhone poistaa oman kopionsa heti, kun äänite on siirtynyt iCloudiin. Jos olet ottanut litteroinnin käyttöön iPhonella, se säilyttää oman kopionsa äänitteestä, kunnes se on litteroitu, enintään 30 päivää.
 - Äänitteet, joissa ei ollut puhetta, ja epäonnistuneet säilyvät, kunnes yrität uudelleen tai poistat ne.
-- Poistetut muistiinpanot säilyvät 30 päivää ja poistuvat sitten pysyvästi.
+- Poistetut muistiinpanot säilyvät 30 päivää ja poistuvat sitten pysyvästi. Muistiinpanon kuvat poistuvat kaikilta laitteilta ja iCloudista heti, kun poistat muistiinpanon tai kuvan.
 - Muut muistiinpanot säilyvät, kunnes poistat ne.
 
 ## Ulkopuoliset palvelut
