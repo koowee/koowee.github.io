@@ -1,7 +1,7 @@
 ---
 title: "Brainingin tietosuojaseloste"
 description: "Miten Braining käsittelee tietojasi: ei tilejä eikä Brainingin omia palvelimia, ja muistiinpanot ja äänitteet synkronoituvat oman iCloud-tilisi yksityisessä tietokannassa."
-lastUpdated: 2026-11-24
+lastUpdated: 2026-11-25
 ---
 ## Lyhyesti
 
@@ -14,6 +14,8 @@ Brainingissa ei ole tilejä eikä omia palvelimia. Muistiinpanosi ja äänittees
 - Kategorialuettelosi.
 
 Muistutukset käyttävät laitteesi ilmoituksia. Sovellus pyytää niihin luvan, kun tallennat ensimmäisen muistutuksen tai kun ensimmäinen muistutus tulee toiselta laitteeltasi.
+
+Jos otat käyttöön asetuksen **Muistutukset Muistutukset-appiin**, Braining lukee ja kirjoittaa muistutuksia vain oman iCloud-tilisi Muistutukset-appin **Braining**-listalla, kun olet sallinut sen. Muita listojasi ei muuteta. Mikään ei lähde meidän palvelimillemme, koska meillä ei ole niitä. Asetus on oletuksena pois päältä.
 
 ## Missä tiedot säilyvät
 

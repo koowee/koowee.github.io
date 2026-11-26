@@ -57,7 +57,17 @@ Jos suljet sovelluksen tai pääikkunan, Mac menee lepotilaan tai mikrofoni irto
 <details>
 <summary>Tuleeko muistutus kaikille laitteille?</summary>
 
-Tulee. Jokainen laite ajastaa muistutukset, kun muistiinpanot ovat synkronoituneet sille, joten muistutus tulee iPhoneen, iPadiin ja Maciin. Laitteen pitää saada muutos ennen muistutusaikaa: avaa Braining hetkeksi, jos laite on ollut pitkään poissa verkosta. Kun poistat tai siirrät muistutuksen, se poistuu myös muilta laitteilta.
+Tulee, kun laite ehtii saada muutoksen ennen muistutusaikaa. Oletuksena jokainen laite ajastaa muistutukset itse, kun muistiinpanot ovat synkronoituneet sille. Varmin tapa on asetus **Muistutukset Muistutukset-appiin** (ks. alla). Kun poistat tai siirrät muistutuksen, se poistuu myös muilta laitteilta.
+</details>
+
+<details>
+<summary>Muistutus ei tule toiselle laitteelle</summary>
+
+Oletuksena jokainen laite ajastaa muistutuksen vasta, kun Braining on lukenut muistiinpanon. iPhone herättää Brainingin taustalla, kun muutos saapuu, mutta iOS päättää, herääkö se. Se ei herätä sovellusta, jonka olet pyyhkäissyt pois, ja se rajoittaa taustapäivityksiä esimerkiksi virransäästötilassa. Silloin muistutus ajastuu vasta, kun avaat Brainingin.
+
+Varmempi tapa on ottaa käyttöön **Muistutukset Muistutukset-appiin**. iPhonella ja iPadilla asetus on muistiinpanolistan ⋯-valikossa, Macilla valikkorivin **Muistiinpanot**-valikossa. Asetus on sama kaikilla laitteillasi. Kun se on päällä, Braining lisää muistutukset Muistutukset-appin **Braining**-listaan iCloudissa, ja ne ilmoittavat kaikilla laitteillasi (myös Apple Watchilla), vaikka Braining ei olisi auki. Brainingin omat ilmoitukset jäävät silloin pois. Braining pyytää kytkiessä luvan Muistutuksiin, ja jokaisen laitteen pitää sallia se. Laite, jolla lupaa ei ole, näyttää siitä varoituksen ja ilmoittaa muistutukset Brainingin omina ilmoituksina. Siellä muistutus tulee siis kahdesti, koska myös Muistutukset-appi ilmoittaa sen. Samoin toimii laite, jolla synkronointi ei ole päällä. Laite, jolla Braining ei ole käynnistynyt asetuksen kytkemisen jälkeen, ilmoittaa jo ajastamansa muistutukset vielä Brainingin ilmoituksina, kunnes Braining käynnistyy siellä.
+
+Muutokset kulkevat vain Brainingista Muistutuksiin. Jos muokkaat muistutusta Muistutukset-apissa, muistiinpano ei muutu. Muistutuksen linkki avaa muistiinpanon Brainingissa. Kun kytket asetuksen pois, Braining poistaa lisäämänsä muistutukset ja ajastaa taas omat ilmoituksensa.
 </details>
 
 <details>

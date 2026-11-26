@@ -57,7 +57,17 @@ If you quit the app or close its main window, the Mac goes to sleep or the micro
 <details>
 <summary>Do reminders arrive on every device?</summary>
 
-Yes. Each device schedules the reminders once the notes have synced to it, so a reminder arrives on your iPhone, iPad and Mac. The device needs the change before the reminder time: open Braining for a moment if the device has been offline for long. When you remove or move a reminder, it goes away on your other devices too.
+Yes, as long as the device gets the change before the reminder time. By default each device schedules the reminders itself once the notes have synced to it. The surest way is the **Muistutukset Muistutukset-appiin** (Reminders through the Reminders app) setting, described below. When you remove or move a reminder, it goes away on your other devices too.
+</details>
+
+<details>
+<summary>A reminder doesn't reach my other device</summary>
+
+By default each device schedules a reminder only after Braining has read the note. The iPhone wakes Braining in the background when a change arrives, but iOS decides whether it does. It does not wake an app you have swiped away, and it limits background updates, for example in Low Power Mode. In those cases the reminder is scheduled only when you next open Braining.
+
+The surer way is to turn on **Muistutukset Muistutukset-appiin**. On iPhone and iPad it is in the ⋯ menu of the notes list, on the Mac in the **Muistiinpanot** menu in the menu bar. The setting is the same on all your devices. When it is on, Braining adds your reminders to a **Braining** list in the Reminders app in iCloud, and they alert on all your devices (Apple Watch too) even when Braining is not open. Braining's own notifications are then switched off. Braining asks for permission to use Reminders when you turn it on, and each device has to allow it. A device without permission shows a warning and alerts with Braining's own notifications, so there a reminder alerts twice: the Reminders app alerts too. A device where sync is off does the same. A device where Braining has not run since the setting was turned on keeps the Braining notifications it had already scheduled until Braining runs there.
+
+Changes go only from Braining to Reminders. If you edit a reminder in the Reminders app, the note does not change. The link in the reminder opens the note in Braining. When you turn the setting off, Braining removes the reminders it added and schedules its own notifications again.
 </details>
 
 <details>

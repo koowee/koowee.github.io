@@ -1,7 +1,7 @@
 ---
 title: "Braining privacy policy"
 description: "How Braining handles your data: no accounts and no Braining servers, and your notes and recordings sync through the private database of your own iCloud account."
-lastUpdated: 2026-11-24
+lastUpdated: 2026-11-25
 ---
 ## Summary
 
@@ -14,6 +14,8 @@ Braining has no accounts and no servers of its own. Your notes and recordings ar
 - Your list of categories.
 
 Reminders use notifications on your device. The app asks for permission the first time you save a reminder, or when the first reminder arrives from another of your devices.
+
+If you turn on the **Muistutukset Muistutukset-appiin** (Reminders through the Reminders app) setting, Braining reads and writes reminders only in a **Braining** list in your own Reminders in iCloud, after you have allowed it. It changes none of your other lists. Nothing goes to any server of ours, because we have none. The setting is off by default.
 
 ## Where it is stored
 
