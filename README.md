@@ -53,7 +53,9 @@ The app page then shows Apple's official "Download on the App Store" badge. The 
 
 - Terrain and contour lines come straight from [Mapterhorn](https://mapterhorn.com) tiles (National Land Survey of Finland 2 m elevation model, CC BY 4.0). Contours are computed in the browser with maplibre-contour.
 - Weather and snow come from Open-Meteo, the Kp forecast from NOAA SWPC and measured snow depth from the Finnish Meteorological Institute (Kittilä airport). The browser fetches all of them when the page opens, so there is no server or scheduled job.
-- `data/layers.json` holds buildings, roads, paths, pistes, ski tracks, lifts, water and places from the Overture Maps release 2026-11-18 (OpenStreetMap, ODbL; places CDLA-Permissive-2.0). `data/landcover.png` is ESA WorldCover 2021. Both cover lon 24.60–25.02, lat 67.62–67.88. The scripts that made them are kept with the project planning files, not in this repository.
+- `data/layers.json` holds buildings, roads, paths, water and places from the Overture Maps release 2026-11-18 (OpenStreetMap, ODbL; places CDLA-Permissive-2.0).
+- `data/winter.json` holds pistes, lifts, ski tracks, winter paths and snowmobile routes straight from OpenStreetMap (Overpass query of 2026-11-27, ODbL). Pistes and lifts keep their refs (`E.1`, `GE`), which match the names levi.fi uses.
+- Piste and lift status comes from the API behind levi.fi. The API only answers requests from levi.fi itself, so on this site the page shows a short note and draws the pistes from OSM alone. If Levi allows this origin, open and closed pistes and lifts appear without code changes. Do not route the requests through a proxy to get around this. `data/landcover.png` is ESA WorldCover 2021. These files cover lon 24.60–25.02, lat 67.62–67.88. The scripts that made them are kept with the project planning files, not in this repository.
 
 ### Screenshots
 

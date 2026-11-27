@@ -422,7 +422,14 @@ test('levi map page ships with its data', () => {
   assert.match(html, /<html lang="fi"/);
   assert.ok(html.includes('https://tiles.mapterhorn.com/{z}/{x}/{y}.webp'), 'terrain from Mapterhorn');
   assert.ok(html.includes('© Mapterhorn') && html.includes('CC BY 4.0') && html.includes('OpenStreetMap'), 'attribution');
-  for (const f of ['layers.json', 'landcover.png']) assert.ok(existsSync(join(DIST, 'levi', 'data', f)), f);
+  for (const f of ['layers.json', 'winter.json', 'landcover.png']) assert.ok(existsSync(join(DIST, 'levi', 'data', f)), f);
   const layers = JSON.parse(readFileSync(join(DIST, 'levi', 'data', 'layers.json'), 'utf8'));
-  for (const k of ['buildings', 'roads', 'water', 'infra', 'landuse', 'places']) assert.ok(layers[k]?.features?.length > 0, k);
+  for (const k of ['buildings', 'roads', 'water', 'places']) assert.ok(layers[k]?.features?.length > 0, k);
+  // winter layers come straight from OpenStreetMap; pistes and lifts keep the refs (E.1, GE) that levi.fi status uses
+  const winter = JSON.parse(readFileSync(join(DIST, 'levi', 'data', 'winter.json'), 'utf8'));
+  for (const k of ['pistes', 'lifts', 'nordic', 'wpaths', 'snowmobile']) assert.ok(winter[k]?.features?.length > 0, k);
+  assert.ok(winter.pistes.features.some((f: any) => f.properties.ref === 'E.1'), 'piste refs');
+  assert.ok(winter.lifts.features.some((f: any) => f.properties.ref === 'GE'), 'lift refs');
+  assert.ok(html.includes('Moottorikelkkareitit') && html.includes('Talvipolut'), 'winter layer toggles');
+  assert.ok(html.includes('frendsapp.com/api/'), 'levi.fi status source');
 });
