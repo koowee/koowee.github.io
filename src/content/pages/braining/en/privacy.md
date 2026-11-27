@@ -1,7 +1,7 @@
 ---
 title: "Braining privacy policy"
 description: "How Braining handles your data: no accounts and no Braining servers, and your notes and recordings sync through the private database of your own iCloud account."
-lastUpdated: 2026-11-25
+lastUpdated: 2026-11-26
 ---
 ## Summary
 
@@ -11,7 +11,7 @@ Braining has no accounts and no servers of its own. Your notes and recordings ar
 
 - Voice recordings you make on your iPhone or Mac. The device asks for microphone access only to record them.
 - Your notes: title, text, transcript, category, tags, due date and reminder.
-- Pictures you add to notes. Braining shrinks them and removes location and other metadata before saving. The iPhone asks for camera access only when you take a picture for a note, and from your photo library Braining gets only the pictures you choose.
+- Pictures and drawings you add to notes. Braining shrinks them and removes location and other metadata before saving. The iPhone asks for camera access only when you take a picture for a note, and from your photo library Braining gets only the pictures you choose.
 - Your list of categories.
 
 Reminders use notifications on your device. The app asks for permission the first time you save a reminder, or when the first reminder arrives from another of your devices.
@@ -27,7 +27,7 @@ If you turn on the **Muistutukset Muistutukset-appiin** (Reminders through the R
 
 - A recording is deleted from iCloud and the Mac 30 days after it is transcribed. The iPhone deletes its own copy as soon as the recording has reached iCloud. If you have turned on transcription on the iPhone, it keeps its own copy of the recording until it is transcribed, and at most 30 days.
 - Recordings without speech and failed ones are kept until you retry or delete them.
-- Deleted notes are kept for 30 days and then removed for good. A note's pictures are removed from all devices and iCloud as soon as you delete the note or the picture.
+- A deleted note is removed from iCloud and all your devices, and the app cannot bring it back. Each device keeps an internal copy of its text for 30 days, and then removes it for good. A note's pictures are removed from all devices and iCloud as soon as you delete the note or the picture. An archived note is kept and can be restored from the Archive.
 - Other notes are kept until you delete them.
 
 ## Third-party services

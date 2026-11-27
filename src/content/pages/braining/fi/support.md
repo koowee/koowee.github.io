@@ -21,7 +21,7 @@ Jos et ole ottanut litterointia käyttöön iPhonella, litterointi tehdään Bra
 
 Vain jos otat sen käyttöön. Uudemmissa iPhoneissa ja iPadeissa Braining tarjoaa kerran **Litteroi iPhonella** -valintaa. Voit ottaa sen käyttöön tai pois myöhemmin synkronointivalikon asetuksella **Litteroi tällä laitteella**. Vanhemmissa laitteissa valintaa ei näy.
 
-Kun litterointi on päällä, laite lataa kerran 627 Mt:n puhemallin, vain Wi-Fi-yhteydellä, ja litteroi omat äänitteensä itse laitteella, kun Braining on auki. Kun puhelin on lukittu, tehdyt äänitteet odottavat, kunnes avaat sovelluksen seuraavan kerran. Mac litteroi edelleen ne, joihin iPhone ei ehdi, eikä sama äänite tule litteroiduksi kahdesti. Kunnes malli on ladattu, äänitteet odottavat Macia kuten ennenkin.
+Kun litterointi on päällä, laite lataa kerran 627 Mt:n puhemallin, vain Wi-Fi-yhteydellä, ja litteroi omat äänitteensä itse laitteella, kun Braining on auki. Kun puhelin on lukittu, tehdyt äänitteet odottavat, kunnes avaat sovelluksen seuraavan kerran. Mac litteroi edelleen ne, joihin iPhone ei ehdi, eikä sama äänite tule litteroiduksi kahdesti. Kunnes malli on ladattu, äänitteet odottavat Macia kuten ennenkin. Litterointi tällä laitteella vaatii, että iCloud-synkronointi on käytössä, koska laitteet sopivat iCloudin kautta, kuka äänitteen litteroi.
 
 iPhone säilyttää oman äänitteensä, kunnes se on litteroitu, enintään 30 päivää. Jokaiseen äänitteeseen tallentuu, mikä laite ja mikä puhemalli sen litteroi.
 
@@ -55,9 +55,15 @@ Voit. Teksti on Markdownia. iPhonella ja iPadilla näppäimistön yläpuolen **A
 <details>
 <summary>Voinko lisätä muistiinpanoon kuvia?</summary>
 
-Voit, enintään 20 kuvaa muistiinpanoa kohden. iPhonella ja iPadilla paina kuvanappia näppäimistön yläpuolella tai **Lisää kuva** tekstin alla ja valitse kamera, kuvat tai tiedostot. Voit myös liittää kopioidun kuvan. Macilla vedä kuva editoriin, liitä se ⌘V:llä tai valitse **Muotoile → Lisää kuva…** (⇧⌘I).
+Voit, enintään 20 kuvaa muistiinpanoa kohden. iPhonella ja iPadilla paina kuvanappia näppäimistön yläpuolella tai **Lisää kuva** tekstin alla ja valitse kamera, kuvat tai tiedostot. Valinnalla **Piirrä** voit piirtää tyhjälle sivulle, ja piirros tallentuu muistiinpanoon kuvana. Voit myös liittää kopioidun kuvan. Macilla vedä kuva editoriin, liitä se ⌘V:llä tai valitse **Muotoile → Lisää kuva…** (⇧⌘I).
 
 Kuvat näkyvät pikkukuvina tekstin alla. Napauta tai klikkaa kuvaa nähdäksesi sen isona, ja poista se painamalla sitä pitkään tai Macilla Ctrl-klikkaamalla. Kuvat tallentuvat, kun tallennat muistiinpanon, ja synkronoituvat muille laitteillesi. Braining pienentää kuvat (pisin sivu 2048 pikseliä) ja poistaa niistä sijaintitiedot ennen tallennusta.
+</details>
+
+<details>
+<summary>Voiko poistetun muistiinpanon palauttaa?</summary>
+
+Ei. Poisto poistaa muistiinpanon ja sen kuvat kaikilta laitteiltasi ja iCloudista, eikä sitä voi kumota. Braining kertoo ennen poistoa, montako kuvaa lähtee mukana. Jos haluat vain siirtää muistiinpanon syrjään, arkistoi se: Arkistosta sen saa takaisin.
 </details>
 
 <details>
