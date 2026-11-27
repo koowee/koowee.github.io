@@ -65,7 +65,7 @@ Kuvat näkyvät pikkukuvina tekstin alla. Napauta tai klikkaa kuvaa nähdäksesi
 
 Jos samasta asiasta on tullut monta lyhyttä sanelua, voit yhdistää ne yhdeksi. iPhonella ja iPadilla paina muistiinpanoa pitkään ja valitse **Yhdistä toiseen muistiinpanoon…**, tai valitse muokkaustilassa useampi muistiinpano ja paina **Yhdistä…**. Macilla valitse muistiinpanot ja valitse Ctrl-klikkausvalikosta tai Muistiinpanot-valikosta **Yhdistä toiseen muistiinpanoon…**. Valitse sitten, mihin muistiinpanoon ne lisätään.
 
-Voit myös vetää muistiinpanon toisen päälle listassa, niin Braining kysyy, yhdistetäänkö ne. Macilla ja iPadilla muistiinpanon voi vetää myös toiseen ohjelmaan: tekstikenttään (esimerkiksi Mail tai Viestit) se menee tekstinä ja Finderiin tai Tiedostoihin .md-tiedostona.
+Macilla voit myös vetää muistiinpanon toisen päälle listassa, niin Braining kysyy, yhdistetäänkö ne. Macilla ja iPadilla muistiinpanon voi vetää myös toiseen ohjelmaan: tekstikenttään (esimerkiksi Mail tai Viestit) se menee tekstinä ja Finderiin tai Tiedostoihin .md-tiedostona.
 
 Muistiinpanot lisätään valitun perään vanhimmasta alkaen, ja kunkin otsikosta tulee väliotsikko. Myös kuvat kopioidaan. Alkuperäiset siirtyvät Arkistoon äänitteineen, joten mitään ei katoa. Yhdistämisen voi kumota heti sen jälkeen **Kumoa**-painikkeella (Macilla Muistiinpanot-valikosta), ja myöhemmin alkuperäiset voi palauttaa Arkistosta.
 </details>
