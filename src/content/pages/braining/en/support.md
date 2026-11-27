@@ -65,6 +65,8 @@ Pictures show as thumbnails below the text. Tap or click one to see it large, an
 
 If one topic ended up as several short dictations, you can merge them into one. On the iPhone and iPad, touch and hold a note and choose **Yhdistä toiseen muistiinpanoon…** (Merge into another note), or select several notes in edit mode and tap **Yhdistä…**. On the Mac, select the notes and choose **Yhdistä toiseen muistiinpanoon…** from the Control-click menu or the Muistiinpanot (Notes) menu. Then pick the note they are added to.
 
+You can also drag a note onto another in the list, and Braining asks whether to merge them. On the Mac and iPad you can drag a note into another app too: into a text field (Mail or Messages, for example) it goes as text, and into Finder or Files as a .md file.
+
 The notes are added to the end of the one you picked, oldest first, each with its title as a heading. Pictures are copied too. The originals move to the Archive with their recordings, so nothing is lost. You can undo the merge right after it with **Kumoa** (Undo; on the Mac in the Muistiinpanot menu), and later restore the originals from the Archive.
 </details>
 
