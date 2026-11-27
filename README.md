@@ -49,13 +49,13 @@ The app page then shows Apple's official "Download on the App Store" badge. The 
 
 ### Levi 3D map
 
-`/levi/` is a standalone MapLibre page, not built by Astro. It shows the Levi fell and Kittilä centre in 3D from open data:
+`/levi/` is a standalone MapLibre page, not built by Astro. It shows three fell areas in 3D from open data: Levi with Kittilä centre (`#levi`), Ylläs with Äkäslompolo and Ylläsjärvi (`#yllas`) and Pallas (`#pallas`). The area buttons swap the data in place, and the address keeps the chosen area.
 
 - Terrain and contour lines come straight from [Mapterhorn](https://mapterhorn.com) tiles (National Land Survey of Finland 2 m elevation model, CC BY 4.0). Contours are computed in the browser with maplibre-contour.
-- Weather and snow come from Open-Meteo, the Kp forecast from NOAA SWPC and measured snow depth from the Finnish Meteorological Institute (Kittilä airport). The browser fetches all of them when the page opens, so there is no server or scheduled job.
-- `data/layers.json` holds buildings, roads, paths, water and places from the Overture Maps release 2026-11-18 (OpenStreetMap, ODbL; places CDLA-Permissive-2.0).
-- `data/winter.json` holds pistes, lifts, ski tracks, winter paths and snowmobile routes straight from OpenStreetMap (Overpass query of 2026-11-27, ODbL). Pistes and lifts keep their refs (`E.1`, `GE`), which match the names levi.fi uses.
-- Piste and lift status comes from the API behind levi.fi. The API only answers requests from levi.fi itself, so on this site the page shows a short note and draws the pistes from OSM alone. If Levi allows this origin, open and closed pistes and lifts appear without code changes. Do not route the requests through a proxy to get around this. `data/landcover.png` is ESA WorldCover 2021. These files cover lon 24.60–25.02, lat 67.62–67.88. The scripts that made them are kept with the project planning files, not in this repository.
+- Weather and snow come from Open-Meteo, the Kp forecast from NOAA SWPC and measured snow depth from the nearest Finnish Meteorological Institute station within 40 km (Kittilä airport for Levi, Pallasjärvi for Pallas; Ylläs has none, so it uses the Open-Meteo model). The browser fetches all of them when the page opens, so there is no server or scheduled job.
+- Each area has its own folder `data/<area>/`. Its `layers.json` holds buildings, roads, paths, water and places from the Overture Maps release 2026-11-18 (OpenStreetMap, ODbL; places CDLA-Permissive-2.0). `landcover.png` is ESA WorldCover 2021. The bounding boxes are in the `AREAS` table in the page (Levi lon 24.60–25.02, lat 67.62–67.88; Ylläs 24.05–24.42, 67.49–67.66; Pallas 23.90–24.30, 67.97–68.13). The scripts that made them are kept with the project planning files, not in this repository.
+- `winter.json` holds pistes, lifts, ski tracks, winter paths and snowmobile routes straight from OpenStreetMap (Overpass query of 2026-11-27, ODbL). Pistes and lifts keep their refs (`E.1`, `GE`), which match the names levi.fi uses.
+- Piste and lift status (Levi only) comes from the API behind levi.fi. The API only answers requests from levi.fi itself, so on this site the page shows a short note and draws the pistes from OSM alone. If Levi allows this origin, open and closed pistes and lifts appear without code changes. Do not route the requests through a proxy to get around this.
 
 ### Screenshots
 
