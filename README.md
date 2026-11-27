@@ -26,6 +26,7 @@ Every push to `main` builds the site, runs the tests and deploys it. A pull requ
 | App icons | `src/assets/icons/<slug>.png` (1024 px) |
 | About text and website privacy | `src/content/site/<en\|fi>/<about\|privacy>.md` |
 | Shared interface text (buttons, labels) | `src/lib/i18n.ts` |
+| Levi 3D map (standalone page, Finnish only) | `public/levi/index.html`, data in `public/levi/data/` |
 
 Write the support FAQ as `<details><summary>Question</summary>…answer…</details>` blocks. Every privacy page needs `lastUpdated: YYYY-MM-DD` in its frontmatter. Change the date whenever the policy changes.
 
@@ -45,6 +46,14 @@ The build fails if an app is missing any of its six text files, if a privacy pag
 In the app's JSON, set `"status": "released"` and `"appStoreUrl": "https://apps.apple.com/…"`.
 
 The app page then shows Apple's official "Download on the App Store" badge. The badges are Apple's official black artwork: `src/assets/badges/app-store-en.svg` and `app-store-fi.svg`. New versions come from [App Store Marketing Tools](https://toolbox.marketingtools.apple.com/app-store/); do not edit the files.
+
+### Levi 3D map
+
+`/levi/` is a standalone MapLibre page, not built by Astro. It shows the Levi fell and Kittilä centre in 3D from open data:
+
+- Terrain and contour lines come straight from [Mapterhorn](https://mapterhorn.com) tiles (National Land Survey of Finland 2 m elevation model, CC BY 4.0). Contours are computed in the browser with maplibre-contour.
+- Weather and snow come from Open-Meteo, the Kp forecast from NOAA SWPC and measured snow depth from the Finnish Meteorological Institute (Kittilä airport). The browser fetches all of them when the page opens, so there is no server or scheduled job.
+- `data/layers.json` holds buildings, roads, paths, pistes, ski tracks, lifts, water and places from the Overture Maps release 2026-11-18 (OpenStreetMap, ODbL; places CDLA-Permissive-2.0). `data/landcover.png` is ESA WorldCover 2021. Both cover lon 24.60–25.02, lat 67.62–67.88. The scripts that made them are kept with the project planning files, not in this repository.
 
 ### Screenshots
 
