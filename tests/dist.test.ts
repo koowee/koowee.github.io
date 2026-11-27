@@ -102,8 +102,9 @@ test('exactly the expected pages', () => {
   const files = listHtml(DIST).sort();
   const redirects = ['', 'fi/'].flatMap((lang) =>
     ['', 'guide/', 'support/', 'privacy/'].map((page) => `${lang}revontulet/${page}index.html`));
-  const expected = [...EXPECTED_PATHS.map(toFile), '404.html', ...redirects, 'lataamo/volvo/index.html'].sort();
-  assert.equal(expected.length, 78);
+  // levi/ is a standalone static map page from public/ (no Astro layout, Finnish only).
+  const expected = [...EXPECTED_PATHS.map(toFile), '404.html', ...redirects, 'lataamo/volvo/index.html', 'levi/index.html'].sort();
+  assert.equal(expected.length, 79);
   assert.deepEqual(files, expected);
 });
 
@@ -414,4 +415,14 @@ test('lataamo guide explains the Volvo keys and the support page links to it', (
     assert.ok(html.includes('developer.volvocars.com'), `${rel} portal`);
     assert.ok(readPage(`${prefix.slice(1)}lataamo/support`).includes(`href="${prefix}lataamo/guide/`), `${rel} support → guide`);
   }
+});
+
+test('levi map page ships with its data', () => {
+  const html = readPage('levi');
+  assert.match(html, /<html lang="fi"/);
+  assert.ok(html.includes('https://tiles.mapterhorn.com/{z}/{x}/{y}.webp'), 'terrain from Mapterhorn');
+  assert.ok(html.includes('© Mapterhorn') && html.includes('CC BY 4.0') && html.includes('OpenStreetMap'), 'attribution');
+  for (const f of ['layers.json', 'landcover.png']) assert.ok(existsSync(join(DIST, 'levi', 'data', f)), f);
+  const layers = JSON.parse(readFileSync(join(DIST, 'levi', 'data', 'layers.json'), 'utf8'));
+  for (const k of ['buildings', 'roads', 'water', 'infra', 'landuse', 'places']) assert.ok(layers[k]?.features?.length > 0, k);
 });
