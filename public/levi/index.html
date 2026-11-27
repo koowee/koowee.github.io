@@ -69,6 +69,8 @@ button:hover,button:focus-visible{border-color:var(--accent);outline:none}
 .chart span.now{outline:2px solid var(--fg);outline-offset:0}
 .days{display:flex;justify-content:space-around;font-size:.72rem;color:var(--muted)}
 .au{border-top:1px solid var(--line);padding-top:8px}
+.sw.diff{background:linear-gradient(90deg,#2f9e44 0 25%,#1c64d6 25% 50%,#d6333f 50% 75%,#111 75%)}
+#lstat b{font-family:var(--display);font-size:1rem;color:var(--fg)}
 .stat.big{font-size:1.4rem;color:#1f9e63}
 #aurora{position:absolute;inset:0 0 auto 0;height:45%;z-index:1;pointer-events:none;opacity:0;transition:opacity .6s;
   background:radial-gradient(120% 70% at 50% 0%,rgba(61,255,154,.28),rgba(61,255,154,.08) 45%,transparent 70%),
@@ -116,6 +118,11 @@ button:hover,button:focus-visible{border-color:var(--accent);outline:none}
     <p class="note" id="snow"></p>
   </section>
   <section>
+    <h2>Rinteet ja hissit</h2>
+    <p class="note" id="lstat">Haetaan rinteiden ja hissien tilaa…</p>
+    <p class="note">Rinteet vaikeusväreillä: vihreä erittäin helppo, sininen helppo, punainen keskivaikea, musta vaikea. Napauta rinnettä, hissiä tai reittiä nähdäksesi tiedot.</p>
+  </section>
+  <section>
     <h2>Aika, aurinko ja revontulet</h2>
     <div class="chart" id="chart" aria-label="Revontulten todennäköisyys tunneittain"></div>
     <input type="range" id="time" min="0" max="4310" step="10" aria-label="Aika">
@@ -142,7 +149,7 @@ button:hover,button:focus-visible{border-color:var(--accent);outline:none}
       <button data-v="yla">Yläkuva</button>
     </div>
   </section>
-  <p class="note">Korkeus: Maanmittauslaitoksen 2 m korkeusmalli 2025 (CC BY 4.0) Mapterhornin maastotiilinä (© Mapterhorn). Korkeuskäyrät lasketaan selaimessa samasta mallista (maplibre-contour). Maanpeite: ESA WorldCover 2021. Rakennukset, tiet, polut, rinteet, ladut ja hissit: © OpenStreetMap-tekijät (ODbL) Overture Maps -julkaisun 2026-11-18 kautta. Paikat ja yritykset: Overture Maps Places (CDLA-Permissive-2.0; lähteinä mm. Meta, BrightQuery, Foursquare). Sää: Open-Meteo. Lumensyvyys: Ilmatieteen laitos (CC BY 4.0). Kp-ennuste: NOAA SWPC.</p>
+  <p class="note">Korkeus: Maanmittauslaitoksen 2 m korkeusmalli 2025 (CC BY 4.0) Mapterhornin maastotiilinä (© Mapterhorn). Korkeuskäyrät lasketaan selaimessa samasta mallista (maplibre-contour). Maanpeite: ESA WorldCover 2021. Rakennukset, tiet ja polut: © OpenStreetMap-tekijät (ODbL) Overture Maps -julkaisun 2026-11-18 kautta. Rinteet, hissit, ladut, talvipolut ja moottorikelkkareitit: © OpenStreetMap-tekijät (ODbL), haettu suoraan OSM:stä 27.11.2026. Kelkkareitit ovat OSM:n merkintöjä, eivät virallinen reittikartta: tarkista ajoreitit ja -luvat Metsähallitukselta tai kelkkasafarin järjestäjältä. Rinteiden ja hissien tila: Levi (levi.fi), kun Levi sallii haun. Paikat ja yritykset: Overture Maps Places (CDLA-Permissive-2.0; lähteinä mm. Meta, BrightQuery, Foursquare). Sää: Open-Meteo. Lumensyvyys: Ilmatieteen laitos (CC BY 4.0). Kp-ennuste: NOAA SWPC.</p>
 </aside>
 <div id="hover" hidden></div>
 
@@ -167,9 +174,11 @@ const LAYERS=[
   {id:'hillshade',name:'Rinnevarjostus',sw:'#777',ids:['hillshade']},
   {id:'contours',name:'Käyrät 10 m',sw:'#8a6d3b',ids:['contours','contours-major']},
   {id:'water',name:'Vesistöt',sw:'#5b8fc2',ids:['water-fill','water-line']},
-  {id:'pistes',name:'Laskettelurinteet',sw:'var(--piste)',ids:['pistes']},
+  {id:'pistes',name:'Laskettelurinteet',sw:'',cls:'diff',ids:['pistes']},
   {id:'nordic',name:'Ladut',sw:'var(--nordic)',ids:['nordic']},
   {id:'lifts',name:'Hissit',sw:'var(--lift)',ids:['lifts']},
+  {id:'wpaths',name:'Talvipolut',sw:'#8a5a2b',ids:['wpaths'],winter:true},
+  {id:'snowmobile',name:'Moottorikelkkareitit',sw:'#e8a317',ids:['snowmobile'],winter:true},
   {id:'roads',name:'Tiet ja polut',sw:'#b08850',ids:['roads','paths']},
   {id:'buildings',name:'Rakennukset 3D',sw:'#c9b8a6',ids:['buildings']},
   {id:'places',name:'Paikat ja yritykset',sw:'#e07a1f',ids:['places']},
@@ -177,9 +186,9 @@ const LAYERS=[
 const lw=document.getElementById('layers');
 LAYERS.forEach(L=>{
   const l=document.createElement('label');
-  l.innerHTML=`<input type="checkbox" id="ly-${L.id}" checked><span class="sw" style="background:${L.sw}"></span>${L.name}`;
+  l.innerHTML=`<input type="checkbox" id="ly-${L.id}" checked><span class="sw ${L.cls||''}" style="${L.sw?'background:'+L.sw:''}"></span>${L.name}`;
   lw.appendChild(l);
-  l.querySelector('input').addEventListener('change',e=>L.ids.forEach(id=>map.getLayer(id)&&map.setLayoutProperty(id,'visibility',e.target.checked?'visible':'none')));
+  l.querySelector('input').addEventListener('change',e=>{L.ids.forEach(id=>map.getLayer(id)&&map.setLayoutProperty(id,'visibility',e.target.checked?'visible':'none')); if(L.winter) applyLook();});
 });
 
 // --- sun position (NOAA simplified) ---
@@ -255,12 +264,15 @@ function applyLook(){
   map.setPaintProperty('water-fill','fill-outline-color',winter?'#9bb4c8':'#8fb7dc');
   map.setPaintProperty('water-line','line-color',mix(winter?'#b9cddc':'#6f9fcc','#2c4766',night));
   map.setLayoutProperty('paths','visibility',winter?'none':(document.getElementById('ly-roads').checked?'visible':'none'));
+  for(const id of ['wpaths','snowmobile']) map.setLayoutProperty(id,'visibility',winter&&document.getElementById('ly-'+id).checked?'visible':'none');
+  map.setPaintProperty('snowmobile','line-color',mix('#e8a317','#ffd166',night));
+  map.setPaintProperty('wpaths','line-color',mix('#8a5a2b','#e0b48a',night));
   map.setPaintProperty('nordic','line-width',winter?3:2);
   map.setPaintProperty('nordic','line-color',mix(winter?'#1747c9':'#2b59c3','#8fb0ff',night));
-  map.setPaintProperty('pistes','line-color',mix('#d1495b','#ff8a98',night));
-  map.setPaintProperty('pistes','line-opacity',winter?0.95:0.6);
+  map.setPaintProperty('pistes','line-color',pisteColor(night>0.5));
+  map.setPaintProperty('pistes','line-opacity',['match',['get','st'],['c','u'],winter?0.45:0.3,winter?0.95:0.6]);
   map.setPaintProperty('roads','line-color',mix('#fff7e6','#f3c66b',night));
-  map.setPaintProperty('lifts','line-color',night>0.5?'#e8e8e8':'#1a1a1a');
+  map.setPaintProperty('lifts','line-color',['case',['==',['get','st'],'c'],'#8b9297',night>0.5?'#e8e8e8':'#1a1a1a']);
   map.setPaintProperty('buildings','fill-extrusion-color',night>0.5?['match',['get','class'],['commercial','retail','hotel'],'#c79a5a','#8d7a60']:['match',['get','class'],['commercial','retail','hotel'],'#c58b6a','#d8cbbd']);
   map.setPaintProperty('contours','line-color',night>0.5?'#9fb0c8':'#7a5c2e');
   map.setPaintProperty('contours-major','line-color',night>0.5?'#9fb0c8':'#7a5c2e');
@@ -329,13 +341,15 @@ function useWeather(w){
 }
 const weather=loadWeather().catch(e=>{document.getElementById('snow').textContent='Säätietoja ei saatu ('+e.message+'). Kartta toimii ilman niitä.'; return null});
 
-fetch('data/layers.json').then(r=>r.json()).then(L=>{
+Promise.all(['data/layers.json','data/winter.json'].map(u=>fetch(u).then(r=>{if(!r.ok) throw new Error(u+' '+r.status); return r.json()}))).then(([L,WL])=>{
+  WINTER=WL;
   PLACES=L.places.features.map(f=>({...f,_n:norm(f.properties.name)}));
   const start=()=>{
     const demSrc={type:'raster-dem',tiles:['https://tiles.mapterhorn.com/{z}/{x}/{y}.webp'],tileSize:512,encoding:'terrarium',maxzoom:14,attribution:'<a href="https://mapterhorn.com/attribution">© Mapterhorn</a>'};
     map.addSource('dem3d',demSrc); map.addSource('demhs',{...demSrc});
     map.addSource('landcover',{type:'image',url:new URL('data/landcover.png',location.href).href,coordinates:[[24.60,67.88],[25.02,67.88],[25.02,67.62],[24.60,67.62]]});
     for(const k of Object.keys(L)) map.addSource(k,{type:'geojson',data:L[k]});
+    for(const k of Object.keys(WL)) map.addSource(k,{type:'geojson',data:WL[k]});
     map.addLayer({id:'landcover',type:'raster',source:'landcover',paint:{'raster-opacity':0.85,'raster-resampling':'linear'}});
     map.addLayer({id:'hillshade',type:'hillshade',source:'demhs',paint:{'hillshade-exaggeration':0.6,'hillshade-highlight-color':'#ffffff','hillshade-shadow-color':'#2a2f3a','hillshade-accent-color':'#55606a'}});
     map.addLayer({id:'water-fill',type:'fill',source:'water',filter:['==',['geometry-type'],'Polygon'],paint:{'fill-color':'#8fb7dc'}});
@@ -348,15 +362,18 @@ fetch('data/layers.json').then(r=>r.json()).then(L=>{
     map.addLayer({id:'contours-major',type:'line',source:'contours','source-layer':'contours',filter:['>=',['get','level'],1],paint:{'line-color':'#7a5c2e','line-opacity':0.6,'line-width':1.2}});
     map.addLayer({id:'roads',type:'line',source:'roads',filter:['!',['in',['get','class'],['literal',['path','footway','track','cycleway','steps']]]],paint:{'line-color':'#fff7e6','line-width':['match',['get','class'],['primary','secondary'],3.5,['tertiary','residential'],2,1.2],'line-opacity':0.95}});
     map.addLayer({id:'paths',type:'line',source:'roads',filter:['in',['get','class'],['literal',['path','footway','track','cycleway','steps']]],paint:{'line-color':'#7b4b1e','line-width':1.3,'line-dasharray':[2,1.5]}});
-    map.addLayer({id:'nordic',type:'line',source:'landuse',filter:['==',['get','class'],'nordic'],paint:{'line-color':css('--nordic')||'#2b59c3','line-width':2,'line-dasharray':[3,1.5]}});
-    map.addLayer({id:'pistes',type:'line',source:'landuse',filter:['==',['get','class'],'downhill'],paint:{'line-color':css('--piste')||'#d1495b','line-width':['interpolate',['linear'],['zoom'],12,2,15,5],'line-opacity':0.9}});
-    map.addLayer({id:'lifts',type:'line',source:'infra',filter:['==',['geometry-type'],'LineString'],paint:{'line-color':'#1a1a1a','line-width':1.6}});
+    map.addLayer({id:'snowmobile',type:'line',source:'snowmobile',paint:{'line-color':'#e8a317','line-width':['interpolate',['linear'],['zoom'],11,1.2,15,3],'line-dasharray':[4,2]}});
+    map.addLayer({id:'wpaths',type:'line',source:'wpaths',paint:{'line-color':'#8a5a2b','line-width':['interpolate',['linear'],['zoom'],12,1.2,15,2.4],'line-dasharray':[1,1.4]}});
+    map.addLayer({id:'nordic',type:'line',source:'nordic',paint:{'line-color':css('--nordic')||'#2b59c3','line-width':2,'line-dasharray':[3,1.5]}});
+    map.addLayer({id:'pistes',type:'line',source:'pistes',layout:{'line-cap':'round','line-join':'round'},paint:{'line-color':pisteColor(false),'line-width':['interpolate',['linear'],['zoom'],12,2,15,5],'line-opacity':0.9}});
+    map.addLayer({id:'lifts',type:'line',source:'lifts',paint:{'line-color':'#1a1a1a','line-width':['interpolate',['linear'],['zoom'],12,1.4,15,2.6]}});
     map.addLayer({id:'buildings',type:'fill-extrusion',source:'buildings',minzoom:13,paint:{'fill-extrusion-color':['match',['get','class'],['commercial','retail','hotel'],'#c58b6a','#d8cbbd'],'fill-extrusion-height':['coalesce',['get','height'],['*',['coalesce',['get','num_floors'],1.5],3.2]],'fill-extrusion-opacity':1}});
     map.addLayer({id:'places',type:'circle',source:'places',minzoom:12,paint:{'circle-radius':['interpolate',['linear'],['zoom'],12,3,16,6],
       'circle-color':['match',['get','g'],'majoitus','#7d4cc2','ruoka','#e07a1f','luonto','#2c8a57','#3a6ea5'],'circle-stroke-color':'#ffffff','circle-stroke-width':1.5,'circle-pitch-alignment':'viewport'}});
     map.setTerrain({source:'dem3d',exaggeration:+ex.value});
     applyLook();
     weather.then(w=>{if(w) useWeather(w)});
+    loadStatus(); setInterval(()=>{if(!document.hidden) loadStatus()},10*6e4);
     document.getElementById('loading').hidden=true;
   };
   map.loaded()?start():map.once('load',start);
@@ -389,6 +406,50 @@ map.on('click','places',e=>{const f=e.features[0];
     .getElement().querySelector('.maplibregl-popup-content').replaceChildren(Object.assign(document.createElement('strong'),{textContent:f.properties.name}),Object.assign(document.createElement('small'),{textContent:f.properties.t}));});
 map.on('mouseenter','places',()=>map.getCanvas().style.cursor='pointer');
 map.on('mouseleave','places',()=>map.getCanvas().style.cursor='');
+
+// --- pistes and lifts: difficulty colours, live open/closed status from levi.fi, popups ---
+let WINTER=null, STATUS=null;
+function pisteColor(nightMode){
+  return ['case',['==',['get','st'],'c'],nightMode?'#6b7480':'#9aa3a8',
+    ['match',['get','d'],'novice','#2f9e44','easy','#1c64d6','intermediate','#d6333f',['advanced','expert'],nightMode?'#f2f2f2':'#111111','freeride','#e8590c',nightMode?'#ff8a98':'#d1495b']];
+}
+const DIFF={novice:'erittäin helppo',easy:'helppo',intermediate:'keskivaikea',advanced:'vaikea',expert:'erittäin vaikea',freeride:'vapaalasku / park'};
+// levi.fi names slopes "E.1", "5.3 non-groomed", "Siirtymäreitti / Connecting Route 1-5" or "Leevilandia – Family Park"; OSM has the same refs in piste:ref/ref
+const slopeKeys=n=>{const m=(n||'').match(/\b(\d+[A-Z]?\.\d+|[A-Z]+\.\d+|\d+-\d+)\b/); return m?[m[1]]:[norm((n||'').split(/\s[–-]\s|\//)[0].trim())]};
+const osmKeys=p=>[...(p.ref?String(p.ref).split(';').map(x=>x.trim()):[]),...(p.name?[norm(p.name)]:[])];
+const LEVI_API='https://levi-cloudprod-agent.frendsapp.com/api/';
+async function loadStatus(){
+  const el=document.getElementById('lstat');
+  try{
+    const [s,l]=await Promise.all(['activities/v1/slopes','amenities/v1/lifts'].map(p=>getJSON(LEVI_API+p).then(x=>x.data||x)));
+    const SL=new Map(), LF=new Map();
+    for(const x of s) for(const k of slopeKeys(x.name?.fi)) SL.set(k,x);
+    for(const x of l){ if(x.identifier&&x.identifier!=='=') LF.set(x.identifier,x); LF.set(norm(x.name?.fi||''),x); }
+    STATUS={SL,LF,at:new Date()};
+    const mark=(fc,M)=>{for(const f of fc.features){const hit=osmKeys(f.properties).map(k=>M.get(k)).filter(Boolean);
+      f.properties.st=hit.length?(hit.some(x=>x.open?.now)?'o':'c'):'u'; f.properties.lv=hit.length?JSON.stringify(hit.map(x=>({n:x.name?.fi,o:!!x.open?.now,h:x.open?.hours,c:x.comment?.fi,p:!!x.inSnowPreparation}))):undefined;}};
+    mark(WINTER.pistes,SL); mark(WINTER.lifts,LF);
+    map.getSource('pistes').setData(WINTER.pistes); map.getSource('lifts').setData(WINTER.lifts);
+    const os=s.filter(x=>x.open?.now).length, ol=l.filter(x=>x.open?.now).length;
+    el.innerHTML=''; el.append('Auki nyt ',Object.assign(document.createElement('b'),{textContent:os+'/'+s.length}),' rinnettä ja ',Object.assign(document.createElement('b'),{textContent:ol+'/'+l.length}),
+      ' hissiä (levi.fi, haettu klo '+STATUS.at.toLocaleTimeString('fi-FI',{timeZone:tz,hour:'2-digit',minute:'2-digit'})+'). Suljetut näkyvät harmaina ja rinteenpätkät, joille ei löydy tilaa, haaleina.');
+    applyLook();
+  }catch(e){
+    el.textContent='Rinteiden ja hissien aukiolotietoa ei saatu: Levin rajapinta ei vielä salli hakua tältä sivulta ('+e.message+'). Kartta näyttää rinteet ja hissit OSM:n tiedoilla.';
+  }
+}
+function infoPopup(e,title,lines){
+  const box=document.createElement('div'); box.append(Object.assign(document.createElement('strong'),{textContent:title}));
+  for(const t of lines.filter(Boolean)) box.append(Object.assign(document.createElement('small'),{textContent:t}));
+  new maplibregl.Popup({closeButton:false,offset:6}).setLngLat(e.lngLat).setHTML('').addTo(map).getElement().querySelector('.maplibregl-popup-content').replaceChildren(box);
+}
+const lvLines=p=>p.lv?JSON.parse(p.lv).map(x=>(x.o?'Auki nyt':x.p?'Suljettu, lumetus käynnissä':'Suljettu')+(x.h?' · '+x.h:'')+(x.c?' · '+x.c:'')):[STATUS?'Ei tilatietoa tälle rinteelle':null];
+map.on('click','pistes',e=>{const p=e.features[0].properties; infoPopup(e,'Rinne '+(p.ref||p.name||''),[p.name&&p.ref?p.name:null,DIFF[p.d]||null,p.lit==='yes'?'Valaistu':null,...lvLines(p)])});
+map.on('click','lifts',e=>{const p=e.features[0].properties; infoPopup(e,(p.ref?p.ref+' ':'')+(p.name||'Hissi'),[{gondola:'Gondoli',chair_lift:'Tuolihissi','t-bar':'Ankkurihissi',platter:'Sompahissi',magic_carpet:'Mattohissi',drag_lift:'Hiihtohissi'}[p.k]||p.k,...lvLines(p)])});
+map.on('click','nordic',e=>{const p=e.features[0].properties; infoPopup(e,p.name||'Latu',[DIFF[p.d]||null,p.g==='classic+skating'?'Perinteinen ja vapaa':p.g==='classic'?'Perinteinen':p.g==='skating'?'Vapaa':null,p.lit==='yes'?'Valaistu':null])});
+map.on('click','wpaths',e=>{const p=e.features[0].properties; infoPopup(e,p.name||'Talvipolku',[p.k.split(';').map(k=>({hike:'kävely',fatbike:'läskipyörä',snowshoe:'lumikengät'})[k]).join(', '),DIFF[p.d]||null,p.g==='backcountry'?'Ei kunnostettu':null])});
+map.on('click','snowmobile',e=>{const p=e.features[0].properties; infoPopup(e,p.name||'Moottorikelkkareitti',[p.ref?'Reitti '+p.ref:null,'OSM-merkintä: tarkista reitti ja ajolupa ennen ajoa'])});
+for(const id of ['pistes','lifts','nordic','wpaths','snowmobile']){map.on('mouseenter',id,()=>map.getCanvas().style.cursor='pointer'); map.on('mouseleave',id,()=>map.getCanvas().style.cursor='');}
 
 // --- search places by name (accent-insensitive, matches any word start or substring) ---
 let PLACES=[];
