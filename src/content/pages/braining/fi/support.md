@@ -61,6 +61,14 @@ Kuvat näkyvät pikkukuvina tekstin alla. Napauta tai klikkaa kuvaa nähdäksesi
 </details>
 
 <details>
+<summary>Miten yhdistän muistiinpanoja?</summary>
+
+Jos samasta asiasta on tullut monta lyhyttä sanelua, voit yhdistää ne yhdeksi. iPhonella ja iPadilla paina muistiinpanoa pitkään ja valitse **Yhdistä toiseen muistiinpanoon…**, tai valitse muokkaustilassa useampi muistiinpano ja paina **Yhdistä…**. Macilla valitse muistiinpanot ja valitse Ctrl-klikkausvalikosta tai Muistiinpanot-valikosta **Yhdistä toiseen muistiinpanoon…**. Valitse sitten, mihin muistiinpanoon ne lisätään.
+
+Muistiinpanot lisätään valitun perään vanhimmasta alkaen, ja kunkin otsikosta tulee väliotsikko. Myös kuvat kopioidaan. Alkuperäiset siirtyvät Arkistoon äänitteineen, joten mitään ei katoa. Yhdistämisen voi kumota heti sen jälkeen **Kumoa**-painikkeella (Macilla Muistiinpanot-valikosta), ja myöhemmin alkuperäiset voi palauttaa Arkistosta.
+</details>
+
+<details>
 <summary>Voinko äänittää Macilla?</summary>
 
 Voit. Paina työkalupalkin **Äänitä** tai ⌥⌘R, ja lopeta samasta napista tai uudelleen ⌥⌘R:llä. Mac litteroi äänitteen itse, ja muistiinpano synkronoituu muille laitteillesi kuten iPhonella tehty. Ensimmäisellä kerralla macOS kysyy lupaa käyttää mikrofonia. Jos olet estänyt sen, salli se kohdassa Järjestelmäasetukset → Tietosuoja ja turvallisuus → Mikrofoni.
