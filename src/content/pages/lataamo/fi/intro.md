@@ -10,7 +10,8 @@ Lataamo on iPhone-sovellus vapaan sähköauton laturin löytämiseen Suomessa. A
 - **Kartta.** Kaikki laturit kartalla väreittäin sen mukaan, onko niissä vapaata.
 - **Pitkä matka.** Anna kohde, niin näet reitin varren laturit ja arvion akun varauksesta perillä. Lataamo ehdottaa kahvi- ja ruokatauot kellonajan mukaan pikalatureille, joiden lähellä on kahvila tai ravintola, ja lisää latauspysähdyksen, jos akku ei muuten riittäisi. Kun haluat perille mahdollisimman nopeasti, valitse Nopein: Lataamo ehdottaa vain latauspysähdykset ja kertoo, kuinka kauan kukin lataus suunnilleen kestää.
 - **Widget ja Siri.** Katso laturit kotinäytöltä tai kysy Siriltä suomeksi.
-- **Navigointi.** Yksi napautus avaa reittiohjeet laturille Apple Karttoihin.
+- **Navigointi.** Yksi napautus avaa reittiohjeet laturille Apple Karttoihin tai Google Mapsiin.
+- **Auton varaus (vapaaehtoinen).** Omilla Volvon tai BMW:n / MINIn kehittäjätunnuksilla Lataamo lukee akun varauksen autosta.
 
 Lataamo käyttää Suomen avointa latausdataa. Ei tilejä, ei mainoksia eikä seurantaa.
 
