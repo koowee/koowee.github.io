@@ -1,4 +1,5 @@
-# One-off probe: does the levi.fi status API answer a plain server request (no browser Origin header)?
+# One-off probe: can a GitHub runner read levi.fi slope status without browser headers?
+# Step 1 showed the API answers 401 without an Origin header. Step 2: is the status already in the public page HTML?
 # We send no Origin and no fake headers. Remove this file after the probe.
 name: Levi status probe
 on:
@@ -10,11 +11,13 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: Fetch slopes and lifts without Origin
+      - name: Public pages
         run: |
-          for p in activities/v1/slopes amenities/v1/lifts; do
-            code=$(curl -s -o out.json -w '%{http_code}' "https://levi-cloudprod-agent.frendsapp.com/api/$p")
-            echo "$p -> HTTP $code, $(wc -c < out.json) bytes"
-            head -c 300 out.json; echo
-            if [ "$code" = 200 ]; then python3 -c "import json;d=json.load(open('out.json'));d=d.get('data',d);print(len(d),'items,',sum(1 for x in d if (x.get('open') or {}).get('now')),'open now')"; fi
+          for u in https://www.levi.fi/laskettelu-ja-hiihto/rinteet-ja-hissit/ https://www.levi.fi/laskettelu-ja-hiihto/maastohiihto/; do
+            code=$(curl -sL -A 'koowee-levi-map-probe' -o page.html -w '%{http_code}' "$u")
+            echo "== $u -> HTTP $code, $(wc -c < page.html) bytes"
+            echo "frends mentions: $(grep -o 'frendsapp[^"'"'"' ]*' page.html | sort -u | head -5 | tr '\n' ' ')"
+            echo "status words: Avaustavoite=$(grep -c 'Avaustavoite' page.html) E.1=$(grep -o 'E\.1' page.html | wc -l) Express gondoli=$(grep -o 'Express gondoli' page.html | wc -l) operating=$(grep -o '"operating"' page.html | wc -l)"
+            grep -o '<script[^>]*src="[^"]*"' page.html | head -15
+            grep -oi 'hubdb[^"]*' page.html | sort -u | head -5
           done
