@@ -121,6 +121,8 @@ When **Settings → Also alert for current location** is on, you also get alerts
 
 This needs the location permission **Always**. iOS then wakes the app after you have moved a fair distance, and the forecast is fetched for the new place. It uses little battery, because the app does not follow your location all the time. If you allow location only while using the app, the place updates when you open the app.
 
+While you stay put, the forecast updates when a Repovahti widget updates (about every half hour), in iOS background refresh or when you open the app. Add a Repovahti widget to your Home or Lock Screen so the alerts follow the evening's forecast.
+
 Within 30 km of one of your favourites, the alert comes only for the favourite, so you don't get the same alert twice. A location more than a day old gets no alerts. When you move more than 30 km, the new place may alert again the same evening. Turning the setting off deletes the saved location.
 
 **Check favourites now** fetches the favourites' forecast and schedules their notifications again. It also sends a test notification right away if a favourite's night reaches the notification limit. If the advance alert time has already passed, the advance alert may also arrive right away.

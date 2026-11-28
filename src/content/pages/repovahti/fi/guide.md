@@ -121,6 +121,8 @@ Kun **Asetukset → Ilmoita myös nykyisestä sijainnista** on päällä, saat i
 
 Toiminto vaatii sijaintiluvan **Aina**. Silloin iOS herättää sovelluksen, kun olet siirtynyt selvästi, ja ennuste haetaan uudelle paikalle. Akkua tämä kuluttaa vähän, koska sovellus ei seuraa sijaintia jatkuvasti. Jos sallit sijainnin vain käytön aikana, paikka päivittyy, kun avaat sovelluksen.
 
+Kun olet paikallaan, ennuste päivittyy Repovahdin widgetin päivittyessä (noin puolen tunnin välein), iOS:n taustapäivityksessä tai kun avaat sovelluksen. Lisää koti- tai lukitusnäytölle jokin Repovahti-widget, niin ilmoitukset seuraavat illan ennustetta.
+
 Jos olet alle 30 km:n päässä jostain suosikistasi, ilmoitus tulee vain suosikista, ettei samaa ilmoitusta tule kahdesti. Yli vuorokauden vanhasta sijainnista ei ilmoiteta. Kun siirryt yli 30 km, uusi paikka voi ilmoittaa samana iltana uudelleen. Kun kytket toiminnon pois, tallennettu sijainti poistetaan.
 
 **Tarkista suosikit nyt** hakee suosikkien ennusteen ja ajastaa niiden ilmoitukset uudelleen. Lisäksi se lähettää testi-ilmoituksen heti, jos jonkin suosikin tämä yö saavuttaa ilmoitusrajan. Jos ennakkoilmoituksen aika on jo ohi, myös ennakkoilmoitus voi tulla heti.
