@@ -55,7 +55,7 @@ Siri works in Finnish. Say "Lähin vapaa laturi Lataamo" and Siri tells you the 
 <details>
 <summary>Why doesn't the widget update right away?</summary>
 
-iOS decides when widgets refresh, usually about every 15 minutes. The widget shows how old its data is. When it can't get a location of its own, it uses the one the app last used, for up to a week.
+iOS decides when widgets refresh, usually about every 15 minutes. Tap the round button in the widget's top corner to get the chargers' status right away. The widget shows how old its data is, and an orange count means the charger's own "free" report is old. When it can't get a location of its own, it uses the one the app last used, for up to a week.
 </details>
 
 <details>

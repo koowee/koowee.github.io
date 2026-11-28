@@ -55,7 +55,7 @@ Sano "Lähin vapaa laturi Lataamo", niin Siri kertoo lähimmän vapaan laturin a
 <details>
 <summary>Miksi widget ei päivity heti?</summary>
 
-iOS päättää, milloin widget päivittyy, yleensä noin vartin välein. Widget kertoo, kuinka vanha tieto on. Jos se ei saa omaa sijaintia, se käyttää viimeksi sovelluksessa käytettyä sijaintia enintään viikon ajan.
+iOS päättää, milloin widget päivittyy, yleensä noin vartin välein. Widgetin yläkulman pyöreällä napilla saat latureiden tilan heti. Widget kertoo, kuinka vanha tieto on, ja oranssi luku tarkoittaa, että laturin oma ilmoitus vapaasta on vanha. Jos se ei saa omaa sijaintia, se käyttää viimeksi sovelluksessa käytettyä sijaintia enintään viikon ajan.
 </details>
 
 <details>
