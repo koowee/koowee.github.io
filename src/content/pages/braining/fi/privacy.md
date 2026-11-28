@@ -1,7 +1,7 @@
 ---
 title: "Brainingin tietosuojaseloste"
 description: "Miten Braining käsittelee tietojasi: ei tilejä eikä Brainingin omia palvelimia, ja muistiinpanot ja äänitteet synkronoituvat oman iCloud-tilisi yksityisessä tietokannassa."
-lastUpdated: 2026-11-25
+lastUpdated: 2026-11-26
 ---
 ## Lyhyesti
 
@@ -11,7 +11,7 @@ Brainingissa ei ole tilejä eikä omia palvelimia. Muistiinpanosi ja äänittees
 
 - Äänitteet, jotka teet iPhonella tai Macilla. Laite pyytää mikrofonin käyttöoikeutta vain niiden äänittämiseen.
 - Muistiinpanosi: otsikko, teksti, litterointi, kategoria, tagit, määräpäivä ja muistutus.
-- Kuvat, jotka lisäät muistiinpanoihin. Braining pienentää ne ja poistaa niistä sijainti- ja muut metatiedot ennen tallennusta. iPhone pyytää kameran käyttöoikeutta vain, kun otat kuvan muistiinpanoon, ja kuvakirjastostasi Braining saa vain ne kuvat, jotka valitset.
+- Kuvat ja piirrokset, jotka lisäät muistiinpanoihin. Braining pienentää ne ja poistaa niistä sijainti- ja muut metatiedot ennen tallennusta. iPhone pyytää kameran käyttöoikeutta vain, kun otat kuvan muistiinpanoon, ja kuvakirjastostasi Braining saa vain ne kuvat, jotka valitset.
 - Kategorialuettelosi.
 
 Muistutukset käyttävät laitteesi ilmoituksia. Sovellus pyytää niihin luvan, kun tallennat ensimmäisen muistutuksen tai kun ensimmäinen muistutus tulee toiselta laitteeltasi.
@@ -27,7 +27,7 @@ Jos otat käyttöön asetuksen **Muistutukset Muistutukset-appiin**, Braining lu
 
 - Äänite poistetaan iCloudista ja Macilta 30 päivää litteroinnin jälkeen. iPhone poistaa oman kopionsa heti, kun äänite on siirtynyt iCloudiin. Jos olet ottanut litteroinnin käyttöön iPhonella, se säilyttää oman kopionsa äänitteestä, kunnes se on litteroitu, enintään 30 päivää.
 - Äänitteet, joissa ei ollut puhetta, ja epäonnistuneet säilyvät, kunnes yrität uudelleen tai poistat ne.
-- Poistetut muistiinpanot säilyvät 30 päivää ja poistuvat sitten pysyvästi. Muistiinpanon kuvat poistuvat kaikilta laitteilta ja iCloudista heti, kun poistat muistiinpanon tai kuvan.
+- Poistettu muistiinpano poistuu iCloudista ja kaikilta laitteiltasi, eikä sitä voi palauttaa sovelluksessa. Jokaiselle laitteelle jää sen tekstistä sisäinen kopio 30 päiväksi, jonka jälkeen se poistuu pysyvästi. Muistiinpanon kuvat poistuvat kaikilta laitteilta ja iCloudista heti, kun poistat muistiinpanon tai kuvan. Arkistoitu muistiinpano säilyy ja palautuu Arkistosta.
 - Muut muistiinpanot säilyvät, kunnes poistat ne.
 
 ## Ulkopuoliset palvelut

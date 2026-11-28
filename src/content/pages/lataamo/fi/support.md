@@ -19,7 +19,7 @@ Lataamo näyttää kaikki laturit, jotka operaattori on ilmoittanut avoimeen dat
 <details>
 <summary>Kuinka tuore tieto vapaasta laturista on?</summary>
 
-Lataamo hakee latureiden tilat noin minuutin välein, kun sovellus on auki. Moni operaattori ilmoittaa vain muutokset, joten vanha aikaleima tarkoittaa usein vain, ettei mikään ole muuttunut. Jos vapaan laturin tieto on yli puoli tuntia vanha, sovellus kertoo sen.
+Lataamo hakee latureiden tilat, kun avaat sovelluksen tai vedät listaa alas, ja Kartta-välilehdellä noin minuutin välein. Moni operaattori ilmoittaa vain muutokset, joten vanha aikaleima tarkoittaa usein vain, ettei mikään ole muuttunut. Jos vapaan laturin tieto on yli puoli tuntia vanha, sovellus kertoo sen.
 </details>
 
 <details>
@@ -43,7 +43,7 @@ Voi. Kun reitti on laskettu, napauta reitin tiedoissa "Avaa Google Mapsissa". Go
 <details>
 <summary>Mistä akun varaus tulee?</summary>
 
-Jos kirjaudut Volvoon, Lataamo lukee varauksen ja toimintamatkan autosta. Muuten annat lähtövarauksen itse reitin tiedoissa, ja Lataamo arvioi kulutuksen matkan varrella. Volvo-kirjautuminen vaatii omat Volvon kehittäjäavaimet, ja se on vapaaehtoinen lisäominaisuus. Avainten hankkiminen on neuvottu [ohjeessa](/fi/lataamo/guide/).
+Jos kirjaudut Volvoon tai BMW:hen / MINIin, Lataamo lukee varauksen ja toimintamatkan autosta. Muuten annat lähtövarauksen itse reitin tiedoissa, ja Lataamo arvioi kulutuksen valitsemasi automallin (Asetukset → Auto) mukaan. Kirjautuminen vaatii omat valmistajan kehittäjätunnukset, ja se on vapaaehtoinen lisäominaisuus. Tunnusten hankkiminen on neuvottu [ohjeessa](/fi/lataamo/guide/). Tunnukset poistetaan auton asetusten napilla "Poista tunnukset".
 </details>
 
 <details>
@@ -55,7 +55,7 @@ Sano "Lähin vapaa laturi Lataamo", niin Siri kertoo lähimmän vapaan laturin a
 <details>
 <summary>Miksi widget ei päivity heti?</summary>
 
-iOS päättää, milloin widget päivittyy, yleensä noin vartin välein. Widget kertoo, kuinka vanha tieto on. Jos se ei saa omaa sijaintia, se käyttää viimeksi sovelluksessa käytettyä sijaintia enintään viikon ajan.
+iOS päättää, milloin widget päivittyy, yleensä noin vartin välein. Widgetin yläkulman pyöreällä napilla saat latureiden tilan heti. Widget kertoo, kuinka vanha tieto on, ja oranssi luku tarkoittaa, että laturin oma ilmoitus vapaasta on vanha. Jos se ei saa omaa sijaintia, se käyttää viimeksi sovelluksessa käytettyä sijaintia enintään viikon ajan.
 </details>
 
 <details>
@@ -67,7 +67,7 @@ Lataamo on avoimessa beta-testissä ennen App Store -julkaisua. Asenna iPhoneen 
 <details>
 <summary>Tarvitsenko tilin?</summary>
 
-Et. Lataamossa ei ole tilejä. Ainoa kirjautuminen on vapaaehtoinen Volvo ID auton akkutietoja varten.
+Et. Lataamossa ei ole tilejä. Ainoa kirjautuminen on vapaaehtoinen Volvo ID tai BMW CarData auton akkutietoja varten.
 </details>
 
 <details>

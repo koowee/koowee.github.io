@@ -21,7 +21,7 @@ Unless you have turned on transcription on your iPhone, transcription happens in
 
 Only if you turn it on. On newer iPhones and iPads, Braining offers **Litteroi iPhonella** (Transcribe on the iPhone) once. You can turn it on or off later with **Litteroi tällä laitteella** (Transcribe on this device) in the sync menu. Older devices do not show the option.
 
-When it is on, the device downloads a speech model of 627 MB once, over Wi-Fi only, and transcribes its own recordings on the device while Braining is open. Recordings made while the phone is locked wait until you next open the app. The Mac still transcribes anything the iPhone has not got to, and the two never transcribe the same recording twice. Until the model has downloaded, recordings wait for the Mac as before.
+When it is on, the device downloads a speech model of 627 MB once, over Wi-Fi only, and transcribes its own recordings on the device while Braining is open. Recordings made while the phone is locked wait until you next open the app. The Mac still transcribes anything the iPhone has not got to, and the two never transcribe the same recording twice. Until the model has downloaded, recordings wait for the Mac as before. Transcription on the device needs iCloud sync to be on, because your devices agree through iCloud on which of them transcribes a recording.
 
 The iPhone keeps a recording's own audio until it is transcribed, and at most 30 days. Each recording remembers which device and speech model transcribed it.
 
@@ -55,7 +55,7 @@ Yes. Notes are Markdown. On iPhone and iPad, the **Aa** menu above the keyboard 
 <details>
 <summary>Can I add pictures to a note?</summary>
 
-Yes, up to 20 per note. On iPhone and iPad, tap the picture button above the keyboard or **Lisää kuva** (Add picture) below the text, and choose the camera, your photos or files. You can also paste a copied image. On the Mac, drag an image into the editor, paste it with ⌘V or choose **Muotoile → Lisää kuva…** (⇧⌘I).
+Yes, up to 20 per note. On iPhone and iPad, tap the picture button above the keyboard or **Lisää kuva** (Add picture) below the text, and choose the camera, your photos or files. With **Piirrä** (Draw) you can draw on an empty page, and the drawing is saved to the note as a picture. You can also paste a copied image. On the Mac, drag an image into the editor, paste it with ⌘V or choose **Muotoile → Lisää kuva…** (⇧⌘I).
 
 Pictures show as thumbnails below the text. Tap or click one to see it large, and remove it with a long press, or a Control-click on the Mac. Pictures are saved when you save the note, and sync to your other devices. Braining shrinks them (longest side 2048 pixels) and removes location data before saving.
 </details>
@@ -68,6 +68,12 @@ If one topic ended up as several short dictations, you can merge them into one. 
 On the Mac you can also drag a note onto another in the list, and Braining asks whether to merge them. On the Mac and iPad you can drag a note into another app too: Finder and Files get a .md file, and most other apps (Outlook or TextEdit, for example) take that file as an attachment. To paste a note as text, copy it with **Kopioi** (Copy): on the Mac it is in the toolbar and under ⇧⌘C, on iPhone and iPad at the bottom of an open note and in the list's long-press menu.
 
 The notes are added to the end of the one you picked, oldest first, each with its title as a heading. Pictures are copied too. The originals move to the Archive with their recordings, so nothing is lost. You can undo the merge right after it with **Kumoa** (Undo; on the Mac in the Muistiinpanot menu), and later restore the originals from the Archive.
+</details>
+
+<details>
+<summary>Can I get a deleted note back?</summary>
+
+No. Deleting removes the note and its pictures from all your devices and iCloud, and it cannot be undone. Braining tells you before the delete how many pictures go with it. If you only want to put a note aside, archive it: you can bring it back from the Archive.
 </details>
 
 <details>
