@@ -61,6 +61,16 @@ Pictures show as thumbnails below the text. Tap or click one to see it large, an
 </details>
 
 <details>
+<summary>How do I merge notes?</summary>
+
+If one topic ended up as several short dictations, you can merge them into one. On the iPhone and iPad, touch and hold a note and choose **Yhdistä toiseen muistiinpanoon…** (Merge into another note), or select several notes in edit mode and tap **Yhdistä…**. On the Mac, select the notes and choose **Yhdistä toiseen muistiinpanoon…** from the Control-click menu or the Muistiinpanot (Notes) menu. Then pick the note they are added to.
+
+On the Mac you can also drag a note onto another in the list, and Braining asks whether to merge them. On the Mac and iPad you can drag a note into another app too: Finder and Files get a .md file, and most other apps (Outlook or TextEdit, for example) take that file as an attachment. To paste a note as text, copy it with **Kopioi** (Copy): on the Mac it is in the toolbar and under ⇧⌘C, on iPhone and iPad at the bottom of an open note and in the list's long-press menu.
+
+The notes are added to the end of the one you picked, oldest first, each with its title as a heading. Pictures are copied too. The originals move to the Archive with their recordings, so nothing is lost. You can undo the merge right after it with **Kumoa** (Undo; on the Mac in the Muistiinpanot menu), and later restore the originals from the Archive.
+</details>
+
+<details>
 <summary>Can I get a deleted note back?</summary>
 
 No. Deleting removes the note and its pictures from all your devices and iCloud, and it cannot be undone. Braining tells you before the delete how many pictures go with it. If you only want to put a note aside, archive it: you can bring it back from the Archive.

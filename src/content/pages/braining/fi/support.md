@@ -61,6 +61,16 @@ Kuvat näkyvät pikkukuvina tekstin alla. Napauta tai klikkaa kuvaa nähdäksesi
 </details>
 
 <details>
+<summary>Miten yhdistän muistiinpanoja?</summary>
+
+Jos samasta asiasta on tullut monta lyhyttä sanelua, voit yhdistää ne yhdeksi. iPhonella ja iPadilla paina muistiinpanoa pitkään ja valitse **Yhdistä toiseen muistiinpanoon…**, tai valitse muokkaustilassa useampi muistiinpano ja paina **Yhdistä…**. Macilla valitse muistiinpanot ja valitse Ctrl-klikkausvalikosta tai Muistiinpanot-valikosta **Yhdistä toiseen muistiinpanoon…**. Valitse sitten, mihin muistiinpanoon ne lisätään.
+
+Macilla voit myös vetää muistiinpanon toisen päälle listassa, niin Braining kysyy, yhdistetäänkö ne. Macilla ja iPadilla muistiinpanon voi vetää myös toiseen ohjelmaan: Finderiin ja Tiedostoihin se menee .md-tiedostona, ja useimmat muut ohjelmat (esimerkiksi Outlook tai TextEdit) ottavat tiedoston liitteeksi. Kun haluat liittää muistiinpanon tekstinä, kopioi se **Kopioi**-komennolla: Macilla se on työkalupalkissa ja ⇧⌘C:ssä, iPhonella ja iPadilla avoimen muistiinpanon alareunassa ja listan pitkän painalluksen valikossa.
+
+Muistiinpanot lisätään valitun perään vanhimmasta alkaen, ja kunkin otsikosta tulee väliotsikko. Myös kuvat kopioidaan. Alkuperäiset siirtyvät Arkistoon äänitteineen, joten mitään ei katoa. Yhdistämisen voi kumota heti sen jälkeen **Kumoa**-painikkeella (Macilla Muistiinpanot-valikosta), ja myöhemmin alkuperäiset voi palauttaa Arkistosta.
+</details>
+
+<details>
 <summary>Voiko poistetun muistiinpanon palauttaa?</summary>
 
 Ei. Poisto poistaa muistiinpanon ja sen kuvat kaikilta laitteiltasi ja iCloudista, eikä sitä voi kumota. Braining kertoo ennen poistoa, montako kuvaa lähtee mukana. Jos haluat vain siirtää muistiinpanon syrjään, arkistoi se: Arkistosta sen saa takaisin.
