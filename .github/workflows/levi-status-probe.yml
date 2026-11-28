@@ -1,0 +1,20 @@
+# One-off probe: does the levi.fi status API answer a plain server request (no browser Origin header)?
+# We send no Origin and no fake headers. Remove this file after the probe.
+name: Levi status probe
+on:
+  push:
+    branches: [claude/levi-status-probe]
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch slopes and lifts without Origin
+        run: |
+          for p in activities/v1/slopes amenities/v1/lifts; do
+            code=$(curl -s -o out.json -w '%{http_code}' "https://levi-cloudprod-agent.frendsapp.com/api/$p")
+            echo "$p -> HTTP $code, $(wc -c < out.json) bytes"
+            head -c 300 out.json; echo
+            if [ "$code" = 200 ]; then python3 -c "import json;d=json.load(open('out.json'));d=d.get('data',d);print(len(d),'items,',sum(1 for x in d if (x.get('open') or {}).get('now')),'open now')"; fi
+          done
