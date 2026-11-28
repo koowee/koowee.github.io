@@ -19,7 +19,7 @@ Lataamo shows every charger that its operator has reported to the open data. Not
 <details>
 <summary>How up to date is "free"?</summary>
 
-Lataamo fetches the charger statuses about once a minute while the app is open. Many operators only report a change, so an old timestamp often just means nothing has changed. If a free charger's status is older than half an hour, the app says so.
+Lataamo fetches the charger statuses when you open the app or pull the list down, and about once a minute on the Kartta (Map) tab. Many operators only report a change, so an old timestamp often just means nothing has changed. If a free charger's status is older than half an hour, the app says so.
 </details>
 
 <details>
@@ -43,7 +43,7 @@ Yes. Once the route is worked out, tap "Open in Google Maps" in the route detail
 <details>
 <summary>Where does the battery level come from?</summary>
 
-If you sign in to Volvo, Lataamo reads the level and range from the car. Otherwise you enter the starting charge in the route details, and Lataamo estimates the use along the way. The Volvo sign-in needs your own Volvo developer keys and is an optional extra. The [guide](/lataamo/guide/) explains how to get them.
+If you sign in to Volvo or BMW / MINI, Lataamo reads the level and range from the car. Otherwise you enter the starting charge in the route details, and Lataamo estimates the use from the car model you pick (Asetukset → Auto). The sign-in needs your own developer credentials from the maker and is an optional extra. The [guide](/lataamo/guide/) explains how to get them. Remove them with "Poista tunnukset" (Remove credentials) in the car's settings.
 </details>
 
 <details>
@@ -67,7 +67,7 @@ Lataamo is in open beta before its App Store release. Install the free [TestFlig
 <details>
 <summary>Do I need an account?</summary>
 
-No. Lataamo has no accounts. The only sign-in is the optional Volvo ID for the car's battery data.
+No. Lataamo has no accounts. The only sign-in is the optional Volvo ID or BMW CarData for the car's battery data.
 </details>
 
 <details>
